@@ -1,0 +1,17 @@
+@import '../../sass/utils/mixin';
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  height: 50px;
+
+  @include mq(tab) {
+  }
+
+  @include mq(desk) {
+    height: 70px;
+  }
+}

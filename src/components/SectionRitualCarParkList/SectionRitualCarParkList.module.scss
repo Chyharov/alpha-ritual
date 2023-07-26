@@ -1,0 +1,31 @@
+@import '../../sass/utils/mixin';
+
+.ritualCarPark {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ritualCarPark__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tab) {
+    width: 700px;
+  }
+
+  @include mq(desk) {
+    width: 1000px;
+  } 
+}
+
+.ritualCarParkList {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+
+  @include mq(tab) {
+      padding: 30px 10px 30px;
+    }
+}

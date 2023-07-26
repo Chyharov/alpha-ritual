@@ -1,0 +1,78 @@
+.title {
+    text-align: center;
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans SemiBold;
+        font-size: 20px;
+        line-height: 1.38;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.description {
+    text-align: center;
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans Regular;
+        line-height: 1.38;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.description__default {
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans Regular;
+        line-height: 1.38;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.descriptionNoMargin {
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans Regular;
+        line-height: 1.38;
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 22px;
+    }
+}

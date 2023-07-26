@@ -1,0 +1,98 @@
+@import '../../sass/utils/mixin';
+
+.freshFlowers {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+
+    @include mq(tab) {
+        width: 200px;
+        height: 200px;
+    }
+
+    @include mq(desk) {
+        margin-bottom: 20px;
+    }
+}
+
+.wreathsContainer {
+    padding: 20px;
+}
+
+.wreathsdDescriptionContainer {
+    padding: 20px;
+    outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {
+        padding: 80px 20px 20px 20px;
+    }
+}
+
+.wreathsPage__listItem {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.wreathsPage__list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionWreaths {
+    padding-top: 70px;
+}
+
+.wreathsLinksContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include mq(tab) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    @include mq(desk) {
+        justify-content: space-evenly;
+    }
+}
+
+.wreathsLinks {
+    padding: 10px;
+    width: 110px;
+    height: 190px;
+    outline: 1px solid var(--primaryTextColor);
+    border-radius: 8px;
+
+    @include mq(tab) {
+        padding: 20px;
+        width: 300px;
+        height: 320px;
+    }
+
+    @include mq(desk) {
+        padding: 40px 20px;
+        width: 500px;
+        height: 350px;
+    }
+}
+
+.wreathsLinks__title {
+    text-align: center;
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans SemiBold;
+        font-size: 20px;
+        line-height: 1.38;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 30px;
+    }
+}

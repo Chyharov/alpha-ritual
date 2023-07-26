@@ -1,0 +1,101 @@
+@import '../../sass/utils/mixin';
+
+.menu__list {
+    @include mq(mob) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    margin-top: 10px;
+    }
+
+    @include mq(tab) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    }
+}
+
+.menu__list_link {
+  color: #fff;
+  font-size: 1.1rem;
+
+  @include mq(desk) {
+    font-size: 1.5rem;
+  }
+}
+
+.menu__list_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include mq(mob-only) {
+      margin: 10px;
+    }
+  
+}
+
+.menu__list_item:not(:last-child) {
+  @include mq(tab) {
+      margin-right: 10px;
+    }
+ 
+}
+
+.menu__list_item a:hover,
+.menu__list_item a:focus {
+    border-bottom: 5px solid var(--primaryTextColor);
+    margin-bottom: -5px;
+}
+
+.navBar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @include mq(tab) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navBar .navigation {
+      display: none;
+    }
+  
+    .navBar .mobileNavigation {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .navBar .navigation {
+      display: flex;
+    }
+  
+    .navBar .mobileNavigation {
+      display: none;
+    }
+  }
+
+.navBar .mobileNavigation .hamburgerMenu {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.hamburgerMenu {
+    width: 50px;
+    height: 50px;
+    color: var(--primaryTextColor);
+    position: absolute;
+    top: 20px;
+    left: 79%;
+    cursor: pointer;
+  }

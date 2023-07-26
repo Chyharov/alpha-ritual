@@ -1,0 +1,49 @@
+@import '../../sass/utils/mixin';
+
+.sectionFreshFlowersWreath {
+    padding-top: 70px;
+}
+
+.wreathsContainer {
+    padding: 20px;
+}
+
+.freshFlowersWreathDescriptionContainer {
+    padding: 20px;
+    outline: 1px solid var(--primaryTextColor);
+}
+
+.freshFlowersWreath__list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.freshFlowersWreath__listItem {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.freshFlowersWreathPictureList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+
+    @include mq(tab) {
+        grid-gap: 20px;
+    }
+}
+
+.freshFlowersWreathPictureList_img {
+    width: 125px;
+
+    @include mq(tab) {
+        width: 320px;
+        height: 500px;
+    }
+
+    @include mq(desk) {
+        width: 630px;
+        height: 820px;
+    }
+}

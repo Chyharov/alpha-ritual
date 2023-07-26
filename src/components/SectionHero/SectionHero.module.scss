@@ -1,0 +1,49 @@
+@import '../../sass/utils/mixin';
+
+.sectionHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  margin-bottom: 30px;
+
+
+  @include mq(tab) {
+    padding-top: 160px;
+  }
+
+  @include mq(desk) {
+    padding-top: 200px;
+  }
+}
+
+.hero__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tab) {
+    width: 700px;
+  }
+}
+
+.hero__address {
+  text-align: center;
+
+  @include mq(mob) {
+  font-family: Open Sans Regular;
+  font-size: 15px;
+  line-height: 1.38;
+  width: 220px;
+  margin: 0 auto;
+  }
+
+  @include mq(tab) {
+    font-size: 18px;
+    width: 700px;
+  }
+
+  @include mq(desk) {
+    font-size: 22px;
+  }
+}

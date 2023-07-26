@@ -1,0 +1,37 @@
+@import '../../sass/utils/mixin';
+
+.header {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: var(--backgroundColor);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: 1px solid var(--primaryTextColor);
+
+    @include mq(tab) {}
+
+    &--active {
+        composes: header;
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+
+    @include mq(tab) {}
+}
+
+.header__linkBack {
+    display: flex;
+    padding: 10px 5px;
+    color: var(--primaryTextColor);
+    border: 0.5px solid var(--primaryTextColor);
+    border-radius: 15px;
+}
