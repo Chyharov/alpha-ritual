@@ -100,7 +100,7 @@ const WhiteVolksWagen = () => {
                         </Slider>
 
                 <p className={s.ritualCarParkList__name}>Volkswagen Т-5 Білий</p>
-                <p className="description" style={{ textAlign: 'center' }}>(2 - 5 пасажирів)</p>
+                <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>(2 - 5 пасажирів)</p>
 
                 <div className={s.carouselButtonCenter}>
                     <ButtonBack className={s.carouselButton}>Назад</ButtonBack>

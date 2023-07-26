@@ -10,7 +10,7 @@ const SectionAbout = () => {
             <image className={s.image__logo} xlinkHref={logo} alt="Logo"/>
           </svg>
           <h1 className="title">ОМЕГА-РИТУАЛ</h1>
-          <p className="description" style={{ textAlign: 'center' }}>похоронний дім</p>
+          <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>похоронний дім</p>
           <p className={s.about__company}>Похоронний дім Альфа та Омега має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
         </div>
       </div>
