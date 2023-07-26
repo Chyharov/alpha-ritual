@@ -20,7 +20,6 @@
 }
 
 .description {
-    text-align: center;
 
     @media screen and (min-width: 320px) {
         font-family: Open Sans Regular;
@@ -40,8 +39,8 @@
     }
 }
 
-.description__default {
-
+.description {
+    
     @media screen and (min-width: 320px) {
         font-family: Open Sans Regular;
         line-height: 1.38;

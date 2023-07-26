@@ -107,7 +107,7 @@ const BlackMercedesGallery = () => {
                   </Slider>
 
                   <p className={s.ritualCarParkList__name}>Mercedes Banz Sprinter Чорний</p>
-                  <p className="description">(14 - 18 пасажирів)</p>
+                  <p className="description" style={{ textAlign: 'center' }}>(14 - 18 пасажирів)</p>
 
                   <div className={s.carouselButtonCenter}>
                     <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
