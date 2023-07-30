@@ -1,4 +1,4 @@
-# alpha-and-omega ritual Website
+# Alpha ritual Website
 
 This is a web application for ordering funeral services.
 
