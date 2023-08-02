@@ -6,7 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './BlackMercedesGallery.module.scss';
 
-const imagesBMPhoto = require.context('../../images/blackMercedes', true, /\.(jpe?g|png)$/);
+const imagesBMPhoto = require.context('../../images/blackMercedes', true, /\.(webp)$/);
 const RitualCarParkBMPhoto = imagesBMPhoto.keys().map((path) => imagesBMPhoto(path));
 
 const Modal = ({ closeModal, currentSlide, images }) => {
