@@ -6,7 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './WhiteVolksWagen.module.scss';
 
-const images = require.context('../../images/whiteVolksWagen/', true, /\.(jpe?g|png)$/);
+const images = require.context('../../images/whiteVolksWagen', true, /\.(webp)$/);
 const RitualCarParkWVWPhoto = images.keys().map((path) => images(path));
 
 const Modal = ({ closeModal, currentSlide }) => {
