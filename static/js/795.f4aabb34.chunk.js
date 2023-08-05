@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalpha_and_omega=self.webpackChunkalpha_and_omega||[]).push([[795],{8795:function(a,e,o){o.d(e,{Z:function(){return r}});var l=o(1087);o(2791);var c=o.p+"static/media/alpha-ritual-logo.bc80508474e06f639fd07e8c3d1e63cf.svg",n="Logo_logo__6yrBi",s="Logo_logo__img__zmYBe",_=o(184),r=function(){return(0,_.jsx)(l.rU,{className:n,to:"/",children:(0,_.jsx)("img",{className:s,loading:"lazy",src:c,alt:"header__logo"})})}}}]);
+//# sourceMappingURL=795.f4aabb34.chunk.js.map
