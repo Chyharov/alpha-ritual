@@ -41,19 +41,19 @@ const SectionCoffins = () => {
     ];
     
     const CoffinsPictureAveragePriceList = [
-        { id: 1, src: require('../../images/coffinsAveragePrice/DSC_3365.jpg'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/coffinsAveragePrice/DSC_3370.jpg'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/coffinsAveragePrice/DSC_3374.jpg'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/coffinsAveragePrice/DSC_3375.jpg'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/coffinsAveragePrice/DSC_3378.jpg'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/coffinsAveragePrice/DSC_3379.jpg'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/coffinsAveragePrice/DSC_3384.jpg'), alt: 'Зображення 7' },
-        { id: 8, src: require('../../images/coffinsAveragePrice/DSC_3388.jpg'), alt: 'Зображення 8' },
-        { id: 9, src: require('../../images/coffinsAveragePrice/DSC_3390.jpg'), alt: 'Зображення 9' },
-        { id: 10, src: require('../../images/coffinsAveragePrice/DSC_3395.jpg'), alt: 'Зображення 10' },
-        { id: 11, src: require('../../images/coffinsAveragePrice/DSC_3399.jpg'), alt: 'Зображення 11' },
-        { id: 12, src: require('../../images/coffinsAveragePrice/dsc_3383.jpg'), alt: 'Зображення 12' },    
-    ];
+        { id: 1, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3365.webp'), alt: 'Зображення 1' },
+        { id: 2, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3370.webp'), alt: 'Зображення 2' },
+        { id: 3, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3374.webp'), alt: 'Зображення 3' },
+        { id: 4, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3375.webp'), alt: 'Зображення 4' },
+        { id: 5, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3378.webp'), alt: 'Зображення 5' },
+        { id: 6, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3379.webp'), alt: 'Зображення 6' },
+        { id: 7, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3384.webp'), alt: 'Зображення 7' },
+        { id: 8, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3388.webp'), alt: 'Зображення 8' },
+        { id: 9, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3390.webp'), alt: 'Зображення 9' },
+        { id: 10, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3395.webp'), alt: 'Зображення 10' },
+        { id: 11, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3399.webp'), alt: 'Зображення 11' },
+        { id: 12, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3383.webp'), alt: 'Зображення 12' },    
+  ];
     
     const CoffinsPictureEconomPriceList = [
         { id: 1, src: require('../../images/coffinsEconomPrice/DSC_3438.jpg'), alt: 'Зображення 1' },
