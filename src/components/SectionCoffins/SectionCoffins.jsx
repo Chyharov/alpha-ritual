@@ -56,22 +56,22 @@ const SectionCoffins = () => {
   ];
     
     const CoffinsPictureEconomPriceList = [
-        { id: 1, src: require('../../images/coffinsEconomPrice/DSC_3438.jpg'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/coffinsEconomPrice/DSC_3439.jpg'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/coffinsEconomPrice/DSC_3443.jpg'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/coffinsEconomPrice/DSC_3446.jpg'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/coffinsEconomPrice/DSC_3452.jpg'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/coffinsEconomPrice/DSC_3455.jpg'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/coffinsEconomPrice/DSC_3462.jpg'), alt: 'Зображення 7' },
-        { id: 8, src: require('../../images/coffinsEconomPrice/DSC_3471.jpg'), alt: 'Зображення 8' },
-        { id: 9, src: require('../../images/coffinsEconomPrice/DSC_3474-scaled.jpg'), alt: 'Зображення 9' },
-        { id: 10, src: require('../../images/coffinsEconomPrice/DSC_3476.jpg'), alt: 'Зображення 10' },
-        { id: 11, src: require('../../images/coffinsEconomPrice/DSC_3477.jpg'), alt: 'Зображення 11' },
-        { id: 12, src: require('../../images/coffinsEconomPrice/DSC_3478.jpg'), alt: 'Зображення 12' },
-        { id: 13, src: require('../../images/coffinsEconomPrice/DSC_3480.jpg'), alt: 'Зображення 13' },
-        { id: 14, src: require('../../images/coffinsEconomPrice/dsc_3458-1.jpg'), alt: 'Зображення 14' },
-        { id: 15, src: require('../../images/coffinsEconomPrice/dsc_3464-1.jpg'), alt: 'Зображення 15' },
-        { id: 16, src: require('../../images/coffinsEconomPrice/dsc_3472-1.jpg'), alt: 'Зображення 16' }, 
+        { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3438.webp'), alt: 'Зображення 1' },
+        { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3439.webp'), alt: 'Зображення 2' },
+        { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3443.webp'), alt: 'Зображення 3' },
+        { id: 4, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3446.webp'), alt: 'Зображення 4' },
+        { id: 5, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3452.webp'), alt: 'Зображення 5' },
+        { id: 6, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3455.webp'), alt: 'Зображення 6' },
+        { id: 7, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3458.webp'), alt: 'Зображення 7' },
+        { id: 8, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3462.webp'), alt: 'Зображення 8' },
+        { id: 9, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3464.webp'), alt: 'Зображення 9' },
+        { id: 10, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3471.webp'), alt: 'Зображення 10' },
+        { id: 11, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3472.webp'), alt: 'Зображення 11' }, 
+        { id: 12, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3474.webp'), alt: 'Зображення 12' },
+        { id: 13, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3476.webp'), alt: 'Зображення 13' },
+        { id: 14, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3477.webp'), alt: 'Зображення 14' },
+        { id: 15, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3478.webp'), alt: 'Зображення 15' },
+        { id: 16, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3480.webp'), alt: 'Зображення 16' },
 ];
     
     const openModal = (src, alt) => {
