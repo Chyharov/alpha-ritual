@@ -8,18 +8,18 @@ const SectionCrosses = () => {
     const [selectedImageAlt, setSelectedImageAlt] = useState('');
 
     const CrossesPictureList = [
-      { id: 1, src: require('../../images/crosses/1.jpg'), alt: 'Зображення 1' },
-      { id: 2, src: require('../../images/crosses/2.jpg'), alt: 'Зображення 2' },
-      { id: 3, src: require('../../images/crosses/3.jpg'), alt: 'Зображення 3' },
-      { id: 4, src: require('../../images/crosses/5-1.jpg'), alt: 'Зображення 4' },
-      { id: 5, src: require('../../images/crosses/6.jpg'), alt: 'Зображення 5' },
-      { id: 6, src: require('../../images/crosses/7.jpg'), alt: 'Зображення 6' },
-      { id: 7, src: require('../../images/crosses/8.jpg'), alt: 'Зображення 7' },
-      { id: 8, src: require('../../images/crosses/DSC_3520-kopiya.jpg'), alt: 'Зображення 8' },
-      { id: 9, src: require('../../images/crosses/DSC_3524-kopiya.jpg'), alt: 'Зображення 9' },
-      { id: 10, src: require('../../images/crosses/DSC_3525.jpg'), alt: 'Зображення 10' },
-      { id: 11, src: require('../../images/crosses/DSC_3527.jpg'), alt: 'Зображення 11' },
-      { id: 12, src: require('../../images/crosses/DSC_3531.jpg'), alt: 'Зображення 12' }
+      { id: 1, src: require('../../images/crosses/crosses1.webp'), alt: 'Зображення 1' },
+      { id: 2, src: require('../../images/crosses/crosses2.webp'), alt: 'Зображення 2' },
+      { id: 3, src: require('../../images/crosses/crosses3.webp'), alt: 'Зображення 3' },
+      { id: 4, src: require('../../images/crosses/crosses4.webp'), alt: 'Зображення 4' },
+      { id: 5, src: require('../../images/crosses/crosses5.webp'), alt: 'Зображення 5' },
+      { id: 6, src: require('../../images/crosses/crosses6.webp'), alt: 'Зображення 6' },
+      { id: 7, src: require('../../images/crosses/crosses7.webp'), alt: 'Зображення 7' },
+      { id: 8, src: require('../../images/crosses/crosses8.webp'), alt: 'Зображення 8' },
+      { id: 9, src: require('../../images/crosses/crosses9.webp'), alt: 'Зображення 9' },
+      { id: 10, src: require('../../images/crosses/crosses10.webp'), alt: 'Зображення 10' },
+      { id: 11, src: require('../../images/crosses/crosses11.webp'), alt: 'Зображення 11' },
+      { id: 12, src: require('../../images/crosses/crosses12.webp'), alt: 'Зображення 12' }
   ];
 
   const openModal = (src, alt) => {
