@@ -8,13 +8,13 @@ const SectionDecorations = () => {
   const [selectedImageAlt, setSelectedImageAlt] = useState('');
 
     const decorationsPictureList = [
-        { id: 1, src: require('../../images/decorations/photo_2023-05-30_14-35-32.jpg'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/decorations/photo_2023-05-30_14-35-33 (2).jpg'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/decorations/photo_2023-05-30_14-35-33.jpg'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/decorations/photo_2023-05-30_14-35-34 (2).jpg'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/decorations/photo_2023-05-30_14-35-34.jpg'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/decorations/photo_2023-05-30_14-35-35.jpg'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/decorations/photo_2023-05-30_14-35-36.jpg'), alt: 'Зображення 7' },
+        { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1' },
+        { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2' },
+        { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3' },
+        { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4' },
+        { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5' },
+        { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6' },
+        { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7' },
 ];
 
   const openModal = (src, alt) => {
