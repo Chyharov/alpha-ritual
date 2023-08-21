@@ -14,7 +14,7 @@ install all necessary dependencies using the following commands:
 
 ## Bash
 
-git clone https://github.com/Chyharov/alpha-and-omega
+git clone https://github.com/Chyharov/alpha-ritual
 
 cd pizza-style-test-task
 
