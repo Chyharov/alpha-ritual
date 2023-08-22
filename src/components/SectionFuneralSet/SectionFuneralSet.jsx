@@ -8,20 +8,20 @@ const SectionFuneralSet = () => {
   const [selectedImageAlt, setSelectedImageAlt] = useState('');
 
     const funeralSetPictureList = [
-        { id: 1, src: require('../../images/funeralSet/1-1.jpg'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/funeralSet/2-1.jpg'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/funeralSet/3-1.jpg'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/funeralSet/DSC_3535.jpg'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/funeralSet/DSC_3539.jpg'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/funeralSet/DSC_3541.jpg'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/funeralSet/DSC_3543.jpg'), alt: 'Зображення 7' },
-        { id: 8, src: require('../../images/funeralSet/DSC_3546.jpg'), alt: 'Зображення 8' },
-        { id: 9, src: require('../../images/funeralSet/DSC_3549.jpg'), alt: 'Зображення 9' },
-        { id: 10, src: require('../../images/funeralSet/DSC_3551.jpg'), alt: 'Зображення 10' },
-        { id: 11, src: require('../../images/funeralSet/DSC_3552.jpg'), alt: 'Зображення 11' },
-        { id: 12, src: require('../../images/funeralSet/DSC_3554.jpg'), alt: 'Зображення 12' },
-        { id: 13, src: require('../../images/funeralSet/DSC_3555.jpg'), alt: 'Зображення 13' },
-        { id: 12, src: require('../../images/funeralSet/DSC_3556.jpg'), alt: 'Зображення 12' },
+        { id: 1, src: require('../../images/funeralSet/funeralSet1.webp'), alt: 'Зображення 1' },
+        { id: 2, src: require('../../images/funeralSet/funeralSet2.webp'), alt: 'Зображення 2' },
+        { id: 3, src: require('../../images/funeralSet/funeralSet3.webp'), alt: 'Зображення 3' },
+        { id: 4, src: require('../../images/funeralSet/funeralSet4.webp'), alt: 'Зображення 4' },
+        { id: 5, src: require('../../images/funeralSet/funeralSet5.webp'), alt: 'Зображення 5' },
+        { id: 6, src: require('../../images/funeralSet/funeralSet6.webp'), alt: 'Зображення 6' },
+        { id: 7, src: require('../../images/funeralSet/funeralSet7.webp'), alt: 'Зображення 7' },
+        { id: 8, src: require('../../images/funeralSet/funeralSet8.webp'), alt: 'Зображення 8' },
+        { id: 9, src: require('../../images/funeralSet/funeralSet9.webp'), alt: 'Зображення 9' },
+        { id: 10, src: require('../../images/funeralSet/funeralSet10.webp'), alt: 'Зображення 10' },
+        { id: 11, src: require('../../images/funeralSet/funeralSet11.webp'), alt: 'Зображення 11' },
+        { id: 12, src: require('../../images/funeralSet/funeralSet12.webp'), alt: 'Зображення 12' },
+        { id: 13, src: require('../../images/funeralSet/funeralSet13.webp'), alt: 'Зображення 13' },
+        { id: 12, src: require('../../images/funeralSet/funeralSet14.webp'), alt: 'Зображення 14' },
 ];
 
   const openModal = (src, alt) => {
