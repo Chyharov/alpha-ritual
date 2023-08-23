@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.cb5f08d0.css",
-    "main.js": "/alpha-ritual/static/js/main.c756e0fa.js",
-    "static/css/316.4d2e54df.chunk.css": "/alpha-ritual/static/css/316.4d2e54df.chunk.css",
-    "static/js/316.ef4ee183.chunk.js": "/alpha-ritual/static/js/316.ef4ee183.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.553432ca.js",
+    "static/css/316.04789bc6.chunk.css": "/alpha-ritual/static/css/316.04789bc6.chunk.css",
+    "static/js/316.fd6e313e.chunk.js": "/alpha-ritual/static/js/316.fd6e313e.chunk.js",
     "static/css/387.442f0639.chunk.css": "/alpha-ritual/static/css/387.442f0639.chunk.css",
     "static/js/387.e2a7257b.chunk.js": "/alpha-ritual/static/js/387.e2a7257b.chunk.js",
     "static/css/718.42aadae9.chunk.css": "/alpha-ritual/static/css/718.42aadae9.chunk.css",
@@ -232,9 +232,9 @@
     "static/media/alpha-ritual-logo.svg": "/alpha-ritual/static/media/alpha-ritual-logo.203259c7c0487101751fcf7a06aacc15.svg",
     "index.html": "/alpha-ritual/index.html",
     "main.cb5f08d0.css.map": "/alpha-ritual/static/css/main.cb5f08d0.css.map",
-    "main.c756e0fa.js.map": "/alpha-ritual/static/js/main.c756e0fa.js.map",
-    "316.4d2e54df.chunk.css.map": "/alpha-ritual/static/css/316.4d2e54df.chunk.css.map",
-    "316.ef4ee183.chunk.js.map": "/alpha-ritual/static/js/316.ef4ee183.chunk.js.map",
+    "main.553432ca.js.map": "/alpha-ritual/static/js/main.553432ca.js.map",
+    "316.04789bc6.chunk.css.map": "/alpha-ritual/static/css/316.04789bc6.chunk.css.map",
+    "316.fd6e313e.chunk.js.map": "/alpha-ritual/static/js/316.fd6e313e.chunk.js.map",
     "387.442f0639.chunk.css.map": "/alpha-ritual/static/css/387.442f0639.chunk.css.map",
     "387.e2a7257b.chunk.js.map": "/alpha-ritual/static/js/387.e2a7257b.chunk.js.map",
     "718.42aadae9.chunk.css.map": "/alpha-ritual/static/css/718.42aadae9.chunk.css.map",
@@ -263,6 +263,6 @@
   },
   "entrypoints": [
     "static/css/main.cb5f08d0.css",
-    "static/js/main.c756e0fa.js"
+    "static/js/main.553432ca.js"
   ]
 }
