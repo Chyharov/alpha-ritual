@@ -6,7 +6,12 @@ const Logo = () => {
   return (
     <Link className={s.logo} to="/">
       <img className={s.logo__img} loading="lazy" src={logo} alt="header__logo" />
-  </Link>
+      <div className={s.logo__text}>
+        <h2 className={s.logo__title}>АЛЬФА-РИТУАЛ</h2>
+        <p className={s.logo__description}>похоронний дім</p>
+      </div>
+      
+    </Link>
     
         
   );
