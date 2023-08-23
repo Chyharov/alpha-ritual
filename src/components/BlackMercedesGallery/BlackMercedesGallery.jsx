@@ -6,10 +6,10 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './BlackMercedesGallery.module.scss';
 
-const imagesBMPhoto = require.context('../../images/blackMercedes', true, /\.(webp)$/);
-const RitualCarParkBMPhoto = imagesBMPhoto.keys().map((path) => imagesBMPhoto(path));
+const images = require.context('../../images/blackMercedes', true, /\.(webp)$/);
+const RitualCarParBlackMercedesPhoto = images.keys().map((path) => images(path));
 
-const Modal = ({ closeModal, currentSlide, images }) => {
+const Modal = ({ closeModal, currentSlide }) => {
   const handleKeyDown = (event) => {
     if (event.key === "Escape") {
       closeModal();
@@ -38,86 +38,79 @@ const Modal = ({ closeModal, currentSlide, images }) => {
         </span>
         <CarouselProvider
           naturalSlideWidth={280}
-          naturalSlideHeight={130}
-          totalSlides={RitualCarParkBMPhoto.length}
+          naturalSlideHeight={210}
+          totalSlides={RitualCarParBlackMercedesPhoto.length}
           infinite={true}
           currentSlide={currentSlide}
         >
           <Slider>
-            {images.map((photo, index) => (
+            {RitualCarParBlackMercedesPhoto.map((photo, index) => (
               <Slide key={index} index={index + 1}>
                 <img src={photo} alt={`Slide ${index}`} />
               </Slide>
             ))}
-            </Slider>
-                  
-            <div className={s.carouselCenterButtonModal}>
-                <ButtonBack className={s.carouselButtonModal}>
-                  <FontAwesomeIcon icon={faChevronLeft} />
-                </ButtonBack>
-                <ButtonNext className={s.carouselButtonModal}>
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </ButtonNext>
-            </div>
-                  
+          </Slider>
+          <div className={s.carouselCenterButtonModal}>
+            <ButtonBack className={s.carouselButtonModal}>
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </ButtonBack>
+            <ButtonNext className={s.carouselButtonModal}>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </ButtonNext>
+          </div>
         </CarouselProvider>
       </div>
     </div>
   );
 };
 
-const BlackMercedesGallery = () => {
-  const [modalImages, setModalImages] = useState([]);
+const BlackMercedes = () => {
+  const [modalImage, setModalImage] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const openModal = (images, index) => {
-    setModalImages(images);
-    setCurrentSlide(index);
+  const openModal = (image) => {
+    setModalImage(image);
     setIsOpen(true);
     document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
-    setModalImages([]);
+    setModalImage(null);
     setIsOpen(false);
     document.body.style.overflow = 'auto';
   };
 
     return (
         <>
-          <li className={s.ritualCarParkList}>
-            <h2 className="title">VIP</h2>
-              <CarouselProvider
-                naturalSlideWidth={280}
-                naturalSlideHeight={130}
-                totalSlides={RitualCarParkBMPhoto.length}
-                infinite={true}>
-            
-                  <Slider>
-                    {RitualCarParkBMPhoto.map((photo, index) => (
-                      <Slide key={index} index={index + 1}>
-                        <img
-                          src={photo}
-                          alt={`Slide ${index}`}
-                          onClick={() => openModal(RitualCarParkBMPhoto, index)}
-                        />
-                      </Slide>
-                    ))}
-                  </Slider>
+            <li className={s.ritualCarParkList}>
+                <h2 className="title">VIP</h2>
+                
+                    <CarouselProvider
+                    naturalSlideWidth={280}
+                    naturalSlideHeight={210}
+                    totalSlides={RitualCarParBlackMercedesPhoto.length}
+                    infinite={true}>
+                    
+                        <Slider>
+                            {RitualCarParBlackMercedesPhoto.map((photo, index) => (
+                            <Slide key={index} index={index + 1}>
+                                <img src={photo} alt={`Slide ${index}`} onClick={() => openModal(photo)}/>
+                            </Slide>
+                            ))}
+                        </Slider>
 
-                  <p className={s.ritualCarParkList__name}>Mercedes Banz Sprinter Чорний</p>
-                  <p className="description" style={{ textAlign: 'center', marginBottom: '20px'}}>(14 - 18 пасажирів)</p>
+                <p className={s.ritualCarParkList__name}>Mercedes Banz Sprinter Чорний</p>
+                <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>(14 - 18 пасажирів)</p>
 
-                  <div className={s.carouselButtonCenter}>
+                <div className={s.carouselButtonCenter}>
                     <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
                     <ButtonNext className={s.carouselButton}>Вперед</ButtonNext>
-                  </div>
+                </div>
               </CarouselProvider>
-          </li>
-          {isOpen && (<Modal closeModal={closeModal} currentSlide={currentSlide} images={modalImages} />)}
-      </>
+            </li>
+            {isOpen && modalImage && <Modal image={modalImage} closeModal={closeModal} currentSlide={RitualCarParBlackMercedesPhoto.indexOf(modalImage)} />}
+        </>
   );
 };
 
-export default BlackMercedesGallery;
+export default BlackMercedes;
