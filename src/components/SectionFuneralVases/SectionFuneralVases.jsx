@@ -8,15 +8,15 @@ const SectionFuneralVases = () => {
   const [selectedImageAlt, setSelectedImageAlt] = useState('');
 
     const funeralVasesPictureList = [
-        { id: 1, src: require('../../images/funeralVases/photo_2023-05-30_14-33-45.jpg'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/funeralVases/photo_2023-05-30_14-33-46.jpg'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/funeralVases/photo_2023-05-30_14-33-47.jpg'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/funeralVases/photo_2023-05-30_14-33-48 (2).jpg'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/funeralVases/photo_2023-05-30_14-33-48.jpg'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/funeralVases/photo_2023-05-30_14-33-49.jpg'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/funeralVases/photo_2023-05-30_14-33-50 (2).jpg'), alt: 'Зображення 7' },
-        { id: 8, src: require('../../images/funeralVases/photo_2023-05-30_14-33-50.jpg'), alt: 'Зображення 8' },
-        { id: 9, src: require('../../images/funeralVases/photo_2023-05-30_14-33-52.jpg'), alt: 'Зображення 9' },
+        { id: 1, src: require('../../images/funeralVases/funeralVases1.webp'), alt: 'Зображення 1' },
+        { id: 2, src: require('../../images/funeralVases/funeralVases2.webp'), alt: 'Зображення 2' },
+        { id: 3, src: require('../../images/funeralVases/funeralVases3.webp'), alt: 'Зображення 3' },
+        { id: 4, src: require('../../images/funeralVases/funeralVases4.webp'), alt: 'Зображення 4' },
+        { id: 5, src: require('../../images/funeralVases/funeralVases5.webp'), alt: 'Зображення 5' },
+        { id: 6, src: require('../../images/funeralVases/funeralVases6.webp'), alt: 'Зображення 6' },
+        { id: 7, src: require('../../images/funeralVases/funeralVases7.webp'), alt: 'Зображення 7' },
+        { id: 8, src: require('../../images/funeralVases/funeralVases8.webp'), alt: 'Зображення 8' },
+        { id: 9, src: require('../../images/funeralVases/funeralVases9.webp'), alt: 'Зображення 9' },
  
 ];
 
