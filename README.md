@@ -38,3 +38,4 @@ GitHub. We welcome any improvements and suggestions!
 ## Author
 
 Chyharov Oleksii - Chyharov@gmail.com
+Telegram - t.me/chyharov
