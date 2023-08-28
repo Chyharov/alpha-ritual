@@ -6,7 +6,7 @@ const SectionRitualServices = () => {
     <section className={s.sectionRitualServices} id='services'>
       <div className="container">
         <div className={s.ritualServices__container}>
-          <h2 className="title" style={{ marginBottom: '20px' }}>Ритуальні послуги</h2>
+          <h2 className="title" style={{ marginBottom: '20px' }}>Ритуальні товари</h2>
 
           <p className="description" style={{ marginBottom: '20px' }}>Похоронний дім "Альфа-ритуал" - наші фахівці допоможуть вам у важкі моменти життя. Ми розуміємо, наскільки важливо забезпечити гідне та шанобливе прощання з вашими близькими. Наша компанія готова надати вам широкий спектр ритуальних послуг та товарів, щоб зробити цей процес якомога менш тяжким.</p>
           

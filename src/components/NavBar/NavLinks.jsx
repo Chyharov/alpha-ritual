@@ -77,7 +77,7 @@ const NavLinks = (props) => {
                     smooth={true}
                     offset={-70}
                     duration={500}>
-                    Ритуальні послуги
+                    Ритуальні товари
                 </Link>
             </motion.li>
             <motion.li 
