@@ -44,7 +44,7 @@ const SectionServicesList = () => {
           <li className={s.ritualServices__listItem}>
             <Link className={s.ritualServices__link} to="/vases">
               <div className={s.ritualServices__border}>
-                <h2 className={s.ritualServices__title}>Поховальні вази</h2>
+                <h2 className={s.ritualServices__title}>Урни для праху</h2>
               </div>
             </Link>
           </li>
