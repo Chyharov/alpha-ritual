@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import freshFlowersWreath from '../../images/servicesImages/Group-46.png'
-import artificialWreaths from '../../images/servicesImages/Group-50.png'
+import freshFlowersWreath from '../../images/servicesImages/servicesImagesFreshFlowersWreath.png'
+import artificialWreaths from '../../images/servicesImages/servicesImageArtificialWreaths.png'
 import s from './SectionWreaths.module.scss'
 
 const SectionWreath = () => {
