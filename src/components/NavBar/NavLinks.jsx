@@ -21,7 +21,7 @@ const NavLinks = (props) => {
     const getOffsetByDeviceType = () => {
         const deviceType = getDeviceType();
         if (deviceType === 'mobile') {
-            return -70;
+            return -90;
         } else if (deviceType === 'tablet') {
             return -130;
         } else {
