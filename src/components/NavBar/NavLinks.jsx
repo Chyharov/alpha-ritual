@@ -7,6 +7,28 @@ const NavLinks = (props) => {
     const animateFrom = { opacity: 0, y: -40 }
     const animateTo = { opacity: 1, y: 0 }
 
+    const getDeviceType = () => {
+    const width = window.innerWidth;
+    if (width <= 767) {
+        return 'mobile';
+    } else if (width >= 768 && width <= 1359) {
+        return 'tablet';
+    } else {
+        return 'desktop';
+    }
+};
+
+    const getOffsetByDeviceType = () => {
+        const deviceType = getDeviceType();
+        if (deviceType === 'mobile') {
+            return -70;
+        } else if (deviceType === 'tablet') {
+            return -130;
+        } else {
+            return -170;
+        }
+    };
+
 
     return (
         <div className='container'>
@@ -23,7 +45,7 @@ const NavLinks = (props) => {
                     to="main"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={getOffsetByDeviceType()}
                     duration={500}>
                     Головна
                 </Link>
@@ -40,7 +62,7 @@ const NavLinks = (props) => {
                     to="сontacts"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={getOffsetByDeviceType()}
                     duration={500}>
                     Контакти
                 </Link>
@@ -58,7 +80,7 @@ const NavLinks = (props) => {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={getOffsetByDeviceType()}
                     duration={500}>
                     Про компанію
                 </Link>
@@ -75,7 +97,7 @@ const NavLinks = (props) => {
                     to="services"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={getOffsetByDeviceType()}
                     duration={500}>
                     Ритуальні товари
                 </Link>
@@ -91,7 +113,7 @@ const NavLinks = (props) => {
                     to="servicesList"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={getOffsetByDeviceType()}
                     duration={500}>
                     Додаткові послуги
                 </Link>
