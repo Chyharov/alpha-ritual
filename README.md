@@ -16,7 +16,7 @@ install all necessary dependencies using the following commands:
 
 git clone https://github.com/Chyharov/alpha-ritual
 
-cd pizza-style-test-task
+cd alpha-ritual
 
 npm install
 
@@ -37,5 +37,4 @@ GitHub. We welcome any improvements and suggestions!
 
 ## Author
 
-Chyharov Oleksii - Chyharov@gmail.com
-Telegram - t.me/chyharov
+Chyharov Oleksii - Chyharov@gmail.com Telegram - t.me/chyharov
