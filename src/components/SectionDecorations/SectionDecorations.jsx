@@ -1,67 +1,88 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ModalWindow from 'components/ModalWindow/ModalWindow';
-import s from './SectionDecorations.module.scss'
+import s from './SectionDecorations.module.scss';
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const SectionDecorations = () => {
+  const [modalImage, setModalImage] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImageSrc, setSelectedImageSrc] = useState('');
-  const [selectedImageAlt, setSelectedImageAlt] = useState('');
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-    const decorationsPictureList = [
-        { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7' },
-];
+  const decorationsPictureList = [
+    // ваш масив зображень
+  ];
 
-  const openModal = (src, alt) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
+  const openModal = (image, index) => {
+    setModalImage(image);
+    setCurrentSlide(index);
     setModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
+    setModalImage(null);
     setModalOpen(false);
+    document.body.style.overflow = 'auto';
   };
 
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
+  return (
+    <>
+      <li className={s.ritualCarParkList}>
+        <h2 className="title" style={{ marginBottom: '20px' }}>
+          Декор
+        </h2>
 
-    return (
-        <section className={s.sectionDecorations}>
-            <div className={'container ' + s.decorationsContainer}>
-                <div className={s.decorationsDescriptionContainer}>
-                    <h2 className="title">Декор</h2>
-                        <ul className={s.decorationsPictureList}>
-                        {decorationsPictureList.map((image) => (
-                        <li className={s.decorationsPictureList__item} key={image.id}>
-                            <img className={s.decorationsPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
-                        </li>
-                        ))}
-                        </ul>
-            
-                        {modalOpen && (
-                        <ModalWindow
-                            selectedImageSrc={selectedImageSrc}
-                            selectedImageAlt={selectedImageAlt}
-                            closeModal={closeModal}
-                        />
-                        )}           
-                </div>
-            </div>
-        </section>
-    );
-  };
+        <CarouselProvider
+          naturalSlideWidth={280}
+          naturalSlideHeight={210}
+          totalSlides={decorationsPictureList.length}
+          infinite={true}
+        >
+          <Slider>
+            {decorationsPictureList.map((image, index) => (
+              <Slide key={image.id} index={index + 1}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  onClick={() => openModal(image.src, index)}
+                />
+              </Slide>
+            ))}
+          </Slider>
+
+          <p
+            className={s.ritualCarParkList__name}
+            style={{ marginBottom: '10px' }}
+          >
+            Декорації
+          </p>
+          <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>
+            Опис декорацій
+          </p>
+
+          <div className={s.carouselButtonCenter}>
+            <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
+            <ButtonNext className={s.carouselButton}>Вперед</ButtonNext>
+          </div>
+        </CarouselProvider>
+      </li>
+
+      {modalOpen && modalImage && (
+        <ModalWindow
+          image={modalImage}
+          closeModal={closeModal}
+          currentSlide={currentSlide}
+        />
+      )}
+    </>
+  );
+};
 
 export default SectionDecorations;
