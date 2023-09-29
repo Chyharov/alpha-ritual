@@ -42,7 +42,7 @@ const SectionDecorations = () => {
         <section className={s.sectionDecorations}>
             <div className={'container ' + s.decorationsContainer}>
                 <div className={s.decorationsDescriptionContainer}>
-                    <h2 className="title">Декор</h2>
+                    <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
                         <ul className={s.decorationsPictureList}>
                         {decorationsPictureList.map((image) => (
                         <li className={s.decorationsPictureList__item} key={image.id}>
