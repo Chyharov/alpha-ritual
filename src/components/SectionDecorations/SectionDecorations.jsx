@@ -83,7 +83,7 @@ const BlackMercedes = () => {
     return (
         <>
             <li className={s.ritualCarParkList}>
-                <h2 className="title" style={{ marginBottom: '20px' }}>VIP</h2>
+                <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
                 
                     <CarouselProvider
                     naturalSlideWidth={280}
@@ -98,9 +98,6 @@ const BlackMercedes = () => {
                             </Slide>
                             ))}
                         </Slider>
-
-                <p className={s.ritualCarParkList__name} style={{ marginBottom: '10px' }}>Mercedes Banz Sprinter Чорний</p>
-                <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>(14 - 18 пасажирів)</p>
 
                 <div className={s.carouselButtonCenter}>
                     <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
