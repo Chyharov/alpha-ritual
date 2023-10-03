@@ -81,7 +81,9 @@ const BlackMercedes = () => {
   };
 
     return (
-        <>
+        <section className={s.sectionDecorations}>
+            <div className={'container ' + s.decorationsContainer}>
+                <div className={s.decorationsDescriptionContainer}>
             <li className={s.ritualCarParkList}>
                 <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
                 
@@ -106,7 +108,10 @@ const BlackMercedes = () => {
               </CarouselProvider>
             </li>
             {isOpen && modalImage && <Modal image={modalImage} closeModal={closeModal} currentSlide={RitualCarParBlackMercedesPhoto.indexOf(modalImage)} />}
-        </>
+
+          </div>
+        </div>
+        </section>
   );
 };
 
