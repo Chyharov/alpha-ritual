@@ -20,17 +20,6 @@
     padding: 20px;
 }
 
-.decorations__list {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.decorations__listItem {
-    font-family: Open Sans Regular;
-    list-style: disc;
-    margin-bottom: 10px;
-}
-
 .decorationsPictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -55,86 +44,6 @@
         width: 620px;
         height: 620px;
     }
-}
-
-.ritualCarPark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ritualCarPark__container {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include mq(tab) {
-        width: 700px;
-    }
-}
-
-.ritualCarParkPhotos {
-    height: 210px;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.ritualCarParkList__name {
-    font-family: Open Sans Regular;
-    font-size: 20px;
-    line-height: 1.38;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
-}
-
-.carouselButtonCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include mq(mob-only) {
-        padding-top: 20px;
-    }
-
-    @include mq(tab) {
-        padding-top: 30px;
-    }
-    
-    @include mq(desk) {
-        padding-top: 30px;
-    }
-}
-
-.carouselButton {
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
-    outline: 1px solid var(--primaryTextColor);
-    border-radius: 10px;
-    padding: 6px;
-    cursor: pointer;
-    border: none;
-
-    @include mq(tab) {
-        font-size: 25px;
-        padding: 10px;
-    }
-}
-
-.carouselButton:active {
-    background-color: var(--primaryTextColor);
-    color: var(--backgroundColor);
-    outline: 1px solid var(--primaryTextColor);
-}
-
-.carouselButton:first-child {
-    margin-right: 30px;
 }
 
 .carouselCenterButtonModal {
@@ -162,17 +71,6 @@
 
 .carouselButtonModal:first-child {
     margin-right: 30px;
-}
-
-.ritualCarParkList {
-    padding: 20px 0px;
-    outline: 1px solid var(--primaryTextColor);
-    border-radius: 8px;
-    margin-bottom: 30px;
-
-    @include mq(tab) {
-        padding: 30px 10px 30px;
-    }
 }
 
 .modal {
@@ -220,4 +118,11 @@
     color: red;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modalImage {
+    @include mq(tab) {
+        width: 1000px;
+        height: 750px;
+    }   
 }

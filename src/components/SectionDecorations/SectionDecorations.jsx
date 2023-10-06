@@ -6,18 +6,15 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './SectionDecorations.module.scss';
 
-function importAll(photos) {
-  return photos.keys().map((item, index) => {
-    return {
-      id: index + 1,
-      src: photos(item),
-      alt: `Зображення ${index + 1}`
-    };
-  });
-}
-
-const decorationsContext = require.context('../../images/decorations', false, /\.(webp)$/);
-const decorationsPhotos = importAll(decorationsContext);
+const decorationsPhotos = [
+  { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1' },
+  { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2' },
+  { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3' },
+  { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4' },
+  { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5' },
+  { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6' },
+  { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7' },
+];
 
 const Modal = ({ closeModal, currentSlide, image }) => {
   const handleKeyDown = (event) => {
@@ -56,7 +53,7 @@ const Modal = ({ closeModal, currentSlide, image }) => {
           <Slider>
             {decorationsPhotos.map((photo, index) => (
               <Slide key={index} index={index + 1}>
-                <img src={photo.src} alt={`Slide ${index}`} />
+                <img className={s.modalImage} src={photo.src} alt={`Slide ${index}`} />
               </Slide>
             ))}
           </Slider>
@@ -97,8 +94,8 @@ const SectionDecorations = () => {
           <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
           <ul className={s.decorationsPictureList}>
             {decorationsPhotos.map((image) => (
-              <li className={s.decorationsPictureList__item} key={image.id}>
-                <img src={image.src} alt={image.alt} onClick={() => openModal(image)} />
+              <li key={image.id}>
+                <img className={s.decorationsPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image)} />
               </li>
             ))}
           </ul>
