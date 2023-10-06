@@ -6,10 +6,17 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './SectionDecorations.module.scss';
 
-const images = require.context('../../images/decorations', true, /\.(webp)$/);
-const RitualCarParBlackMercedesPhoto = images.keys().map((path) => images(path));
+const decorationsPhotos = [
+  { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1' },
+  { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2' },
+  { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3' },
+  { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4' },
+  { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5' },
+  { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6' },
+  { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7' },
+];
 
-const Modal = ({ closeModal, currentSlide }) => {
+const Modal = ({ closeModal, currentSlide, image }) => {
   const handleKeyDown = (event) => {
     if (event.key === "Escape") {
       closeModal();
@@ -39,14 +46,14 @@ const Modal = ({ closeModal, currentSlide }) => {
         <CarouselProvider
           naturalSlideWidth={280}
           naturalSlideHeight={210}
-          totalSlides={RitualCarParBlackMercedesPhoto.length}
+          totalSlides={decorationsPhotos.length}
           infinite={true}
           currentSlide={currentSlide}
         >
           <Slider>
-            {RitualCarParBlackMercedesPhoto.map((photo, index) => (
+            {decorationsPhotos.map((photo, index) => (
               <Slide key={index} index={index + 1}>
-                <img src={photo} alt={`Slide ${index}`} />
+                <img src={photo.src} alt={`Slide ${index}`} />
               </Slide>
             ))}
           </Slider>
@@ -64,7 +71,7 @@ const Modal = ({ closeModal, currentSlide }) => {
   );
 };
 
-const BlackMercedes = () => {
+const SectionDecorations = () => {
   const [modalImage, setModalImage] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -80,39 +87,25 @@ const BlackMercedes = () => {
     document.body.style.overflow = 'auto';
   };
 
-    return (
-        <section className={s.sectionDecorations}>
-            <div className={'container ' + s.decorationsContainer}>
-                <div className={s.decorationsDescriptionContainer}>
-            <li className={s.ritualCarParkList}>
-                <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
-                
-                    <CarouselProvider
-                    naturalSlideWidth={280}
-                    naturalSlideHeight={210}
-                    totalSlides={RitualCarParBlackMercedesPhoto.length}
-                    infinite={true}>
-                    
-                        <Slider>
-                            {RitualCarParBlackMercedesPhoto.map((photo, index) => (
-                            <Slide key={index} index={index + 1}>
-                                <img src={photo} alt={`Slide ${index}`} onClick={() => openModal(photo)}/>
-                            </Slide>
-                            ))}
-                        </Slider>
-
-                <div className={s.carouselButtonCenter}>
-                    <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
-                    <ButtonNext className={s.carouselButton}>Вперед</ButtonNext>
-                </div>
-              </CarouselProvider>
-            </li>
-            {isOpen && modalImage && <Modal image={modalImage} closeModal={closeModal} currentSlide={RitualCarParBlackMercedesPhoto.indexOf(modalImage)} />}
-
-          </div>
+  return (
+    <section className={s.sectionDecorations}>
+      <div className={'container ' + s.decorationsContainer}>
+        <div className={s.decorationsDescriptionContainer}>
+          <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
+          <ul className={s.decorationsPictureList}>
+            {decorationsPhotos.map((image) => (
+              <li className={s.decorationsPictureList__item} key={image.id}>
+                <img src={image.src} alt={image.alt} onClick={() => openModal(image)} />
+              </li>
+            ))}
+          </ul>
+          {isOpen && modalImage && (
+            <Modal image={modalImage} closeModal={closeModal} currentSlide={decorationsPhotos.indexOf(modalImage)} />
+          )}
         </div>
-        </section>
+      </div>
+    </section>
   );
 };
 
-export default BlackMercedes;
+export default SectionDecorations;
