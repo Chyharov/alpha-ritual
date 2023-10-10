@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.cb5f08d0.css",
-    "main.js": "/alpha-ritual/static/js/main.1e1b12b5.js",
+    "main.js": "/alpha-ritual/static/js/main.090ae4b7.js",
     "static/css/361.c4bc8849.chunk.css": "/alpha-ritual/static/css/361.c4bc8849.chunk.css",
     "static/js/361.fa57fbae.chunk.js": "/alpha-ritual/static/js/361.fa57fbae.chunk.js",
     "static/css/387.b83ec261.chunk.css": "/alpha-ritual/static/css/387.b83ec261.chunk.css",
@@ -25,7 +25,7 @@
     "static/css/604.e8b52e1f.chunk.css": "/alpha-ritual/static/css/604.e8b52e1f.chunk.css",
     "static/js/604.66216432.chunk.js": "/alpha-ritual/static/js/604.66216432.chunk.js",
     "static/css/977.43bcf586.chunk.css": "/alpha-ritual/static/css/977.43bcf586.chunk.css",
-    "static/js/977.e03f670a.chunk.js": "/alpha-ritual/static/js/977.e03f670a.chunk.js",
+    "static/js/977.b4e5c8e4.chunk.js": "/alpha-ritual/static/js/977.b4e5c8e4.chunk.js",
     "static/js/856.a3f7fcd9.chunk.js": "/alpha-ritual/static/js/856.a3f7fcd9.chunk.js",
     "static/js/820.950ff78f.chunk.js": "/alpha-ritual/static/js/820.950ff78f.chunk.js",
     "static/js/429.d0abb229.chunk.js": "/alpha-ritual/static/js/429.d0abb229.chunk.js",
@@ -233,7 +233,7 @@
     "static/media/alpha-ritual-logo.svg": "/alpha-ritual/static/media/alpha-ritual-logo.203259c7c0487101751fcf7a06aacc15.svg",
     "index.html": "/alpha-ritual/index.html",
     "main.cb5f08d0.css.map": "/alpha-ritual/static/css/main.cb5f08d0.css.map",
-    "main.1e1b12b5.js.map": "/alpha-ritual/static/js/main.1e1b12b5.js.map",
+    "main.090ae4b7.js.map": "/alpha-ritual/static/js/main.090ae4b7.js.map",
     "361.c4bc8849.chunk.css.map": "/alpha-ritual/static/css/361.c4bc8849.chunk.css.map",
     "361.fa57fbae.chunk.js.map": "/alpha-ritual/static/js/361.fa57fbae.chunk.js.map",
     "387.b83ec261.chunk.css.map": "/alpha-ritual/static/css/387.b83ec261.chunk.css.map",
@@ -257,7 +257,7 @@
     "604.e8b52e1f.chunk.css.map": "/alpha-ritual/static/css/604.e8b52e1f.chunk.css.map",
     "604.66216432.chunk.js.map": "/alpha-ritual/static/js/604.66216432.chunk.js.map",
     "977.43bcf586.chunk.css.map": "/alpha-ritual/static/css/977.43bcf586.chunk.css.map",
-    "977.e03f670a.chunk.js.map": "/alpha-ritual/static/js/977.e03f670a.chunk.js.map",
+    "977.b4e5c8e4.chunk.js.map": "/alpha-ritual/static/js/977.b4e5c8e4.chunk.js.map",
     "856.a3f7fcd9.chunk.js.map": "/alpha-ritual/static/js/856.a3f7fcd9.chunk.js.map",
     "820.950ff78f.chunk.js.map": "/alpha-ritual/static/js/820.950ff78f.chunk.js.map",
     "429.d0abb229.chunk.js.map": "/alpha-ritual/static/js/429.d0abb229.chunk.js.map",
@@ -265,6 +265,6 @@
   },
   "entrypoints": [
     "static/css/main.cb5f08d0.css",
-    "static/js/main.1e1b12b5.js"
+    "static/js/main.090ae4b7.js"
   ]
 }
