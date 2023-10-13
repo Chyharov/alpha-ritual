@@ -26,8 +26,6 @@ const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos, naturalSli
       closeModal();
     }
     };
-    
-    console.log(naturalSlideWidth)
 
   return (
     <div className={s.modal} onClick={handleClick}>
