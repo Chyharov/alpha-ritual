@@ -6,7 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './CarouselModal.module.scss';
 
-const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos }) => {
+const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos, naturalSlideWidth, naturalSlideHeight }) => {
   const handleKeyDown = (event) => {
     if (event.key === "Escape") {
       closeModal();
@@ -25,7 +25,9 @@ const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos }) => {
     if (event.target === event.currentTarget) {
       closeModal();
     }
-  };
+    };
+    
+    console.log(naturalSlideWidth)
 
   return (
     <div className={s.modal} onClick={handleClick}>
@@ -34,8 +36,8 @@ const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos }) => {
           <AiOutlineClose className={s.closeModalIcon} />
         </span>
         <CarouselProvider
-          naturalSlideWidth={280}
-          naturalSlideHeight={210}
+          naturalSlideWidth={naturalSlideWidth}
+          naturalSlideHeight={naturalSlideHeight}
           totalSlides={decorationsPhotos.length}
           infinite={true}
           currentSlide={currentSlide}

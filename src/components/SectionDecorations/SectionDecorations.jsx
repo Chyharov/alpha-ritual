@@ -3,13 +3,13 @@ import s from "./SectionDecorations.module.scss"
 import Modal from "../CarouselModal/CarouselModal"
 
 const decorationsPhotos = [
-  { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1' },
-  { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2' },
-  { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3' },
-  { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4' },
-  { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5' },
-  { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6' },
-  { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7' },
+  { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1', width: 280, height: 210 },
+  { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2', width: 280, height: 210 },
+  { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3', width: 280, height: 210 },
+  { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4', width: 280, height: 210 },
+  { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5', width: 280, height: 210 },
+  { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6', width: 280, height: 210 },
+  { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7', width: 280, height: 210 },
 ];
 
 const SectionDecorations = () => {
@@ -41,7 +41,13 @@ const SectionDecorations = () => {
             ))}
           </ul>
           {isOpen && modalImage && (
-            <Modal closeModal={closeModal} currentSlide={decorationsPhotos.indexOf(modalImage)} decorationsPhotos={decorationsPhotos} />
+            <Modal
+              closeModal={closeModal}
+              currentSlide={decorationsPhotos.indexOf(modalImage)}
+              decorationsPhotos={decorationsPhotos}
+              naturalSlideWidth={modalImage.width}
+              naturalSlideHeight={modalImage.height}
+            />
           )}
         </div>
       </div>
