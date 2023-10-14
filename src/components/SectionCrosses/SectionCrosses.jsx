@@ -3,18 +3,18 @@ import Modal from "../CarouselModal/CarouselModal"
 import s from './SectionCrosses.module.scss'
 
 const CrossesPictureList = [
-      { id: 1, src: require('../../images/crosses/crosses1.webp'), alt: 'Зображення 1', width: '140', height: '210' },
-      { id: 2, src: require('../../images/crosses/crosses2.webp'), alt: 'Зображення 2', width: '140', height: '210' },
-      { id: 3, src: require('../../images/crosses/crosses3.webp'), alt: 'Зображення 3', width: '140', height: '210' },
-      { id: 4, src: require('../../images/crosses/crosses4.webp'), alt: 'Зображення 4', width: '140', height: '210' },
-      { id: 5, src: require('../../images/crosses/crosses5.webp'), alt: 'Зображення 5', width: '140', height: '210' },
-      { id: 6, src: require('../../images/crosses/crosses6.webp'), alt: 'Зображення 6', width: '140', height: '210' },
-      { id: 7, src: require('../../images/crosses/crosses7.webp'), alt: 'Зображення 7', width: '140', height: '210' },
-      { id: 8, src: require('../../images/crosses/crosses8.webp'), alt: 'Зображення 8', width: '140', height: '210' },
-      { id: 9, src: require('../../images/crosses/crosses9.webp'), alt: 'Зображення 9', width: '140', height: '210' },
-      { id: 10, src: require('../../images/crosses/crosses10.webp'), alt: 'Зображення 10', width: '140', height: '210' },
-      { id: 11, src: require('../../images/crosses/crosses11.webp'), alt: 'Зображення 11', width: '140', height: '210' },
-      { id: 12, src: require('../../images/crosses/crosses12.webp'), alt: 'Зображення 12', width: '140', height: '210' },
+      { id: 1, src: require('../../images/crosses/crosses1.webp'), alt: 'Зображення 1', width: '120', height: '90' },
+      { id: 2, src: require('../../images/crosses/crosses2.webp'), alt: 'Зображення 2', width: '120', height: '90' },
+      { id: 3, src: require('../../images/crosses/crosses3.webp'), alt: 'Зображення 3', width: '120', height: '90' },
+      { id: 4, src: require('../../images/crosses/crosses4.webp'), alt: 'Зображення 4', width: '120', height: '90' },
+      { id: 5, src: require('../../images/crosses/crosses5.webp'), alt: 'Зображення 5', width: '120', height: '90' },
+      { id: 6, src: require('../../images/crosses/crosses6.webp'), alt: 'Зображення 6', width: '120', height: '90' },
+      { id: 7, src: require('../../images/crosses/crosses7.webp'), alt: 'Зображення 7', width: '120', height: '90' },
+      { id: 8, src: require('../../images/crosses/crosses8.webp'), alt: 'Зображення 8', width: '120', height: '90' },
+      { id: 9, src: require('../../images/crosses/crosses9.webp'), alt: 'Зображення 9', width: '120', height: '90' },
+      { id: 10, src: require('../../images/crosses/crosses10.webp'), alt: 'Зображення 10', width: '120', height: '90' },
+      { id: 11, src: require('../../images/crosses/crosses11.webp'), alt: 'Зображення 11', width: '120', height: '90' },
+      { id: 12, src: require('../../images/crosses/crosses12.webp'), alt: 'Зображення 12', width: '120', height: '90' },
 ];
   
 const SectionCrosses = () => {
