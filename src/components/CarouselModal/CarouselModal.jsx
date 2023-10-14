@@ -6,7 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './CarouselModal.module.scss';
 
-const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos, naturalSlideWidth, naturalSlideHeight }) => {
+const CarouselModal = ({ closeModal, currentSlide, arrayPhotos }) => {
   const handleKeyDown = (event) => {
     if (event.key === "Escape") {
       closeModal();
@@ -24,8 +24,8 @@ const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos, naturalSli
   const handleClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();
-    }
-    };
+    } 
+  };
 
   return (
     <div className={s.modal} onClick={handleClick}>
@@ -34,14 +34,14 @@ const CarouselModal = ({ closeModal, currentSlide, decorationsPhotos, naturalSli
           <AiOutlineClose className={s.closeModalIcon} />
         </span>
         <CarouselProvider
-          naturalSlideWidth={naturalSlideWidth}
-          naturalSlideHeight={naturalSlideHeight}
-          totalSlides={decorationsPhotos.length}
+          naturalSlideWidth={arrayPhotos[currentSlide].width}
+          naturalSlideHeight={arrayPhotos[currentSlide].height}
+          totalSlides={arrayPhotos.length}
           infinite={true}
           currentSlide={currentSlide}
         >
           <Slider>
-            {decorationsPhotos.map((photo, index) => (
+            {arrayPhotos.map((photo, index) => (
               <Slide key={index} index={index + 1}>
                 <img className={s.modalImage} src={photo.src} alt={`Slide ${index}`} />
               </Slide>

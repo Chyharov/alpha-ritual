@@ -1,47 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import ModalWindow from 'components/ModalWindow/ModalWindow';
+import React, { useState } from 'react';
+import Modal from "../CarouselModal/CarouselModal"
 import s from './SectionCrosses.module.scss'
 
+const CrossesPictureList = [
+      { id: 1, src: require('../../images/crosses/crosses1.webp'), alt: 'Зображення 1', width: '140', height: '210' },
+      { id: 2, src: require('../../images/crosses/crosses2.webp'), alt: 'Зображення 2', width: '140', height: '210' },
+      { id: 3, src: require('../../images/crosses/crosses3.webp'), alt: 'Зображення 3', width: '140', height: '210' },
+      { id: 4, src: require('../../images/crosses/crosses4.webp'), alt: 'Зображення 4', width: '140', height: '210' },
+      { id: 5, src: require('../../images/crosses/crosses5.webp'), alt: 'Зображення 5', width: '140', height: '210' },
+      { id: 6, src: require('../../images/crosses/crosses6.webp'), alt: 'Зображення 6', width: '140', height: '210' },
+      { id: 7, src: require('../../images/crosses/crosses7.webp'), alt: 'Зображення 7', width: '140', height: '210' },
+      { id: 8, src: require('../../images/crosses/crosses8.webp'), alt: 'Зображення 8', width: '140', height: '210' },
+      { id: 9, src: require('../../images/crosses/crosses9.webp'), alt: 'Зображення 9', width: '140', height: '210' },
+      { id: 10, src: require('../../images/crosses/crosses10.webp'), alt: 'Зображення 10', width: '140', height: '210' },
+      { id: 11, src: require('../../images/crosses/crosses11.webp'), alt: 'Зображення 11', width: '140', height: '210' },
+      { id: 12, src: require('../../images/crosses/crosses12.webp'), alt: 'Зображення 12', width: '140', height: '210' },
+];
+  
 const SectionCrosses = () => {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [selectedImageSrc, setSelectedImageSrc] = useState('');
-    const [selectedImageAlt, setSelectedImageAlt] = useState('');
+  const [modalImage, setModalImage] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const CrossesPictureList = [
-      { id: 1, src: require('../../images/crosses/crosses1.webp'), alt: 'Зображення 1' },
-      { id: 2, src: require('../../images/crosses/crosses2.webp'), alt: 'Зображення 2' },
-      { id: 3, src: require('../../images/crosses/crosses3.webp'), alt: 'Зображення 3' },
-      { id: 4, src: require('../../images/crosses/crosses4.webp'), alt: 'Зображення 4' },
-      { id: 5, src: require('../../images/crosses/crosses5.webp'), alt: 'Зображення 5' },
-      { id: 6, src: require('../../images/crosses/crosses6.webp'), alt: 'Зображення 6' },
-      { id: 7, src: require('../../images/crosses/crosses7.webp'), alt: 'Зображення 7' },
-      { id: 8, src: require('../../images/crosses/crosses8.webp'), alt: 'Зображення 8' },
-      { id: 9, src: require('../../images/crosses/crosses9.webp'), alt: 'Зображення 9' },
-      { id: 10, src: require('../../images/crosses/crosses10.webp'), alt: 'Зображення 10' },
-      { id: 11, src: require('../../images/crosses/crosses11.webp'), alt: 'Зображення 11' },
-      { id: 12, src: require('../../images/crosses/crosses12.webp'), alt: 'Зображення 12' }
-  ];
+    
 
-  const openModal = (src, alt) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
-    setModalOpen(true);
+  const openModal = (image) => {
+    setModalImage(image);
+    setIsOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
-    setModalOpen(false);
+    setModalImage(null);
+    setIsOpen(false);
+    document.body.style.overflow = 'auto';
   };
-
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
 
   return (
     <section className={s.sectionCrosses}>
@@ -70,19 +62,19 @@ const SectionCrosses = () => {
                         className={s.crossesPictureList_img}
                         src={image.src}
                         alt={image.alt}
-                        onClick={() => openModal(image.src, image.alt)}
+                        onClick={() => openModal(image)}
                       />
                       </li>
                     ))}
                 </ul>
                 
-                {modalOpen && (
-                  <ModalWindow
-                    selectedImageSrc={selectedImageSrc}
-                    selectedImageAlt={selectedImageAlt}
-                    closeModal={closeModal}
-                  />
-                )}
+                {isOpen && modalImage && (
+            <Modal
+              closeModal={closeModal}
+              currentSlide={CrossesPictureList.indexOf(modalImage)}
+              arrayPhotos={CrossesPictureList}
+            />
+          )}
           
                 <h2 className="title" style={{ marginBottom: '20px' }}>Як замовити ритуальний хрест у Києві?</h2>
                 <p className="description" style={{marginBottom: '20px' }}>Похоронне бюро «Альфа» має власні виробничі потужності, які дозволяють виготовляти дерев’яні та металеві ритуальні хрести на могилу. Кожен виріб проходить ретельний контроль на предмет якості деревообробки та столярних робіт у дерев’яних моделях, а також якості металообробки та зварювання у металевих.</p>

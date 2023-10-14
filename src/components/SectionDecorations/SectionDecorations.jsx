@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import s from "./SectionDecorations.module.scss"
 import Modal from "../CarouselModal/CarouselModal"
+import s from "./SectionDecorations.module.scss"
 
 const decorationsPhotos = [
   { id: 1, src: require('../../images/decorations/decoration1.webp'), alt: 'Зображення 1', width: '280', height: '210' },
   { id: 2, src: require('../../images/decorations/decoration2.webp'), alt: 'Зображення 2', width: '280', height: '210' },
-  { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3', width: '280', height: '210' },
+  { id: 3, src: require('../../images/decorations/decoration3.webp'), alt: 'Зображення 3', width: '150', height: '150' },
   { id: 4, src: require('../../images/decorations/decoration4.webp'), alt: 'Зображення 4', width: '280', height: '210' },
   { id: 5, src: require('../../images/decorations/decoration5.webp'), alt: 'Зображення 5', width: '280', height: '210' },
   { id: 6, src: require('../../images/decorations/decoration6.webp'), alt: 'Зображення 6', width: '280', height: '210' },
@@ -36,7 +36,10 @@ const SectionDecorations = () => {
           <ul className={s.decorationsPictureList}>
             {decorationsPhotos.map((image) => (
               <li key={image.id}>
-                <img className={s.decorationsPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image)} />
+                <img className={s.decorationsPictureList_img}
+                  src={image.src}
+                  alt={image.alt}
+                  onClick={() => openModal(image)} />
               </li>
             ))}
           </ul>
@@ -44,9 +47,7 @@ const SectionDecorations = () => {
             <Modal
               closeModal={closeModal}
               currentSlide={decorationsPhotos.indexOf(modalImage)}
-              decorationsPhotos={decorationsPhotos}
-              naturalSlideWidth={modalImage.width}
-              naturalSlideHeight={modalImage.height}
+              arrayPhotos={decorationsPhotos}
             />
           )}
         </div>
