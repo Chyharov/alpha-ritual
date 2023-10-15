@@ -1,17 +1,5 @@
 @import '../../sass/utils/mixin';
 
-.coffins__list {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.coffins__listItem {
-    font-family: Open Sans Regular;
-    color: var(--primaryTextColor);
-    list-style: disc;
-    margin-bottom: 10px;
-}
-
 .coffins__pictureList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -24,7 +12,7 @@
     }
 }
 
-.coffinsPictureElitePriceList__img {
+.coffinsPictureAveragePriceList__img {
     width: 125px;
 
     @include mq(tab) {
