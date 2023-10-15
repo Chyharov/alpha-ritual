@@ -21,8 +21,6 @@ const SectionCrosses = () => {
   const [modalImage, setModalImage] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
-    
-
   const openModal = (image) => {
     setModalImage(image);
     setIsOpen(true);

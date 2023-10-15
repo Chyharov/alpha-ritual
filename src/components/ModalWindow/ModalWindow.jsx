@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import s from './ModalWindow.module.scss';
 
 const ModalWindow = ({ selectedImageSrc, selectedImageAlt, closeModal, selectedImageDescrtiption }) => {
@@ -21,7 +23,8 @@ const ModalWindow = ({ selectedImageSrc, selectedImageAlt, closeModal, selectedI
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  });
+    });
+  
 
   return (
     <div className={s.modal} onClick={handleOutsideClick}>
@@ -30,7 +33,15 @@ const ModalWindow = ({ selectedImageSrc, selectedImageAlt, closeModal, selectedI
           <AiOutlineClose className={s.closeModalIcon} />
         </span>
         <img className={s.modalImage} src={selectedImageSrc} alt={selectedImageAlt} />
-      <p className={s.modalDescription}>{selectedImageDescrtiption}</p>
+        <p className={s.modalDescription}>{selectedImageDescrtiption}</p>
+        <div className={s.carouselCenterButtonModal}>
+      <button className={s.carouselButtonModal}>
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </button>
+      <button className={s.carouselButtonModal}>
+        <FontAwesomeIcon icon={faChevronRight} />
+      </button>
+    </div>
       </div>
     </div>
   );

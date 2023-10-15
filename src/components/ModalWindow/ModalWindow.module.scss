@@ -56,3 +56,30 @@
     color: var(--primaryTextColor);
     text-align: center;
 }
+
+.carouselCenterButtonModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselButtonModal {
+    margin: 10px 0px;
+    color: var(--primaryTextColor);
+    background-color: var(--backgroundColor);
+    outline: 1px solid var(--primaryTextColor);
+    border-radius: 10px;
+    padding: 5px 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.carouselButtonModal:active {
+    color: var(--backgroundColor);
+    background-color: var(--primaryTextColor);
+    outline: 1px solid var(--primaryTextColor);
+}
+
+.carouselButtonModal:first-child {
+    margin-right: 30px;
+}
