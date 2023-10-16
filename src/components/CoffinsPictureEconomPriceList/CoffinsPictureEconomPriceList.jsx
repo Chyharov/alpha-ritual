@@ -3,7 +3,7 @@ import Modal from "../CarouselModal/CarouselModal"
 import s from './CoffinsPictureEconomPriceList.module.scss'
 
     const CoffinsPictureEconomPrice = [
-        { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3438.webp'), alt: 'Зображення 1', width: '180', height: '120' },
+        { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3438.webp'), alt: 'Зображення 1', width: '80', height: '120' },
         { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3439.webp'), alt: 'Зображення 2', width: '180', height: '120' },
         { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3443.webp'), alt: 'Зображення 3', width: '180', height: '120' },
         { id: 4, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3446.webp'), alt: 'Зображення 4', width: '180', height: '120' },

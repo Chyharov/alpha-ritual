@@ -1,6 +1,7 @@
 import React from 'react';
 import CoffinsPictureElitePriceList from 'components/CoffinsPictureElitePriceList/CoffinsPictureElitePriceList';
 import CoffinsPictureAveragePriceList from 'components/CoffinsPictureAveragePriceList/CoffinsPictureAveragePriceList';
+import CoffinsPictureEconomPriceList from 'components/CoffinsPictureEconomPriceList/CoffinsPictureEconomPriceList';
 import s from './SectionCoffins.module.scss'
 
 const SectionCoffins = () => {
@@ -17,6 +18,7 @@ const SectionCoffins = () => {
                 
             <CoffinsPictureAveragePriceList />
                     
+            <CoffinsPictureEconomPriceList />
                 
                 <p className="descriptionNoMargin">У нашому ритуальному бюро ви можете замовити як елітну, так і недорогу бюджетну труну для самостійної організації похорону. Також у вас є можливість безкоштовно викликати додому у будь-який час доби похоронного агента, який допоможе вам організувати всю жалобну церемонію та підібрати труну відповідно до бюджету та статусу покійного.</p>
             </div>
