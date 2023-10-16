@@ -52,7 +52,7 @@ const CoffinsPictureElitePriceList = () => {
   };
 
   return (
-        <section className={s.CoffinsPictureElitePriceListWreaths}>
+        <section className={s.sectionCoffinsPictureElitePriceListWreaths}>
                 <h2 className="title" style={{ marginBottom: '20px' }}>Елітні дерев’яні труни та саркофаги</h2>                  
                 <p className="description" style={{marginBottom: '20px' }}>Спосіб життя та навколишні людини предмети демонструють його статус і становище у суспільстві. Елітні автомобілі та нерухомість, дорогі предмети гардеробу та аксесуари – все це характерні атрибути високої статусності. Похорон – це проводи померлої людини в останній шлях, а значить, це остання можливість віддати їй всю повноту почестей відповідно до її прижиттєвого статусу.</p>
 
@@ -75,7 +75,7 @@ const CoffinsPictureElitePriceList = () => {
                     
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureElitePrice.map((image) => (
-                    <li className={s.coffins__pictureListItem} key={image.id}>
+                    <li key={image.id}>
                         <img className={s.coffinsPictureElitePriceList__img} src={image.src}
                         alt={image.alt}
                         onClick={() => openModal(image)}
