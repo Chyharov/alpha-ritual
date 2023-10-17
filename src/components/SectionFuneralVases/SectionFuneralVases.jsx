@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionFuneralVases.module.scss'
 
-const SectionFuneralVases = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const funeralVasesPictureList = [
+const funeralVasesPictureList = [
     { id: 1, src: require('../../images/funeralVases/funeralVases1.webp'), alt: 'Зображення 1' },
     { id: 2, src: require('../../images/funeralVases/funeralVases2.webp'), alt: 'Зображення 2' },
     { id: 3, src: require('../../images/funeralVases/funeralVases3.webp'), alt: 'Зображення 3' },
@@ -18,45 +14,15 @@ const SectionFuneralVases = () => {
     { id: 9, src: require('../../images/funeralVases/funeralVases9.webp'), alt: 'Зображення 9' },
   ];
 
+const SectionFuneralVases = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const openModal = (id) => {
     setSelectedImage(funeralVasesPictureList.find(image => image.id === id));
     setModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
-
-  const handleOutsideClick = (event) => {
-    if (event.target === event.currentTarget) {
-      closeModal();
-    }
-  };
-
-  const handleKeyDown = (event) => {
-    if (event.key === 'Escape') {
-      closeModal();
-    }
-    };
-    
-    useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-    });
 
     return (
         <section className={s.funeralVases}>
@@ -72,14 +38,13 @@ const SectionFuneralVases = () => {
                         </ul>
             
                         {modalOpen && selectedImage && (
-  <Modal
-  closeModal={closeModal}
-  selectedImage={selectedImage}
-  handleOutsideClick={handleOutsideClick}
-  arrayPhoto={funeralVasesPictureList}
-  setSelectedImage={setSelectedImage}
-/>
-)}          
+                          <Modal
+                          selectedImage={selectedImage}
+                          arrayPhoto={funeralVasesPictureList}
+                          setSelectedImage={setSelectedImage}
+                          setModalOpen={setModalOpen}
+                        />
+                        )}          
                 </div>
             </div>
         </section>
