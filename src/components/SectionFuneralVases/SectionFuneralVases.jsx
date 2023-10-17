@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionFuneralVases.module.scss'
 
 const SectionFuneralVases = () => {
@@ -24,18 +22,6 @@ const SectionFuneralVases = () => {
     setSelectedImage(funeralVasesPictureList.find(image => image.id === id));
     setModalOpen(true);
   };
-
-  const getNextImage = () => {
-  const currentIndex = funeralVasesPictureList.findIndex(image => image.id === selectedImage.id);
-  const nextIndex = (currentIndex + 1) % funeralVasesPictureList.length;
-  return funeralVasesPictureList[nextIndex];
-};
-
-const getPrevImage = () => {
-  const currentIndex = funeralVasesPictureList.findIndex(image => image.id === selectedImage.id);
-  const prevIndex = (currentIndex - 1 + funeralVasesPictureList.length) % funeralVasesPictureList.length;
-  return funeralVasesPictureList[prevIndex];
-};
 
   const closeModal = () => {
     setModalOpen(false);
@@ -86,22 +72,13 @@ const getPrevImage = () => {
                         </ul>
             
                         {modalOpen && selectedImage && (
-  <div className={s.modal} onClick={handleOutsideClick}>
-    <div className={s.modalContent}>
-      <span className={s.closeModal} onClick={closeModal}>
-        <AiOutlineClose className={s.closeModalIcon} />
-      </span>
-      <img className={s.modalImage} id={selectedImage.id} src={selectedImage.src} alt={selectedImage.alt} />
-      <div className={s.carouselCenterButtonModal}>
-  <button className={s.carouselButtonModal} onClick={() => setSelectedImage(getPrevImage())}>
-    <FontAwesomeIcon icon={faChevronLeft} />
-  </button>
-  <button className={s.carouselButtonModal} onClick={() => setSelectedImage(getNextImage())}>
-    <FontAwesomeIcon icon={faChevronRight} />
-  </button>
-</div>
-    </div>
-  </div>
+  <Modal
+  closeModal={closeModal}
+  selectedImage={selectedImage}
+  handleOutsideClick={handleOutsideClick}
+  arrayPhoto={funeralVasesPictureList}
+  setSelectedImage={setSelectedImage}
+/>
 )}          
                 </div>
             </div>
