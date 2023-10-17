@@ -5,6 +5,8 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import s from './ModalWindow.module.scss';
 
 const ModalWindow = ({ selectedImageSrc, selectedImageAlt, closeModal, selectedImageDescrtiption }) => {
+
+
   const handleOutsideClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();

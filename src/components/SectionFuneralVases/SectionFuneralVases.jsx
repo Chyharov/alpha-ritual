@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import ModalWindow from 'components/ModalWindow/ModalWindow';
+import { AiOutlineClose } from 'react-icons/ai';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import s from './SectionFuneralVases.module.scss'
 
 const SectionFuneralVases = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImageSrc, setSelectedImageSrc] = useState('');
-  const [selectedImageAlt, setSelectedImageAlt] = useState('');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const funeralVasesPictureList = [
     { id: 1, src: require('../../images/funeralVases/funeralVases1.webp'), alt: 'Зображення 1' },
@@ -19,11 +20,22 @@ const SectionFuneralVases = () => {
     { id: 9, src: require('../../images/funeralVases/funeralVases9.webp'), alt: 'Зображення 9' },
   ];
 
-  const openModal = (src, alt) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
+  const openModal = (id) => {
+    setSelectedImage(funeralVasesPictureList.find(image => image.id === id));
     setModalOpen(true);
   };
+
+  const getNextImage = () => {
+  const currentIndex = funeralVasesPictureList.findIndex(image => image.id === selectedImage.id);
+  const nextIndex = (currentIndex + 1) % funeralVasesPictureList.length;
+  return funeralVasesPictureList[nextIndex];
+};
+
+const getPrevImage = () => {
+  const currentIndex = funeralVasesPictureList.findIndex(image => image.id === selectedImage.id);
+  const prevIndex = (currentIndex - 1 + funeralVasesPictureList.length) % funeralVasesPictureList.length;
+  return funeralVasesPictureList[prevIndex];
+};
 
   const closeModal = () => {
     setModalOpen(false);
@@ -40,6 +52,26 @@ const SectionFuneralVases = () => {
     };
   }, [modalOpen]);
 
+  const handleOutsideClick = (event) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+    };
+    
+    useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+    });
+
     return (
         <section className={s.funeralVases}>
             <div className={'container ' + s.funeralVasesContainer}>
@@ -48,18 +80,29 @@ const SectionFuneralVases = () => {
                         <ul className={s.funeralVasesPictureList}>
                         {funeralVasesPictureList.map((image) => (
                         <li className={s.funeralVasesPictureList__item} key={image.id}>
-                            <img className={s.funeralVasesPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                            <img className={s.funeralVasesPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                         </li>
                         ))}
                         </ul>
             
-                        {modalOpen && (
-                        <ModalWindow
-                            selectedImageSrc={selectedImageSrc}
-                            selectedImageAlt={selectedImageAlt}
-                            closeModal={closeModal}
-                        />
-                        )}           
+                        {modalOpen && selectedImage && (
+  <div className={s.modal} onClick={handleOutsideClick}>
+    <div className={s.modalContent}>
+      <span className={s.closeModal} onClick={closeModal}>
+        <AiOutlineClose className={s.closeModalIcon} />
+      </span>
+      <img className={s.modalImage} id={selectedImage.id} src={selectedImage.src} alt={selectedImage.alt} />
+      <div className={s.carouselCenterButtonModal}>
+  <button className={s.carouselButtonModal} onClick={() => setSelectedImage(getPrevImage())}>
+    <FontAwesomeIcon icon={faChevronLeft} />
+  </button>
+  <button className={s.carouselButtonModal} onClick={() => setSelectedImage(getNextImage())}>
+    <FontAwesomeIcon icon={faChevronRight} />
+  </button>
+</div>
+    </div>
+  </div>
+)}          
                 </div>
             </div>
         </section>
