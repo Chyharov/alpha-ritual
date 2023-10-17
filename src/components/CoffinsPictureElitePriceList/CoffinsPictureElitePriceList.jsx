@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from "../CarouselModal/CarouselModal"
+import Modal from '../ModalWindow/ModalWindow'
 import s from './CoffinsPictureElitePriceList.module.scss'
 
 const CoffinsPictureElitePrice = [
@@ -36,19 +36,13 @@ const CoffinsPictureElitePrice = [
 
 const CoffinsPictureElitePriceList = () => {
 
-  const [modalImage, setModalImage] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const openModal = (image) => {
-    setModalImage(image);
-    setIsOpen(true);
+  const openModal = (id) => {
+    setSelectedImage(CoffinsPictureElitePrice.find(image => image.id === id));
+    setModalOpen(true);
     document.body.style.overflow = 'hidden';
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-    setIsOpen(false);
-    document.body.style.overflow = 'auto';
   };
 
   return (
@@ -75,22 +69,20 @@ const CoffinsPictureElitePriceList = () => {
                     
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureElitePrice.map((image) => (
-                    <li key={image.id}>
-                        <img className={s.coffinsPictureElitePriceList__img} src={image.src}
-                        alt={image.alt}
-                        onClick={() => openModal(image)}
-                      />
+                    <li className={s.coffins__pictureListItem} key={image.id}>
+                        <img className={s.coffinsPictureElitePriceList__img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                       </li>
                     ))}
                 </ul>
       
-            {isOpen && modalImage && (
-            <Modal
-              closeModal={closeModal}
-              currentSlide={CoffinsPictureElitePrice.indexOf(modalImage)}
-              arrayPhotos={CoffinsPictureElitePrice}
-            />
-            )}
+            {modalOpen && selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                arrayPhoto={CoffinsPictureElitePrice}
+                setSelectedImage={setSelectedImage}
+                setModalOpen={setModalOpen}
+              />
+            )} 
     
         </section>
     );

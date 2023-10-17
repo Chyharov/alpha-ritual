@@ -40,7 +40,7 @@ const CoffinsPictureEconomPriceList = () => {
                 
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureEconomPrice.map((image) => (
-                    <li key={image.id}>
+                    <li className={s.coffins__pictureListItem} key={image.id}>
                         <img className={s.coffinsPictureEconomPriceList__img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                     </li>
                     ))}

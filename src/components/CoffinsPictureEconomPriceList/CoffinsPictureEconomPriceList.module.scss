@@ -25,3 +25,10 @@
         height: 800px;
     }
 }
+
+.coffins__pictureListItem:hover,
+.coffins__pictureListItem:focus {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}

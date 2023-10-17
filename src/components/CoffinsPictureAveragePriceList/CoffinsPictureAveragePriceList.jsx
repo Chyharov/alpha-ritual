@@ -18,6 +18,7 @@ import s from './CoffinsPictureAveragePriceList.module.scss'
   ];
 
 const CoffinsPictureAveragePriceList = () => {
+  
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -36,8 +37,8 @@ const CoffinsPictureAveragePriceList = () => {
                 
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureAveragePrice.map((image) => (
-                    <li key={image.id}>
-                        <img className={s.coffinsPictureAveragePriceList__img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
+                    <li className={s.coffins__pictureListItem} key={image.id}>
+                        <img  className={s.coffinsPictureAveragePriceList__img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
