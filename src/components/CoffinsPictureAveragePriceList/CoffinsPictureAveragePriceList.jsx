@@ -37,7 +37,7 @@ const CoffinsPictureAveragePriceList = () => {
                 <ul className={s.coffins__pictureList}>
                     {CoffinsPictureAveragePrice.map((image) => (
                     <li key={image.id}>
-                        <img className={s.funeralVasesPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
+                        <img className={s.coffinsPictureAveragePriceList__img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                     </li>
                     ))}
                 </ul>
