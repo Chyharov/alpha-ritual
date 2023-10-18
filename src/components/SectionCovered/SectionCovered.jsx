@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import ModalWindow from 'components/ModalWindow/ModalWindow';
+import React, { useState } from 'react';
+import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionCovered.module.scss'
 
-const SectionCoverd = () => {
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImageSrc, setSelectedImageSrc] = useState('');
-  const [selectedImageAlt, setSelectedImageAlt] = useState('');
-
-    const decorationsPictureList = [
+const decorationsPictureList = [
       { id: 1, src: require('../../images/covereds/covered1.webp'), alt: 'Зображення 1' },
       { id: 2, src: require('../../images/covereds/covered2.webp'), alt: 'Зображення 2' },
       { id: 3, src: require('../../images/covereds/covered3.webp'), alt: 'Зображення 3' },
@@ -33,26 +27,16 @@ const SectionCoverd = () => {
       { id: 22, src: require('../../images/covereds/covered22.webp'), alt: 'Зображення 22' },
 ];
 
-  const openModal = (src, alt) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
+const SectionCoverd = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (id) => {
+    setSelectedImage(decorationsPictureList.find(image => image.id === id));
     setModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
 
   return (
       <section className={s.sectionDecorations}>
@@ -62,18 +46,19 @@ const SectionCoverd = () => {
                         <ul className={s.decorationsPictureList}>
                         {decorationsPictureList.map((image) => (
                         <li className={s.decorationsPictureList__item} key={image.id}>
-                            <img className={s.decorationsPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                            <img className={s.decorationsPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                         </li>
                         ))}
                         </ul>
             
-                        {modalOpen && (
-                        <ModalWindow
-                            selectedImageSrc={selectedImageSrc}
-                            selectedImageAlt={selectedImageAlt}
-                            closeModal={closeModal}
-                        />
-                        )}           
+                        {modalOpen && selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                arrayPhoto={decorationsPictureList}
+                setSelectedImage={setSelectedImage}
+                setModalOpen={setModalOpen}
+              />
+            )}           
                 </div>
             </div>
         </section>
