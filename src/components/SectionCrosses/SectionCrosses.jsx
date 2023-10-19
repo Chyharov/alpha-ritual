@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from "../CarouselModal/CarouselModal"
+import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionCrosses.module.scss'
 
 const CrossesPictureList = [
@@ -18,19 +18,13 @@ const CrossesPictureList = [
 ];
   
 const SectionCrosses = () => {
-  const [modalImage, setModalImage] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const openModal = (image) => {
-    setModalImage(image);
-    setIsOpen(true);
+  const openModal = (id) => {
+    setSelectedImage(CrossesPictureList.find(image => image.id === id));
+    setModalOpen(true);
     document.body.style.overflow = 'hidden';
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-    setIsOpen(false);
-    document.body.style.overflow = 'auto';
   };
 
   return (
@@ -55,24 +49,21 @@ const SectionCrosses = () => {
                 
                 <ul className={s.crosses__pictureList}>
                     {CrossesPictureList.map((image) => (
-                    <li key={image.id}>
+                    <li className={s.crosses__pictureListItem} key={image.id}>
                       <img
-                        className={s.crossesPictureList_img}
-                        src={image.src}
-                        alt={image.alt}
-                        onClick={() => openModal(image)}
-                      />
+                        className={s.crossesPictureList_img}id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                       </li>
                     ))}
                 </ul>
                 
-                {isOpen && modalImage && (
-            <Modal
-              closeModal={closeModal}
-              currentSlide={CrossesPictureList.indexOf(modalImage)}
-              arrayPhotos={CrossesPictureList}
-            />
-          )}
+                {modalOpen && selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                arrayPhoto={CrossesPictureList}
+                setSelectedImage={setSelectedImage}
+                setModalOpen={setModalOpen}
+              />
+            )} 
           
                 <h2 className="title" style={{ marginBottom: '20px' }}>Як замовити ритуальний хрест у Києві?</h2>
                 <p className="description" style={{marginBottom: '20px' }}>Похоронне бюро «Альфа» має власні виробничі потужності, які дозволяють виготовляти дерев’яні та металеві ритуальні хрести на могилу. Кожен виріб проходить ретельний контроль на предмет якості деревообробки та столярних робіт у дерев’яних моделях, а також якості металообробки та зварювання у металевих.</p>

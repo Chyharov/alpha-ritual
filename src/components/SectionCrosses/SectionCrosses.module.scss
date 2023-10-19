@@ -54,3 +54,10 @@
     }
 }
 
+.crosses__pictureListItem:hover,
+.crosses__pictureListItem:focus {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
