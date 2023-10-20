@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../CarouselModal/CarouselModal"
+import Modal from '../ModalWindow/ModalWindow'
 import s from "./SectionDecorations.module.scss"
 
 const decorationsPhotos = [
@@ -13,19 +13,13 @@ const decorationsPhotos = [
 ];
 
 const SectionDecorations = () => {
-  const [modalImage, setModalImage] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const openModal = (image) => {
-    setModalImage(image);
-    setIsOpen(true);
+  const openModal = (id) => {
+    setSelectedImage(decorationsPhotos.find(image => image.id === id));
+    setModalOpen(true);
     document.body.style.overflow = 'hidden';
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-    setIsOpen(false);
-    document.body.style.overflow = 'auto';
   };
 
   return (
@@ -35,21 +29,22 @@ const SectionDecorations = () => {
           <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
           <ul className={s.decorationsPictureList}>
             {decorationsPhotos.map((image) => (
-              <li key={image.id}>
+              <li className={s.decorations_pictureListItem} key={image.id}>
                 <img className={s.decorationsPictureList_img}
-                  src={image.src}
-                  alt={image.alt}
-                  onClick={() => openModal(image)} />
+                  id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
               </li>
             ))}
           </ul>
-          {isOpen && modalImage && (
-            <Modal
-              closeModal={closeModal}
-              currentSlide={decorationsPhotos.indexOf(modalImage)}
-              arrayPhotos={decorationsPhotos}
-            />
-          )}
+
+          {modalOpen && selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                arrayPhoto={decorationsPhotos}
+                setSelectedImage={setSelectedImage}
+                setModalOpen={setModalOpen}
+              />
+          )} 
+          
         </div>
       </div>
     </section>

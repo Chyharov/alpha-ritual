@@ -4,7 +4,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './ModalWindow.module.scss';
 
-const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage,setModalOpen }) => {
+const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen }) => {
   
   const closeModal = () => {
     setModalOpen(false);

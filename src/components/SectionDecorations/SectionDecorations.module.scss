@@ -45,3 +45,10 @@
         height: 620px;
     }
 }
+
+.decorations_pictureListItem:hover,
+.decorations_pictureListItem:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}

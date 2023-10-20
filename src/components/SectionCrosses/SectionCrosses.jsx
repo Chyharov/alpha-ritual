@@ -50,8 +50,7 @@ const SectionCrosses = () => {
                 <ul className={s.crosses__pictureList}>
                     {CrossesPictureList.map((image) => (
                     <li className={s.crosses__pictureListItem} key={image.id}>
-                      <img
-                        className={s.crossesPictureList_img}id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
+                      <img className={s.crossesPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                       </li>
                     ))}
                 </ul>
