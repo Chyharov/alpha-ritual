@@ -56,11 +56,11 @@ const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen
           <AiOutlineClose className={s.closeModalIcon} />
         </span>
         <img className={s.modalImage} id={selectedImage.id} src={selectedImage.src} alt={selectedImage.alt} />
-        <div className={s.carouselCenterButtonModal}>
-          <button className={s.carouselButtonModal} onClick={() => setSelectedImage(getPrevImage())}>
+        <div className={s.centerButtonModal}>
+          <button className={s.buttonModal} onClick={() => setSelectedImage(getPrevImage())}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
-          <button className={s.carouselButtonModal} onClick={() => setSelectedImage(getNextImage())}>
+          <button className={s.buttonModal} onClick={() => setSelectedImage(getNextImage())}>
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>

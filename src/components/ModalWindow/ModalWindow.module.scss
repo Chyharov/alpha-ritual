@@ -65,13 +65,13 @@
     text-align: center;
 }
 
-.carouselCenterButtonModal {
+.centerButtonModal {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carouselButtonModal {
+.buttonModal {
     margin: 10px 0px;
     color: var(--primaryTextColor);
     background-color: var(--backgroundColor);
@@ -82,12 +82,12 @@
     border: none;
 }
 
-.carouselButtonModal:active {
+.buttonModal:active {
     color: var(--backgroundColor);
     background-color: var(--primaryTextColor);
     outline: 1px solid var(--primaryTextColor);
 }
 
-.carouselButtonModal:first-child {
+.buttonModal:first-child {
     margin-right: 30px;
 }
