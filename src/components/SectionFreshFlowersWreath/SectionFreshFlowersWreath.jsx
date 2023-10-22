@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import ModalWindow from 'components/ModalWindow/ModalWindow';
+import React, { useState } from "react";
+import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionFreshFlowersWreath.module.scss'
 
-const SectionFreshFlowersWreath = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImageSrc, setSelectedImageSrc] = useState('');
-  const [selectedImageAlt, setSelectedImageAlt] = useState('');
-
-  const FreshFlowersWreathPictureList = [
+const FreshFlowersWreathPictureList = [
   { id: 1, src: require('../../images/freshFlowersWreath/freshFlowersWreath1.webp'), alt: 'Зображення 1' },
   { id: 2, src: require('../../images/freshFlowersWreath/freshFlowersWreath2.webp'), alt: 'Зображення 2' },
   { id: 3, src: require('../../images/freshFlowersWreath/freshFlowersWreath3.webp'), alt: 'Зображення 3' },
@@ -38,26 +33,15 @@ const SectionFreshFlowersWreath = () => {
   { id: 28, src: require('../../images/freshFlowersWreath/freshFlowersWreath28.webp'), alt: 'Зображення 28' },  
 ];
 
-  const openModal = (src, alt) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
+const SectionFreshFlowersWreath = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (id) => {
+    setSelectedImage(FreshFlowersWreathPictureList.find(image => image.id === id));
     setModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
 
     return (
         <section className={s.sectionFreshFlowersWreath}>
@@ -102,18 +86,19 @@ const SectionFreshFlowersWreath = () => {
               <ul className={s.freshFlowersWreathPictureList}>
                 {FreshFlowersWreathPictureList.map((image) => (
                   <li className={s.freshFlowersWreathPictureList__item} key={image.id}>
-                    <img className={s.freshFlowersWreathPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                    <img className={s.freshFlowersWreathPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                   </li>
                 ))}
               </ul>
             
-              {modalOpen && (
-                  <ModalWindow
-                    selectedImageSrc={selectedImageSrc}
-                    selectedImageAlt={selectedImageAlt}
-                    closeModal={closeModal}
-                  />
-                )}
+              {modalOpen && selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                arrayPhoto={FreshFlowersWreathPictureList}
+                setSelectedImage={setSelectedImage}
+                setModalOpen={setModalOpen}
+              />
+          )} 
             
             </div>
           </div>

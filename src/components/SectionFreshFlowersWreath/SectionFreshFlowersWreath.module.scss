@@ -47,3 +47,10 @@
         height: 820px;
     }
 }
+
+.freshFlowersWreathPictureList__item:hover,
+.freshFlowersWreathPictureList__item:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
