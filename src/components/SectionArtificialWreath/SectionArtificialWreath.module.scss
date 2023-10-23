@@ -57,3 +57,10 @@
         
     }
 }
+
+.artificialWreath__pictureListItem:hover,
+.artificialWreath__pictureListItem:focus {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}

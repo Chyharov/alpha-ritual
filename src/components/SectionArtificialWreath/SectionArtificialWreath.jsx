@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import ModalWindow from 'components/ModalWindow/ModalWindow';
+import React, { useState } from "react";
+import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionArtificialWreath.module.scss'
 
-const SectionArtificialWreath = () => {
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImageSrc, setSelectedImageSrc] = useState('');
-  const [selectedImageAlt, setSelectedImageAlt] = useState('');
-  const [selectedImageDescrtiption, setSelectedImageDescrtiption] = useState('');
-    
-  const ArtificialWreathsPictureList = [
+const ArtificialWreathsPictureList = [
       { id: 1, src: require('../../images/artificialWreaths/artificialWreaths3492.webp'), alt: 'Зображення 1', title: '210см' },
       { id: 2, src: require('../../images/artificialWreaths/artificialWreaths3499.webp'), alt: 'Зображення 2', title: '190см' },
       { id: 3, src: require('../../images/artificialWreaths/artificialWreaths3500.webp'), alt: 'Зображення 3', title: '210см' },
@@ -36,28 +29,16 @@ const SectionArtificialWreath = () => {
       { id: 24, src: require('../../images/artificialWreaths/artificialWreaths3530.webp'), alt: 'Зображення 24', title: '130см' },
       
   ];
-  
-  const openModal = (src, alt, title) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
-    setSelectedImageDescrtiption(title);
+
+const SectionArtificialWreath = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (id) => {
+    setSelectedImage(ArtificialWreathsPictureList.find(image => image.id === id));
     setModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
 
     return (
 
@@ -100,20 +81,20 @@ const SectionArtificialWreath = () => {
                 <ul className={s.artificialWreath__pictureList}>
                     {ArtificialWreathsPictureList.map((image) => (
                     <li className={s.artificialWreath__pictureListItem} key={image.id}>
-                        <img className={s.artificialWreathPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt, image.title)}/>
+                        <img className={s.artificialWreathPictureList_img} sid={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                         <h2 className="title">{image.title}</h2>
                     </li>
                     ))}
                 </ul>
             
-                {modalOpen && (
-                  <ModalWindow
-                    selectedImageSrc={selectedImageSrc}
-                    selectedImageAlt={selectedImageAlt}
-                    closeModal={closeModal}
-                    selectedImageDescrtiption={selectedImageDescrtiption}
-                  />
-                )}
+                {modalOpen && selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                arrayPhoto={ArtificialWreathsPictureList}
+                setSelectedImage={setSelectedImage}
+                setModalOpen={setModalOpen}
+              />
+          )} 
             
             </div>
           </div>
