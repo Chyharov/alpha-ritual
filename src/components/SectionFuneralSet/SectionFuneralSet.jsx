@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import ModalWindow from 'components/ModalWindow/ModalWindow';
+import React, { useState } from "react";
+import Modal from '../ModalWindow/ModalWindow'
 import s from './SectionFuneralSet.module.scss'
 
-const SectionFuneralSet = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImageSrc, setSelectedImageSrc] = useState('');
-  const [selectedImageAlt, setSelectedImageAlt] = useState('');
-
-    const funeralSetPictureList = [
+const funeralSetPictureList = [
         { id: 1, src: require('../../images/funeralSet/funeralSet1.webp'), alt: 'Зображення 1' },
         { id: 2, src: require('../../images/funeralSet/funeralSet2.webp'), alt: 'Зображення 2' },
         { id: 3, src: require('../../images/funeralSet/funeralSet3.webp'), alt: 'Зображення 3' },
@@ -21,29 +16,18 @@ const SectionFuneralSet = () => {
         { id: 11, src: require('../../images/funeralSet/funeralSet11.webp'), alt: 'Зображення 11' },
         { id: 12, src: require('../../images/funeralSet/funeralSet12.webp'), alt: 'Зображення 12' },
         { id: 13, src: require('../../images/funeralSet/funeralSet13.webp'), alt: 'Зображення 13' },
-        { id: 12, src: require('../../images/funeralSet/funeralSet14.webp'), alt: 'Зображення 14' },
+        { id: 14, src: require('../../images/funeralSet/funeralSet14.webp'), alt: 'Зображення 14' },
 ];
 
-  const openModal = (src, alt) => {
-    setSelectedImageSrc(src);
-    setSelectedImageAlt(alt);
+const SectionFuneralSet = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (id) => {
+    setSelectedImage(funeralSetPictureList.find(image => image.id === id));
     setModalOpen(true);
+    document.body.style.overflow = 'hidden';
   };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [modalOpen]);
 
     return (
         <section className={s.funeralVases}>
@@ -70,16 +54,17 @@ const SectionFuneralSet = () => {
                     <ul className={s.funeralVasesPictureList}>
                     {funeralSetPictureList.map((image) => (
                         <li className={s.funeralVasesPictureList__item} key={image.id}>
-                            <img className={s.funeralVasesPictureList_img} src={image.src} alt={image.alt} onClick={() => openModal(image.src, image.alt)}/>
+                            <img className={s.funeralVasesPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                         </li>
                         ))}
                     </ul>
             
-                        {modalOpen && (
-                        <ModalWindow
-                            selectedImageSrc={selectedImageSrc}
-                            selectedImageAlt={selectedImageAlt}
-                            closeModal={closeModal}
+                        {modalOpen && selectedImage && (
+                        <Modal
+                          selectedImage={selectedImage}
+                          arrayPhoto={funeralSetPictureList}
+                          setSelectedImage={setSelectedImage}
+                          setModalOpen={setModalOpen}
                         />
                         )}           
                 </div>

@@ -101,3 +101,10 @@
         height: 830px;
     }
 }
+
+.funeralVasesPictureList__item:hover,
+.funeralVasesPictureList__item:focus {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}

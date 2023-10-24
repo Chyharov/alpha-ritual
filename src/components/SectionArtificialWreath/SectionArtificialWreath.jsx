@@ -81,7 +81,7 @@ const SectionArtificialWreath = () => {
                 <ul className={s.artificialWreath__pictureList}>
                     {ArtificialWreathsPictureList.map((image) => (
                     <li className={s.artificialWreath__pictureListItem} key={image.id}>
-                        <img className={s.artificialWreathPictureList_img} sid={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
+                        <img className={s.artificialWreathPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                         <h2 className="title">{image.title}</h2>
                     </li>
                     ))}
