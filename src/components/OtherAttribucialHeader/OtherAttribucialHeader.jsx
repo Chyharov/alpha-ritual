@@ -9,7 +9,7 @@ const OtherAttribucialHeader = () => {
       <div className={`container ${s.header__container}`}>
         <Logo />
         <Link className={s.header__linkBack} to="/otherattributes">
-          <MdOutlineArrowBackIos />Назад
+          <MdOutlineArrowBackIos />
         </Link>
       </div>
     </header>
