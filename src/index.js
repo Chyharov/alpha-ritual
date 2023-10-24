@@ -5,7 +5,7 @@ import { App } from 'components/App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/alpha-ritual">
+  <BrowserRouter basename="/">
     <React.StrictMode>
       <App />
     </React.StrictMode>

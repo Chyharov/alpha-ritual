@@ -9,7 +9,7 @@ const MainHeader = () => {
       <div className={`container ${s.header__container}`}>
         <Logo />
         <Link className={s.header__linkBack} to="/">
-          <MdOutlineArrowBackIos />Назад
+          <MdOutlineArrowBackIos />
         </Link>
       </div>
     </header>

@@ -9,7 +9,7 @@ const WreathsHeader = () => {
       <div className={`container ${s.header__container}`}>
               <Logo />
         <Link className={s.header__linkBack} to="/wreaths">
-          <MdOutlineArrowBackIos />Назад
+          <MdOutlineArrowBackIos />
         </Link>
       </div>
     </header>
