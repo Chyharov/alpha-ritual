@@ -19,24 +19,17 @@
 }
 
 .logo__img {
-  height: 50px;
+  height: 55px;
+  width: 55px;
 
   @include mq(tab) {
+    height: 65px;
+    width: 65px;
   }
 
   @include mq(desk) {
-    height: 70px;
-  }
-}
-
-.logo__img2 {
-  height: 50px;
-  margin-left: 20px;
-
-  @include mq(tab) {}
-
-  @include mq(desk) {
-    height: 70px;
+    height: 80px;
+    width: 80px;
   }
 }
 

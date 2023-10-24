@@ -9,6 +9,11 @@ const Logo = () => {
       <div className={s.logo__text}>
         <h2 className={s.logo__title}>АЛЬФА-РИТУАЛ</h2>
         <p className={s.logo__description}>похоронний дім</p>
+        <a
+            href="https://maps.app.goo.gl/hu8JnF5WPpkHUtQPA"
+            target="_blank"
+            rel="noopener noreferrer"
+          ><p className={s.logo__description}>вул. Івана Федорова, 33</p></a>
       </div>
       
     </Link>

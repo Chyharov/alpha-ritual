@@ -23,9 +23,9 @@ const NavLinks = (props) => {
         if (deviceType === 'mobile') {
             return -90;
         } else if (deviceType === 'tablet') {
-            return -140;
+            return -160;
         } else {
-            return -170;
+            return -180;
         }
     };
 
