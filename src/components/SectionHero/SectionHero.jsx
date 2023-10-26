@@ -5,7 +5,7 @@ const SectionHero = () => {
     <section className={s.sectionHero} id='main'>
       <div className="container">
         <div className={s.hero__container}>
-          <h1 className="title">Склад-магазин ритуальної атрибутики</h1>
+          <h1 className="title" style={{ marginBottom: '20px' }}>Склад-магазин ритуальної атрибутики</h1>
           <a
             href="https://goo.gl/maps/f8b4aQGY6j4d34Gu8"
             target="_blank"
