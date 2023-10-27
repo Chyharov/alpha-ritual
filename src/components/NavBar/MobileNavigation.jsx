@@ -7,8 +7,8 @@ import { useState } from 'react';
 const MobileNavigation = () => {
 
     const [open, setOpen] = useState(false);
-    const hamburgerIcon = <CgMenuRound className={s.hamburgerMenu} onClick={() => setOpen(!open)}/>
-    const hamburgerCloseIcon = <CgCloseO className={s.hamburgerMenu} onClick={() => setOpen(!open)}/>
+    const hamburgerIcon = <CgMenuRound className={s.hamburgerMenu} aria-label="Меню" onClick={() => setOpen(!open)}/>
+    const hamburgerCloseIcon = <CgCloseO className={s.hamburgerMenu} aria-label="Закрити меню"onClick={() => setOpen(!open)}/>
     const closeMobileMenu = () => setOpen(false);
 
     return ( 
