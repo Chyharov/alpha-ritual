@@ -51,10 +51,10 @@ const Modal = ({ closeModal, currentSlide }) => {
             ))}
           </Slider>
           <div className={s.carouselCenterButtonModal}>
-            <ButtonBack className={s.carouselButtonModal}>
+            <ButtonBack className={s.carouselButtonModal} aria-label="Попередній слайд">
               <FontAwesomeIcon icon={faChevronLeft} />
             </ButtonBack>
-            <ButtonNext className={s.carouselButtonModal}>
+            <ButtonNext className={s.carouselButtonModal} aria-label="Наступний слайд">
               <FontAwesomeIcon icon={faChevronRight} />
             </ButtonNext>
           </div>
@@ -103,8 +103,8 @@ const BlackMercedes = () => {
                 <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>(14 - 18 пасажирів)</p>
 
                 <div className={s.carouselButtonCenter}>
-                    <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
-                    <ButtonNext className={s.carouselButton}>Вперед</ButtonNext>
+                    <ButtonBack className={s.carouselButton} aria-label="Попередній слайд">Назад</ButtonBack>
+                    <ButtonNext className={s.carouselButton} aria-label="Наступний слайд">Вперед</ButtonNext>
                 </div>
               </CarouselProvider>
             </li>
