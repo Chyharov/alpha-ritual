@@ -48,10 +48,10 @@ const CarouselModal = ({ closeModal, currentSlide, arrayPhotos }) => {
             ))}
           </Slider>
           <div className={s.carouselCenterButtonModal}>
-            <ButtonBack className={s.carouselButtonModal}>
+            <ButtonBack className={s.carouselButtonModal} aria-label="Попередній слайд">
               <FontAwesomeIcon icon={faChevronLeft} />
             </ButtonBack>
-            <ButtonNext className={s.carouselButtonModal}>
+            <ButtonNext className={s.carouselButtonModal} aria-label="Наступний слайд">
               <FontAwesomeIcon icon={faChevronRight} />
             </ButtonNext>
           </div>
