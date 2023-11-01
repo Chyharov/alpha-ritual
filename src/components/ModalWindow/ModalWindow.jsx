@@ -57,10 +57,10 @@ const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen
         </span>
         <img className={s.modalImage} id={selectedImage.id} src={selectedImage.src} alt={selectedImage.alt} />
         <div className={s.centerButtonModal}>
-          <button className={s.buttonModal} onClick={() => setSelectedImage(getPrevImage())}>
+          <button className={s.buttonModal} aria-label="Попередній слайд" onClick={() => setSelectedImage(getPrevImage())}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
-          <button className={s.buttonModal} onClick={() => setSelectedImage(getNextImage())}>
+          <button className={s.buttonModal} aria-label="Наступний слайд" onClick={() => setSelectedImage(getNextImage())}>
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>
