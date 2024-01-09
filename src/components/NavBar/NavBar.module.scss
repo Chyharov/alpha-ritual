@@ -98,6 +98,13 @@
     cursor: pointer;
 }
 
+.themeMenu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
 .menuList__container {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -105,4 +112,9 @@
   position: absolute;
   top: 75px;
   left: 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
