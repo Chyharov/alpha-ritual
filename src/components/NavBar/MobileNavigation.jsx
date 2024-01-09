@@ -1,14 +1,32 @@
 import NavLinks from "./NavLinks";
 import s from './NavBar.module.scss'
-import {CgMenuRound} from 'react-icons/cg'
-import {CgCloseO} from 'react-icons/cg'
+import BurgerMenu from '../../images/navBar/burgerMenu.svg'
+import CloseBtn from '../../images/navBar/closeBtn.svg'
 import { useState } from 'react';
 
 const MobileNavigation = () => {
 
     const [open, setOpen] = useState(false);
-    const hamburgerIcon = <CgMenuRound className={s.hamburgerMenu} aria-label="Меню" onClick={() => setOpen(!open)}/>
-    const hamburgerCloseIcon = <CgCloseO className={s.hamburgerMenu} aria-label="Закрити меню"onClick={() => setOpen(!open)}/>
+    const hamburgerIcon = (
+        <img
+            src={BurgerMenu}
+            alt="Меню"
+            aria-label="Меню"
+            className={s.hamburgerMenu}
+            onClick={() => setOpen(!open)}
+        />
+    );
+
+    const hamburgerCloseIcon = (
+        <img
+            src={CloseBtn}
+            alt="Закрити меню"
+            aria-label="Закрити меню"
+            className={s.hamburgerMenu}
+            onClick={() => setOpen(!open)}
+        />
+    );
+
     const closeMobileMenu = () => setOpen(false);
 
     return ( 

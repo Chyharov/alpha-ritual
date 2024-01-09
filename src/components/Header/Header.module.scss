@@ -7,8 +7,8 @@
   transform: translateX(-50%);
   z-index: 1;
   background-color: var(--backgroundColor);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   outline: 1px solid var(--primaryTextColor);
 
   @include mq(tab) {
@@ -18,6 +18,9 @@
 }
 
 .header__container {
+  display: flex;
+  justify-content: space-between;
+
   @include mq(tab) {
     display: flex;
     justify-content: flex-start;

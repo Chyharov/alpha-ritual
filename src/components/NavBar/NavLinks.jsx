@@ -31,7 +31,7 @@ const NavLinks = (props) => {
 
 
     return (
-        <div className='container'>
+        <div className={'container ' + s.menuList__container}>
         <ul className={s.menu__list}>
 
             <motion.li 
