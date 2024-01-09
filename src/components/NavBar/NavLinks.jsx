@@ -59,12 +59,12 @@ const NavLinks = (props) => {
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
-                    to="сontacts"
+                    to="about"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Контакти
+                    Про компанію
                 </Link>
             </motion.li>
 
@@ -77,12 +77,12 @@ const NavLinks = (props) => {
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
-                    to="about"
+                    to="goods"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Про компанію
+                    Ритуальні товари
                 </Link>
             </motion.li>
 
@@ -99,7 +99,7 @@ const NavLinks = (props) => {
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Ритуальні товари
+                    Ритуальні послуги
                 </Link>
             </motion.li>
             <motion.li 
@@ -116,6 +116,22 @@ const NavLinks = (props) => {
                     offset={getOffsetByDeviceType()}
                     duration={500}>
                     Додаткові послуги
+                </Link>
+            </motion.li>
+            <motion.li 
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{delay: 0.50}}
+            className={s.menu__list_item}>
+                <Link
+                onClick={() => props.isMobile && props.closeMobileMenu()}
+                    className={s.menu__list_link}
+                    to="servicesList"
+                    spy={true}
+                    smooth={true}
+                    offset={getOffsetByDeviceType()}
+                    duration={500}>
+                    УКР
                 </Link>
             </motion.li>
             
