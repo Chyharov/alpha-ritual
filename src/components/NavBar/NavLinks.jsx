@@ -31,15 +31,11 @@ const NavLinks = (props) => {
 
 
     return (
-        <div className={'container ' + s.menuList__container}>
+
+    <div className={'container ' + s.menuList__container}>
         <ul className={s.menu__list}>
 
-            <motion.li 
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{delay: 0.05}}
-            className={s.menu__list_item}>
-               <Link
+                <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
                     to="main"
@@ -47,15 +43,16 @@ const NavLinks = (props) => {
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Головна
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.05}}
+                        className={s.menu__list_item}>
+                            Головна
+                    </motion.li>
                 </Link>
-            </motion.li>
 
-            <motion.li 
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{delay: 0.10}}
-            className={s.menu__list_item}>
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
@@ -64,16 +61,16 @@ const NavLinks = (props) => {
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Про компанію
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.10}}
+                        className={s.menu__list_item}>
+                            Про компанію
+                    </motion.li>
                 </Link>
-            </motion.li>
 
-            <motion.li 
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{delay: 0.20}}
-            className={s.menu__list_item} 
-            onClick={() => props.isMobile && props.closeMobileMenu()}>
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
@@ -82,63 +79,56 @@ const NavLinks = (props) => {
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Ритуальні товари
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.20}}
+                        className={s.menu__list_item} 
+                        onClick={() => props.isMobile && props.closeMobileMenu()}>
+                            Ритуальні товари
+                    </motion.li>
                 </Link>
-            </motion.li>
 
-            <motion.li 
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{delay: 0.30}}
-            className={s.menu__list_item}>
                 <Link
-                onClick={() => props.isMobile && props.closeMobileMenu()}
+                    onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
                     to="services"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}
                     duration={500}>
-                    Ритуальні послуги
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.30}}
+                        className={s.menu__list_item}>
+                            Ритуальні послуги
+                    </motion.li>
                 </Link>
-            </motion.li>
-            <motion.li 
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{delay: 0.40}}
-            className={s.menu__list_item}>
-                <Link
-                onClick={() => props.isMobile && props.closeMobileMenu()}
-                    className={s.menu__list_link}
-                    to="servicesList"
-                    spy={true}
-                    smooth={true}
-                    offset={getOffsetByDeviceType()}
-                    duration={500}>
-                    Додаткові послуги
-                </Link>
-            </motion.li>
-            <motion.li 
-            initial={animateFrom}
-            animate={animateTo}
-            transition={{delay: 0.50}}
-            className={s.menu__list_item}>
-                <Link
-                onClick={() => props.isMobile && props.closeMobileMenu()}
-                    className={s.menu__list_link}
-                    to="servicesList"
-                    spy={true}
-                    smooth={true}
-                    offset={getOffsetByDeviceType()}
-                    duration={500}>
-                    УКР
-                </Link>
-            </motion.li>
-            
 
-            </ul>
-            </div>
-     );
+                <Link
+                    onClick={() => props.isMobile && props.closeMobileMenu()}
+                    className={s.menu__list_link}
+                    to="servicesList"
+                    spy={true}
+                    smooth={true}
+                    offset={getOffsetByDeviceType()}
+                    duration={500}>
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.40}}
+                        className={s.menu__list_item}>
+                            Додаткові послуги
+                    </motion.li>
+                </Link>
+
+        </ul>
+    </div>
+);
 }
  
 export default NavLinks;
