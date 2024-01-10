@@ -1,20 +1,88 @@
+.titleHero {
+    text-align: center;
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans SemiBold;
+        font-size: 28px;
+        line-height: 1.43;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 48px;
+        line-height: 1.17;
+    }
+}
+
 .title {
     text-align: center;
 
     @media screen and (min-width: 320px) {
         font-family: Open Sans SemiBold;
         font-size: 20px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 20px;
+    }
+}
+
+.titleMedium {
+    text-align: center;
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans ExtraBold;
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+        line-height: 1.12;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 28px;
+        line-height: 1.12;
+        margin-bottom: 20px;
+    }
+}
+
+.titleForCard {
+    text-align: center;
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans Regular;
+        font-size: 16px;
         line-height: 1.38;
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 25px;
+        font-size: 28px;
+        line-height: 1.12;
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1360px) {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 1.12;
         margin-bottom: 20px;
     }
 }
@@ -23,32 +91,55 @@
 
     @media screen and (min-width: 320px) {
         font-family: Open Sans Regular;
+        font-size: 16px;
         line-height: 1.38;
-        font-size: 13px;
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 1.38;
     }
 
     @media screen and (min-width: 1360px) {
-        font-size: 22px;
+        font-size: 16px;
+        line-height: 1.38;
     }
 }
 
-.descriptionNoMargin {
+.descriptionSecondary {
 
     @media screen and (min-width: 320px) {
         font-family: Open Sans Regular;
-        line-height: 1.38;
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.43;
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 1.43;
     }
 
     @media screen and (min-width: 1360px) {
-        font-size: 22px;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}
+
+.descriptionBtn {
+
+    @media screen and (min-width: 320px) {
+        font-family: Open Sans SemiBold;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 14px;
+        line-height: 1.43;
     }
 }

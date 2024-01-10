@@ -1,14 +1,15 @@
 :root {
   --primaryTextColor: #F6F6F6;
-  --secondaryTextColor: #333333;
+  --secondaryTextColor: #D4CEBF;
   --backgroundColor: #231f20;
   --hoverColor: #5E4715;
 
   --primaryTextColorDark: #EAE6DE;
   --backgroundColorDark: #231F20;
   --hoverColorDark: #866929;
-  --secondaryTextColorDark: #D4CEBF;
-  --secondaryBackgroundColorDark: #2b2525;
+  --lightGrayDark: #716F6B;
+  --secondaryTextColorDark: #676663;
+  --lightGoldDark: #B4A075;
 
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
