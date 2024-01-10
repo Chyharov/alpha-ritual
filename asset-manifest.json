@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alpha-ritual/static/css/main.4a4ab0a3.css",
+    "main.css": "/alpha-ritual/static/css/main.8712c3ae.css",
     "main.js": "/alpha-ritual/static/js/main.d61a0f85.js",
     "static/css/888.740f8075.chunk.css": "/alpha-ritual/static/css/888.740f8075.chunk.css",
     "static/js/888.8131f7a2.chunk.js": "/alpha-ritual/static/js/888.8131f7a2.chunk.js",
@@ -53,6 +53,7 @@
     "static/media/covered8.webp": "/alpha-ritual/static/media/covered8.14d5750f6f30ad2c0e67.webp",
     "static/media/blackMercedes6.webp": "/alpha-ritual/static/media/blackMercedes6.abfd3e5c9c268c303cc1.webp",
     "static/media/covered7.webp": "/alpha-ritual/static/media/covered7.ca9f273c386ff4eef3f2.webp",
+    "static/media/OpenSans-ExtraBold.ttf": "/alpha-ritual/static/media/OpenSans-ExtraBold.8915c1921021d3fa9025.ttf",
     "static/media/whiteVolksWagen5.webp": "/alpha-ritual/static/media/whiteVolksWagen5.d2e7f93c286d7c2d9b80.webp",
     "static/media/OpenSans-Regular.ttf": "/alpha-ritual/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
     "static/media/OpenSans-SemiBold.ttf": "/alpha-ritual/static/media/OpenSans-SemiBold.2f17aae884058c5a85df.ttf",
@@ -235,7 +236,7 @@
     "index.html": "/alpha-ritual/index.html",
     "static/media/closeBtn.svg": "/alpha-ritual/static/media/closeBtn.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
-    "main.4a4ab0a3.css.map": "/alpha-ritual/static/css/main.4a4ab0a3.css.map",
+    "main.8712c3ae.css.map": "/alpha-ritual/static/css/main.8712c3ae.css.map",
     "main.d61a0f85.js.map": "/alpha-ritual/static/js/main.d61a0f85.js.map",
     "888.740f8075.chunk.css.map": "/alpha-ritual/static/css/888.740f8075.chunk.css.map",
     "888.8131f7a2.chunk.js.map": "/alpha-ritual/static/js/888.8131f7a2.chunk.js.map",
@@ -266,7 +267,7 @@
     "964.8d7fa693.chunk.js.map": "/alpha-ritual/static/js/964.8d7fa693.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4ab0a3.css",
+    "static/css/main.8712c3ae.css",
     "static/js/main.d61a0f85.js"
   ]
 }
