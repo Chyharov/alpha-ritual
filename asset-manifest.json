@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/alpha-ritual/static/css/main.8712c3ae.css",
-    "main.js": "/alpha-ritual/static/js/main.d61a0f85.js",
-    "static/css/888.740f8075.chunk.css": "/alpha-ritual/static/css/888.740f8075.chunk.css",
-    "static/js/888.8131f7a2.chunk.js": "/alpha-ritual/static/js/888.8131f7a2.chunk.js",
+    "main.css": "/alpha-ritual/static/css/main.0cb982db.css",
+    "main.js": "/alpha-ritual/static/js/main.2be986fb.js",
+    "static/css/888.7b46596c.chunk.css": "/alpha-ritual/static/css/888.7b46596c.chunk.css",
+    "static/js/888.76137637.chunk.js": "/alpha-ritual/static/js/888.76137637.chunk.js",
     "static/css/387.05b03fcd.chunk.css": "/alpha-ritual/static/css/387.05b03fcd.chunk.css",
     "static/js/387.d1c60794.chunk.js": "/alpha-ritual/static/js/387.d1c60794.chunk.js",
     "static/css/9.b7363694.chunk.css": "/alpha-ritual/static/css/9.b7363694.chunk.css",
@@ -66,6 +66,7 @@
     "static/media/whiteVolksWagen7.webp": "/alpha-ritual/static/media/whiteVolksWagen7.6c5bc1e6ae76465b604b.webp",
     "static/media/blackMercedes1.webp": "/alpha-ritual/static/media/blackMercedes1.2233be5c0a32a7c32e1d.webp",
     "static/media/blackMercedes5.webp": "/alpha-ritual/static/media/blackMercedes5.1c8b32249ffe9edd9e14.webp",
+    "static/media/Comfortaa-Regular.ttf": "/alpha-ritual/static/media/Comfortaa-Regular.6718cbec512d80eb9cbb.ttf",
     "static/media/Comfortaa-Light.ttf": "/alpha-ritual/static/media/Comfortaa-Light.2d79c8b673318d831c9b.ttf",
     "static/media/blackMercedes8.webp": "/alpha-ritual/static/media/blackMercedes8.f0b0189cd0f3a86fad4e.webp",
     "static/media/Comfortaa-Bold.ttf": "/alpha-ritual/static/media/Comfortaa-Bold.059cc3e0c5d00a88354f.ttf",
@@ -122,6 +123,7 @@
     "static/media/freshFlowersWreath3.webp": "/alpha-ritual/static/media/freshFlowersWreath3.26fecfab596b58de05e6.webp",
     "static/media/decoration3.webp": "/alpha-ritual/static/media/decoration3.1683306ee3973c08ac01.webp",
     "static/media/funeralSet6.webp": "/alpha-ritual/static/media/funeralSet6.95757187613eac56ef45.webp",
+    "static/media/heroBgMobile.jpg": "/alpha-ritual/static/media/heroBgMobile.0dd67ad689ef32ac30e5.jpg",
     "static/media/freshFlowersWreath18.webp": "/alpha-ritual/static/media/freshFlowersWreath18.dfac462e9d4638333dfb.webp",
     "static/media/freshFlowersWreath28.webp": "/alpha-ritual/static/media/freshFlowersWreath28.e51ba9ef67c51ff9f224.webp",
     "static/media/coffinsAveragePrice3375.webp": "/alpha-ritual/static/media/coffinsAveragePrice3375.0f095ef687b76dd2fd73.webp",
@@ -236,10 +238,10 @@
     "index.html": "/alpha-ritual/index.html",
     "static/media/closeBtn.svg": "/alpha-ritual/static/media/closeBtn.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
-    "main.8712c3ae.css.map": "/alpha-ritual/static/css/main.8712c3ae.css.map",
-    "main.d61a0f85.js.map": "/alpha-ritual/static/js/main.d61a0f85.js.map",
-    "888.740f8075.chunk.css.map": "/alpha-ritual/static/css/888.740f8075.chunk.css.map",
-    "888.8131f7a2.chunk.js.map": "/alpha-ritual/static/js/888.8131f7a2.chunk.js.map",
+    "main.0cb982db.css.map": "/alpha-ritual/static/css/main.0cb982db.css.map",
+    "main.2be986fb.js.map": "/alpha-ritual/static/js/main.2be986fb.js.map",
+    "888.7b46596c.chunk.css.map": "/alpha-ritual/static/css/888.7b46596c.chunk.css.map",
+    "888.76137637.chunk.js.map": "/alpha-ritual/static/js/888.76137637.chunk.js.map",
     "387.05b03fcd.chunk.css.map": "/alpha-ritual/static/css/387.05b03fcd.chunk.css.map",
     "387.d1c60794.chunk.js.map": "/alpha-ritual/static/js/387.d1c60794.chunk.js.map",
     "9.b7363694.chunk.css.map": "/alpha-ritual/static/css/9.b7363694.chunk.css.map",
@@ -267,7 +269,7 @@
     "964.8d7fa693.chunk.js.map": "/alpha-ritual/static/js/964.8d7fa693.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8712c3ae.css",
-    "static/js/main.d61a0f85.js"
+    "static/css/main.0cb982db.css",
+    "static/js/main.2be986fb.js"
   ]
 }
