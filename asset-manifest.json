@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.0cb982db.css",
-    "main.js": "/alpha-ritual/static/js/main.c30a10a3.js",
-    "static/css/888.31015a9d.chunk.css": "/alpha-ritual/static/css/888.31015a9d.chunk.css",
-    "static/js/888.76137637.chunk.js": "/alpha-ritual/static/js/888.76137637.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.064a2bc6.js",
+    "static/css/888.0a9100b4.chunk.css": "/alpha-ritual/static/css/888.0a9100b4.chunk.css",
+    "static/js/888.45f3d392.chunk.js": "/alpha-ritual/static/js/888.45f3d392.chunk.js",
     "static/css/387.05b03fcd.chunk.css": "/alpha-ritual/static/css/387.05b03fcd.chunk.css",
     "static/js/387.d1c60794.chunk.js": "/alpha-ritual/static/js/387.d1c60794.chunk.js",
     "static/css/9.b7363694.chunk.css": "/alpha-ritual/static/css/9.b7363694.chunk.css",
@@ -74,6 +74,7 @@
     "static/media/covered13.webp": "/alpha-ritual/static/media/covered13.dd4a1b701f3584fe3156.webp",
     "static/media/funeralVases3.webp": "/alpha-ritual/static/media/funeralVases3.d0dfea6446d850c807ff.webp",
     "static/media/blackMercedes7.webp": "/alpha-ritual/static/media/blackMercedes7.d7a160ac987b7a525c9e.webp",
+    "static/media/heroBgMobile.jpg": "/alpha-ritual/static/media/heroBgMobile.2b1977f3b95a71d62871.jpg",
     "static/media/decoration4.webp": "/alpha-ritual/static/media/decoration4.23bc0cc8851d3dc46e59.webp",
     "static/media/funeralVases8.webp": "/alpha-ritual/static/media/funeralVases8.683319f7514c6dc583a5.webp",
     "static/media/covered12.webp": "/alpha-ritual/static/media/covered12.2ae2ea9561fb2014786c.webp",
@@ -123,7 +124,6 @@
     "static/media/freshFlowersWreath3.webp": "/alpha-ritual/static/media/freshFlowersWreath3.26fecfab596b58de05e6.webp",
     "static/media/decoration3.webp": "/alpha-ritual/static/media/decoration3.1683306ee3973c08ac01.webp",
     "static/media/funeralSet6.webp": "/alpha-ritual/static/media/funeralSet6.95757187613eac56ef45.webp",
-    "static/media/heroBgMobile.jpg": "/alpha-ritual/static/media/heroBgMobile.0dd67ad689ef32ac30e5.jpg",
     "static/media/freshFlowersWreath18.webp": "/alpha-ritual/static/media/freshFlowersWreath18.dfac462e9d4638333dfb.webp",
     "static/media/freshFlowersWreath28.webp": "/alpha-ritual/static/media/freshFlowersWreath28.e51ba9ef67c51ff9f224.webp",
     "static/media/coffinsAveragePrice3375.webp": "/alpha-ritual/static/media/coffinsAveragePrice3375.0f095ef687b76dd2fd73.webp",
@@ -239,9 +239,9 @@
     "static/media/closeBtn.svg": "/alpha-ritual/static/media/closeBtn.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
     "main.0cb982db.css.map": "/alpha-ritual/static/css/main.0cb982db.css.map",
-    "main.c30a10a3.js.map": "/alpha-ritual/static/js/main.c30a10a3.js.map",
-    "888.31015a9d.chunk.css.map": "/alpha-ritual/static/css/888.31015a9d.chunk.css.map",
-    "888.76137637.chunk.js.map": "/alpha-ritual/static/js/888.76137637.chunk.js.map",
+    "main.064a2bc6.js.map": "/alpha-ritual/static/js/main.064a2bc6.js.map",
+    "888.0a9100b4.chunk.css.map": "/alpha-ritual/static/css/888.0a9100b4.chunk.css.map",
+    "888.45f3d392.chunk.js.map": "/alpha-ritual/static/js/888.45f3d392.chunk.js.map",
     "387.05b03fcd.chunk.css.map": "/alpha-ritual/static/css/387.05b03fcd.chunk.css.map",
     "387.d1c60794.chunk.js.map": "/alpha-ritual/static/js/387.d1c60794.chunk.js.map",
     "9.b7363694.chunk.css.map": "/alpha-ritual/static/css/9.b7363694.chunk.css.map",
@@ -270,6 +270,6 @@
   },
   "entrypoints": [
     "static/css/main.0cb982db.css",
-    "static/js/main.c30a10a3.js"
+    "static/js/main.064a2bc6.js"
   ]
 }
