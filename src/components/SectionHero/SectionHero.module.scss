@@ -2,6 +2,7 @@
 
 .sectionHero {
   padding-top: 75px;
+  padding-bottom: 40px;
 
 
   @include mq(tab) {
@@ -14,8 +15,17 @@
 }
 
 .heroImg__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+        
+
+.bgimg {
   background-image: url(../../images/hero/heroBgMobile.jpg);
-  width: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 494px;
 }
 
@@ -36,6 +46,7 @@
   border: none;
   padding: 14px 57px;
   width: 288px;
+  margin: 0 auto;
 
   @include mq(tab) {
 

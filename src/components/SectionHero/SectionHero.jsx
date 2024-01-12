@@ -3,8 +3,8 @@ import s from '../SectionHero/SectionHero.module.scss';
 const SectionHero = () => {
   return (
     <section className={s.sectionHero} id='main'>
-      <div className={s.heroImg__container}>
-        <div className={'container'}>
+        <div className={s.bgimg}>
+      <div className={'container ' + s.heroImg__container}>
           <div className={s.hero__container}>
             <h1 style={{ marginTop: '40px' }} className='titleHero'>АЛЬФА-РИТУАЛ</h1>
             <h2 style={{ marginBottom: '56px' }} className='titleForHero'>поховальний дім</h2>
