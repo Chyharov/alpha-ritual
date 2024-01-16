@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alpha-ritual/static/css/main.9552d983.css",
+    "main.css": "/alpha-ritual/static/css/main.4010bc66.css",
     "main.js": "/alpha-ritual/static/js/main.5c5244b6.js",
     "static/css/888.66e81eab.chunk.css": "/alpha-ritual/static/css/888.66e81eab.chunk.css",
     "static/js/888.9d664039.chunk.js": "/alpha-ritual/static/js/888.9d664039.chunk.js",
@@ -238,7 +238,7 @@
     "index.html": "/alpha-ritual/index.html",
     "static/media/closeBtn.svg": "/alpha-ritual/static/media/closeBtn.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
-    "main.9552d983.css.map": "/alpha-ritual/static/css/main.9552d983.css.map",
+    "main.4010bc66.css.map": "/alpha-ritual/static/css/main.4010bc66.css.map",
     "main.5c5244b6.js.map": "/alpha-ritual/static/js/main.5c5244b6.js.map",
     "888.66e81eab.chunk.css.map": "/alpha-ritual/static/css/888.66e81eab.chunk.css.map",
     "888.9d664039.chunk.js.map": "/alpha-ritual/static/js/888.9d664039.chunk.js.map",
@@ -269,7 +269,7 @@
     "964.8d7fa693.chunk.js.map": "/alpha-ritual/static/js/964.8d7fa693.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9552d983.css",
+    "static/css/main.4010bc66.css",
     "static/js/main.5c5244b6.js"
   ]
 }
