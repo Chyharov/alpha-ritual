@@ -41,11 +41,10 @@
 
 .titleHero {
 
-  @media screen and (min-width: 320px) {
     font-family: Comfortaa Regular;
     font-size: 28px;
     line-height: 1.43;
-  }
+
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -60,11 +59,9 @@
 
 .titleForHero {
 
-  @media screen and (min-width: 320px) {
     font-family: Open Sans ExtraBold;
     font-size: 16px;
     line-height: 1.38;
-  }
 
   @media screen and (min-width: 768px) {
     font-size: 28px;
@@ -74,42 +71,20 @@
   @media screen and (min-width: 1360px) {
     font-size: 28px;
     line-height: 1.12;
-  }
-}
-
-
-.descriptionBtn {
-
-  @media screen and (min-width: 320px) {
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.43;
-  }
-
-  @media screen and (min-width: 1360px) {
-    font-size: 14px;
-    line-height: 1.43;
   }
 }
 
 .getConsultation {
 
-  @media screen and (min-width: 320px) {
-    background-color: var(--hoverColor);
-    color: var(--secondaryTextColor);
-    border-radius: 8px;
-    border: none;
-    padding: 14px 57px;
-    width: 288px;
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
-  }
+  background-color: var(--hoverColor);
+  color: var(--secondaryTextColor);
+  border-radius: 8px;
+  border: none;
+  padding: 14px 57px;
+  width: 288px;
+  font-family: Open Sans SemiBold;
+  font-size: 14px;
+  line-height: 1.43;
 
   @include mq(tab) {
     font-size: 14px;
