@@ -74,25 +74,3 @@
   }
 }
 
-.getConsultation {
-
-  background-color: var(--hoverColor);
-  color: var(--secondaryTextColor);
-  border-radius: 8px;
-  border: none;
-  padding: 14px 57px;
-  width: 288px;
-  font-family: Open Sans SemiBold;
-  font-size: 14px;
-  line-height: 1.43;
-
-  @include mq(tab) {
-    font-size: 14px;
-    line-height: 1.43;
-  }
-
-  @include mq(desk) {
-    font-size: 14px;
-    line-height: 1.43;
-  }
-}

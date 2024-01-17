@@ -1,3 +1,4 @@
+import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import s from '../SectionHero/SectionHero.module.scss';
 
 const SectionHero = () => {
@@ -12,8 +13,8 @@ const SectionHero = () => {
           
           <p style={{ padding: '8px', marginBottom: '40px' }} className='description'>Поховальний дім Альфа має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
         
+          <ButtonGetConsultation />
           
-          <button type='button' className={s.getConsultation}>Отримати консультацію</button>
         </div>
       </div>
     </section>

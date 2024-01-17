@@ -1,0 +1,114 @@
+@import '../../sass/utils/mixin';
+
+.getConsultation {
+
+    background-color: var(--hoverColor);
+    color: var(--secondaryTextColor);
+    border-radius: 8px;
+    border: none;
+    padding: 14px 57px;
+    width: 288px;
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
+
+    @include mq(tab) {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    @include mq(desk) {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}
+
+.modal {
+    width: 90%;
+    height: 470px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: var(--backgroundColor);
+    border: 1px solid var(--hoverColor);
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--primaryTextShadowColor);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact__links {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contact__icons {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.btn__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon__telegram {
+    fill: #3498db;
+}
+
+.icon__viber {
+    fill: #8a3ab9;
+}
+
+.icon__whatsApp {
+    fill: #25d366;
+}
+
+.contacts__btnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(tab) {
+        width: 300px;
+    }
+}
+
+.address__container {
+    display: none;
+
+    @include mq(tab) {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.phone__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(tab) {
+        width: 300px;
+    }
+}
