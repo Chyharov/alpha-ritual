@@ -43,51 +43,78 @@ const ButtonGetConsultation = () => {
         Отримати консультацію
       </button>
 
-        {isModalOpen && (
+          {isModalOpen && (
+        <div className={s.bgShadow}>
         <div className={s.modal} onClick={handleOutsideClick}>
-          <IoMdClose className={s.btn__close} onClick={closeModal} />
+            <IoMdClose className={s.btn__close} onClick={closeModal} />
+            
+            <div className={s.modalTitleContainer}>
+                <h2 className={s.titleNeedHelp}>Потрібна допомога?</h2>
+                    <div className={s.border}></div>
+                <h3 className={s.titleCallUs}>Зателефонуйте нам</h3>
+            </div>
+
+
+                <ul className={s.phoneNumberList}>
+                    <a className={s.phoneNumberListLink} href="tel:+380672459505">
+                        <li className={s.phoneNumberItemMain}>
+                            +38 (067) 245 95 05
+                        </li>
+                    </a>
+                    <a className={s.phoneNumberListLink} href="tel:+380442322408">
+                        <li className={s.phoneNumberItem}>
+                            +380 (044) 232 24 08
+                        </li>
+                    </a>
+                </ul>
+
+            
           <ul className={s.contact__list}>
             <li className={s.contact__item}>
               <a
                 className={s.contact__links}
-                href="https://t.me/+380939040707"
+                href="https://t.me/+380672459505"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTelegram
                   className={`${s.contact__icons} ${s.icon__telegram}`}
                 />
-                <p> Telegram</p>
+                <p className='description'> Telegram</p>
               </a>
             </li>
 
             <li className={s.contact__item}>
               <a
                 className={s.contact__links}
-                href="viber://chat?number=+380939040707/"
+                href="viber://chat?number=+380672459505/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaViber className={`${s.contact__icons} ${s.icon__viber}`} />
-                <p> Viber</p>
+                <p className='description'> Viber</p>
               </a>
             </li>
 
             <li className={s.contact__item}>
               <a
                 className={s.contact__links}
-                href="whatsapp://send?phone=+380939040707"
+                href="whatsapp://send?phone=+380672459505"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaSquareWhatsapp
                   className={`${s.contact__icons} ${s.icon__whatsApp}`}
                 />
-                <p> WhatsApp</p>
+                <p className='description'> WhatsApp</p>
               </a>
             </li>
-          </ul>
-        </div>
+        </ul>
+
+        <p className='description'>Щоденно | Цілодобово</p>
+
+                  </div>
+                                </div>
       )}
     </>
   );
