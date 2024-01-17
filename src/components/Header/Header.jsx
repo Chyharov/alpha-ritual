@@ -1,5 +1,5 @@
-import s from '../Header/Header.module.scss';
 import Logo from '../Logo/Logo';
+import s from '../Header/Header.module.scss';
 import NavBar from 'components/NavBar/NavBar';
 
 
@@ -11,8 +11,7 @@ const Header = () => {
         
         <NavBar />
       </div>
-
-        
+      
     </header>
   );
 };

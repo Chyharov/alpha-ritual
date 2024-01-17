@@ -1,0 +1,29 @@
+@import '../../sass/utils/mixin';
+
+.scroll-to-top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+}
+
+.toTopIcon {
+    border-radius: 50px;
+    box-shadow: var(--primaryTextShadowColor);
+    background-color: var(--backgroundColor);
+    color: var(--hoverColor);
+    fill: var(--hoverColor);
+    width: 42px;
+    height: 42px;
+}
+
+.scroll-to-top-button.visible {
+    opacity: 0.7;
+}
