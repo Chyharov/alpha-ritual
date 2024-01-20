@@ -1,23 +1,24 @@
 @import '../../sass/utils/mixin';
 
 .sectionRitualServices {
+  padding: 32px 0px;
+}
+
+.ritualServicesContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 30px 0px 30px;
-  outline: 1px solid var(--primaryTextColor);
 }
 
-.ritualServices__container {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include mq(tab) {
-    width: 700px;
-  }
-
-  @include mq(desk) {
-    width: 1000px;
-  }
+.buttonMoreDetails {
+  background-color: var(--backgroundColor);
+  color: var(--secondaryTextColor);
+  border: 1px solid var(--hoverColorDark);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 14px 77.5px;
+  width: 240px;
+  font-family: Open Sans SemiBold;
+  font-size: 14px;
+  line-height: 1.43;
 }
-
