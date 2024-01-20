@@ -1,4 +1,4 @@
-import s from '../SectionRitualServices/SectionRitualServices.module.scss';
+import s from './SectionRitualServices.module.scss';
 
 const SectionRitualServices = () => {
   return (
