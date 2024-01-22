@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px;
-    outline: 1px solid var(--primaryTextColor);
+    padding-top: 32px;
+    padding-bottom: 80px;
 
     @include mq(tab) {
     }
@@ -30,8 +30,8 @@
     font-family: Open Sans SemiBold;
     font-size: 20px;
     line-height: 1.38;
-    padding: 30px;
     text-align: center;
+    color: var(--primaryTextColorDark);
 
     @include mq(tab) {
         font-size: 25px;
@@ -42,8 +42,12 @@
 }
 
 .ritualServices__border {
-    width: 278px;
-    border: 0.5px solid var(--primaryTextColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: 104px;
+    border: 0.5px solid var(--hoverColorDark);
     border-radius: 8px;
 
     @include mq(tab) {
