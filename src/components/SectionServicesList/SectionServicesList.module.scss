@@ -15,14 +15,14 @@
 }
 
 .ritualServices__container {
-    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: center;
+
 
     @include mq(tab) {
-        width: 700px;
     }
 }
 
@@ -42,6 +42,7 @@
 }
 
 .ritualServices__border {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,11 +52,11 @@
     border-radius: 8px;
 
     @include mq(tab) {
-        width: 700px;
+
     }
 
     @include mq(desk) {
-        width: 1000px;
+
     }
 }
 
@@ -66,9 +67,20 @@
     color: var(--backgroundColor);
 }
 
+.ritualServices__list {
+    margin-bottom: 24px;
+}
+
+.ritualServices__listItem {
+    width: 288px;
+    height: 120px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #2B2925;
+}
 
 .ritualServices__listItem:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .ritualServices__background {
@@ -77,4 +89,25 @@
     justify-content: flex-end;
 }
 
+.ritualServices__link {
+    font-family: Open Sans Regular;
+    font-size: 12px;
+    line-height: 1.4;
+    position: absolute;
+    right: 20px;
+    bottom: -9px;
+    padding: 10px 20px;
+    background-color: #2B2925;
+    color: var(--secondaryTextColor);
+    text-decoration: underline;
+}
+
+.viewAllRitualServices {
+    width: 240px;
+    height: 48px;
+    border: 1px solid var(--hoverColorDark);
+    background-color: var(--backgroundColor);
+    color: var(--secondaryTextColor);
+    border-radius: 8px;
+}
 
