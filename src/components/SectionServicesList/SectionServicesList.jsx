@@ -10,7 +10,6 @@ const SectionServicesList = () => {
         <h2 className='title' style={{ marginBottom: '24px' }}>Додаткові послуги</h2>
 
         <ul className={s.ritualServices__list}>
-                      
           <li className={s.ritualServices__listItem}>
               <div className={s.ritualServices__border}>
                 <h2 className={s.ritualServices__title}>Вінки</h2>

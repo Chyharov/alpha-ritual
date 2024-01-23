@@ -1,0 +1,32 @@
+@import '../../sass/utils/mixin';
+
+.footer {
+    border-top: 1px solid var(--secondaryTextColor);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--backgroundColorDark);
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footerNavList {
+    padding: 8px 8px 12px 8px;
+    border-bottom: 1px solid var(--hoverColorDark);
+}
+
+.footerNavListItem {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--secondaryTextColor);
+}
+
+.footerNavListItem:not(:last-child) {
+    margin-bottom: 8px;
+}

@@ -35,7 +35,7 @@
 
 .logo__title {
   
-  color: var(--primaryTextColor);
+  color: var(--secondaryTextColor);
 
   @media screen and (min-width: 320px) {
     font-family: Comfortaa Bold;
@@ -54,7 +54,7 @@
 
 .logo__description {
 
-  color: var(--primaryTextColor);
+  color: var(--secondaryTextColor);
 
   @media screen and (min-width: 320px) {
     font-family: Comfortaa Light;
