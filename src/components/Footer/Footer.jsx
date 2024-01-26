@@ -10,20 +10,21 @@ const Footer = () => {
       <div className='container'>
         <div className={s.logoContainer}>
           <Logo />
-        </div>
         
-        <nav className={s.footerNavigation}>
-          <ul className={s.footerNavList}>
-            <Link className={s.footerNavListLink}><li className={s.footerNavListItem} style={{ marginBottom: '8px' }}>Головна</li></Link>
-            <Link className={s.footerNavListLink}><li className={s.footerNavListItem} style={{ marginBottom: '8px' }}>Про компанію</li></Link>
-            <Link className={s.footerNavListLink}><li className={s.footerNavListItem} style={{ marginBottom: '8px' }}>Ритуальні товари</li></Link>
-            <Link className={s.footerNavListLink}><li className={s.footerNavListItem} style={{ marginBottom: '8px' }}>Ритуальні послуги</li></Link>
-            <Link className={s.footerNavListLink}><li className={s.footerNavListItem}>Додаткові послуги</li></Link>
-          </ul>
-        </nav>
-        <ButtonGetConsultation />
+        
+          <nav className={s.footerNavigation}>
+            <ul className={s.footerNavList}>
+              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
+              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
+              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
+              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
+              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
+            </ul>
+          </nav>
+            <ButtonGetConsultation />
+        </div>
       </div>
-       <ScrollToTopButton />
+      <ScrollToTopButton />
     </footer>
   );
 };
