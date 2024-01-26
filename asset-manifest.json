@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.ac21b9cc.css",
-    "main.js": "/alpha-ritual/static/js/main.3c1e2188.js",
-    "static/css/891.7c30a30a.chunk.css": "/alpha-ritual/static/css/891.7c30a30a.chunk.css",
-    "static/js/891.b8a43b2c.chunk.js": "/alpha-ritual/static/js/891.b8a43b2c.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.5e401be6.js",
+    "static/css/891.1eee5f5e.chunk.css": "/alpha-ritual/static/css/891.1eee5f5e.chunk.css",
+    "static/js/891.aba1b82d.chunk.js": "/alpha-ritual/static/js/891.aba1b82d.chunk.js",
     "static/css/387.86e1968c.chunk.css": "/alpha-ritual/static/css/387.86e1968c.chunk.css",
     "static/js/387.8ceac55d.chunk.js": "/alpha-ritual/static/js/387.8ceac55d.chunk.js",
     "static/css/9.0e938325.chunk.css": "/alpha-ritual/static/css/9.0e938325.chunk.css",
@@ -219,9 +219,9 @@
     "static/media/closeBtn.svg": "/alpha-ritual/static/media/closeBtn.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
     "main.ac21b9cc.css.map": "/alpha-ritual/static/css/main.ac21b9cc.css.map",
-    "main.3c1e2188.js.map": "/alpha-ritual/static/js/main.3c1e2188.js.map",
-    "891.7c30a30a.chunk.css.map": "/alpha-ritual/static/css/891.7c30a30a.chunk.css.map",
-    "891.b8a43b2c.chunk.js.map": "/alpha-ritual/static/js/891.b8a43b2c.chunk.js.map",
+    "main.5e401be6.js.map": "/alpha-ritual/static/js/main.5e401be6.js.map",
+    "891.1eee5f5e.chunk.css.map": "/alpha-ritual/static/css/891.1eee5f5e.chunk.css.map",
+    "891.aba1b82d.chunk.js.map": "/alpha-ritual/static/js/891.aba1b82d.chunk.js.map",
     "387.86e1968c.chunk.css.map": "/alpha-ritual/static/css/387.86e1968c.chunk.css.map",
     "387.8ceac55d.chunk.js.map": "/alpha-ritual/static/js/387.8ceac55d.chunk.js.map",
     "9.0e938325.chunk.css.map": "/alpha-ritual/static/css/9.0e938325.chunk.css.map",
@@ -250,6 +250,6 @@
   },
   "entrypoints": [
     "static/css/main.ac21b9cc.css",
-    "static/js/main.3c1e2188.js"
+    "static/js/main.5e401be6.js"
   ]
 }
