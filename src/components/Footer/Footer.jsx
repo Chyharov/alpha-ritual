@@ -7,39 +7,55 @@ import s from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={s.footer}>
-      <div className='container'>
-        <div className={s.logoContainer}>
+      <div className={'container ' + s.footerContainer}>
           <Logo />
         
         
           <nav className={s.footerNavigation}>
             <ul className={s.footerNavList}>
-              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
-              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
-              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
-              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
-              <Link className={s.footerNavListLink}><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
+              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
+              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
+              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
+              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
+              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
             </ul>
           </nav>
 
-          <h2>Адреса</h2>
-          <address>
-            <ul>
-              <a className={s.footerNavListLink} href="https://maps.app.goo.gl/RmyTBg28Podhhuek6" target="_blank" rel="noopener noreferrer">
-                <li className={s.footerNavListItem}>
+          <address className={s.address}>
+            <h2 className={s.addressTitle}>Адреса</h2>
+            <ul className={s.addressList}>
+              <a href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA" target="_blank" rel="noopener noreferrer">
+                <li style={{ padding: '8px 8px 4px' }} className={s.addressListItem}>
                   Київ, вул. Івана Федорова, 33
                 </li>
               </a>
-              <a className={s.footerNavListLink} href="https://maps.app.goo.gl/AwovKjfD7p53WbF56" target="_blank" rel="noopener noreferrer">
-                <li className={s.footerNavListItem}>
+              <a href="https://maps.app.goo.gl/AwovKjfD7p53WbF56" target="_blank" rel="noopener noreferrer">
+                <li style={{ padding: '4px 8px 8px', marginBottom: '8px' }} className={s.addressListItem}>
                   м.Київ, вул. Колоскова 9 (район Совського кладовища)
                 </li>
               </a>
+
+              <a href="tel:+380672459505">
+                <li style={{ padding: '8px 8px 4px' }} className={s.addressPhoneListItem}>
+                  +380 (067) 245 95 05
+                </li>
+              </a>
+              <a href="tel:+380442322408">
+                <li style={{ padding: '4px 8px 8px', marginBottom: '8px' }} className={s.addressPhoneListItemLast}>
+                  +380 (044) 232 24 08
+                </li>
+              </a>
             </ul>
+          <p className={s.footerAllTimeDescription}>Щоденно | Цілодобово</p>
           </address>
-            <ButtonGetConsultation />
-        </div>
+        
+          <ButtonGetConsultation />
+              
+          <div className={s.copyrightDescriptionContainer}>
+            <p className={s.copyrightDescription}>АЛЬФА - Похоронний дім © 2023</p> <p className={s.copyrightDescription}>Всі права захищені.</p>
+          </div>
       </div>
+        
       <ScrollToTopButton />
     </footer>
   );

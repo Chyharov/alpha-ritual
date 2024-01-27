@@ -29,7 +29,7 @@ button {
   cursor: pointer;
 }
 
-main {
+main, header, footer {
   color: var(--primaryTextColor);
-  background-color: var(--backgroundColor);
+  background-color: var(--backgroundColorDark);
 }

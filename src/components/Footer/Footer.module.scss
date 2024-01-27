@@ -4,27 +4,40 @@
     border-top: 1px solid var(--secondaryTextColor);
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: var(--backgroundColorDark);
 }
 
-.logoContainer {
+.footerContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 24px;
 }
 
 .footerNavList {
-    padding-bottom: 12px;
+    width: 100%;
+    padding-bottom: 8px;
     border-bottom: 1px solid var(--hoverColorDark);
 }
 
-.footerNavListItem {
+.footerNavListItem,
+.addressListItem,
+.addressPhoneListItem,
+.addressPhoneListItemLast {
     font-family: Open Sans Regular;
     font-size: 14px;
     line-height: 1.43;
+    
+}
+
+.footerNavListItem,
+.addressListItem,
+.addressPhoneListItem {
     color: var(--secondaryTextColor);
+}
+
+
+.addressPhoneListItemLast {
+    color: var(--primaryTextColorDark);
 }
 
 .footerNavListItem:not(:last-child) {
@@ -32,11 +45,45 @@
 }
 
 .footerNavigation {
+    margin-top: 24px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
 }
 
-.footerNavListLink a li{
-    padding: 4px 8px;
+.address {
+    width: 100%;
+    padding-top: 4px;
+    font-style: normal;
+}
+
+.addressTitle {
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--primaryTextColorDark);
+    padding: 8px 8px 0px 8px;
+}
+
+.footerAllTimeDescription {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--secondaryTextColor);
+    margin-bottom: 24px;
+    padding: 8px;
+}
+
+.copyrightDescription {
+    font-family: Open Sans Regular;
+    font-size: 10px;
+    line-height: 2;
+    color: var(--secondaryTextColor);
+}
+
+.copyrightDescriptionContainer {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
