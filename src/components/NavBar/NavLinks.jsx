@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import s from './NavBar.module.scss'
 
@@ -38,7 +38,7 @@ const NavLinks = (props) => {
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
-                    to="main"
+                    to="/"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}
@@ -74,7 +74,7 @@ const NavLinks = (props) => {
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
-                    to="goods"
+                    to="/ritualgoods"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}

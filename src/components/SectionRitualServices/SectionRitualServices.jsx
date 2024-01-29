@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import s from './SectionRitualServices.module.scss';
 
 const SectionRitualServices = () => {
@@ -9,7 +10,7 @@ const SectionRitualServices = () => {
 
           <p className='secondaryDescription' style={{ marginBottom: '24px', padding: '8px' }}>Поховальний дім 'Альфа-ритуал' - наші фахівці допоможуть вам у важкі моменти життя. Ми розуміємо, наскільки важливо забезпечити гідне та шанобливе прощання з вашими близькими. Наша компанія готова надати вам широкий спектр ритуальних послуг та товарів, щоб зробити цей процес якомога менш тяжким.</p>
           
-          <button type='button' className={s.buttonMoreDetails}>Детальніше</button>
+          <Link to="/ritualgoods" className={s.buttonMoreDetails}>Детальніше</Link>
 
       </div>
     </section>

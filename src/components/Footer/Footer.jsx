@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'
 import ScrollToTopButton from 'components/ScrollToTopButton/ScrollToTopButton';
 import Logo from '../Logo/Logo';
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
@@ -13,9 +13,9 @@ const Footer = () => {
         
           <nav className={s.footerNavigation}>
             <ul className={s.footerNavList}>
-              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
+              <Link to="/"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
               <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
-              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
+              <Link to="/ritualgoods"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
               <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
               <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
             </ul>
