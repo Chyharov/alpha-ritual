@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import s from './SectionRitualServices.module.scss';
 
 const SectionRitualServices = () => {
