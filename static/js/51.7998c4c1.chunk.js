@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkalpha_ritual=self.webpackChunkalpha_ritual||[]).push([[51],{5068:function(a,e,n){n.r(e);var i=n(959),r=n(6677),s=n(184);e.default=function(){return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(i.Z,{}),(0,s.jsx)("main",{children:(0,s.jsx)("h2",{children:"AdditionalServicesPage"})}),(0,s.jsx)(r.Z,{})]})}}}]);
-//# sourceMappingURL=51.7998c4c1.chunk.js.map
