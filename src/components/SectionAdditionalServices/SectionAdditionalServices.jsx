@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import s from '../SectionServicesList/SectionServicesList.module.scss';
+import s from './SectionAdditionalServices.module.scss';
 
 const additionalServices = [
   { id: 1, title: 'Вінки', link: '/wreaths' },
@@ -12,12 +12,12 @@ const additionalServices = [
   { id: 7, title: 'Інша атрибутика', link: '/otherattributes' },
 ];
 
-const SectionServicesList = () => {
+const SectionAdditionalServices = () => {
   const [showAll, setShowAll] = useState(false);
   const displayedServices = showAll ? additionalServices : additionalServices.slice(0, 4);
 
   return (
-    <section className={s.sectionServicesList} id='servicesList'>
+    <section className={s.sectionAdditionalServices}>
       <div className={'container ' + s.ritualServices__container}>
 
         <h2 className='title' style={{ marginBottom: '24px' }}>Додаткові послуги</h2>
@@ -44,4 +44,4 @@ const SectionServicesList = () => {
   );
 };
 
-export default SectionServicesList;
+export default SectionAdditionalServices;
