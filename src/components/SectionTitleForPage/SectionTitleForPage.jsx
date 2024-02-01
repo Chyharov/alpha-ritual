@@ -6,10 +6,10 @@ const SectionTitleForPage = ({title, backgroundImg}) => {
 
   return (
    <section style={{ backgroundImage: `url(${backgroundImg})` }} className={s.sectionTitleForPage}>
-            <div className='container'>
-                <div className={s.titleContainer}><Link to="/" className={s.linkTitleForPage}>Головна</Link><img className={s.titleLine} src={Line} alt="line" /><p className={s.descriptionTitleForPage}>{title}</p></div>
-                <h2 className={s.mainTitle}>{title}</h2>
-            </div>
+        <div className='container'>
+            <div className={s.titleContainer}><Link to="/" className={s.linkTitleForPage}>Головна</Link><img className={s.titleLine} src={Line} alt="line" /><p className={s.descriptionTitleForPage}>{title}</p></div>
+            <h2 className={s.mainTitle}>{title}</h2>
+        </div>
     </section>
   );
 };

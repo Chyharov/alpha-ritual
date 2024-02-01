@@ -2,9 +2,9 @@ import Header from '../../components/Header/Header'
 import SectionFullAdditionalServices from '../../components/SectionFullAdditionalServices/SectionFullAdditionalServices';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import Footer from '../../components/Footer/Footer';
+import backgroundImg from '../../images/additionalServices/backgroundAdditionalServicesMobile.jpg'
 
 const title = 'Додаткові послуги';
-const backgroundImg = '/alpha-ritual/static/media/backgroundAdditionalServicesMobile.80b092d15989be58fdcf.jpg';
 
 const AdditionalServicesPage = () => {
   return (
