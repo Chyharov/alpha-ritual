@@ -1,4 +1,6 @@
 import Header from '../../components/Header/Header'
+import SectionFullAdditionalServices from 'components/SectionFullAdditionalServices/SectionFullAdditionalServices';
+import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForPage';
 import Footer from 'components/Footer/Footer';
 
 const AdditionalServicesPage = () => {
@@ -6,7 +8,8 @@ const AdditionalServicesPage = () => {
     <>
       <Header />
         <main>
-            <h2>AdditionalServicesPage</h2>      
+            <SectionTitleForPage />
+            <SectionFullAdditionalServices />    
         </main>
       <Footer />
     </>

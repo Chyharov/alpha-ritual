@@ -33,3 +33,7 @@ main, header, footer {
   color: var(--primaryTextColor);
   background-color: var(--backgroundColorDark);
 }
+
+main {
+  padding-top: 75px;
+}

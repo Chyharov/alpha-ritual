@@ -1,7 +1,6 @@
 @import '../../sass/utils/mixin';
 
 .sectionHero {
-  padding-top: 75px;
   padding-bottom: 40px;
 
 
@@ -44,7 +43,7 @@
   font-family: Comfortaa Regular;
   font-size: 28px;
   line-height: 1.43;
-  color: #D4CEBF;
+  color: var(--secondaryTextColor);
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -62,7 +61,7 @@
   font-family: Open Sans ExtraBold;
   font-size: 16px;
   line-height: 1.38;
-  color: #D4CEBF;
+  color: var(--secondaryTextColor);
 
   @media screen and (min-width: 768px) {
     font-size: 28px;

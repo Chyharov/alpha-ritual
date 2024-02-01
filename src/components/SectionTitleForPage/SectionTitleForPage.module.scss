@@ -1,0 +1,48 @@
+@import '../../sass/utils/mixin';
+
+.sectionTitleForPage {
+    background-image: url(../../images/additionalServices/backgroundAdditionalServicesMobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 478px;
+
+    @include mq(tab) {}
+
+    @include mq(desk) {}
+}
+
+.titleLine {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.titleContainer {
+    padding: 8px;
+    display: flex;
+    margin-bottom: 288px;
+}
+
+.descriptionTitleForPage,
+.linkTitleForPage {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+}
+.mainTitle {
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+
+.linkTitleForPage {
+    margin-right: 12px;
+    color: var(--secondaryTextColor);
+}
+
+.descriptionTitleForPage {
+    color: var(--hoverColor);
+}
