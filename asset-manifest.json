@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.9b705b70.css",
-    "main.js": "/alpha-ritual/static/js/main.9bc283e3.js",
-    "static/css/174.1d4dc23f.chunk.css": "/alpha-ritual/static/css/174.1d4dc23f.chunk.css",
-    "static/js/174.b663d4c3.chunk.js": "/alpha-ritual/static/js/174.b663d4c3.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.d828cd53.js",
+    "static/css/174.aa98aa92.chunk.css": "/alpha-ritual/static/css/174.aa98aa92.chunk.css",
+    "static/js/174.b1d2180b.chunk.js": "/alpha-ritual/static/js/174.b1d2180b.chunk.js",
     "static/css/387.86e1968c.chunk.css": "/alpha-ritual/static/css/387.86e1968c.chunk.css",
     "static/js/387.8ceac55d.chunk.js": "/alpha-ritual/static/js/387.8ceac55d.chunk.js",
     "static/css/9.0e938325.chunk.css": "/alpha-ritual/static/css/9.0e938325.chunk.css",
@@ -222,9 +222,9 @@
     "static/media/closeBtn.svg": "/alpha-ritual/static/media/closeBtn.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
     "main.9b705b70.css.map": "/alpha-ritual/static/css/main.9b705b70.css.map",
-    "main.9bc283e3.js.map": "/alpha-ritual/static/js/main.9bc283e3.js.map",
-    "174.1d4dc23f.chunk.css.map": "/alpha-ritual/static/css/174.1d4dc23f.chunk.css.map",
-    "174.b663d4c3.chunk.js.map": "/alpha-ritual/static/js/174.b663d4c3.chunk.js.map",
+    "main.d828cd53.js.map": "/alpha-ritual/static/js/main.d828cd53.js.map",
+    "174.aa98aa92.chunk.css.map": "/alpha-ritual/static/css/174.aa98aa92.chunk.css.map",
+    "174.b1d2180b.chunk.js.map": "/alpha-ritual/static/js/174.b1d2180b.chunk.js.map",
     "387.86e1968c.chunk.css.map": "/alpha-ritual/static/css/387.86e1968c.chunk.css.map",
     "387.8ceac55d.chunk.js.map": "/alpha-ritual/static/js/387.8ceac55d.chunk.js.map",
     "9.0e938325.chunk.css.map": "/alpha-ritual/static/css/9.0e938325.chunk.css.map",
@@ -256,6 +256,6 @@
   },
   "entrypoints": [
     "static/css/main.9b705b70.css",
-    "static/js/main.9bc283e3.js"
+    "static/js/main.d828cd53.js"
   ]
 }
