@@ -1,8 +1,21 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import s from '../SectionServicesList/SectionServicesList.module.scss';
 
+const additionalServices = [
+  { id: 1, title: 'Вінки', link: '/wreaths' },
+  { id: 2, title: 'Труни', link: '/coffins' },
+  { id: 3, title: 'Хрести', link: '/crosses' },
+  { id: 4, title: 'Покривала', link: '/covered' },
+  { id: 5, title: 'Урни для праху', link: '/vases' },
+  { id: 6, title: 'Декор', link: '/decorations' },
+  { id: 7, title: 'Інша атрибутика', link: '/otherattributes' },
+];
 
 const SectionServicesList = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedServices = showAll ? additionalServices : additionalServices.slice(0, 4);
+
   return (
     <section className={s.sectionServicesList} id='servicesList'>
       <div className={'container ' + s.ritualServices__container}>
@@ -10,36 +23,21 @@ const SectionServicesList = () => {
         <h2 className='title' style={{ marginBottom: '24px' }}>Додаткові послуги</h2>
 
         <ul className={s.ritualServices__list}>
-          <li className={s.ritualServices__listItem}>
+          {displayedServices.map((item) => (
+            <li className={s.ritualServices__listItem} key={item.id}>
               <div className={s.ritualServices__border}>
-                <h2 className={s.ritualServices__title}>Вінки</h2>
-                <Link className={s.ritualServices__link} to="/wreaths">Деталі</Link>
+                <h2 className={s.ritualServices__title}>{item.title}</h2>
+                <Link className={s.ritualServices__link} to={item.link}>Деталі</Link>
               </div>
-          </li>
-                
-          <li className={s.ritualServices__listItem}>
-              <div className={s.ritualServices__border}>
-                <h2 className={s.ritualServices__title}>Труни</h2>
-                <Link className={s.ritualServices__link} to="/coffins">Деталі</Link>
-              </div>
-          </li>
-                      
-          <li className={s.ritualServices__listItem}>
-              <div className={s.ritualServices__border}>
-                <h2 className={s.ritualServices__title}>Хрести</h2>
-                <Link className={s.ritualServices__link} to="/crosses">Деталі</Link>
-              </div>
-          </li>
-                      
-          <li className={s.ritualServices__listItem}>
-              <div className={s.ritualServices__border}>
-                <h2 className={s.ritualServices__title}>Покривала</h2>
-                <Link className={s.ritualServices__link} to="/covered">Деталі</Link>
-              </div>
-          </li>
+            </li>
+          ))}       
         </ul>     
 
-        <button type='button' className={s.viewAllRitualServices}>Переглянути всі</button>
+        {showAll || (
+          <button type='button' className={s.viewAllRitualServices} onClick={() => setShowAll(true)}>
+            Переглянути всі
+          </button>
+        )}
         
       </div>
     </section>
