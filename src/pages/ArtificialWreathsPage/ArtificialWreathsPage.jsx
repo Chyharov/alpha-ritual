@@ -1,10 +1,10 @@
-import WreathsHeader from '../../components/WreathsHeader/WreathsHeader'
+import Header from '../../components/Header/Header'
 import SectionArtificialWreath from '../../components/SectionArtificialWreath/SectionArtificialWreath'
 
 const ArtificialWreathsPage = () => {
   return (
     <>
-      <WreathsHeader />
+      <Header />
       <main>
         <SectionArtificialWreath/>
       </main>
