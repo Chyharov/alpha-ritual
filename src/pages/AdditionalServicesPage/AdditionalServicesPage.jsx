@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header'
 import SectionFullAdditionalServices from '../../components/SectionFullAdditionalServices/SectionFullAdditionalServices';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import Footer from '../../components/Footer/Footer';
-import backgroundImg from '../../images/additionalServices/backgroundAdditionalServicesMobile.jpg'
+import backgroundImg from '../../images/additionalServices/backgroundAdditionalServicesMob.jpg'
 
 const title = 'Додаткові послуги';
 
