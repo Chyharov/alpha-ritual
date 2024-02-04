@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import SectionCoffins from '../../components/SectionCoffins/SectionCoffins'
 
 const CoffinsPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <SectionCoffins />
       </main>
