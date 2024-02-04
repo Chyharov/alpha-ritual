@@ -36,13 +36,18 @@ const Footer = () => {
               </a>
 
               <a href="tel:+380672459505">
-                <li style={{ padding: '8px 8px 4px' }} className={s.addressPhoneListItem}>
-                  +380 (067) 245 95 05
+                <li style={{ padding: '8px 8px 4px' }} className={s.addressPhoneListItemLast}>
+                  +38 (067) 245 95 05
                 </li>
               </a>
               <a href="tel:+380442322408">
-                <li style={{ padding: '4px 8px 8px', marginBottom: '8px' }} className={s.addressPhoneListItemLast}>
-                  +380 (044) 232 24 08
+                <li style={{ padding: '4px 8px' }} className={s.addressPhoneListItem}>
+                  +38 (044) 232 24 08
+                </li>
+              </a>
+              <a href="tel:+380995069473">
+                <li style={{ padding: '4px 8px 8px', marginBottom: '8px' }} className={s.addressPhoneListItem}>
+                  +38 (099) 506 94 73
                 </li>
               </a>
             </ul>

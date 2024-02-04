@@ -63,7 +63,7 @@ const ButtonGetConsultation = () => {
                     </a>
                     <a className={s.phoneNumberListLink} href="tel:+380442322408">
                         <li className={s.phoneNumberItem}>
-                            +380 (044) 232 24 08
+                            +38 (044) 232 24 08
                         </li>
                     </a>
                     <a className={s.phoneNumberListLink} href="tel:+380995069473">
