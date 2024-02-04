@@ -93,7 +93,7 @@ const NavLinks = (props) => {
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
-                    to="services"
+                    to="/ritualtransport"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}
@@ -103,6 +103,25 @@ const NavLinks = (props) => {
                         initial={animateFrom}
                         animate={animateTo}
                         transition={{delay: 0.30}}
+                        className={s.menu__list_item} 
+                        onClick={() => props.isMobile && props.closeMobileMenu()}>
+                            Ритуальний транспорт
+                    </motion.li>
+                </Link>
+
+                <Link
+                    onClick={() => props.isMobile && props.closeMobileMenu()}
+                    className={s.menu__list_link}
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    offset={getOffsetByDeviceType()}
+                    duration={500}>
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.40}}
                         className={s.menu__list_item}>
                             Ритуальні послуги
                     </motion.li>
@@ -120,7 +139,7 @@ const NavLinks = (props) => {
                     <motion.li 
                         initial={animateFrom}
                         animate={animateTo}
-                        transition={{delay: 0.40}}
+                        transition={{delay: 0.50}}
                         className={s.menu__list_item}>
                             Додаткові послуги
                     </motion.li>
