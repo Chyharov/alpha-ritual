@@ -16,6 +16,7 @@ const Footer = () => {
               <Link to="/"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
               <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
               <Link to="/ritualgoods"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
+              <Link to="/ritualtransport"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальний транспорт</li></Link>
               <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
               <Link to="/additionalservices"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
             </ul>
@@ -34,7 +35,6 @@ const Footer = () => {
                   м.Київ, вул. Колоскова 9 (район Совського кладовища)
                 </li>
               </a>
-
               <a href="tel:+380672459505">
                 <li style={{ padding: '8px 8px 4px' }} className={s.addressPhoneListItemLast}>
                   +38 (067) 245 95 05
