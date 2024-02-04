@@ -74,52 +74,50 @@ const ButtonGetConsultation = () => {
                 </ul>
 
             
-          <ul className={s.contact__list}>
-            <li className={s.contact__item}>
-              <a
-                className={s.contact__links}
-                href="https://t.me/+380672459505"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTelegram
-                  className={`${s.contact__icons} ${s.icon__telegram}`}
-                />
-                <p className='description'> Telegram</p>
-              </a>
-            </li>
+                <ul className={s.contact__list}>
+                  <li className={s.contact__item}>
+                    <a
+                      className={s.contact__links}
+                      href="https://t.me/+380672459505"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaTelegram
+                        className={`${s.contact__icons} ${s.icon__telegram}`}
+                      />
+                      <p className={s.contact__itemDescription}> Telegram</p>
+                    </a>
+                  </li>
 
-            <li className={s.contact__item}>
-              <a
-                className={s.contact__links}
-                href="viber://chat?number=+380672459505/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaViber className={`${s.contact__icons} ${s.icon__viber}`} />
-                <p className='description'> Viber</p>
-              </a>
-            </li>
+                  <li className={s.contact__item}>
+                    <a
+                      className={s.contact__links}
+                      href="viber://chat?number=+380672459505/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaViber className={`${s.contact__icons} ${s.icon__viber}`} />
+                      <p className={s.contact__itemDescription}> Viber</p>
+                    </a>
+                  </li>
 
-            <li className={s.contact__item}>
-              <a
-                className={s.contact__links}
-                href="whatsapp://send?phone=+380672459505"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaSquareWhatsapp
-                  className={`${s.contact__icons} ${s.icon__whatsApp}`}
-                />
-                <p className='description'> WhatsApp</p>
-              </a>
-            </li>
-        </ul>
-
-        <p className='description'>Щоденно | Цілодобово</p>
-
-                  </div>
-                                </div>
+                  <li className={s.contact__item}>
+                    <a
+                      className={s.contact__links}
+                      href="whatsapp://send?phone=+380672459505"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaSquareWhatsapp
+                        className={`${s.contact__icons} ${s.icon__whatsApp}`}
+                      />
+                      <p className={s.contact__itemDescription}> WhatsApp</p>
+                    </a>
+                  </li>
+              </ul>
+            <p className={s.contact__itemDescription}>Щоденно | Цілодобово</p>
+        </div>
+      </div>
       )}
     </>
   );

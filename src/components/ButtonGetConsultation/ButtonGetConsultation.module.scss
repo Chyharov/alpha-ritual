@@ -171,3 +171,20 @@
     color: #22211E;
     margin-bottom: 20px;
 }
+
+.contact__itemDescription {
+    font-family: Open Sans Regular;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--backgroundColor);
+    
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.38;
+    }
+    
+    @media screen and (min-width: 1360px) {
+        font-size: 16px;
+        line-height: 1.38;
+    }
+}
