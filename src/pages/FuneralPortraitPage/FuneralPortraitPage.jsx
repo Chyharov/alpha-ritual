@@ -1,10 +1,10 @@
-import OtherAttribucialHeader from '../../components/OtherAttribucialHeader/OtherAttribucialHeader'
+import Header from '../../components/Header/Header'
 import SectionFuneralPortrait from 'components/SectionFuneralPortrait/SectionFuneralPortrait';
 
 const FuneralPortraitPage = () => {
   return (
     <>
-      <OtherAttribucialHeader />
+      <Header />
       <main>
         <SectionFuneralPortrait />
       </main>

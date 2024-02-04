@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import Crosses from '../../components/SectionCrosses/SectionCrosses'
 
 const CrossesPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <Crosses />
       </main>

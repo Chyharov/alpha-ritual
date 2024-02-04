@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import SectionDecorations from 'components/SectionDecorations/SectionDecorations';
 
 const DecorationsPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <SectionDecorations />
       </main>

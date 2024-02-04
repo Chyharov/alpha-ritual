@@ -1,4 +1,4 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import SectionWreath from 'components/SectionWreaths/SectionWreaths';
 
 
@@ -6,7 +6,7 @@ import SectionWreath from 'components/SectionWreaths/SectionWreaths';
 const WreathsPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <SectionWreath />
       </main>

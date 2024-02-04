@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import OtherAttributes from 'components/OtherAttributes/OtherAttributes';
 
 const OtherAttributesPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <OtherAttributes />
       </main>

@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import SectionFuneralVases from 'components/SectionFuneralVases/SectionFuneralVases';
 
 const FuneralVasesPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <SectionFuneralVases />
       </main>

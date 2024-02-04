@@ -1,10 +1,10 @@
-import MainHeader from '../../components/MainHeader/MainHeader'
+import Header from '../../components/Header/Header'
 import SectionCoverd from 'components/SectionCovered/SectionCovered';
 
 const CoveredPage = () => {
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <SectionCoverd />
       </main>
