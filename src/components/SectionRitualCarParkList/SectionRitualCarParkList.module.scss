@@ -1,10 +1,12 @@
 @import '../../sass/utils/mixin';
 
 .ritualCarPark {
+  margin-top: -65px;
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
 }
 
 .ritualCarPark__container {
@@ -20,6 +22,15 @@
     width: 1000px;
   } 
 }
+
+.ritualCarPark__description {
+  font-family: Open Sans Regular;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 8px;
+  color: var(--primaryTextColorDark);
+}
+
 
 .ritualCarParkList {
   padding: 30px 0px;
