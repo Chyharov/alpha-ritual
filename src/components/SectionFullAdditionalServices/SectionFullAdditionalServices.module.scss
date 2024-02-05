@@ -49,6 +49,10 @@
     @include mq(desk) {}
 }
 
+.ritualServices__list {
+    width: 100%;
+}
+
 .ritualServices__listItem {
     width: 288px;
     height: 120px;
