@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { AiOutlineClose } from 'react-icons/ai';
 import s from './WhiteVolksWagen.module.scss';
+import arrowLeft from '../../images/arrowLeft.svg'
+import arrowRight from '../../images/arrowRight.svg'
 
 const images = require.context('../../images/whiteVolksWagen', true, /\.(webp)$/);
 const RitualCarParkWVWPhoto = images.keys().map((path) => images(path));
@@ -52,10 +52,10 @@ const Modal = ({ closeModal, currentSlide }) => {
           </Slider>
           <div className={s.carouselCenterButtonModal}>
             <ButtonBack className={s.carouselButtonModal}>
-              <FontAwesomeIcon icon={faChevronLeft} />
+              <img src={arrowLeft} alt="arrowLeft" />
             </ButtonBack>
             <ButtonNext className={s.carouselButtonModal}>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <img src={arrowRight} alt="arrowRight" />
             </ButtonNext>
           </div>
         </CarouselProvider>
@@ -103,8 +103,8 @@ const WhiteVolksWagen = () => {
                 <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>(2 - 5 пасажирів)</p>
 
                 <div className={s.carouselButtonCenter}>
-                    <ButtonBack className={s.carouselButton}>Назад</ButtonBack>
-                    <ButtonNext className={s.carouselButton}>Вперед</ButtonNext>
+                    <ButtonBack className={s.carouselButton}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
+                    <ButtonNext className={s.carouselButton}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
                 </div>
               </CarouselProvider>
             </li>
