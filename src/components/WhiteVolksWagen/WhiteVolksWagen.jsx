@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { AiOutlineClose } from 'react-icons/ai';
-import s from './WhiteVolksWagen.module.scss';
+import closeIcon from '../../images/closeIcon.svg'
 import arrowLeft from '../../images/arrowLeft.svg'
 import arrowRight from '../../images/arrowRight.svg'
+import s from './WhiteVolksWagen.module.scss';
 
 const images = require.context('../../images/whiteVolksWagen', true, /\.(webp)$/);
 const RitualCarParkWVWPhoto = images.keys().map((path) => images(path));
@@ -34,7 +34,7 @@ const Modal = ({ closeModal, currentSlide }) => {
     <div className={s.modal} onClick={handleClick}>
       <div className={s.modalContent}>
         <span className={s.close} onClick={closeModal}>
-          <AiOutlineClose className={s.closeModalIcon} />
+          <img src={closeIcon} alt="closeIcon" />
         </span>
         <CarouselProvider
           naturalSlideWidth={280}

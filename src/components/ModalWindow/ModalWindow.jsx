@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { AiOutlineClose } from 'react-icons/ai';
+import closeIcon from '../../images/closeIcon.svg'
+import arrowLeft from '../../images/arrowLeft.svg'
+import arrowRight from '../../images/arrowRight.svg'
 import s from './ModalWindow.module.scss';
 
 const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen }) => {
@@ -53,15 +53,15 @@ const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen
     <div className={s.modal} onClick={handleOutsideClick}>
       <div className={s.modalContent}>
         <span className={s.closeModal} onClick={closeModal}>
-          <AiOutlineClose className={s.closeModalIcon} />
+          <img src={closeIcon} alt="closeIcon" />
         </span>
         <img className={s.modalImage} id={selectedImage.id} src={selectedImage.src} alt={selectedImage.alt} />
         <div className={s.centerButtonModal}>
           <button className={s.buttonModal} aria-label="Попередній слайд" onClick={() => setSelectedImage(getPrevImage())}>
-            <FontAwesomeIcon icon={faChevronLeft} />
+            <img src={arrowLeft} alt="arrowLeft" />
           </button>
           <button className={s.buttonModal} aria-label="Наступний слайд" onClick={() => setSelectedImage(getNextImage())}>
-            <FontAwesomeIcon icon={faChevronRight} />
+            <img src={arrowRight} alt="arrowRight" />
           </button>
         </div>
       </div>
