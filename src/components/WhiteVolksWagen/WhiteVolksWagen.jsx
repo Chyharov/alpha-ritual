@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Modal from '../ModalWindow/ModalWindow';
 import { useSwipeable } from 'react-swipeable';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
@@ -17,6 +18,14 @@ const whiteVolksWagenPhotos = [
 
 const WhiteVolksWagen = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (id) => {
+    setSelectedImage(whiteVolksWagenPhotos.find(image => image.id === id));
+    setModalOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
 
   const handlers = useSwipeable({
     onSwipedLeft: () => nextImage(),
@@ -35,7 +44,7 @@ const WhiteVolksWagen = () => {
     <>
       <li className={s.ritualCarParkList}>
         <h2 className={s.ritualCarParkList__title}>Економ клас</h2>
-        <img {...handlers} className={s.ritualCarParkPhotos} src={whiteVolksWagenPhotos[currentImageIndex].src} alt={whiteVolksWagenPhotos[currentImageIndex].alt} />
+        <img {...handlers} className={s.ritualCarParkPhotos} src={whiteVolksWagenPhotos[currentImageIndex].src} alt={whiteVolksWagenPhotos[currentImageIndex].alt} onClick={() => openModal(whiteVolksWagenPhotos[currentImageIndex].id)} />
         <p className={s.ritualCarParkList__name}>Volkswagen Т-5 Білий</p>
         <p className={s.ritualCarParkList__description}>(2 - 5 пасажирів)</p>
         <div className={s.containerForButtons}>
@@ -43,6 +52,15 @@ const WhiteVolksWagen = () => {
           <button className={s.buttonNavigation} onClick={nextImage}><img src={arrowRight} alt="arrowRight" /></button>
         </div>
       </li>
+
+      {modalOpen && selectedImage && (
+        <Modal
+          selectedImage={selectedImage}
+          arrayPhoto={whiteVolksWagenPhotos}
+          setSelectedImage={setSelectedImage}
+          setModalOpen={setModalOpen}
+        />
+      )}
     </>
   );
 };
