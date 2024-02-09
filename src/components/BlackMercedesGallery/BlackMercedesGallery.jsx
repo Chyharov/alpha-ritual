@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { AiOutlineClose } from 'react-icons/ai';
+import arrowLeft from '../../images/arrowLeft.svg';
+import arrowRight from '../../images/arrowRight.svg';
+import closeIcon from '../../images/closeIcon.svg';
 import s from './BlackMercedesGallery.module.scss';
 
 const images = require.context('../../images/blackMercedes', true, /\.(webp)$/);
@@ -34,7 +34,7 @@ const Modal = ({ closeModal, currentSlide }) => {
     <div className={s.modal} onClick={handleClick}>
       <div className={s.modalContent}>
         <span className={s.close} onClick={closeModal}>
-          <AiOutlineClose className={s.closeModalIcon} />
+          <img className={s.closeModalIcon} src={closeIcon} alt="closeIcon" />
         </span>
         <CarouselProvider
           naturalSlideWidth={280}
@@ -52,10 +52,10 @@ const Modal = ({ closeModal, currentSlide }) => {
           </Slider>
           <div className={s.carouselCenterButtonModal}>
             <ButtonBack className={s.carouselButtonModal} aria-label="Попередній слайд">
-              <FontAwesomeIcon icon={faChevronLeft} />
+              <img src={arrowLeft} alt="arrowLeft" />
             </ButtonBack>
             <ButtonNext className={s.carouselButtonModal} aria-label="Наступний слайд">
-              <FontAwesomeIcon icon={faChevronRight} />
+              <img src={arrowRight} alt="arrowRight" />
             </ButtonNext>
           </div>
         </CarouselProvider>
@@ -103,8 +103,12 @@ const BlackMercedes = () => {
                 <p className="description" style={{ textAlign: 'center', marginBottom: '20px' }}>(14 - 18 пасажирів)</p>
 
                 <div className={s.carouselButtonCenter}>
-                    <ButtonBack className={s.carouselButton} aria-label="Попередній слайд">Назад</ButtonBack>
-                    <ButtonNext className={s.carouselButton} aria-label="Наступний слайд">Вперед</ButtonNext>
+                    <ButtonBack className={s.carouselButton} aria-label="Попередній слайд">
+                      <img src={arrowLeft} alt="arrowLeft" />
+                    </ButtonBack>
+                    <ButtonNext className={s.carouselButton} aria-label="Наступний слайд">
+                      <img src={arrowRight} alt="arrowRight" />
+                    </ButtonNext>
                 </div>
               </CarouselProvider>
             </li>
