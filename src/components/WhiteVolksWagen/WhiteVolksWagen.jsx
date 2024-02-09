@@ -40,10 +40,11 @@ const WhiteVolksWagen = () => {
           naturalSlideHeight={288}
           totalSlides={whiteVolksWagenPhotos.length}
           infinite={true}>
+          
           <Slider className={s.sliderPhoto}>
             {whiteVolksWagenPhotos.map(photo => (
               <Slide key={photo.id} index={photo.id}>
-                <img className={s.ritualCarParkPhotos} src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
+                <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
               </Slide>
             ))}
           </Slider>

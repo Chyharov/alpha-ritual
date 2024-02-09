@@ -41,7 +41,7 @@ const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen
     };
   });
 
-  return (
+   return (
     <div className={s.modal} onClick={handleOutsideClick}>
       <div className={s.modalContent}>
         <span className={s.closeModal} onClick={closeModal}>
@@ -52,10 +52,11 @@ const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen
           naturalSlideHeight={280}
           totalSlides={arrayPhoto.length}
           infinite={true}
+          currentSlide={selectedImage.id - 1}
         >
           <Slider>
-            {arrayPhoto.map((photo, index) => (
-              <Slide key={index}>
+            {arrayPhoto.map((photo, id) => (
+              <Slide key={id}>
                 <img className={s.modalImage} id={photo.id} src={photo.src} alt={photo.alt} />
               </Slide>
             ))}

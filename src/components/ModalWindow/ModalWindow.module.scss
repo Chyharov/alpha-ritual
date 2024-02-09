@@ -14,9 +14,9 @@
 }
 
 .modalContent {
-    width: 100%;
-    background-color: var(--backgroundColor);
-    padding: 10px 20px 20px 20px;
+    width: 99%;
+    background-color: var(--backgroundColorDark);
+    padding: 8px 8px 24px 8px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     outline: 1px solid var(--primaryTextColor);
@@ -33,7 +33,8 @@
 .modalImage {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    border-radius: 16px;
 
     @include mq(desk) {
         max-height: 800px;
@@ -44,7 +45,7 @@
     display: flex;
     justify-content: flex-end;
     color: var(--primaryTextColor);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .closeModalIcon {
@@ -66,18 +67,19 @@
 }
 
 .centerButtonModal {
+    width: 55.855%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 16px auto 0;
 }
 
 .buttonModal {
-    margin: 10px 0px;
     color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
+    background-color: var(--backgroundColorDark);
     outline: 1px solid var(--primaryTextColor);
-    border-radius: 10px;
-    padding: 5px 30px;
+    border-radius: 16px;
+    padding: 12px;
     cursor: pointer;
     border: none;
 }
