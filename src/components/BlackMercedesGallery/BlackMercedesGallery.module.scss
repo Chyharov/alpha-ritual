@@ -1,72 +1,71 @@
 @import '../../sass/utils/mixin';
 
-.ritualCarPark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ritualCarPark__container {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+.ritualCarParkList {
+    padding: 20px 0px 24px;
+    outline: 1px solid var(--secondaryTextColor);
+    border-radius: 8px;
+    margin-bottom: 24px;
 
     @include mq(tab) {
-        width: 700px;
+        padding: 30px 10px 30px;
     }
 }
 
-.ritualCarParkPhotos {
-    height: 210px;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+.ritualCarParkList__title {
+    font-family: Open Sans ExtraBold;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: var(--primaryTextColorDark);
+    margin-bottom: 20px;
+}
 
+.sliderPhoto {
+    margin-bottom: 16px;
 }
 
 .ritualCarParkList__name {
-    font-family: Open Sans Regular;
-    font-size: 20px;
+    font-family: Open Sans ExtraBold;
+    font-size: 16px;
     line-height: 1.38;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    color: var(--primaryTextColorDark);
+    padding: 4px 8px;
 
     @include mq(tab) {
         font-size: 25px;
     }
 }
 
+.ritualCarParkList__description {
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: var(--primaryTextColorDark);
+    padding: 4px 8px;
+    margin-bottom: 40px;
+}
+
 .carouselButtonCenter {
+    width: 58.5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 .carouselButton {
-    color: var(--primaryTextColor);
-    background-color: var(--backgroundColor);
-    outline: 1px solid var(--primaryTextColor);
-    border-radius: 10px;
-    padding: 6px;
+    background-color: var(--backgroundColorDark);
+    border: 1px solid var(--secondaryTextColor);
+    border-radius: 16px;
+    padding: 11px;
     cursor: pointer;
-    border: none;
-
+    
     @include mq(tab) {
         font-size: 25px;
         padding: 10px;
     }
-}
-
-.carouselButton:active {
-    background-color: var(--primaryTextColor);
-    color: var(--backgroundColor);
-    outline: 1px solid var(--primaryTextColor);
-}
-
-.carouselButton:first-child {
-    margin-right: 30px;
 }
 
 .carouselCenterButtonModal {
@@ -94,17 +93,6 @@
 
 .carouselButtonModal:first-child {
     margin-right: 30px;
-}
-
-.ritualCarParkList {
-    padding: 30px 0px;
-    outline: 1px solid var(--primaryTextColor);
-    border-radius: 8px;
-    margin-bottom: 30px;
-
-    @include mq(tab) {
-        padding: 30px 10px 30px;
-    }
 }
 
 .modal {
