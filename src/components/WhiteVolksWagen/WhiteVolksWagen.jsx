@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import Modal from '../ModalWindow/ModalWindow';
-import { useSwipeable } from 'react-swipeable';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
 import s from './WhiteVolksWagen.module.scss';
@@ -17,7 +18,6 @@ const whiteVolksWagenPhotos = [
 ];
 
 const WhiteVolksWagen = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -27,30 +27,32 @@ const WhiteVolksWagen = () => {
     document.body.style.overflow = 'hidden';
   };
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => nextImage(),
-    onSwipedRight: () => prevImage(),
-  });
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === whiteVolksWagenPhotos.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? whiteVolksWagenPhotos.length - 1 : prevIndex - 1));
-  };
 
   return (
     <>
       <li className={s.ritualCarParkList}>
         <h2 className={s.ritualCarParkList__title}>Економ клас</h2>
-        <img {...handlers} className={s.ritualCarParkPhotos} src={whiteVolksWagenPhotos[currentImageIndex].src} alt={whiteVolksWagenPhotos[currentImageIndex].alt} onClick={() => openModal(whiteVolksWagenPhotos[currentImageIndex].id)} />
-        <p className={s.ritualCarParkList__name}>Volkswagen Т-5 Білий</p>
-        <p className={s.ritualCarParkList__description}>(2 - 5 пасажирів)</p>
-        <div className={s.containerForButtons}>
-          <button className={s.buttonNavigation} onClick={prevImage}><img src={arrowLeft} alt="arrowLeft" /></button>
-          <button className={s.buttonNavigation} onClick={nextImage}><img src={arrowRight} alt="arrowRight" /></button>
-        </div>
+
+        <CarouselProvider
+          naturalSlideWidth={280}
+          naturalSlideHeight={210}
+          totalSlides={whiteVolksWagenPhotos.length}
+          infinite={true}>
+          <Slider className={s.sliderPhoto}>
+            {whiteVolksWagenPhotos.map(photo => (
+              <Slide key={photo.id} index={photo.id}>
+                <img className={s.ritualCarParkPhotos} src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
+              </Slide>
+            ))}
+          </Slider>
+
+          <p className={s.ritualCarParkList__name}>Volkswagen Т-5 Білий</p>
+          <p className={s.ritualCarParkList__description}>(2 - 5 пасажирів)</p>
+          <div className={s.containerForButtons}>
+            <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
+            <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
+          </div>
+        </CarouselProvider>
       </li>
 
       {modalOpen && selectedImage && (
