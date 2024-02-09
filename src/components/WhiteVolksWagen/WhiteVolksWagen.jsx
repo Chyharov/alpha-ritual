@@ -25,6 +25,10 @@ const WhiteVolksWagen = () => {
     document.body.style.overflow = 'hidden';
   };
 
+  const handleImageChange = (id) => {
+    const newSelectedImage = whiteVolksWagenPhotos.find(image => image.id === id);
+    setSelectedImage(newSelectedImage);
+  };
 
   return (
     <>
@@ -59,6 +63,7 @@ const WhiteVolksWagen = () => {
           arrayPhoto={whiteVolksWagenPhotos}
           setSelectedImage={setSelectedImage}
           setModalOpen={setModalOpen}
+          onImageChange={handleImageChange}
         />
       )}
     </>
