@@ -7,14 +7,12 @@ import arrowRight from '../../images/arrowRight.svg';
 import s from './WhiteVolksWagen.module.scss';
 
 const whiteVolksWagenPhotos = [
-  { id: 1, src: require('../../images/whiteVolksWagen/whiteVolksWagen.webp'), alt: 'Зображення 1', width: '280', height: '210' },
-  { id: 2, src: require('../../images/whiteVolksWagen/whiteVolksWagen2.webp'), alt: 'Зображення 2', width: '280', height: '210' },
-  { id: 3, src: require('../../images/whiteVolksWagen/whiteVolksWagen3.webp'), alt: 'Зображення 3', width: '150', height: '150' },
-  { id: 4, src: require('../../images/whiteVolksWagen/whiteVolksWagen4.webp'), alt: 'Зображення 4', width: '280', height: '210' },
-  { id: 5, src: require('../../images/whiteVolksWagen/whiteVolksWagen5.webp'), alt: 'Зображення 5', width: '280', height: '210' },
-  { id: 6, src: require('../../images/whiteVolksWagen/whiteVolksWagen6.webp'), alt: 'Зображення 6', width: '280', height: '210' },
-  { id: 7, src: require('../../images/whiteVolksWagen/whiteVolksWagen7.webp'), alt: 'Зображення 7', width: '280', height: '210' },
-  { id: 8, src: require('../../images/whiteVolksWagen/whiteVolksWagen8.webp'), alt: 'Зображення 8', width: '280', height: '210' },
+  { id: 1, src: require('../../images/whiteVolksWagen/whiteVolksWagen1.jpg'), alt: 'Зображення 1', width: '280', height: '210' },
+  { id: 2, src: require('../../images/whiteVolksWagen/whiteVolksWagen2.jpg'), alt: 'Зображення 2', width: '280', height: '210' },
+  { id: 3, src: require('../../images/whiteVolksWagen/whiteVolksWagen3.jpg'), alt: 'Зображення 3', width: '150', height: '150' },
+  { id: 4, src: require('../../images/whiteVolksWagen/whiteVolksWagen4.jpg'), alt: 'Зображення 4', width: '280', height: '210' },
+  { id: 5, src: require('../../images/whiteVolksWagen/whiteVolksWagen5.jpg'), alt: 'Зображення 5', width: '280', height: '210' },
+  { id: 6, src: require('../../images/whiteVolksWagen/whiteVolksWagen6.jpg'), alt: 'Зображення 6', width: '280', height: '210' },
 ];
 
 const WhiteVolksWagen = () => {
@@ -34,8 +32,8 @@ const WhiteVolksWagen = () => {
         <h2 className={s.ritualCarParkList__title}>Економ клас</h2>
 
         <CarouselProvider
-          naturalSlideWidth={280}
-          naturalSlideHeight={210}
+          naturalSlideWidth={288}
+          naturalSlideHeight={288}
           totalSlides={whiteVolksWagenPhotos.length}
           infinite={true}>
           <Slider className={s.sliderPhoto}>
