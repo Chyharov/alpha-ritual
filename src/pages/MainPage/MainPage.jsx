@@ -1,6 +1,6 @@
 import Header from 'components/Header/Header';
 import Hero from 'components/SectionHero/SectionHero';
-import SectionRitualServices from 'components/SectionRitualServices/SectionRitualServices';
+import SectionRitualGoods from 'components/SectionRitualGoods/SectionRitualGoods';
 import SectionRitualTransport from 'components/SectionRitualTransport/SectionRitualTransport';
 import SectionServicesList from 'components/SectionAdditionalServices/SectionAdditionalServices';
 import Footer from 'components/Footer/Footer';
@@ -11,7 +11,7 @@ const MainPage = () => {
       <Header />
       <main>
         <Hero />
-        <SectionRitualServices />
+        <SectionRitualGoods />
         <SectionRitualTransport />
         <SectionServicesList />
       </main>
