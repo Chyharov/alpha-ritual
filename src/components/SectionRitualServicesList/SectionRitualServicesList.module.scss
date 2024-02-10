@@ -1,9 +1,8 @@
 @import '../../sass/utils/mixin';
 
-@import '../../sass/utils/mixin';
-
 .sectionRitualServicesList {
-    padding: 32px 0px;
+    margin-top: -110px;
+    padding-bottom: 80px;
 }
 
 .ritualServicesContainer {
@@ -16,28 +15,15 @@
     @include mq(tab) {}
 }
 
-.ritualServices__title {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1.38;
-    text-align: center;
-    color: var(--primaryTextColorDark);
-
-    @include mq(tab) {
-        font-size: 25px;
-    }
-
-    @include mq(desk) {}
-}
-
 .ritualServices__border {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 104px;
+    min-height: 104px;
     border: 0.5px solid var(--hoverColorDark);
     border-radius: 8px;
+    flex-direction: column;
 
     @include mq(tab) {}
 
@@ -46,11 +32,10 @@
 
 .ritualServices__list {
     width: 100%;
-    margin-bottom: 24px;
 }
 
 .ritualServices__listItem {
-    height: 120px;
+    min-height: 120px;
     border-radius: 8px;
     padding: 8px;
     background-color: #2b2925;
@@ -66,7 +51,18 @@
     justify-content: flex-end;
 }
 
-.ritualServices__link {
+.ritualServices__ContainerInfo {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ritualServices__price {
+    text-align: center;
+}
+
+.ritualServices__btnDetails {
     font-family: Open Sans Regular;
     font-size: 12px;
     line-height: 1.4;
@@ -77,6 +73,7 @@
     background-color: #2b2925;
     color: var(--secondaryTextColor);
     text-decoration: underline;
+    border: none;
 }
 
 .viewAllRitualServices {
