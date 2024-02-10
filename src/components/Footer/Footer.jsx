@@ -17,7 +17,7 @@ const Footer = () => {
               <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
               <Link to="/ritualgoods"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
               <Link to="/ritualtransport"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальний транспорт</li></Link>
-              <Link><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
+              <Link to="/ritualservices"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
               <Link to="/additionalservices"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
             </ul>
           </nav>
