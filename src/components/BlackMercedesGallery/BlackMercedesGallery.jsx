@@ -7,12 +7,12 @@ import arrowRight from '../../images/arrowRight.svg';
 import s from './BlackMercedesGallery.module.scss';
 
 const RitualCarParBlackMercedesPhoto = [
-  { id: 1, src: require('../../images/testBlackMercedes/testBlackMercedes1.jpg'), alt: 'Зображення 1', width: '280', height: '210' },
-  { id: 2, src: require('../../images/testBlackMercedes/testBlackMercedes2.jpg'), alt: 'Зображення 2', width: '280', height: '210' },
-  { id: 3, src: require('../../images/testBlackMercedes/testBlackMercedes3.jpg'), alt: 'Зображення 3', width: '150', height: '150' },
-  { id: 4, src: require('../../images/testBlackMercedes/testBlackMercedes4.jpg'), alt: 'Зображення 4', width: '280', height: '210' },
-  { id: 5, src: require('../../images/testBlackMercedes/testBlackMercedes5.jpg'), alt: 'Зображення 5', width: '280', height: '210' },
-  { id: 6, src: require('../../images/testBlackMercedes/testBlackMercedes6.jpg'), alt: 'Зображення 6', width: '280', height: '210' },
+  { id: 1, src: require('../../images/testBlackMercedes/testBlackMercedes1.webp'), alt: 'Зображення 1', width: '280', height: '210' },
+  { id: 2, src: require('../../images/testBlackMercedes/testBlackMercedes2.webp'), alt: 'Зображення 2', width: '280', height: '210' },
+  { id: 3, src: require('../../images/testBlackMercedes/testBlackMercedes3.webp'), alt: 'Зображення 3', width: '150', height: '150' },
+  { id: 4, src: require('../../images/testBlackMercedes/testBlackMercedes4.webp'), alt: 'Зображення 4', width: '280', height: '210' },
+  { id: 5, src: require('../../images/testBlackMercedes/testBlackMercedes5.webp'), alt: 'Зображення 5', width: '280', height: '210' },
+  { id: 6, src: require('../../images/testBlackMercedes/testBlackMercedes6.webp'), alt: 'Зображення 6', width: '280', height: '210' },
 ];
 
 const BlackMercedes = () => {
