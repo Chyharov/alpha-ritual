@@ -84,3 +84,42 @@
     color: var(--secondaryTextColor);
     border-radius: 8px;
 }
+
+.ritualServicesList__title {
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+.containerInfo__title {
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.ritualServices__price {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--secondaryTextColor);
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.containerInfo__list {
+    margin-bottom: 24px;
+}
+
+.containerInfo__listItem {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--primaryTextColorDark);
+    margin-top: 8px;
+}

@@ -20,7 +20,7 @@ const SectionRitualServicesList = () => {
   return (
    <section className={s.sectionRitualServicesList}>
         <div className={'container ' + s.ritualServicesContainer}>
-        <h2>Поховання</h2>
+        <h2 className={s.ritualServicesList__title}>Поховання</h2>
         <ul className={s.ritualServices__list}>
           {additionalServices.map((item) => (
             <li className={s.ritualServices__listItem} key={item.id}>
@@ -28,11 +28,11 @@ const SectionRitualServicesList = () => {
                 {!selectedService && <h2 className={s.ritualServices__title}>{item.title}</h2>}
                 {selectedService === item.id && (
                   <div className={s.ritualServices__ContainerInfo}>
-                    <h2>{item.title}</h2>
+                    <h2 className={s.containerInfo__title}>{item.title}</h2>
                     <p className={s.ritualServices__price}>{item.price}</p>
-                    <ul>
+                    <ul className={s.containerInfo__list}>
                       {item.description.map((desc, index) => (
-                        <li key={index}>{desc}</li>
+                        <li className={s.containerInfo__listItem} key={index}>{desc}</li>
                       ))}
                     </ul>
                     <ButtonGetConsultation />
