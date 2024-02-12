@@ -1,8 +1,8 @@
 @import '../../sass/utils/mixin';
 
 .sectionRitualServicesList {
-    margin-top: -110px;
-    padding-bottom: 80px;
+    margin-top: -80px;
+    padding-bottom: 64px;
 }
 
 .ritualServicesContainer {
@@ -32,6 +32,7 @@
 
 .ritualServices__list {
     width: 100%;
+    margin-bottom: 16px;
 }
 
 .ritualServices__listItem {
