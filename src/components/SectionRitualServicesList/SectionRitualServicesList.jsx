@@ -22,27 +22,28 @@ const additionalServices = [
 ];
 
 const SectionRitualServicesList = () => {
-  const [selectedService, setSelectedService] = useState(null);
+  const [selectedServices, setSelectedServices] = useState({});
 
-  const toggleDetails = (id) => {
-    if (selectedService === id) {
-      setSelectedService(null);
-    } else {
-      setSelectedService(id);
-    }
+const toggleDetails = (id) => {
+    setSelectedServices(prevState => ({
+      ...prevState,
+      [id]: !prevState[id]
+    }));
   };
 
   return (
-   <section className={s.sectionRitualServicesList}>
-     {additionalServices.map((service) => (
+    <section className={s.sectionRitualServicesList}>
+      {additionalServices.map((service) => (
         <div key={service.title} className={'container ' + s.ritualServicesContainer}>
           <h2 className={s.ritualServicesList__title}>{service.title}</h2>
           <ul className={s.ritualServices__list}>
             {service.items.map((item) => (
               <li key={item.id} className={s.ritualServices__listItem}>
                 <div className={s.ritualServices__border}>
-                  {!selectedService && <h2 className={s.ritualServices__title}>{item.title}</h2>}
-                  {selectedService === item.id && (
+                  {!selectedServices[`${service.title}-${item.id}`] && (
+                    <h2 className={s.ritualServices__title}>{item.title}</h2>
+                  )}
+                  {selectedServices[`${service.title}-${item.id}`] && (
                     <div className={s.ritualServices__ContainerInfo}>
                       <h2 className={s.containerInfo__title}>{item.title}</h2>
                       <p className={s.ritualServices__price}>{item.price}</p>
@@ -54,8 +55,8 @@ const SectionRitualServicesList = () => {
                       <ButtonGetConsultation />
                     </div>
                   )}
-                  {!selectedService && (
-                    <button className={s.ritualServices__btnDetails} onClick={() => toggleDetails(item.id)}>Деталі</button>
+                  {!selectedServices[`${service.title}-${item.id}`] && (
+                    <button className={s.ritualServices__btnDetails} onClick={() => toggleDetails(`${service.title}-${item.id}`)}>Деталі</button>
                   )}
                 </div>
               </li>
