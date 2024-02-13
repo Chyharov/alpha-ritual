@@ -52,7 +52,11 @@ const toggleDetails = (id) => {
                           <li className={s.containerInfo__listItem} key={index}>{desc}</li>
                         ))}
                       </ul>
-                      <ButtonGetConsultation />
+
+                        <div className={s.containerForBtnGetConsultaton}>
+                          <ButtonGetConsultation />
+                        </div>
+                      
                     </div>
                   )}
                   {!selectedServices[`${service.title}-${item.id}`] && (

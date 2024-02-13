@@ -53,6 +53,7 @@
 }
 
 .ritualServices__ContainerInfo {
+    width: 100%;
     padding: 8px;
     display: flex;
     flex-direction: column;
@@ -120,6 +121,7 @@
 }
 
 .containerInfo__list {
+    width: 100%;
     margin-bottom: 24px;
 }
 
@@ -129,4 +131,11 @@
     line-height: 1.43;
     color: var(--primaryTextColorDark);
     margin-top: 8px;
+}
+
+.containerForBtnGetConsultaton {
+    width: 100%;
+    margin-bottom: -13px;
+    padding: 3px;
+    background-color: #2b2925;
 }
