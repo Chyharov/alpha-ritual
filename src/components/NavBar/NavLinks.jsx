@@ -56,7 +56,7 @@ const NavLinks = (props) => {
                 <Link
                     onClick={() => props.isMobile && props.closeMobileMenu()}
                     className={s.menu__list_link}
-                    to="about"
+                    to="/about"
                     spy={true}
                     smooth={true}
                     offset={getOffsetByDeviceType()}
