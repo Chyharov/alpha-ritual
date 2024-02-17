@@ -1,7 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .ritualCarPark {
-  margin-top: -65px;
+  margin-top: -125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,16 @@
   @include mq(desk) {
     width: 1000px;
   } 
+}
+
+.ritualCarPark__title {
+  font-family: Open Sans SemiBold;
+  font-size: 20px;
+  line-height: 1.38;
+  text-align: center;
+  color: var(--primaryTextColorDark);
+  padding: 8px;
+  margin-bottom: 16px;
 }
 
 .ritualCarPark__description {

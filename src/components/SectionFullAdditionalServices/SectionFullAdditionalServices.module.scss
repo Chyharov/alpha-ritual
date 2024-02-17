@@ -1,7 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionFullAdditionalServices {
-    margin-top: -110px;
+    margin-top: -125px;
     padding-bottom: 80px;
 
     @include mq(tab) {}
@@ -37,6 +37,7 @@
 
 .additionalServicestitle {
     margin-bottom: 16px;
+    padding: 8px;
 }
 
 .ritualServices__border {
