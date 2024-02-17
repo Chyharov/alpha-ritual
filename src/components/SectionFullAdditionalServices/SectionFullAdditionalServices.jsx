@@ -17,6 +17,8 @@ const SectionFullAdditionalServices = () => {
     <section className={s.sectionFullAdditionalServices}>
       <div className={'container ' + s.ritualServices__container}>
 
+        <h2 className={s.additionalServicestitle}>Додаткові послуги</h2>
+
         <ul className={s.ritualServices__list}>
           {additionalServices.map((item) => (
             <li className={s.ritualServices__listItem} key={item.id}>

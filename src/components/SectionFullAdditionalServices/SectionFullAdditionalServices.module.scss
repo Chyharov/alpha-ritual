@@ -1,7 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionFullAdditionalServices {
-    margin-top: -65px;
+    margin-top: -110px;
     padding-bottom: 80px;
 
     @include mq(tab) {}
@@ -20,6 +20,7 @@
     @include mq(tab) {}
 }
 
+.additionalServicestitle,
 .ritualServices__title {
     font-family: Open Sans SemiBold;
     font-size: 20px;
@@ -32,6 +33,10 @@
     }
 
     @include mq(desk) {}
+}
+
+.additionalServicestitle {
+    margin-bottom: 16px;
 }
 
 .ritualServices__border {
