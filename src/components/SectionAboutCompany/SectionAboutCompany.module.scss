@@ -1,0 +1,56 @@
+.sectionAboutCompany {
+    margin-top: -160px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.aboutCompanyTitle {
+    font-family: Open Sans ExtraBold;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+    text-align: start;
+}
+
+.aboutCompanyListItem,
+.aboutCompanyDescription {
+    font-family: Open Sans Regular;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--primaryTextColorDark);
+}
+
+.aboutCompanyListItem {
+    padding: 4px 8px;
+}
+
+.aboutCompanyDescription {
+    padding: 8px;
+}
+
+.aboutCompanyListContainer {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.aboutCompanyIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.aboutCompanyListItemAddress {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--primaryTextColorDark);
+    padding: 4px;
+}
+
+.timeWorkContainer {
+    display: flex;
+    justify-content: space-between;
+}
