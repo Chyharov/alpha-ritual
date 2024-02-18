@@ -2,7 +2,7 @@ import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionRitualCarParkList from 'components/SectionRitualCarParkList/SectionRitualCarParkList';
-import backgroundImg from '../../images/additionalServices/backgroundAdditionalServicesMob.jpg'
+import backgroundImg from '../../images/ritualTransport/ritualTransportBackgroundMob.jpg'
 
 
 const title = 'Ритуальний транспорт';
