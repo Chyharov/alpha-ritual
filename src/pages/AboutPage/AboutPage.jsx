@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionAboutCompany from 'components/SectionAboutCompany/SectionAboutCompany';
 import Footer from '../../components/Footer/Footer';
-import backgroundImg from '../../images/additionalServices/backgroundAdditionalServicesMob.jpg'
+import backgroundImg from '../../images/aboutCompany/aboutCompanyBackgroundMob.jpg'
 
 const title = 'Про Компанію';
 
