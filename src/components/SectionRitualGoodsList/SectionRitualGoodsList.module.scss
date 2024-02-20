@@ -1,15 +1,46 @@
 .sectionRitualGoodsList {
-    margin-top: -160px;
+    margin-top: -125px;
     display: flex;
     flex-direction: column;
     padding-bottom: 80px;
 }
 
 .ritualGoodsListTitle {
-    font-family: Open Sans ExtraBold;
-    font-size: 16px;
-    line-height: 1.38;
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    line-height: 1;
     color: var(--primaryTextColorDark);
     padding: 8px;
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.ritualGoodsListDescription {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+    margin-bottom: 32px;
+}
+
+.ritualGoodsListItem {
+    border-radius: 8px;
+    background-color: var(--cardBlackDark);
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.ritualGoodsListItemDescription {
+    font-family: Open Sans Regular;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--primaryTextColorDark);
+}
+
+.ritualGoodsListItemSpan {
+    font-family: Open Sans ExtraBold;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--secondaryTextColor);
 }

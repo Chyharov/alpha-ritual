@@ -24,8 +24,9 @@
 .ritualServices__title {
     font-family: Open Sans SemiBold;
     font-size: 20px;
-    line-height: 1.38;
+    line-height: 1;
     text-align: center;
+    padding: 8px;
     color: var(--primaryTextColorDark);
 
     @include mq(tab) {
@@ -62,7 +63,7 @@
     height: 120px;
     border-radius: 8px;
     padding: 8px;
-    background-color: #2B2925;
+    background-color: var(--cardBlackDark);
 }
 
 .ritualServices__listItem:not(:last-child) {
@@ -83,7 +84,7 @@
     right: 20px;
     bottom: -9px;
     padding: 10px 20px;
-    background-color: #2B2925;
+    background-color: var(--cardBlackDark);
     color: var(--secondaryTextColor);
     text-decoration: underline;
 }

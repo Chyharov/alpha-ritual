@@ -39,7 +39,7 @@
     min-height: 120px;
     border-radius: 8px;
     padding: 8px;
-    background-color: #2b2925;
+    background-color: var(--cardBlackDark);
 }
 
 .ritualServices__listItem:not(:last-child) {
@@ -78,7 +78,7 @@
     right: 20px;
     bottom: -9px;
     padding: 10px 20px;
-    background-color: #2b2925;
+    background-color: var(--cardBlackDark);
     color: var(--secondaryTextColor);
     text-decoration: underline;
     border: none;
@@ -137,5 +137,5 @@
     width: 100%;
     margin-bottom: -13px;
     padding: 3px;
-    background-color: #2b2925;
+    background-color: var(--cardBlackDark);
 }
