@@ -4,7 +4,6 @@ import s from './SectionAboutCompany.module.scss';
 
 const SectionAboutCompany = () => {
 
-
     return (
         <section className={s.sectionAboutCompany}>
             <div className='container'>
@@ -23,7 +22,6 @@ const SectionAboutCompany = () => {
 
                 <h2 className={s.aboutCompanyTitle} style={{ marginBottom: '8px' }}>На мапі</h2>
                 
-
                 <h2 className={s.aboutCompanyTitle} style={{ marginBottom: '8px' }}>Адреса</h2>
                 <div className={s.aboutCompanyListContainer}>
                     <img className={s.aboutCompanyIcon} src={locationIcon} alt="phone__icon" />
@@ -31,9 +29,8 @@ const SectionAboutCompany = () => {
                         <li className={s.aboutCompanyListItemAddress}><a href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA">м.Київ, вул. Івана Федорова, 33</a></li>
                         <li className={s.aboutCompanyListItemAddress}><a href="https://maps.app.goo.gl/AwovKjfD7p53WbF56">м.Київ, вул. Колоскова 9 (район Совського кладовища)</a></li>
                     </ul>
-
                 </div>
-                
+
                 <div className={s.timeWorkContainer}>
                     <h2 className={s.aboutCompanyTitle}>Щоденно</h2>
                     <h2 className={s.aboutCompanyTitle}>Цілодобово</h2>  
