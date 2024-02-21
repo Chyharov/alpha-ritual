@@ -1,5 +1,12 @@
 @import '../../sass/utils/mixin';
 
+.sectionWreaths {
+    margin-top: -125px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
 .freshFlowers {
     margin: 0 auto;
     width: 90px;

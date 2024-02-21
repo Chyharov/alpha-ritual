@@ -1,8 +1,8 @@
 import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionRitualCarParkList from 'components/SectionRitualCarParkList/SectionRitualCarParkList';
 import backgroundImg from '../../images/ritualTransport/ritualTransportBackgroundMob.jpg'
+import Footer from 'components/Footer/Footer';
 
 
 const title = 'Ритуальний транспорт';

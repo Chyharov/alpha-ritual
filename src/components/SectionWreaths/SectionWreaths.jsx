@@ -6,7 +6,9 @@ import s from './SectionWreaths.module.scss'
 const SectionWreath = () => {
   return (
     <section className={s.sectionWreaths}>
-        <div className={'container ' + s.wreathsContainer}>
+      <div className={'container ' + s.wreathsContainer}>
+        <h2>Поховальний вінок чи композиція?</h2>
+        
         <div className={s.wreathsdDescriptionContainer}>
           
           <div className={s.wreathsLinksContainer}>
