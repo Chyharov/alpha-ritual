@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.74eec086.css",
-    "main.js": "/alpha-ritual/static/js/main.d0b3423a.js",
+    "main.js": "/alpha-ritual/static/js/main.c72f87d1.js",
     "static/css/102.ee6274da.chunk.css": "/alpha-ritual/static/css/102.ee6274da.chunk.css",
     "static/js/102.15385408.chunk.js": "/alpha-ritual/static/js/102.15385408.chunk.js",
-    "static/css/688.6eb544d9.chunk.css": "/alpha-ritual/static/css/688.6eb544d9.chunk.css",
-    "static/js/688.c5e5f878.chunk.js": "/alpha-ritual/static/js/688.c5e5f878.chunk.js",
+    "static/css/688.4f380111.chunk.css": "/alpha-ritual/static/css/688.4f380111.chunk.css",
+    "static/js/688.42a5d1c0.chunk.js": "/alpha-ritual/static/js/688.42a5d1c0.chunk.js",
     "static/css/950.6904e4aa.chunk.css": "/alpha-ritual/static/css/950.6904e4aa.chunk.css",
     "static/js/950.416d82fc.chunk.js": "/alpha-ritual/static/js/950.416d82fc.chunk.js",
     "static/css/823.0ee8d74f.chunk.css": "/alpha-ritual/static/css/823.0ee8d74f.chunk.css",
@@ -85,6 +85,7 @@
     "static/media/blackMercedes7.webp": "/alpha-ritual/static/media/blackMercedes7.d7a160ac987b7a525c9e.webp",
     "static/media/heroBgMobile.jpg": "/alpha-ritual/static/media/heroBgMobile.2b1977f3b95a71d62871.jpg",
     "static/media/decoration4.webp": "/alpha-ritual/static/media/decoration4.23bc0cc8851d3dc46e59.webp",
+    "static/media/WreathsBackgroundMob.jpg": "/alpha-ritual/static/media/WreathsBackgroundMob.3b700ae7fd5c82b23a20.jpg",
     "static/media/funeralVases8.webp": "/alpha-ritual/static/media/funeralVases8.683319f7514c6dc583a5.webp",
     "static/media/covered12.webp": "/alpha-ritual/static/media/covered12.2ae2ea9561fb2014786c.webp",
     "static/media/funeralVases6.webp": "/alpha-ritual/static/media/funeralVases6.0a931766972aa7ffc64d.webp",
@@ -93,7 +94,6 @@
     "static/media/backgroundAdditionalServicesMob.jpg": "/alpha-ritual/static/media/backgroundAdditionalServicesMob.12acf46f93d1210efc6f.jpg",
     "static/media/freshFlowersWreath10.webp": "/alpha-ritual/static/media/freshFlowersWreath10.658a6d51d86d1316664e.webp",
     "static/media/covered1.webp": "/alpha-ritual/static/media/covered1.3c267f61d35abd75cb4e.webp",
-    "static/media/WreathsBackgroundMob.jpg": "/alpha-ritual/static/media/WreathsBackgroundMob.d8e5bcf99a8e8d2131b2.jpg",
     "static/media/whiteVolksWagen3.webp": "/alpha-ritual/static/media/whiteVolksWagen3.ce33a90a268758f8a075.webp",
     "static/media/funeralSet3.webp": "/alpha-ritual/static/media/funeralSet3.501ca66af4373131ec2e.webp",
     "static/media/blackMercedes3.webp": "/alpha-ritual/static/media/blackMercedes3.4033202f57cc5d7694c0.webp",
@@ -258,11 +258,11 @@
     "static/media/arrowLeft.svg": "/alpha-ritual/static/media/arrowLeft.ced4667617a94daa01f2833b1d67fd96.svg",
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "main.74eec086.css.map": "/alpha-ritual/static/css/main.74eec086.css.map",
-    "main.d0b3423a.js.map": "/alpha-ritual/static/js/main.d0b3423a.js.map",
+    "main.c72f87d1.js.map": "/alpha-ritual/static/js/main.c72f87d1.js.map",
     "102.ee6274da.chunk.css.map": "/alpha-ritual/static/css/102.ee6274da.chunk.css.map",
     "102.15385408.chunk.js.map": "/alpha-ritual/static/js/102.15385408.chunk.js.map",
-    "688.6eb544d9.chunk.css.map": "/alpha-ritual/static/css/688.6eb544d9.chunk.css.map",
-    "688.c5e5f878.chunk.js.map": "/alpha-ritual/static/js/688.c5e5f878.chunk.js.map",
+    "688.4f380111.chunk.css.map": "/alpha-ritual/static/css/688.4f380111.chunk.css.map",
+    "688.42a5d1c0.chunk.js.map": "/alpha-ritual/static/js/688.42a5d1c0.chunk.js.map",
     "950.6904e4aa.chunk.css.map": "/alpha-ritual/static/css/950.6904e4aa.chunk.css.map",
     "950.416d82fc.chunk.js.map": "/alpha-ritual/static/js/950.416d82fc.chunk.js.map",
     "823.0ee8d74f.chunk.css.map": "/alpha-ritual/static/css/823.0ee8d74f.chunk.css.map",
@@ -301,6 +301,6 @@
   },
   "entrypoints": [
     "static/css/main.74eec086.css",
-    "static/js/main.d0b3423a.js"
+    "static/js/main.c72f87d1.js"
   ]
 }
