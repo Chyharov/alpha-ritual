@@ -9,9 +9,22 @@ const wreathsDescriptionArray = [
   { id: 4, title: "Крім вінка традиційної форми, ви можете купити на поховання ритуальний букет чи кошик із живими квітами. Це повністю відповідатиме жалобній церемонії, але дещо пом’якшить її сумне забарвлення. Традиція встеляти останній шлях на цвинтар квітами або покривати труну квітковими декоративними композиціями та монограмами спочатку і зародилася, щоб зменшити стрес рідних та близьких у цей сумний та емоційно важкий день." },
 ];
 
+const wreathsDescriptionSecondArray = [
+  { id: 1, title: "Незважаючи на досить вільні традиції та відсутність чітких ритуальних засад, існують деякі правила, що склалися в культурі нашого народу, яких прийнято дотримуватися." },
+  { id: 2, title: "Не більше п’яти видів квітів в одній жалобній композиції." },
+  { id: 3, title: "Насичені глибокі кольори використовують у центрі вінка." },
+  { id: 4, title: "Ялинові гілки та зелений декор краще вибирати темно-зеленого відтінку." },
+  { id: 5, title: "Квіти та елементи декору блідих відтінків рожевого, блакитного та лимонного врівноважують насичені кольори." },
+  { id: 6, title: "Найбільш придатні для поховального вінка – лілії, гвоздики, троянди та півонії." },
+  { id: 7, title: "Для людей творчої натури та померлим у поважному віці використовують квіти червоних та темно-рожевих відтінків. Білі та фіолетові відтінки використовують у вінках на похороні молодих жінок." },
+  { id: 8, title: "Флористи поховального будинку «Альфа» точно знають усі правила та традиції складання ритуальних вінків. Ви можете купити як окремо вінок на поховання з доставкою по Києву, так і замовити комплексне флористичне оформлення церемонії прощання." },
+  ];
+
 const SectionWreath = () => {
   const [showAll, setShowAll] = useState(false);
+  const [showAllSecond, setShowAllSecond] = useState(false);
   const displayedwreaths = showAll ? wreathsDescriptionArray : wreathsDescriptionArray.slice(0, 1);
+  const displayedwreathsSecond = showAllSecond ? wreathsDescriptionSecondArray : wreathsDescriptionSecondArray.slice(0, 1);
 
   return (
     <section className={s.sectionWreaths}>
@@ -19,11 +32,11 @@ const SectionWreath = () => {
         <h2 className={s.wreathsTitle}>Поховальний вінок чи композиція?</h2>
 
         {displayedwreaths.map((item) => (
-            <p className={s.wreathsDescription} style={{ marginBottom: '16px' }}>{item.title}</p>
+          <p key={item.id} className={s.wreathsDescription} style={{ marginBottom: '16px' }}>{item.title}</p>
         ))}
 
         {!showAll && (
-          <button className={s.buttonMoreDetails} onClick={() => setShowAll(true)}>Детальніше</button>
+          <button className={s.buttonMoreDetails} style={{ marginBottom: '64px', marginTop: '8px' }} onClick={() => setShowAll(true)}>Детальніше</button>
         )}
 
         <h2 className={s.wreathsTitle}>Які квіти найкращі для поховального вінка?</h2>
@@ -49,10 +62,34 @@ const SectionWreath = () => {
 
         <p className={s.wreathsDescription}>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
 
-        <Link>Вінок із живих квітів</Link>
-        <Link>Вінок із штучних квітів</Link>
-        </div>
-      </section>
+        <Link to="/freshflowerswreath">Вінок із живих квітів</Link>
+        <Link to="/artificialwreaths">Вінок із штучних квітів</Link>
+
+        <h2 className={s.wreathsTitle}>Правила складання поховального вінка</h2>
+
+        {displayedwreathsSecond.map((item, index) => {
+          if (item.id >= 2 && item.id <= 6) {
+            return (
+              <ul key={item.id} className={s.wreathsList}>
+                <li className={s.wreathsListItem}>
+                  <p className={s.wreathsDescription}>{item.title}</p>
+                </li>
+              </ul>
+            );
+          } else {
+            const isLastItem = index === displayedwreathsSecond.length - 1;
+            return (
+              <p key={item.id} className={s.wreathsDescription} style={{ marginBottom: isLastItem ? '0' : '16px' }}>{item.title}</p>
+            );
+          }
+        })}
+
+        {!showAllSecond && (
+          <button className={s.buttonMoreDetails} onClick={() => setShowAllSecond(true)}>Детальніше</button>
+        )}
+
+      </div>
+    </section>
   );
 };
 
