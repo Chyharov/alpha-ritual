@@ -20,5 +20,4 @@ const WreathsPage = () => {
 };
 
 
-
 export default WreathsPage;
