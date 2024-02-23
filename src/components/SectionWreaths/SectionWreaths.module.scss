@@ -46,3 +46,22 @@
     background-color: var(--cardBlackDark);
     margin-bottom: 8px;
 }
+
+.wreathsLinkList {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.wreathsLinkitem {
+    height: 288px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 1px solid var(--secondaryTextColor);
+}

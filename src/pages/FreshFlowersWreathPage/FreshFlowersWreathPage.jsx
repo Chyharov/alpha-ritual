@@ -1,12 +1,12 @@
 import React from 'react';
-import WreathsHeader from '../../components/WreathsHeader/WreathsHeader'
+import Header from '../../components/Header/Header'
 import SectionFreshFlowersWreath from 'components/SectionFreshFlowersWreath/SectionFreshFlowersWreath';
 
 const freshFlowersWreathPage = () => {
 
     return (
       <>
-        <WreathsHeader />
+        <Header />
         <main>
           <SectionFreshFlowersWreath />
         </main>

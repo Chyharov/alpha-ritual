@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import freshflowerswreathImg from '../../images/wreaths/freshflowerswreathImg.jpg'
+import artificialwreathsImg from '../../images/wreaths/artificialwreathsImg.jpg'
 import s from './SectionWreaths.module.scss'
 
 const wreathsDescriptionArray = [
@@ -36,7 +38,7 @@ const SectionWreath = () => {
         ))}
 
         {!showAll && (
-          <button className={s.buttonMoreDetails} style={{ marginBottom: '64px', marginTop: '8px' }} onClick={() => setShowAll(true)}>Детальніше</button>
+          <button className={s.buttonMoreDetails} style={{ marginBottom: '64px', marginTop: '24px' }} onClick={() => setShowAll(true)}>Детальніше</button>
         )}
 
         <h2 className={s.wreathsTitle}>Які квіти найкращі для поховального вінка?</h2>
@@ -62,8 +64,18 @@ const SectionWreath = () => {
 
         <p className={s.wreathsDescription}>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
 
-        <Link to="/freshflowerswreath">Вінок із живих квітів</Link>
-        <Link to="/artificialwreaths">Вінок із штучних квітів</Link>
+        <ul className={s.wreathsLinkList}>
+          <Link to="/freshflowerswreath">
+            <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginBottom: '16px' }} className={s.wreathsLinkitem}>
+              <h2 className='title'>Вінок із живих квітів</h2>
+            </li>
+          </Link>
+          <Link to="/artificialwreaths">
+            <li style={{ backgroundImage: `url(${artificialwreathsImg})` }} className={s.wreathsLinkitem}>
+              <h2 className='title'>Вінок із штучних квітів</h2>
+            </li>
+          </Link>
+        </ul>
 
         <h2 className={s.wreathsTitle}>Правила складання поховального вінка</h2>
 
@@ -85,14 +97,12 @@ const SectionWreath = () => {
         })}
 
         {!showAllSecond && (
-          <button className={s.buttonMoreDetails} onClick={() => setShowAllSecond(true)}>Детальніше</button>
+          <button className={s.buttonMoreDetails} style={{ marginTop: '24px' }} onClick={() => setShowAllSecond(true)}>Детальніше</button>
         )}
 
       </div>
     </section>
   );
 };
-
-
 
 export default SectionWreath;
