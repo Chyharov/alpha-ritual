@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import s from './SectionTitleForPage.module.scss';
-import Line from '../../images/titleForPage/Line6.svg'
+import Line from '../../images/TitleForPage/Line6.svg'
 
 const SectionTitleForPage = ({title, backgroundImg}) => {
 
