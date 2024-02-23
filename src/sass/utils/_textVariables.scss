@@ -70,12 +70,29 @@
 }
 
 .secondaryDescription {
-
     font-family: Open Sans Regular;
     font-size: 14px;
     line-height: 1.43;
     color: #EAE6DE;
     
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    @media screen and (min-width: 1360px) {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}
+
+.buttonDescription {
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #D4CEBF;
+
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
