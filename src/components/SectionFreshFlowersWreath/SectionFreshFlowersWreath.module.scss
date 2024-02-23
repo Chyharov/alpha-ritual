@@ -1,56 +1,59 @@
 @import '../../sass/utils/mixin';
 
 .sectionFreshFlowersWreath {
-    padding-top: 70px;
+    margin-top: -125px;
+    padding-bottom: 80px;
 }
 
 .wreathsContainer {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.freshFlowersWreathDescriptionContainer {
-    padding: 20px;
-    outline: 1px solid var(--primaryTextColor);
-}
 
-.freshFlowersWreath__list {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.freshFlowersWreath__listItem {
-    list-style: disc;
-    margin-bottom: 10px;
-}
-
-.freshFlowersWreathPictureList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
+.freshFlowersWreathPhotoContainer {
+    width: 100%;
+    padding: 20px 0px 24px;
+    outline: 1px solid var(--secondaryTextColor);
+    border-radius: 8px;
+    margin-bottom: 24px;
 
     @include mq(tab) {
-        grid-gap: 20px;
+        padding: 30px 10px 30px;
     }
 }
 
-.freshFlowersWreathPictureList_img {
-    width: 125px;
+.containerForButtons {
+    margin-top: 32px;
+    width: 58.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.buttonNavigation {
+    background-color: var(--backgroundColorDark);
+    border: 1px solid var(--secondaryTextColor);
+    border-radius: 16px;
+    padding: 11px;
+    cursor: pointer;
 
     @include mq(tab) {
-        width: 320px;
-        height: 500px;
-    }
-
-    @include mq(desk) {
-        width: 630px;
-        height: 820px;
+        font-size: 25px;
+        padding: 10px;
     }
 }
 
-.freshFlowersWreathPictureList__item:hover,
-.freshFlowersWreathPictureList__item:focus {
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in-out;
-    cursor: zoom-in;
+.buttonMoreDetails {
+    color: var(--secondaryTextColor);
+    border: 1px solid var(--hoverColorDark);
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 14px 77.5px;
+    width: 83.4%;
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
 }
