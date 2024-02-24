@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import Modal from '../ModalWindow/ModalWindow'
+import arrowLeft from '../../images/arrowLeft.svg';
+import arrowRight from '../../images/arrowRight.svg';
 import s from './SectionArtificialWreath.module.scss'
 
 const ArtificialWreathsPictureList = [
@@ -27,12 +31,12 @@ const ArtificialWreathsPictureList = [
       { id: 22, src: require('../../images/artificialWreaths/artificialWreaths3528.webp'), alt: 'Зображення 22', title: '160см' },
       { id: 23, src: require('../../images/artificialWreaths/artificialWreaths3529.webp'), alt: 'Зображення 23', title: '130см' },
       { id: 24, src: require('../../images/artificialWreaths/artificialWreaths3530.webp'), alt: 'Зображення 24', title: '130см' },
-      
-  ];
+];
 
 const SectionArtificialWreath = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  
 
   const openModal = (id) => {
     setSelectedImage(ArtificialWreathsPictureList.find(image => image.id === id));
@@ -41,62 +45,67 @@ const SectionArtificialWreath = () => {
   };
 
     return (
-
         <section className={s.sectionArtificialWreaths}>
           <div className={'container ' + s.artificialWreathsContainer}>
-            <div className={s.artificialWreathsDescriptionContainer}>
-              <p className="description" style={{marginBottom: '20px' }}>Штучні похоронні вінки та жалобні ритуальні кошики мають такий самий свіжий вигляд і не відштовхують своєю неприродністю та неживістю. Штучні флористичні жалобні композиції так само сповнені символізмом і здатні також як і звичайні квіти висловити вашу скорботу, любов і повагу до покійного.</p>
-              <h2 className="title" style={{marginBottom: '20px' }}>Як вибрати ритуальний вінок зі штучних квітів</h2>
-                <p className="description" style={{marginBottom: '20px' }}>Особливо суворих флористичних правил і релігійних канонів у християнстві щодо створення жалобних букетів, квіткових кошиків та вінків немає. Є лише традиції і символізм, що склався в культурі народів світу. Живі чи штучні квіти символізують вічне кохання, а вінки ще з язичницьких часів одягали на голови померлих, як символ переходу у більш досконалий світ на небесах. Ця традиція перейшла і в християнський світ, де квітами ми святкуємо перехід душі померлої близької людини до Царства Небесного.</p>
-                <p className="description" style={{marginBottom: '20px' }}>Штучні квіткові композиції на похороні можуть бути не лише у вигляді вінка, а й як ідеально злагоджена траурна ікебана у кошику, у формі монограми або як надгробний букет. Такі похоронні композиції зі штучних квітів хоч і не регламентуються суворими правилами, але складаються відповідно до культурних традицій, що склалися.</p>
-                
-                <h2 className="title" style={{marginBottom: '20px' }}>Форма та склад жалобних штучних вінків</h2>
-                    
-                <p className="description" style={{marginBottom: '20px' }}>Ритуальний вінок може бути будь-якої форми. Він висловлює почуття, відчуття і ставлення до покійного людини, яка виключно підносить таку композицію. Серед найпоширеніших форм:</p>
-
-                <ul className={s.artificialWreath__list}>
-                    <li className={s.artificialWreath__listItem}><p className="description" style={{marginBottom: '20px' }}><b>Круглий</b> – найдавніший символ нескінченності буття та відродження. Це сонце як джерело вічного життя. Круглі вінки можуть бути складені кільцем або із суцільним заповненням живими квітами.</p></li>
-                    <li className={s.artificialWreath__listItem}><p className="description" style={{marginBottom: '20px' }}><b>Серце</b> – найвідоміший символ кохання, який виражає щирі почуття до померлого та їх нетлінність навіть після смерті.</p></li>
-                    <li className={s.artificialWreath__listItem}><p className="description" style={{marginBottom: '20px' }}><b>Крапля</b> – традиційний у нашій культурі жалобний вінок. Каплеподібна форма символізує скорботу і смуток за вчасною втратою дорогої людини. Така форма за іншою версією символізує полум’я, що очищає, спрямоване вгору на небеса.</p></li>
-                </ul>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Символізм мають і самі штучні квіти, кількість їх видів та кольорова гама:</p>
-
-                <ul className={s.artificialWreath__list}>
-                    <li className={s.artificialWreath__listItem}><p className="description" style={{marginBottom: '20px' }}>молодим непорочним дівчатам та дітям подають вінки з білих та фіолетових троянд або лілій, як символ чистоти душі;</p></li>
-                    <li className={s.artificialWreath__listItem}><p className="description" style={{marginBottom: '20px' }}>тим, хто прожив важке життя і військовим вінки на похорон складають переважно з червоних штучних троянд і гвоздик;</p></li>
-                    <li className={s.artificialWreath__listItem}><p className="description" style={{marginBottom: '20px' }}>для вираження глибокої скорботи вінок прикрашають ялиновими гілками.</p></li>
-                </ul>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Використовують трохи більше п’яти видів квіток. Не можна перевантажувати вінок занадто темними, чорними та темно-червоними штучними кольорами. Це ще більше посилить траурну обстановку на похороні та погіршить емоційний стан усіх присутніх на церемонії прощання.</p>
-                
-                <h2 className="title" style={{marginBottom: '20px' }}>Чому штучні квіти найкращі для жалобного вінка?</h2>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Флористи похоронного будинку «Альфа» складають будь-які траурні композиції з ботанічних копій різних видів квітів та рослин. Букети, надгробні квіткові монограми та похоронні вінки складаються з сучасного флористичного матеріалу, який природно виглядає і коштує недорого.</p>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Натуральність зовнішнього вигляду, постійна «свіжість» та порівняно низька ціна – головні переваги штучних кольорів, які ми використовуємо при складанні жалобних кошиків та вінків для похорону.</p>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Ми підберемо для вас ідеальну композицію, щоб ви змогли наповнити своїми символами кожну квітку та кожну гілку у вінку. Такий символізм допоможе вам висловити любов і скорботу через вчасну втрату, повагу і повагу до померлої близької людини, християнські сподівання набуття Царства Небесного і вічного життя на небесах.</p>
-                    
-                <ul className={s.artificialWreath__pictureList}>
-                    {ArtificialWreathsPictureList.map((image) => (
-                    <li className={s.artificialWreath__pictureListItem} key={image.id}>
-                        <img className={s.artificialWreathPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
-                        <h2 className="title">{image.title}</h2>
-                    </li>
-                    ))}
-                </ul>
             
-                {modalOpen && selectedImage && (
+            <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінок із штучних квітів</h2>
+              
+            <p className="description" style={{ marginBottom: '64px' }}>Штучні поховальні вінки та жалобні ритуальні кошики мають такий самий свіжий вигляд і не відштовхують своєю неприродністю та неживістю. Штучні флористичні жалобні композиції так само сповнені символізмом і здатні також як і звичайні квіти висловити вашу скорботу, любов і повагу до покійного.</p>
+            
+            <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Як вибрати ритуальний вінок зі штучних квітів</h2>
+
+            <p className="description" style={{ marginBottom: '16px' }}>Особливо суворих флористичних правил і релігійних канонів у християнстві щодо створення жалобних букетів, квіткових кошиків та вінків немає. Є лише традиції і символізм, що склався в культурі народів світу. Живі чи штучні квіти символізують вічне кохання, а вінки ще з язичницьких часів одягали на голови померлих, як символ переходу у більш досконалий світ на небесах. Ця традиція перейшла і в християнський світ, де квітами ми святкуємо перехід душі померлої близької людини до Царства Небесного.</p>
+
+            <p className="description" style={{ marginBottom: '64px' }}>Штучні квіткові композиції на похованні можуть бути не лише у вигляді вінка, а й як ідеально злагоджена траурна ікебана у кошику, у формі монограми або як надгробний букет. Такі поховальні композиції зі штучних квітів хоч і не регламентуються суворими правилами, але складаються відповідно до культурних традицій, що склалися.</p>
+
+            <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Форма та склад жалобних штучних вінків</h2>
+
+            <p className="description">Ритуальний вінок може бути будь-якої форми. Він висловлює почуття, відчуття і ставлення до покійного людини, яка виключно підносить таку композицію.</p>
+
+            <button className="button" style={{ marginTop: '24px', marginBottom: '64px' }}>Детальніше</button>
+            
+            <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Чому штучні квіти найкращі для жалобного вінка?</h2>
+
+            <p className="description">Флористи поховального будинку «Альфа» складають будь-які траурні композиції з ботанічних копій різних видів квітів та рослин. Букети, надгробні квіткові монограми та поховальні вінки складаються з сучасного флористичного матеріалу, який природно виглядає і коштує недорого.</p>
+
+            <button className="button" style={{ marginTop: '24px', marginBottom: '64px' }}>Детальніше</button>
+
+            <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінки із штучних квітів</h2>
+
+            <div className={s.artificialWreathsContainer}>
+              <CarouselProvider
+              naturalSlideWidth={288}
+              naturalSlideHeight={288}
+              totalSlides={ArtificialWreathsPictureList.length}
+              infinite={true}>
+            
+              <Slider className={s.sliderPhoto}>
+                {ArtificialWreathsPictureList.map(photo => (
+                  <Slide key={photo.id} index={photo.id}>
+                    <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
+                  </Slide>
+                ))}
+              </Slider>
+
+              <div className={s.containerForButtons}>
+                <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
+                <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
+              </div>
+              </CarouselProvider>
+            </div>
+            
+
+            <button className="button" style={{ marginTop: '24px' }}>Переглянути всі</button>
+
+            {modalOpen && selectedImage && (
               <Modal
                 selectedImage={selectedImage}
                 arrayPhoto={ArtificialWreathsPictureList}
                 setSelectedImage={setSelectedImage}
                 setModalOpen={setModalOpen}
               />
-          )} 
+            )} 
             
-            </div>
           </div>
         </section>
     );

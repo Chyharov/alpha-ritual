@@ -1,66 +1,65 @@
 @import '../../sass/utils/mixin';
 
 .sectionArtificialWreaths {
-    padding-top: 70px;
+    margin-top: -150px;
+    padding-bottom: 80px;
 }
 
 .artificialWreathsContainer {
-    padding: 20px;
-    @include mq(desk) {
-        padding: 40px 20px 20px 20px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.artificialWreathsDescriptionContainer {
-    padding: 10px;
-    outline: 1px solid var(--primaryTextColor);
+.artificialWreathsPhotoContainer {
+    width: 100%;
+    padding: 8px 8px 24px 8px;
+    outline: 1px solid var(--secondaryTextColor);
+    border-radius: 8px;
+    margin-bottom: 24px;
 
     @include mq(tab) {
-        padding: 20px;
+        padding: 30px 10px 30px;
     }
 }
 
-.artificialWreath__list {
-    margin-left: 20px;
-    margin-bottom: 20px;
+.containerForButtons {
+    width: 58.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.artificialWreath__listItem {
-    list-style: disc;
+.sliderPhoto {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 32px;
 }
 
-.artificialWreath__pictureList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
-    
-    @include mq(tab) {
-        grid-gap: 20px;
-    }
-}
-
-.artificialWreathPictureList_img {
-    width: 125px;
-    height: 190px;
-    margin-bottom: 10px;
+.buttonNavigation {
+    background-color: var(--backgroundColorDark);
+    border: 1px solid var(--secondaryTextColor);
+    border-radius: 16px;
+    padding: 11px;
+    cursor: pointer;
 
     @include mq(tab) {
-        width: 320px;
-        height: 500px;
-        margin-bottom: 20px;
-    }
-
-    @include mq(desk) {
-        width: 630px;
-        height: 820px;
-        
+        font-size: 25px;
+        padding: 10px;
     }
 }
 
-.artificialWreath__pictureListItem:hover,
-.artificialWreath__pictureListItem:focus {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    cursor: zoom-in;
+.buttonMoreDetails {
+    color: var(--secondaryTextColor);
+    border: 1px solid var(--hoverColorDark);
+    background-color: transparent;
+    border-radius: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 83.4%;
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
 }
