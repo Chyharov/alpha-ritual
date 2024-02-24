@@ -115,7 +115,7 @@ const SectionFreshFlowersWreath = () => {
           })}
 
           {!showAllComposition && (
-            <button className={s.buttonMoreDetails} style={{ marginTop: '24px' }} onClick={() => setShowAllComposition(true)}><p className="buttonDescription">Детальніше</p></button>
+            <button className="button" style={{ marginTop: '24px' }} onClick={() => setShowAllComposition(true)}><p className="buttonDescription">Детальніше</p></button>
           )}
 
           <h2 className="title" style={{ marginTop: '64px', marginBottom: '16px', textAlign: 'center' }}>Як живі квіти у жалобному вінку зберігають свою свіжість?</h2>
@@ -125,7 +125,7 @@ const SectionFreshFlowersWreath = () => {
           ))}
 
           {!showAll && (
-            <button className={s.buttonMoreDetails} style={{ marginTop: '8px' }} onClick={() => setShowAll(true)}><p className="buttonDescription">Детальніше</p></button>
+            <button className="button" style={{ marginTop: '8px' }} onClick={() => setShowAll(true)}><p className="buttonDescription">Детальніше</p></button>
           )}
 
           <h2 className="title" style={{ marginTop: '64px', marginBottom: '16px', textAlign: 'center' }}>Вінки із живих квітів</h2>
@@ -153,7 +153,7 @@ const SectionFreshFlowersWreath = () => {
           </div>
           
 
-          <button className={s.buttonMoreDetails}><p className="buttonDescription"></p>Переглянути всі</button>
+          <button className="button"><p className="buttonDescription"></p>Переглянути всі</button>
           
               {modalOpen && selectedImage && (
               <Modal
