@@ -96,7 +96,7 @@ const SectionArtificialWreath = () => {
                 case 9:
                   return (
                     <ul key={item.id} className="list">
-                      <li className="listItem"><p className="description" style={{ marginBottom: '16px' }}>{item.title}</p></li>
+                      <li className="listItem"><p className="description">{item.title}</p></li>
                     </ul>
                   );
                 default:

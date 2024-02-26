@@ -1,46 +1,61 @@
 @import '../../sass/utils/mixin';
 
-.coffins__list {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.coffins__listItem {
-    font-family: Open Sans Regular;
-    color: var(--primaryTextColor);
-    list-style: disc;
-    margin-bottom: 10px;
-}
-
-.coffins__pictureList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 20px;
-    justify-items: center;
+.ritualCarParkList {
+    width: 100%;
+    padding: 20px 0px 24px;
+    outline: 1px solid var(--secondaryTextColor);
+    border-radius: 8px;
+    margin-bottom: 24px;
 
     @include mq(tab) {
-        grid-gap: 20px;
+        padding: 30px 10px 30px;
     }
 }
 
-.coffinsPictureElitePriceList__img {
-    width: 125px;
+.ritualCarPark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ritualCarPark__container {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(tab) {
-        width: 330px;
-        height: 220px;
-    }
-
-    @include mq(desk) {
-        width: 620px;
-        height: 400px;
+        width: 700px;
     }
 }
 
-.coffins__pictureListItem:hover,
-.coffins__pictureListItem:focus {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    cursor: zoom-in;
+.ritualCarParkList__description {
+    font-family: Open Sans SemiBold;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: var(--primaryTextColorDark);
+    padding: 4px 8px;
+    margin-bottom: 40px;
+}
+
+.containerForButtons {
+    width: 58.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.buttonNavigation {
+    background-color: var(--backgroundColorDark);
+    border: 1px solid var(--secondaryTextColor);
+    border-radius: 16px;
+    padding: 11px;
+    cursor: pointer;
+
+    @include mq(tab) {
+        font-size: 25px;
+        padding: 10px;
+    }
 }

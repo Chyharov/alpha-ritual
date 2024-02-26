@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import Modal from '../ModalWindow/ModalWindow'
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import Modal from '../ModalWindow/ModalWindow';
+import arrowLeft from '../../images/arrowLeft.svg';
+import arrowRight from '../../images/arrowRight.svg';
 import s from './CoffinsPictureElitePriceList.module.scss'
 
 const CoffinsPictureElitePrice = [
@@ -45,46 +49,49 @@ const CoffinsPictureElitePriceList = () => {
     document.body.style.overflow = 'hidden';
   };
 
+  const handleImageChange = (id) => {
+    const newSelectedImage = CoffinsPictureElitePrice.find(image => image.id === id);
+    setSelectedImage(newSelectedImage);
+  };
+
   return (
-        <section className={s.sectionCoffinsPictureElitePriceListWreaths}>
-                <h2 className="title" style={{ marginBottom: '20px' }}>Елітні дерев’яні труни та саркофаги</h2>                  
-                <p className="description" style={{marginBottom: '20px' }}>Спосіб життя та навколишні людини предмети демонструють його статус і становище у суспільстві. Елітні автомобілі та нерухомість, дорогі предмети гардеробу та аксесуари – все це характерні атрибути високої статусності. Похорон – це проводи померлої людини в останній шлях, а значить, це остання можливість віддати їй всю повноту почестей відповідно до її прижиттєвого статусу.</p>
+    <>
+      <li className={s.ritualCarParkList}>
+        <h2 className="smallTitle" style={{ marginBottom: '20px', textAlign: 'center' }}>Елітні труни</h2>
 
-                <p className="description" style={{marginBottom: '20px' }}>Елітна труна з цінних порід дерева ручної роботи з ідеальним опрацюванням найдрібніших деталей декору та фурнітури, бездоганним поліруванням та лакуванням – це демонстрація не просто статусності покійного, а й безмежної поваги до його близьких рідних, друзів та колег.</p>
-                
-                <p className="description" style={{marginBottom: '20px' }}><b>Похоронний дім «Альфа»</b> – це понад 25 видів елітних дерев’яних трун власного виробництва. Завдяки відсутності посередників та власної майстерні ми пропонуємо ціни від виробника без зайвих націнок. Це може бути як стандартна дерев’яна лакована труна з елітних порід дерева з цільною кришкою, так і двокришковий саркофаг. Верхня кришка дозволяє відкрити на похороні обличчя та руки покійного, залишивши нижню частину прихованої тіла.</p>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Ціна елітної лакованої дерев’яної труни або двокришкового саркофага залежить від породи дерева, глибини ручного опрацювання декору, якості лакофарбових матеріалів, оббивних тканин та фурнітури.</p>
-                
-                <ul className={s.coffins__list}>
-                    <li className={s.coffins__listItem}><p className="description" style={{marginBottom: '20px' }}>Для елітної внутрішньої оббивки та зовнішнього текстильного декору ми використовуємо Італійські тканини найвищої якості.</p></li>
-                    <li className={s.coffins__listItem}><p className="description" style={{marginBottom: '20px' }}>Тільки високоміцна престижна фурнітура, включаючи ручки та замки з дорогих металів.</p></li>
-                    <li className={s.coffins__listItem}><p className="description" style={{marginBottom: '20px' }}>Покриття дерева тільки найкращим лаком у кілька шарів, що робить поверхню ідеально рівною та з багатим блиском.</p></li>
-                </ul>
-                
-                <p className="description" style={{marginBottom: '20px' }}>Кожна така труна робиться майстрами кілька днів, через що її вартість виходить порівняно високою. При цьому ми не женемося за надприбутком і пропонуємо чесні ціни, які повністю відображають всю повноту копіткої багатоденної праці майстрів і елітних матеріалів, що використовуються.</p>
+        <CarouselProvider
+          naturalSlideWidth={288}
+          naturalSlideHeight={288}
+          totalSlides={CoffinsPictureElitePrice.length}
+          infinite={true}>
+          
+          <Slider className={s.sliderPhoto}>
+            {CoffinsPictureElitePrice.map(photo => (
+              <Slide key={photo.id} index={photo.id}>
+                <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
+              </Slide>
+            ))}
+          </Slider>
 
-                <h2 className="title" style={{ marginBottom: '20px' }}>Елітні труни</h2>
-                <p className="description" style={{marginBottom: '20px' }}><b>Матеріал:</b> дерев’яна заготовка покрита лаком</p>
-                    
-                <ul className={s.coffins__pictureList}>
-                    {CoffinsPictureElitePrice.map((image) => (
-                    <li className={s.coffins__pictureListItem} key={image.id}>
-                        <img className={s.coffinsPictureElitePriceList__img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
-                      </li>
-                    ))}
-                </ul>
-      
-            {modalOpen && selectedImage && (
-              <Modal
-                selectedImage={selectedImage}
-                arrayPhoto={CoffinsPictureElitePrice}
-                setSelectedImage={setSelectedImage}
-                setModalOpen={setModalOpen}
-              />
-            )} 
-    
-        </section>
+          <p className="smallTitle" style={{ marginTop: '12px', textAlign: 'center' }}>Матеріал</p>
+          <p className="secondaryDescription" style={{ marginBottom: '40px', textAlign: 'center' }}>дерев’яна заготовка покрита лаком</p>
+          <div className={s.containerForButtons}>
+            <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
+            <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
+          </div>
+        </CarouselProvider>
+      </li>
+
+      {modalOpen && selectedImage && (
+        <Modal
+          selectedImage={selectedImage}
+          arrayPhoto={CoffinsPictureElitePrice}
+          setSelectedImage={setSelectedImage}
+          setModalOpen={setModalOpen}
+          onImageChange={handleImageChange}
+        />
+      )}
+    </>
     );
   };
 
