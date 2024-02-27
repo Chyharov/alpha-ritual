@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionAdditionalServices.module.scss';
 
 const additionalServices = [
@@ -11,6 +12,8 @@ const additionalServices = [
   { id: 6, title: 'Декор', link: '/decorations' },
   { id: 7, title: 'Інша атрибутика', link: '/otherattributes' },
 ];
+
+const buttonDescription = 'Переглянути всі';
 
 const SectionAdditionalServices = () => {
   const [showAll, setShowAll] = useState(false);
@@ -34,9 +37,7 @@ const SectionAdditionalServices = () => {
         </ul>     
 
         {showAll || (
-          <button type='button' className={s.viewAllRitualServices} onClick={() => setShowAll(true)}>
-            Переглянути всі
-          </button>
+         <ButtonMoreDetails buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />
         )}
         
       </div>
