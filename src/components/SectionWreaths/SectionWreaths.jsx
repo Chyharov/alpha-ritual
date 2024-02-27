@@ -31,7 +31,7 @@ const SectionWreath = () => {
   return (
     <section className={s.sectionWreaths}>
       <div className={`container ${s.wreathsContainer}`}>
-        <h2 className={s.wreathsTitle}>Поховальний вінок чи композиція?</h2>
+        <h2 className={s.wreathsTitle}>Похороний вінок чи композиція?</h2>
 
         {displayedwreaths.map((item) => (
           <p key={item.id} className={s.wreathsDescription} style={{ marginBottom: '16px' }}>{item.title}</p>

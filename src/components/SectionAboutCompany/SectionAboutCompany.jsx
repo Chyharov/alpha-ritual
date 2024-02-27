@@ -8,7 +8,7 @@ const SectionAboutCompany = () => {
         <section className={s.sectionAboutCompany}>
             <div className='container'>
                 <h2 className={s.aboutCompanyTitle}>Склад-магазин ритуальної атрибутики</h2>
-                <p className={s.aboutCompanyDescription}>Поховальний дім Альфа має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
+                <p className={s.aboutCompanyDescription}>Похороний дім Альфа має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
                 
                 <h2 className={s.aboutCompanyTitle} style={{marginBottom: '8px' }}>Телефон</h2>
                 <div className={s.aboutCompanyListContainer}>
