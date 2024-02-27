@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/alpha-ritual/static/css/main.c3629b75.css",
-    "main.js": "/alpha-ritual/static/js/main.f30fee02.js",
-    "static/css/3.37eaf2de.chunk.css": "/alpha-ritual/static/css/3.37eaf2de.chunk.css",
-    "static/js/3.7ca0eec5.chunk.js": "/alpha-ritual/static/js/3.7ca0eec5.chunk.js",
-    "static/css/688.2f3dd2bc.chunk.css": "/alpha-ritual/static/css/688.2f3dd2bc.chunk.css",
-    "static/js/688.324ecf03.chunk.js": "/alpha-ritual/static/js/688.324ecf03.chunk.js",
+    "main.css": "/alpha-ritual/static/css/main.e5984b20.css",
+    "main.js": "/alpha-ritual/static/js/main.5c383fd0.js",
+    "static/css/102.fca2e773.chunk.css": "/alpha-ritual/static/css/102.fca2e773.chunk.css",
+    "static/js/102.77c987f7.chunk.js": "/alpha-ritual/static/js/102.77c987f7.chunk.js",
+    "static/css/688.8aed3bb1.chunk.css": "/alpha-ritual/static/css/688.8aed3bb1.chunk.css",
+    "static/js/688.6a793465.chunk.js": "/alpha-ritual/static/js/688.6a793465.chunk.js",
     "static/css/950.477b6b7e.chunk.css": "/alpha-ritual/static/css/950.477b6b7e.chunk.css",
     "static/js/950.f4f02db9.chunk.js": "/alpha-ritual/static/js/950.f4f02db9.chunk.js",
     "static/css/823.0ee8d74f.chunk.css": "/alpha-ritual/static/css/823.0ee8d74f.chunk.css",
@@ -182,7 +182,7 @@
     "static/media/coffinsEconomPrice3474.webp": "/alpha-ritual/static/media/coffinsEconomPrice3474.fed86156c1e0ec8b282d.webp",
     "static/media/decoration7.webp": "/alpha-ritual/static/media/decoration7.b3c7fba423aaccb2a28e.webp",
     "static/media/funeralSet9.webp": "/alpha-ritual/static/media/funeralSet9.c5c2ab72e262ee8f0a63.webp",
-    "static/media/freshflowerswreathImg.jpg": "/alpha-ritual/static/media/freshflowerswreathImg.2f1392eef6f73654b2f7.jpg",
+    "static/media/freshflowerswreathImg.jpg": "/alpha-ritual/static/media/freshflowerswreathImg.6fc5cc85078e039ae3b6.jpg",
     "static/media/decoration3.webp": "/alpha-ritual/static/media/decoration3.1683306ee3973c08ac01.webp",
     "static/media/funeralSet6.webp": "/alpha-ritual/static/media/funeralSet6.95757187613eac56ef45.webp",
     "static/media/coffinsAveragePrice3375.webp": "/alpha-ritual/static/media/coffinsAveragePrice3375.0f095ef687b76dd2fd73.webp",
@@ -250,12 +250,12 @@
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
     "static/media/arrowLeft.svg": "/alpha-ritual/static/media/arrowLeft.ced4667617a94daa01f2833b1d67fd96.svg",
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
-    "main.c3629b75.css.map": "/alpha-ritual/static/css/main.c3629b75.css.map",
-    "main.f30fee02.js.map": "/alpha-ritual/static/js/main.f30fee02.js.map",
-    "3.37eaf2de.chunk.css.map": "/alpha-ritual/static/css/3.37eaf2de.chunk.css.map",
-    "3.7ca0eec5.chunk.js.map": "/alpha-ritual/static/js/3.7ca0eec5.chunk.js.map",
-    "688.2f3dd2bc.chunk.css.map": "/alpha-ritual/static/css/688.2f3dd2bc.chunk.css.map",
-    "688.324ecf03.chunk.js.map": "/alpha-ritual/static/js/688.324ecf03.chunk.js.map",
+    "main.e5984b20.css.map": "/alpha-ritual/static/css/main.e5984b20.css.map",
+    "main.5c383fd0.js.map": "/alpha-ritual/static/js/main.5c383fd0.js.map",
+    "102.fca2e773.chunk.css.map": "/alpha-ritual/static/css/102.fca2e773.chunk.css.map",
+    "102.77c987f7.chunk.js.map": "/alpha-ritual/static/js/102.77c987f7.chunk.js.map",
+    "688.8aed3bb1.chunk.css.map": "/alpha-ritual/static/css/688.8aed3bb1.chunk.css.map",
+    "688.6a793465.chunk.js.map": "/alpha-ritual/static/js/688.6a793465.chunk.js.map",
     "950.477b6b7e.chunk.css.map": "/alpha-ritual/static/css/950.477b6b7e.chunk.css.map",
     "950.f4f02db9.chunk.js.map": "/alpha-ritual/static/js/950.f4f02db9.chunk.js.map",
     "823.0ee8d74f.chunk.css.map": "/alpha-ritual/static/css/823.0ee8d74f.chunk.css.map",
@@ -292,7 +292,7 @@
     "959.9259bb47.chunk.js.map": "/alpha-ritual/static/js/959.9259bb47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3629b75.css",
-    "static/js/main.f30fee02.js"
+    "static/css/main.e5984b20.css",
+    "static/js/main.5c383fd0.js"
   ]
 }
