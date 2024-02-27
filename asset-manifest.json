@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.c3629b75.css",
-    "main.js": "/alpha-ritual/static/js/main.681359c8.js",
-    "static/css/3.419720f7.chunk.css": "/alpha-ritual/static/css/3.419720f7.chunk.css",
-    "static/js/3.0e54d344.chunk.js": "/alpha-ritual/static/js/3.0e54d344.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.cf4c4d3f.js",
+    "static/css/3.281051ea.chunk.css": "/alpha-ritual/static/css/3.281051ea.chunk.css",
+    "static/js/3.b5867a52.chunk.js": "/alpha-ritual/static/js/3.b5867a52.chunk.js",
     "static/css/688.2f3dd2bc.chunk.css": "/alpha-ritual/static/css/688.2f3dd2bc.chunk.css",
     "static/js/688.324ecf03.chunk.js": "/alpha-ritual/static/js/688.324ecf03.chunk.js",
     "static/css/950.477b6b7e.chunk.css": "/alpha-ritual/static/css/950.477b6b7e.chunk.css",
@@ -251,9 +251,9 @@
     "static/media/arrowLeft.svg": "/alpha-ritual/static/media/arrowLeft.ced4667617a94daa01f2833b1d67fd96.svg",
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "main.c3629b75.css.map": "/alpha-ritual/static/css/main.c3629b75.css.map",
-    "main.681359c8.js.map": "/alpha-ritual/static/js/main.681359c8.js.map",
-    "3.419720f7.chunk.css.map": "/alpha-ritual/static/css/3.419720f7.chunk.css.map",
-    "3.0e54d344.chunk.js.map": "/alpha-ritual/static/js/3.0e54d344.chunk.js.map",
+    "main.cf4c4d3f.js.map": "/alpha-ritual/static/js/main.cf4c4d3f.js.map",
+    "3.281051ea.chunk.css.map": "/alpha-ritual/static/css/3.281051ea.chunk.css.map",
+    "3.b5867a52.chunk.js.map": "/alpha-ritual/static/js/3.b5867a52.chunk.js.map",
     "688.2f3dd2bc.chunk.css.map": "/alpha-ritual/static/css/688.2f3dd2bc.chunk.css.map",
     "688.324ecf03.chunk.js.map": "/alpha-ritual/static/js/688.324ecf03.chunk.js.map",
     "950.477b6b7e.chunk.css.map": "/alpha-ritual/static/css/950.477b6b7e.chunk.css.map",
@@ -293,6 +293,6 @@
   },
   "entrypoints": [
     "static/css/main.c3629b75.css",
-    "static/js/main.681359c8.js"
+    "static/js/main.cf4c4d3f.js"
   ]
 }
