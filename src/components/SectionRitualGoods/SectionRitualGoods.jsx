@@ -20,7 +20,7 @@ const SectionRitualGoods = () => {
         <h2 className='title' style={{ marginBottom: '16px', textAlign: 'center' }}>Ритуальні товари</h2>
 
         {displayedServices.map((item) => (
-            <p key={item.id} className='secondaryDescription' style={{ marginBottom: '24px', padding: '8px' }}>{item.title}</p>
+            <p key={item.id} className='secondaryDescription' style={{ marginBottom: '16px', padding: '8px' }}>{item.title}</p>
         ))}
 
         {!showAll && (

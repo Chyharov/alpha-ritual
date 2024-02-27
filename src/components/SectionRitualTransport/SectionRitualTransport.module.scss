@@ -1,23 +1,11 @@
 @import '../../sass/utils/mixin';
 
 .sectionRitualTransport {
-    padding: 32px 0px;
+    padding: 32px 0px 32px;
 }
 
 .ritualServicesContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.buttonMoreDetails {
-    color: var(--secondaryTextColor);
-    border: 1px solid var(--hoverColorDark);
-    background-color: transparent;
-    border-radius: 8px;
-    padding: 14px 77.5px;
-    width: 83.4%;
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
 }
