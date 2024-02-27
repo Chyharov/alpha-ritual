@@ -2,33 +2,35 @@
     font-family: Open Sans SemiBold;
     font-size: 20px;
     line-height: 1;
-    color: #EAE6DE;
+    color: var(--primaryTextColorDark);
     padding: 8px;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 32px;
         line-height: 1.25;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 32px;
         line-height: 1.25;
     }
 }
 
 .mediumTitle {
-    font-family: Open Sans ExtraBold;
+    font-family: Open Sans SemiBold;
     font-size: 20px;
     line-height: 1;
-    color: #EAE6DE;
+    color: var(--primaryTextColorDark);
+    text-align: center;
+    padding: 8px;
 
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 28px;
         line-height: 1.12;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 28px;
         line-height: 1.12;
     }
@@ -38,16 +40,16 @@
     font-family: Open Sans ExtraBold;
     font-size: 16px;
     line-height: 1.38;
-    color: #EAE6DE;
+    color: var(--primaryTextColorDark);
     padding: 8px;
 
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 28px;
         line-height: 1.12;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 28px;
         line-height: 1.12;
     }
@@ -57,14 +59,14 @@
     font-family: Open Sans Regular;
     font-size: 16px;
     line-height: 1.38;
-    color: #EAE6DE;
+    color: var(--primaryTextColorDark);
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 28px;
         line-height: 1.12;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 28px;
         line-height: 1.12;
     }
@@ -74,15 +76,15 @@
     font-family: Open Sans Regular;
     font-size: 16px;
     line-height: 1.38;
-    color: #EAE6DE;
+    color: var(--primaryTextColorDark);
     padding: 8px;
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 16px;
         line-height: 1.38;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 16px;
         line-height: 1.38;
     }
@@ -92,15 +94,15 @@
     font-family: Open Sans Regular;
     font-size: 14px;
     line-height: 1.43;
-    color: #EAE6DE;
+    color: var(--primaryTextColorDark);
     
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 14px;
         line-height: 1.43;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 14px;
         line-height: 1.43;
     }
@@ -113,12 +115,12 @@
     color: #D4CEBF;
 
 
-    @media screen and (min-width: 768px) {
+    @include mq(tab) {
         font-size: 14px;
         line-height: 1.43;
     }
 
-    @media screen and (min-width: 1360px) {
+    @include mq(desk) {
         font-size: 14px;
         line-height: 1.43;
     }

@@ -11,48 +11,6 @@
     align-items: center;
 }
 
-.wreathsTitle {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1;
-    color: var(--primaryTextColorDark);
-    text-align: center;
-    padding: 8px;
-    margin-bottom: 16px;
-}
-
-.wreathsDescription {
-    font-family: Open Sans Regular;
-    font-size: 16px;
-    line-height: 1.34;
-    color: var(--primaryTextColorDark);
-    padding: 8px;
-}
-
-.buttonMoreDetails {
-    color: var(--secondaryTextColor);
-    border: 1px solid var(--hoverColorDark);
-    background-color: transparent;
-    border-radius: 8px;
-    padding: 14px 77.5px;
-    width: 83.4%;
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
-}
-
-.wreathsListItem {
-    border-radius: 8px;
-    background-color: var(--cardBlackDark);
-    margin-bottom: 8px;
-}
-
-.wreathsLinkList {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    width: 100%;
-}
-
 .wreathsLinkitem {
     height: 288px;
     width: 100%;

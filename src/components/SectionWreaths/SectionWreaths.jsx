@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import freshflowerswreathImg from '../../images/wreaths/freshflowerswreathImg.jpg'
 import artificialwreathsImg from '../../images/wreaths/artificialwreathsImg.jpg'
 import s from './SectionWreaths.module.scss'
@@ -22,6 +23,8 @@ const wreathsDescriptionSecondArray = [
   { id: 8, title: "Флористи поховального будинку «Альфа» точно знають усі правила та традиції складання ритуальних вінків. Ви можете купити як окремо вінок на поховання з доставкою по Києву, так і замовити комплексне флористичне оформлення церемонії прощання." },
   ];
 
+const buttonDescription = 'Детальніше';
+
 const SectionWreath = () => {
   const [showAll, setShowAll] = useState(false);
   const [showAllSecond, setShowAllSecond] = useState(false);
@@ -31,40 +34,40 @@ const SectionWreath = () => {
   return (
     <section className={s.sectionWreaths}>
       <div className={`container ${s.wreathsContainer}`}>
-        <h2 className={s.wreathsTitle}>Похороний вінок чи композиція?</h2>
+        <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Похороний вінок чи композиція?</h2>
 
-        {displayedwreaths.map((item) => (
-          <p key={item.id} className={s.wreathsDescription} style={{ marginBottom: '16px' }}>{item.title}</p>
+        {displayedwreaths.map((item, index) => (
+          <p key={item.id} className="description" style={{ marginBottom: index === displayedwreaths.length - 1 ? '0px' : '16px' }}>{item.title}</p>
         ))}
 
         {!showAll && (
-          <button className={s.buttonMoreDetails} style={{ marginBottom: '64px', marginTop: '24px' }} onClick={() => setShowAll(true)}>Детальніше</button>
+           <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />
         )}
 
-        <h2 className={s.wreathsTitle}>Які квіти найкращі для поховального вінка?</h2>
+        <h2 className='mediumTitle' style={{ marginTop: '64px', marginBottom: '16px' }} >Які квіти найкращі для поховального вінка?</h2>
 
-        <p className={s.wreathsDescription}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні поховальні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
+        <p className="description">Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні поховальні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
         
-        <ul className={s.wreathsList}>
-          <li className={s.wreathsListItem}>
-            <p className={s.wreathsDescription}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
+        <ul className="list">
+          <li className="listItem">
+            <p className="description">Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
           </li>
-          <li className={s.wreathsListItem}>
-            <p className={s.wreathsDescription}>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
+          <li className="listItem">
+            <p className="description">Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
           </li>
-          <li className={s.wreathsListItem}>
-            <p className={s.wreathsDescription}>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
+          <li className="listItem">
+            <p className="description">Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
           </li>
-          <li className={s.wreathsListItem}>
-            <p className={s.wreathsDescription}>Гілки верби символізують перехід у Царство Небесне.</p>
+          <li className="listItem">
+            <p className="description">Гілки верби символізують перехід у Царство Небесне.</p>
           </li>
         </ul>
 
-        <p className={s.wreathsDescription}>Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
+        <p className="description">Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
 
-        <p className={s.wreathsDescription}>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
+        <p className="description">Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
 
-        <ul className={s.wreathsLinkList}>
+        <ul className='list'>
           <Link to="/freshflowerswreath">
             <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginBottom: '16px' }} className={s.wreathsLinkitem}>
               <h2 className='title'>Вінок із живих квітів</h2>
@@ -77,27 +80,26 @@ const SectionWreath = () => {
           </Link>
         </ul>
 
-        <h2 className={s.wreathsTitle}>Правила складання поховального вінка</h2>
+        <h2 className="title">Правила складання поховального вінка</h2>
 
         {displayedwreathsSecond.map((item, index) => {
           if (item.id >= 2 && item.id <= 6) {
             return (
               <ul key={item.id} className={s.wreathsList}>
-                <li className={s.wreathsListItem}>
-                  <p className={s.wreathsDescription}>{item.title}</p>
+                <li className="listItem">
+                  <p className="description">{item.title}</p>
                 </li>
               </ul>
             );
           } else {
-            const isLastItem = index === displayedwreathsSecond.length - 1;
             return (
-              <p key={item.id} className={s.wreathsDescription} style={{ marginBottom: isLastItem ? '0' : '16px' }}>{item.title}</p>
+              <p key={item.id} className="description" style={{ marginBottom: index === displayedwreathsSecond.length - 1 ? '0px' : '16px' }}>{item.title}</p>
             );
           }
         })}
 
         {!showAllSecond && (
-          <button className={s.buttonMoreDetails} style={{ marginTop: '24px' }} onClick={() => setShowAllSecond(true)}>Детальніше</button>
+          <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAllSecond(true)} />
         )}
 
       </div>
