@@ -15,6 +15,7 @@
     width: 20px;
     height: 20px;
     margin-right: 12px;
+    margin-left: 12px;
 }
 
 .titleContainer {
@@ -24,15 +25,16 @@
 }
 
 .descriptionTitleForPage,
-.linkTitleForPage {
+.linkTitleForPage,
+.prevPage {
     font-family: Open Sans Regular;
     font-size: 14px;
     line-height: 1.43;
 }
 
 
-.linkTitleForPage {
-    margin-right: 12px;
+.linkTitleForPage,
+.prevPage {
     color: var(--secondaryTextColor);
 }
 
