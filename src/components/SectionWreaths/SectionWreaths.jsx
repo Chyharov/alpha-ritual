@@ -44,11 +44,11 @@ const SectionWreath = () => {
            <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />
         )}
 
-        <h2 className='mediumTitle' style={{ marginTop: '64px', marginBottom: '16px' }} >Які квіти найкращі для поховального вінка?</h2>
+        <h2 className='mediumTitle' style={{ marginTop: '64px', marginBottom: '16px', textAlign: 'center' }} >Які квіти найкращі для поховального вінка?</h2>
 
-        <p className="description">Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні поховальні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
+        <p className="description" style={{ marginBottom: '16px' }}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні поховальні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
         
-        <ul className="list">
+        <ul className="list" style={{ marginBottom: '16px' }}>
           <li className="listItem">
             <p className="description">Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
           </li>
@@ -63,11 +63,11 @@ const SectionWreath = () => {
           </li>
         </ul>
 
-        <p className="description">Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
+        <p className="description" style={{ marginBottom: '16px' }}>Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
 
-        <p className="description">Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
+        <p className="description" style={{ marginBottom: '64px' }}>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
 
-        <ul className='list'>
+        <ul className='list' style={{ marginBottom: '64px' }}>
           <Link to="/freshflowerswreath">
             <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginBottom: '16px' }} className={s.wreathsLinkitem}>
               <h2 className='title'>Вінок із живих квітів</h2>
@@ -80,7 +80,7 @@ const SectionWreath = () => {
           </Link>
         </ul>
 
-        <h2 className="title">Правила складання поховального вінка</h2>
+        <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Правила складання поховального вінка</h2>
 
         {displayedwreathsSecond.map((item, index) => {
           if (item.id >= 2 && item.id <= 6) {
