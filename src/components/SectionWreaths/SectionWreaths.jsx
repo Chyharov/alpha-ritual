@@ -87,7 +87,7 @@ const SectionWreath = () => {
             return (
               <ul key={item.id} className={s.wreathsList}>
                 <li className="listItem">
-                  <p className="description">{item.title}</p>
+                  <p key={item.id} className="description">{item.title}</p>
                 </li>
               </ul>
             );

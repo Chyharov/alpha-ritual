@@ -4,6 +4,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Modal from '../ModalWindow/ModalWindow'
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionFreshFlowersWreath.module.scss'
 
 const FreshFlowersWreathPictureList = [
@@ -62,6 +63,9 @@ const SectionFreshFlowersWreath = () => {
     document.body.style.overflow = 'hidden';
   };
 
+  const buttonDescription = 'Детальніше';
+  const buttonShowAll = 'Переглянути всі';
+
     return (
         <section className={s.sectionFreshFlowersWreath}>
           <div className={'container ' + s.wreathsContainer}>
@@ -103,29 +107,29 @@ const SectionFreshFlowersWreath = () => {
               return (
                 <ul key={item.id} className="list">
                   <li className="listItem">
-                    <p className="description">{item.title}</p>
+                    <p key={item.id} className="description">{item.title}</p>
                   </li>
                 </ul>
               );
             } else {
               return (
-                <p key={item.id} className="description">{item.title}</p>
+                <p key={item.id} className="description" style={{ marginBottom: index === displayedformCompositionColorRange.length - 1 ? '0px' : '16px' }}>{item.title}</p>
               );
             }
           })}
 
           {!showAllComposition && (
-            <button className="button" style={{ marginTop: '24px' }} onClick={() => setShowAllComposition(true)}><p className="buttonDescription">Детальніше</p></button>
+           <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAllComposition(true)} />
           )}
 
           <h2 className="title" style={{ marginTop: '64px', marginBottom: '16px', textAlign: 'center' }}>Як живі квіти у жалобному вінку зберігають свою свіжість?</h2>
 
-          {displayedHowSaveFreshFlowers.map((item) => (
-            <p key={item.id} className="description" style={{ marginBottom: '16px' }}>{item.title}</p>
+          {displayedHowSaveFreshFlowers.map((item, index) => (
+            <p key={item.id} className="description" style={{ marginBottom: index === displayedHowSaveFreshFlowers.length - 1 ? '0px' : '16px' }}>{item.title}</p>
           ))}
 
           {!showAll && (
-            <button className="button" style={{ marginTop: '8px' }} onClick={() => setShowAll(true)}><p className="buttonDescription">Детальніше</p></button>
+            <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />
           )}
 
           <h2 className="title" style={{ marginTop: '64px', marginBottom: '16px', textAlign: 'center' }}>Вінки із живих квітів</h2>
@@ -152,8 +156,7 @@ const SectionFreshFlowersWreath = () => {
             </CarouselProvider>
           </div>
           
-
-          <button className="button"><p className="buttonDescription"></p>Переглянути всі</button>
+          <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonShowAll} onClick={() => setShowAll(true)} />
           
               {modalOpen && selectedImage && (
               <Modal
