@@ -11,8 +11,9 @@
 
 .sectionFreshFlowersWreathGalleryList {
     display: flex;
+    flex-direction: column;
 }
 
 .sectionFreshFlowersWreathGalleryItem {
-    width: 100px;
+    width: 100%;
 }

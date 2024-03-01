@@ -143,7 +143,7 @@ const SectionFreshFlowersWreath = () => {
           
             <Slider className={s.sliderPhoto}>
               {FreshFlowersWreathPictureList.map(photo => (
-                <Slide key={photo.id} index={photo.id}>
+                <Slide key={photo.id}>
                   <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
                 </Slide>
               ))}
