@@ -18,6 +18,7 @@ const AdditionalServicesPage = lazy(() => import('pages/AdditionalServicesPage/A
 const RitualTransportPage = lazy(() => import('pages/RitualTransportPage/RitualTransportPage'));
 const RitualServicesPage = lazy(() => import('pages/RitualServicesPage/RitualServicesPage'));
 const AboutPage = lazy(() => import('pages/AboutPage/AboutPage'));
+const FreshFlowersWreathGallery = lazy(() => import('pages/FreshFlowersWreathGallery/FreshFlowersWreathGallery'));
 
 export const App = () => {
   return (
@@ -41,6 +42,7 @@ export const App = () => {
           <Route path="/ritualtransport" element={<RitualTransportPage />} />
           <Route path="/ritualservices" element={<RitualServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/freshflowerswreathgallery" element={<FreshFlowersWreathGallery />} />
         </Routes>
       </Suspense>
     </>
