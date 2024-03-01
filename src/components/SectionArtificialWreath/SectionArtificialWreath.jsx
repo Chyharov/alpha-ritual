@@ -4,6 +4,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Modal from '../ModalWindow/ModalWindow'
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionArtificialWreath.module.scss'
 
 const ArtificialWreathsPictureList = [
@@ -46,6 +47,8 @@ const whyArtificialWreath = [
 ];
 
 const SectionArtificialWreath = () => {
+  const buttonDescription = 'Детальніше';
+  const buttonShowAll = 'Переглянути всі';
   const [showAll, setShowAll] = useState(false);
   const [showAllComposition, setShowAllComposition] = useState(false);
   const displayedWhyArtificialWreath = showAll ? whyArtificialWreath : whyArtificialWreath.slice(0, 1);
@@ -105,7 +108,7 @@ const SectionArtificialWreath = () => {
             })}
 
             {!showAllComposition && (
-              <button className="button" style={{ marginTop: '8px', marginBottom: '64px' }} onClick={() => setShowAllComposition(true)}><p className="buttonDescription">Детальніше</p></button>
+              <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAllComposition(true)} />  
             )}
             
             <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Чому штучні квіти найкращі для жалобного вінка?</h2>
@@ -115,7 +118,7 @@ const SectionArtificialWreath = () => {
             ))}
 
             {!showAll && (
-              <button className="button" style={{ marginTop: '8px', marginBottom: '64px' }} onClick={() => setShowAll(true)}><p className="buttonDescription">Детальніше</p></button>
+              <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />  
             )}
 
             <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінки із штучних квітів</h2>
@@ -142,9 +145,7 @@ const SectionArtificialWreath = () => {
               </CarouselProvider>
             </div>
             
-
-            <button className="button">Переглянути всі</button>
-
+            <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonShowAll} />  
             {modalOpen && selectedImage && (
               <Modal
                 selectedImage={selectedImage}

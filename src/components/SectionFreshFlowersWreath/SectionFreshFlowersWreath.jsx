@@ -50,6 +50,8 @@ const howSaveFreshFlowers = [
 ];
 
 const SectionFreshFlowersWreath = () => {
+  const buttonDescription = 'Детальніше';
+  const buttonShowAll = 'Переглянути всі';
   const [showAll, setShowAll] = useState(false);
   const [showAllComposition, setShowAllComposition] = useState(false);
   const displayedHowSaveFreshFlowers = showAll ? howSaveFreshFlowers : howSaveFreshFlowers.slice(0, 1);
@@ -62,9 +64,6 @@ const SectionFreshFlowersWreath = () => {
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
-
-  const buttonDescription = 'Детальніше';
-  const buttonShowAll = 'Переглянути всі';
 
     return (
         <section className={s.sectionFreshFlowersWreath}>
