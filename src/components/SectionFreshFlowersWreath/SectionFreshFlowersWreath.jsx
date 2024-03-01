@@ -155,7 +155,7 @@ const SectionFreshFlowersWreath = () => {
             </CarouselProvider>
           </div>
           
-          <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonShowAll} onClick={() => setShowAll(true)} />
+          <ButtonMoreDetails buttonDescription={buttonShowAll} onClick={() => setShowAll(true)} />
           
               {modalOpen && selectedImage && (
               <Modal

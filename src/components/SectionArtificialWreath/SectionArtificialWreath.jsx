@@ -108,7 +108,7 @@ const SectionArtificialWreath = () => {
             })}
 
             {!showAllComposition && (
-              <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAllComposition(true)} />  
+              <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '64px' }} buttonDescription={buttonDescription} onClick={() => setShowAllComposition(true)} />  
             )}
             
             <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Чому штучні квіти найкращі для жалобного вінка?</h2>
@@ -118,7 +118,7 @@ const SectionArtificialWreath = () => {
             ))}
 
             {!showAll && (
-              <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />  
+              <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '64px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />  
             )}
 
             <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінки із штучних квітів</h2>
@@ -145,7 +145,7 @@ const SectionArtificialWreath = () => {
               </CarouselProvider>
             </div>
             
-            <ButtonMoreDetails style={{ marginTop: '24px' }} buttonDescription={buttonShowAll} />  
+            <ButtonMoreDetails buttonDescription={buttonShowAll} />  
             {modalOpen && selectedImage && (
               <Modal
                 selectedImage={selectedImage}
