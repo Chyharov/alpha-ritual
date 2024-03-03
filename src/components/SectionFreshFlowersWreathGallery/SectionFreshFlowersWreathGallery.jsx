@@ -45,7 +45,7 @@ const SectionFreshFlowersWreathGallery = () => {
         <section className={s.sectionFreshFlowersWreathGallery}>
             <div className={'container ' + s.freshFlowersWreathGalleryContainer}>
                 <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінок із живих квітів</h2>
-                <ul className={s.sectionFreshFlowersWreathGalleryList}>
+                <ul style={{ marginBottom: showAllPhotos ? '0px' : '16px' }} className={s.sectionFreshFlowersWreathGalleryList}>
                     {displayedPhotos.map(photo => (
                         <li key={photo.id} className={s.sectionFreshFlowersWreathGalleryItem}>
                             <img className={s.freshFlowersWreathGalleryImg} src={photo.src} alt={photo.alt} />
