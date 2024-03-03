@@ -1,6 +1,6 @@
 @import '../../sass/utils/mixin';
 
-.ritualCarParkList {
+.galleryWindowContainer {
     width: 100%;
     padding: 20px 0px 24px;
     outline: 1px solid var(--secondaryTextColor);
@@ -10,33 +10,6 @@
     @include mq(tab) {
         padding: 30px 10px 30px;
     }
-}
-
-.ritualCarPark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ritualCarPark__container {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include mq(tab) {
-        width: 700px;
-    }
-}
-
-.ritualCarParkList__description {
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
-    text-align: center;
-    color: var(--primaryTextColorDark);
-    padding: 4px 8px;
-    margin-bottom: 40px;
 }
 
 .containerForButtons {
