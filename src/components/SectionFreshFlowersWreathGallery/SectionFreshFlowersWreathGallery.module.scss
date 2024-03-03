@@ -9,12 +9,17 @@
     align-items: center;
 }
 
-.sectionFreshFlowersWreathGalleryList {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
+.freshFlowersWreathGalleryImg {
+    border-radius: 8px;
+    border: 1px solid var(--secondaryTextColor);
 }
 
-.sectionFreshFlowersWreathGalleryItem {
-    width: 100%;
+.sectionFreshFlowersWreathGalleryList {
+    display: grid;
+    align-items: baseline;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 16px;
 }
