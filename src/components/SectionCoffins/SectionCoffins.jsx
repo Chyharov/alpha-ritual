@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import GalleryWindow from 'components/GalleryWindow/GalleryWindow';
 import s from './SectionCoffins.module.scss'
 
@@ -68,7 +69,7 @@ const CoffinsPictureEconomPrice = [
 ];
 
 
-const formCompositionForArtificialWreath = [
+const formCompositionForEliteCoffins = [
   { id: 1, title: "Спосіб життя та навколишні людини предмети демонструють його статус і становище у суспільстві. Елітні автомобілі та нерухомість, дорогі предмети гардеробу та аксесуари – все це характерні атрибути високої статусності." },
   { id: 2, title: "Поховання – це проводи померлої людини в останній шлях, а значить, це остання можливість віддати їй всю повноту почестей відповідно до її прижиттєвого статусу." },
   { id: 3, title: "Елітна труна з цінних порід дерева ручної роботи з ідеальним опрацюванням найдрібніших деталей декору та фурнітури, бездоганним поліруванням та лакуванням – це демонстрація не просто статусності покійного, а й безмежної поваги до його близьких рідних, друзів та колег." },
@@ -80,11 +81,29 @@ const formCompositionForArtificialWreath = [
   { id: 9, title: "Кожна така труна робиться майстрами кілька днів, через що її вартість виходить порівняно високою. При цьому ми не женемося за надприбутком і пропонуємо чесні ціни, які повністю відображають всю повноту копіткої багатоденної праці майстрів і елітних матеріалів, що використовуються." },
 ];
 
+const standartCoffins = [
+  { id: 1, title: "Вартість стандартної дерев’яної ритуальної труни середнього цінового рівня в нашому поховальному бюро також є однією з найдоступніших у Києві завдяки чесному відношенню до виробництва та ціноутворення. У виробництві недорогих стандартн..." },
+  { id: 2, title: "Вартість стандартної дерев’яної ритуальної труни середнього цінового рівня в нашому поховальному бюро також є однією з найдоступніших у Києві завдяки чесному відношенню до виробництва та ціноутворення. У виробництві недорогих стандартних моделей середньоцінового рівня ми використовуємо недорогу, але міцну деревину, яка після ретельної обробки набуває урочистого вигляду, що відповідає траурному заходу. Внутрішня оббивка виконується за допомогою недорогого, але якісного та приємного на вигляд текстилю." },
+];
+
+const buttonDescription = 'Детальніше';
+const showAllDescription = 'Переглянути всі';
+
 
 const SectionCoffins = () => {
   const [showAllComposition, setShowAllComposition] = useState(false);
-  const displayedFormCompositionForArtificialWreath = showAllComposition ? formCompositionForArtificialWreath : formCompositionForArtificialWreath.slice(0, 1);
+  const [displayedCoffinId, setDisplayedCoffinId] = useState(1);
+  const [showAll, setShowAll] = useState(false);
+  const displayedFormCompositionForEliteCoffins = showAllComposition ? formCompositionForEliteCoffins : formCompositionForEliteCoffins.slice(0, 1);
+  const displayedCoffin = showAll ? standartCoffins.find(coffin => coffin.id === 2) : standartCoffins.find(coffin => coffin.id === displayedCoffinId);
 
+  const handleShowAllClick = () => {
+    if (!showAll) {
+      setDisplayedCoffinId(2);
+    }
+    setShowAll(true);
+  };
+  
 
     return (
         <section className={s.sectionCoffinsWreaths}>
@@ -98,7 +117,7 @@ const SectionCoffins = () => {
 
             <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Елітні дерев’яні труни та саркофаги</h2>
 
-            {displayedFormCompositionForArtificialWreath.map((item, index) => {
+            {displayedFormCompositionForEliteCoffins.map((item, index) => {
             if (item.id >= 6 && item.id <= 8) {
               return (
                 <ul key={item.id} className="list">
@@ -115,7 +134,7 @@ const SectionCoffins = () => {
           })}
 
           {!showAllComposition && (
-            <button className="button" style={{ marginTop: '8px', marginBottom: '56px' }} onClick={() => setShowAllComposition(true)}><p className="buttonDescription">Детальніше</p></button>
+            <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '56px' }} buttonDescription={buttonDescription} onClick={() => setShowAllComposition(true)} />
           )}
           
           <GalleryWindow 
@@ -123,24 +142,44 @@ const SectionCoffins = () => {
             title="Елітні труни"
             material="Матеріал"
             materialDescription="дерев’яна заготовка покрита лаком"
-            style={{ marginTop: '156px' }}
           />
+
+          <ButtonMoreDetails style={{ marginTop: '24px', marginBottom: '64px' }} buttonDescription={showAllDescription} />
+
+          <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Стандартні та недорогі бюджетні труни</h2>
+          
+          {displayedCoffin && (
+            <p className="description" style={{ marginBottom: displayedCoffin.id === 2 ? '64px' : '16px' }}>{displayedCoffin.title}</p>
+          )}
+          {!showAll && (
+            <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '56px' }} buttonDescription={buttonDescription} onClick={handleShowAllClick} />  
+          )}
 
           <GalleryWindow 
             array={coffinsPictureAveragePrice}
             title="Стандартні та недорогі бюджетні труни"
             material="Матеріал"
             materialDescription="дерев’яна заготовка, з елементами дерева, покритого лаком"
-            style={{ marginTop: '156px' }}
           />
+
+          <ButtonMoreDetails style={{ marginTop: '24px', marginBottom: '64px' }} buttonDescription={showAllDescription} />
+
+          <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Економ труни</h2>
+
+          <p className="description" style={{ marginBottom:'16px' }}>Труна не обов’язково повинна бути елітною з цінних порід дерева з багатою внутрішньою оббивкою вишуканими тканинами. Це може бути і зовсім недорога труна. При цьому його скромне, але урочисте оформлення недорогими тканинами, що відповідають жалобній церемонії, підкреслить всю повноту поваги до покійного.</p>
+
+          <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '56px' }} buttonDescription={buttonDescription} onClick={handleShowAllClick} />  
 
           <GalleryWindow 
             array={CoffinsPictureEconomPrice}
             title="Економ труни"
             material="Матеріал"
             materialDescription="дерев’яна заготівля, оббита тканиною (шовк, атлас, велюр, парча)"
-            style={{ marginTop: '156px' }}
           />
+
+          <ButtonMoreDetails style={{ marginTop: '24px', marginBottom: '24px' }} buttonDescription={showAllDescription} />
+          
+          <p className="description">У нашому ритуальному бюро ви можете замовити як елітну, так і недорогу бюджетну труну для самостійної організації поховання. Також у вас є можливість безкоштовно викликати додому у будь-який час доби поховального агента, який допоможе вам організувати всю жалобну церемонію та підібрати труну відповідно до бюджету та статусу покійного.</p>
 
           </div>
         </section>
