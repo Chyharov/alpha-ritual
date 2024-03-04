@@ -50,22 +50,22 @@ const coffinsPictureAveragePrice = [
 ];
   
 const CoffinsPictureEconomPrice = [
-  { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3438.webp'), alt: 'Зображення 1', width: '80', height: '120' },
-  { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3439.webp'), alt: 'Зображення 2', width: '180', height: '120' },
-  { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3443.webp'), alt: 'Зображення 3', width: '180', height: '120' },
-  { id: 4, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3446.webp'), alt: 'Зображення 4', width: '180', height: '120' },
-  { id: 5, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3452.webp'), alt: 'Зображення 5', width: '180', height: '120' },
-  { id: 6, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3455.webp'), alt: 'Зображення 6', width: '180', height: '120' },
-  { id: 7, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3458.webp'), alt: 'Зображення 7', width: '180', height: '120' },
-  { id: 8, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3462.webp'), alt: 'Зображення 8', width: '180', height: '120' },
-  { id: 9, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3464.webp'), alt: 'Зображення 9', width: '180', height: '120' },
-  { id: 10, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3471.webp'), alt: 'Зображення 10', width: '180', height: '120' },
-  { id: 11, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3472.webp'), alt: 'Зображення 11', width: '180', height: '120' }, 
-  { id: 12, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3474.webp'), alt: 'Зображення 12', width: '180', height: '120' },
-  { id: 13, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3476.webp'), alt: 'Зображення 13', width: '180', height: '120' },
-  { id: 14, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3477.webp'), alt: 'Зображення 14', width: '180', height: '120' },
-  { id: 15, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3478.webp'), alt: 'Зображення 15', width: '180', height: '120' },
-  { id: 16, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3480.webp'), alt: 'Зображення 16', width: '180', height: '120' },
+  { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice1.jpg'), alt: 'Зображення 1' },
+  { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice2.jpg'), alt: 'Зображення 2' },
+  { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3.jpg'), alt: 'Зображення 3' },
+  { id: 4, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice4.jpg'), alt: 'Зображення 4' },
+  { id: 5, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice5.jpg'), alt: 'Зображення 5' },
+  { id: 6, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice6.jpg'), alt: 'Зображення 6' },
+  { id: 7, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice7.jpg'), alt: 'Зображення 7' },
+  { id: 8, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice8.jpg'), alt: 'Зображення 8' },
+  { id: 9, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice9.jpg'), alt: 'Зображення 9' },
+  { id: 10, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice10.jpg'), alt: 'Зображення 10' },
+  { id: 11, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice11.jpg'), alt: 'Зображення 11' }, 
+  { id: 12, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice12.jpg'), alt: 'Зображення 12' },
+  { id: 13, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice13.jpg'), alt: 'Зображення 13' },
+  { id: 14, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice14.jpg'), alt: 'Зображення 14' },
+  { id: 15, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice15.jpg'), alt: 'Зображення 15' },
+  { id: 16, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice16.jpg'), alt: 'Зображення 16' },
 ];
 
 
@@ -86,6 +86,11 @@ const standartCoffins = [
   { id: 2, title: "Вартість стандартної дерев’яної ритуальної труни середнього цінового рівня в нашому поховальному бюро також є однією з найдоступніших у Києві завдяки чесному відношенню до виробництва та ціноутворення. У виробництві недорогих стандартних моделей середньоцінового рівня ми використовуємо недорогу, але міцну деревину, яка після ретельної обробки набуває урочистого вигляду, що відповідає траурному заходу. Внутрішня оббивка виконується за допомогою недорогого, але якісного та приємного на вигляд текстилю." },
 ];
 
+const economCoffins = [
+  { id: 1, title: "Труна не обов’язково повинна бути елітною з цінних порід дерева з багатою внутрішньою оббивкою вишуканими тканинами. Це може бути і зовсім недорога труна. При цьому його скромне, але урочисте оформлення недорогими тканина..." },
+  { id: 2, title: "Труна не обов’язково повинна бути елітною з цінних порід дерева з багатою внутрішньою оббивкою вишуканими тканинами. Це може бути і зовсім недорога труна. При цьому його скромне, але урочисте оформлення недорогими тканинами, що відповідають жалобній церемонії, підкреслить всю повноту поваги до покійного." },
+];
+
 const buttonDescription = 'Детальніше';
 const showAllDescription = 'Переглянути всі';
 
@@ -93,15 +98,25 @@ const showAllDescription = 'Переглянути всі';
 const SectionCoffins = () => {
   const [showAllComposition, setShowAllComposition] = useState(false);
   const [displayedCoffinId, setDisplayedCoffinId] = useState(1);
+  const [displayedEconomCoffinId, setDisplayedEconomCoffinId] = useState(1);
   const [showAll, setShowAll] = useState(false);
+  const [showEconom, setShowEconom] = useState(false);
   const displayedFormCompositionForEliteCoffins = showAllComposition ? formCompositionForEliteCoffins : formCompositionForEliteCoffins.slice(0, 1);
   const displayedCoffin = showAll ? standartCoffins.find(coffin => coffin.id === 2) : standartCoffins.find(coffin => coffin.id === displayedCoffinId);
+  const displayedEconomCoffin = showEconom ? economCoffins.find(coffin => coffin.id === 2) : economCoffins.find(coffin => coffin.id === displayedEconomCoffinId);
 
   const handleShowAllClick = () => {
     if (!showAll) {
       setDisplayedCoffinId(2);
     }
     setShowAll(true);
+  };
+
+  const handleShowEconomClick = () => {
+    if (!showAll) {
+      setDisplayedEconomCoffinId(2);
+    }
+    setShowEconom(true);
   };
   
 
@@ -166,9 +181,13 @@ const SectionCoffins = () => {
 
           <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Економ труни</h2>
 
-          <p className="description" style={{ marginBottom:'16px' }}>Труна не обов’язково повинна бути елітною з цінних порід дерева з багатою внутрішньою оббивкою вишуканими тканинами. Це може бути і зовсім недорога труна. При цьому його скромне, але урочисте оформлення недорогими тканинами, що відповідають жалобній церемонії, підкреслить всю повноту поваги до покійного.</p>
+          {displayedEconomCoffin && (
+            <p className="description" style={{ marginBottom: displayedEconomCoffin.id === 2 ? '64px' : '16px' }}>{displayedEconomCoffin.title}</p>
+          )}
 
-          <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '56px' }} buttonDescription={buttonDescription} onClick={handleShowAllClick} />  
+          {!showEconom && (
+            <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '56px' }} buttonDescription={buttonDescription} onClick={handleShowEconomClick} />  
+          )}
 
           <GalleryWindow 
             array={CoffinsPictureEconomPrice}
