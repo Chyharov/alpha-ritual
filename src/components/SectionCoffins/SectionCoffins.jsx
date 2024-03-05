@@ -94,7 +94,6 @@ const economCoffins = [
 const buttonDescription = 'Детальніше';
 const showAllDescription = 'Переглянути всі';
 
-
 const SectionCoffins = () => {
   const [showAllComposition, setShowAllComposition] = useState(false);
   const [displayedCoffinId, setDisplayedCoffinId] = useState(1);
