@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-import Modal from '../ModalWindow/ModalWindow'
-import arrowLeft from '../../images/arrowLeft.svg';
-import arrowRight from '../../images/arrowRight.svg';
+import PhotoSlider from "components/PhotoSlider/PhotoSlider";
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionCrosses.module.scss'
 
@@ -41,17 +37,8 @@ const SectionCrosses = () => {
   const buttonShowAllDescription = 'Переглянути всі';
   const [showWhy, setShowWhy] = useState(false);
   const [showWhich, setShowWhich] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
   const displayedWhyCantInstalMonument = showWhy ? whyArtificialWreath : whyArtificialWreath.slice(0, 1);
   const displayedWhichRitualCross = showWhich ? WhichRitualCross : WhichRitualCross.slice(0, 1);
-
-
-  const openModal = (id) => {
-    setSelectedImage(CrossesPictureList.find(image => image.id === id));
-    setModalOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
 
   return (
     <section className={s.sectionCrosses}>
@@ -93,37 +80,7 @@ const SectionCrosses = () => {
 
         <h2 className='title' style={{ marginBottom: '16px', textAlign: 'center' }}>Хрести</h2>
 
-        <div className={s.photosContainer}>
-          <CarouselProvider
-            naturalSlideWidth={288}
-            naturalSlideHeight={288}
-            totalSlides={CrossesPictureList.length}
-            infinite={true}>
-            
-            <Slider className={s.sliderPhoto}>
-              {CrossesPictureList.map(photo => (
-                <Slide key={photo.id}>
-                  <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
-                </Slide>
-              ))}
-            </Slider>
-
-            <div className={s.containerForButtons}>
-              <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
-              <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
-            </div>
-            </CarouselProvider>
-          </div>
-
-        
-        {modalOpen && selectedImage && (
-          <Modal
-          selectedImage={selectedImage}
-          arrayPhoto={CrossesPictureList}
-          setSelectedImage={setSelectedImage}
-          setModalOpen={setModalOpen}
-          />
-        )}
+        <PhotoSlider array={CrossesPictureList} />
 
         <ButtonMoreDetails style={{ marginBottom: '64px' }} buttonDescription={buttonShowAllDescription} />  
         
