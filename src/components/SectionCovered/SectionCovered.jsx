@@ -40,28 +40,29 @@ const SectionCoverd = () => {
 
   return (
       <section className={s.sectionDecorations}>
-            <div className={'container ' + s.decorationsContainer}>
-                <div className={s.decorationsDescriptionContainer}>
-                    <h2 className="title" style={{ marginBottom: '20px' }}>Покривала</h2>
-                        <ul className={s.decorationsPictureList}>
-                        {decorationsPictureList.map((image) => (
-                        <li className={s.decorationsPictureList__item} key={image.id}>
-                            <img className={s.decorationsPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
-                        </li>
-                        ))}
-                        </ul>
+        <div className={'container ' + s.decorationsContainer}>
+          <div className={s.decorationsDescriptionContainer}>
+            <h2 className="title" style={{ marginBottom: '20px', textAlign: 'center' }}>Покривала</h2>
+              <ul className={s.decorationsPictureList}>
+                {decorationsPictureList.map((image) => (
+                  <li className={s.decorationsPictureList__item} key={image.id}>
+                    <img className={s.decorationsPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
+                  </li>
+                ))}
+              </ul>
             
-                        {modalOpen && selectedImage && (
-              <Modal
-                selectedImage={selectedImage}
-                arrayPhoto={decorationsPictureList}
-                setSelectedImage={setSelectedImage}
-                setModalOpen={setModalOpen}
-              />
-            )}           
-                </div>
-            </div>
-        </section>
+              {modalOpen && selectedImage && (
+                <Modal
+                  selectedImage={selectedImage}
+                  arrayPhoto={decorationsPictureList}
+                  setSelectedImage={setSelectedImage}
+                  setModalOpen={setModalOpen}
+                />
+              )}
+          
+          </div>
+        </div>
+      </section>
   );
 };
 

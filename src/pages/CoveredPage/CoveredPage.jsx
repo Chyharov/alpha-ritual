@@ -1,6 +1,5 @@
 import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
-import backgroundImg from '../../images/RitualServices/backgroundRitualServicesMob.jpg'
 import SectionCoverd from 'components/SectionCovered/SectionCovered';
 import Footer from 'components/Footer/Footer';
 
@@ -11,7 +10,7 @@ const CoveredPage = () => {
     <>
       <Header />
       <main>
-        <SectionTitleForPage title={title} backgroundImg={backgroundImg} />
+        <SectionTitleForPage title={title}  />
         <SectionCoverd />
       </main>
       <Footer />
