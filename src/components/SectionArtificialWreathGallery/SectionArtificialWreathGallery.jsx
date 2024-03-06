@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from '../ModalWindow/ModalWindow'
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionArtificialWreathGallery.module.scss'
 
@@ -24,9 +25,16 @@ const artificialWreathGalleryList = [
 
 const buttonShowAll = 'Переглянути всі';
 
-
 const SectionArtificialWreathGallery = () => {
     const [showAllPhotos, setShowAllPhotos] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openModal = (id) => {
+        setSelectedImage(artificialWreathGalleryList.find(image => image.id === id));
+        setModalOpen(true);
+        document.body.style.overflow = 'hidden';
+  };
 
     const handleClickShowAll = () => {
         setShowAllPhotos(true);
@@ -41,10 +49,19 @@ const SectionArtificialWreathGallery = () => {
                 <ul style={{ marginBottom: showAllPhotos ? '0px' : '16px' }} className={s.artificialWreathGalleryList}>
                     {displayedPhotos.map(photo => (
                         <li key={photo.id} className={s.artificialWreathGalleryItem}>
-                            <img className={s.artificialWreathGalleryImg} src={photo.src} alt={photo.alt} />
+                            <img className={s.artificialWreathGalleryImg} id={photo.id} src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id, photo.src, photo.alt)} />
                         </li>
                     ))}
                 </ul>
+
+                {modalOpen && selectedImage && (
+                <Modal
+                  selectedImage={selectedImage}
+                  arrayPhoto={artificialWreathGalleryList}
+                  setSelectedImage={setSelectedImage}
+                  setModalOpen={setModalOpen}
+                />
+              )}
                 
                 {!showAllPhotos && <ButtonMoreDetails buttonDescription={buttonShowAll} onClick={handleClickShowAll} />}
 
