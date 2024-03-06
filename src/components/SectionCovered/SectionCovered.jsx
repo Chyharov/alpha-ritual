@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../ModalWindow/ModalWindow'
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionCovered.module.scss'
 
 const decorationsPictureList = [
@@ -27,8 +28,10 @@ const decorationsPictureList = [
       { id: 22, src: require('../../images/covereds/covered22.webp'), alt: 'Зображення 22' },
 ];
 
-const SectionCoverd = () => {
+const buttonShowAll = 'Переглянути всі';
 
+const SectionCoverd = () => {
+  const [showAllPhotos, setShowAllPhotos] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -38,13 +41,20 @@ const SectionCoverd = () => {
     document.body.style.overflow = 'hidden';
   };
 
+  const handleClickShowAll = () => {
+        setShowAllPhotos(true);
+    };
+
+  const displayedPhotos = showAllPhotos ? decorationsPictureList : decorationsPictureList.slice(0, 6);
+
+
   return (
       <section className={s.sectionDecorations}>
         <div className={'container ' + s.decorationsContainer}>
-          <div className={s.decorationsDescriptionContainer}>
+
             <h2 className="title" style={{ marginBottom: '20px', textAlign: 'center' }}>Покривала</h2>
-              <ul className={s.decorationsPictureList}>
-                {decorationsPictureList.map((image) => (
+              <ul className={s.decorationsPictureList} style={{ marginBottom: showAllPhotos ? '0px' : '16px' }}>
+                {displayedPhotos.map((image) => (
                   <li className={s.decorationsPictureList__item} key={image.id}>
                     <img className={s.decorationsPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
                   </li>
@@ -60,7 +70,8 @@ const SectionCoverd = () => {
                 />
               )}
           
-          </div>
+          {!showAllPhotos && <ButtonMoreDetails buttonDescription={buttonShowAll} onClick={handleClickShowAll} />}
+          
         </div>
       </section>
   );
