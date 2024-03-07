@@ -13,10 +13,10 @@ const WreathsPage = () => {
   return (
     <>
       <Header />
-      <main>
-        <SectionTitleForPage {...titleProps} />
-        <SectionWreath />
-      </main>
+        <main>
+          <SectionTitleForPage {...titleProps} />
+          <SectionWreath />
+        </main>
       <Footer />
     </>
   );

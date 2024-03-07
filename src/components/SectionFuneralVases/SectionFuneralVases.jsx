@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../ModalWindow/ModalWindow'
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionFuneralVases.module.scss'
 
 const funeralVasesPictureList = [
@@ -14,9 +15,12 @@ const funeralVasesPictureList = [
     { id: 9, src: require('../../images/funeralVases/funeralVases9.webp'), alt: 'Зображення 9' },
   ];
 
+const buttonShowAll = 'Переглянути всі';
+
 const SectionFuneralVases = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showAllPhotos, setShowAllPhotos] = useState(false);
 
   const openModal = (id) => {
     setSelectedImage(funeralVasesPictureList.find(image => image.id === id));
@@ -24,30 +28,39 @@ const SectionFuneralVases = () => {
     document.body.style.overflow = 'hidden';
   };
 
-    return (
-        <section className={s.funeralVases}>
-            <div className={'container ' + s.funeralVasesContainer}>
-                <div className={s.funeralVasesDescriptionContainer}>
-                    <h2 className="title">Урни для праху</h2>
-                        <ul className={s.funeralVasesPictureList}>
-                        {funeralVasesPictureList.map((image) => (
-                        <li className={s.funeralVasesPictureList__item} key={image.id}>
-                            <img className={s.funeralVasesPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
-                        </li>
-                        ))}
-                        </ul>
+  const handleClickShowAll = () => {
+    setShowAllPhotos(true);
+  };
+
+  const displayedPhotos = showAllPhotos ? funeralVasesPictureList : funeralVasesPictureList.slice(0, 6);
+
+  return (
+      <section className={s.funeralVases}>
+        <div className={'container ' + s.funeralVasesContainer}>
             
-                        {modalOpen && selectedImage && (
-                          <Modal
-                          selectedImage={selectedImage}
-                          arrayPhoto={funeralVasesPictureList}
-                          setSelectedImage={setSelectedImage}
-                          setModalOpen={setModalOpen}
-                        />
-                        )}          
-                </div>
-            </div>
-        </section>
+          <h2 className="title" style={{ marginBottom: '20px', textAlign: 'center' }}>Урни для праху</h2>
+        
+            <ul className={s.funeralVasesPictureList} style={{ marginBottom: showAllPhotos ? '0px' : '16px' }}>
+              {displayedPhotos.map((image) => (
+                <li className={s.funeralVasesPictureList__item} key={image.id}>
+                  <img className={s.funeralVasesPictureList_img} id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
+                </li>
+              ))}
+            </ul>
+              
+              {modalOpen && selectedImage && (
+                <Modal
+                  selectedImage={selectedImage}
+                  arrayPhoto={funeralVasesPictureList}
+                  setSelectedImage={setSelectedImage}
+                  setModalOpen={setModalOpen}
+                />
+              )}          
+
+        {!showAllPhotos && <ButtonMoreDetails buttonDescription={buttonShowAll} onClick={handleClickShowAll} />}
+        
+        </div>
+      </section>
     );
   };
 
