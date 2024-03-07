@@ -51,7 +51,7 @@ const SectionCoverd = () => {
       <section className={s.sectionDecorations}>
         <div className={'container ' + s.decorationsContainer}>
 
-          <h2 className="title" style={{ marginBottom: '20px', textAlign: 'center' }}>Покривала</h2>
+          <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Покривала</h2>
         
             <ul className={s.decorationsPictureList} style={{ marginBottom: showAllPhotos ? '0px' : '16px' }}>
               {displayedPhotos.map((image) => (

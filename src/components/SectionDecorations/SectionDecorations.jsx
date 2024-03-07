@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import Modal from '../ModalWindow/ModalWindow'
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from "./SectionDecorations.module.scss"
 
 const decorationsPhotos = [
@@ -12,9 +13,12 @@ const decorationsPhotos = [
   { id: 7, src: require('../../images/decorations/decoration7.webp'), alt: 'Зображення 7', width: '280', height: '210' },
 ];
 
+const buttonShowAll = 'Переглянути всі';
+
 const SectionDecorations = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showAllPhotos, setShowAllPhotos] = useState(false);
 
   const openModal = (id) => {
     setSelectedImage(decorationsPhotos.find(image => image.id === id));
@@ -22,13 +26,19 @@ const SectionDecorations = () => {
     document.body.style.overflow = 'hidden';
   };
 
+  const handleClickShowAll = () => {
+    setShowAllPhotos(true);
+  };
+
+  const displayedPhotos = showAllPhotos ? decorationsPhotos : decorationsPhotos.slice(0, 6);
+
   return (
     <section className={s.sectionDecorations}>
       <div className={'container ' + s.decorationsContainer}>
-        <div className={s.decorationsDescriptionContainer}>
-          <h2 className="title" style={{ marginBottom: '20px' }}>Декор</h2>
-          <ul className={s.decorationsPictureList}>
-            {decorationsPhotos.map((image) => (
+
+          <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Декор</h2>
+          <ul className={s.decorationsPictureList} style={{ marginBottom: showAllPhotos ? '0px' : '16px' }}>
+            {displayedPhotos.map((image) => (
               <li className={s.decorations_pictureListItem} key={image.id}>
                 <img className={s.decorationsPictureList_img}
                   id={image.id} src={image.src} alt={image.alt} onClick={() => openModal(image.id, image.src, image.alt)}/>
@@ -45,7 +55,8 @@ const SectionDecorations = () => {
               />
           )} 
           
-        </div>
+          {!showAllPhotos && <ButtonMoreDetails buttonDescription={buttonShowAll} onClick={handleClickShowAll} />}
+
       </div>
     </section>
   );

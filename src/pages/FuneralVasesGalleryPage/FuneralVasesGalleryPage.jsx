@@ -22,6 +22,4 @@ const FuneralVasesGalleryPage = () => {
   );
 };
 
-
-
 export default FuneralVasesGalleryPage;

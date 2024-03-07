@@ -38,7 +38,7 @@ const SectionFuneralVasesGallery = () => {
       <section className={s.sectionFuneralVasesGallery}>
         <div className={'container ' + s.funeralVasesContainerGallery}>
             
-          <h2 className="title" style={{ marginBottom: '20px', textAlign: 'center' }}>Урни для праху</h2>
+          <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Урни для праху</h2>
         
             <ul className={s.funeralVasesPictureList} style={{ marginBottom: showAllPhotos ? '0px' : '16px' }}>
               {displayedPhotos.map((image) => (

@@ -1,54 +1,28 @@
 @import '../../sass/utils/mixin';
 
 .sectionDecorations {
-    @include mq(mob-only) {
-        height: 100vh;
-    }
-    padding-top: 70px;
+    margin-top: -420px;
+    padding-bottom: 80px;
 }
 
 .decorationsContainer {
-    padding: 20px;
-
-    @include mq(desk) {
-        padding: 40px 20px 20px 20px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include mq(desk) {}
 }
 
-.decorationsDescriptionContainer {
-    outline: 1px solid var(--primaryTextColor);
-    padding: 20px;
+.decorationsPictureList_img {
+    border-radius: 8px;
+    border: 1px solid var(--secondaryTextColor);
 }
 
 .decorationsPictureList {
     display: grid;
+    align-items: baseline;
+    gap: 16px;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    justify-content: center;
     justify-items: center;
-
-    @include mq(tab) {
-        grid-gap: 20px;
-    }
-}
-
-.decorationsPictureList_img {
-    width: 125px;
-    height: 130px;
-
-    @include mq(tab) {
-        width: 340px;
-        height: 340px;
-    }
-
-    @include mq(desk) {
-        width: 620px;
-        height: 620px;
-    }
-}
-
-.decorations_pictureListItem:hover,
-.decorations_pictureListItem:focus {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    cursor: zoom-in;
 }
