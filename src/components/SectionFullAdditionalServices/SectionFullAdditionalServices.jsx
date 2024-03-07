@@ -6,7 +6,7 @@ const additionalServices = [
   { id: 2, title: 'Труни', link: '/coffins' },
   { id: 3, title: 'Хрести', link: '/crosses' },
   { id: 4, title: 'Покривала', link: '/covered' },
-  { id: 5, title: 'Урни для праху', link: '/vases' },
+  { id: 5, title: 'Урни для праху', link: '/funeralvases' },
   { id: 6, title: 'Декор', link: '/decorations' },
   { id: 7, title: 'Інша атрибутика', link: '/otherattributes' },
 ];

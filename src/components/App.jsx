@@ -20,6 +20,7 @@ const RitualServicesPage = lazy(() => import('pages/RitualServicesPage/RitualSer
 const AboutPage = lazy(() => import('pages/AboutPage/AboutPage'));
 const FreshFlowersWreathGallery = lazy(() => import('pages/FreshFlowersWreathGallery/FreshFlowersWreathGallery'));
 const ArtificialWreathGallery = lazy(() => import('pages/ArtificialWreathGallery/ArtificialWreathGallery'));
+const FuneralVasesGalleryPage = lazy(() => import('pages/FuneralVasesGalleryPage/FuneralVasesGalleryPage'));
 
 export const App = () => {
   return (
@@ -34,7 +35,7 @@ export const App = () => {
           <Route path="/otherattributes" element={<OtherAttributesPage />} />
           <Route path="/artificialwreaths" element={<ArtificialWreathsPage />} />
           <Route path="/freshflowerswreath" element={<FreshFlowersWreathPage />} />
-          <Route path="/vases" element={<FuneralVasesPage />} />
+          <Route path="/funeralvases" element={<FuneralVasesPage />} />
           <Route path="/decorations" element={<DecorationsPage />} />
           <Route path="/funeralportrait" element={<FuneralPortraitPage />} />
           <Route path="/funeralset" element={<FuneralSetPage />} />
@@ -45,6 +46,7 @@ export const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/freshflowerswreathgallery" element={<FreshFlowersWreathGallery />} />
           <Route path="/artificialwreathgallery" element={<ArtificialWreathGallery />} />
+          <Route path="/funeralvasesgallery" element={<FuneralVasesGalleryPage />} />
         </Routes>
       </Suspense>
     </>

@@ -1,18 +1,16 @@
 @import '../../sass/utils/mixin';
 
-.funeralVases {
-    margin-top: -125px;
+.sectionFuneralVasesGallery {
+    margin-top: -420px;
     padding-bottom: 80px;
 }
 
-.funeralVasesContainer {
+.funeralVasesContainerGallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    @include mq(desk) {
 
-    }
+    @include mq(desk) {}
 }
 
 .funeralVasesPictureList_img {
