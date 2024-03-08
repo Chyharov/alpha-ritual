@@ -5,7 +5,7 @@ import SectionFuneralSet from 'components/SectionFuneralSet/SectionFuneralSet';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
-  title: 'Вінки',
+  title: 'Поховальний набір',
   backgroundImg: backgroundImg
 };
 
