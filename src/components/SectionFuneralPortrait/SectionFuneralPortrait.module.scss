@@ -1,53 +1,14 @@
 @import '../../sass/utils/mixin';
 
 .sectionFuneralPortrait {
-    padding-top: 70px;
+    margin-top: -125px;
+    padding-bottom: 80px;
 }
 
 .funeralPortraitContainer {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-    @include mq(desk) {
-        padding: 40px 20px 20px 20px;
-    }
-}
-
-.funeralPortraitDescriptionContainer {
-    padding: 20px;
-    outline: 1px solid var(--primaryTextColor);
-}
-
-.funeralPortrait__list {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.funeralPortrait__listItem {
-    font-family: Open Sans Regular;
-    list-style: disc;
-    margin-bottom: 10px;
-
-    @include mq(tab) {
-        margin-bottom: 20px;
-    }
-}
-
-.funeralPortraitPictureList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    justify-items: center;
-
-    @include mq(tab) {
-        grid-gap: 20px;
-    }
-}
-
-.funeralPortraitPictureList_img {
-    width: 125px;
-
-    @include mq(tab) {
-        width: 340px;
-        height: 400px;
-    }
+    @include mq(desk) {}
 }
