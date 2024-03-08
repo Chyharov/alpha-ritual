@@ -1,0 +1,17 @@
+@import '../../sass/utils/mixin';
+
+.sectionFuneralPortraitLink {
+    padding-bottom: 400px;
+    
+    @include mq(tab) {}
+
+    @include mq(desk) {}
+}
+
+.funeralPortrait__container {
+    background-image: url(../../images/otherAttributes/FuneralPortraitBackgroundMob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 478px;
+}

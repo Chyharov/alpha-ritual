@@ -6,8 +6,6 @@ import s from '../OtherAttributes/OtherAttributes.module.scss';
 const OtherAttributes = () => {
   const buttonDescription = 'Детальніше';
 
-  
-
   return (
     <section className={s.sectionOtherAttributes}>
       <div className={'container ' + s.ritualServices__container}>
