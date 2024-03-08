@@ -17,12 +17,6 @@ const OtherAttributes = () => {
             <Link className={s.ritualServices__link} to="/funeralset" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
               <ButtonMoreDetails  buttonDescription={buttonDescription} />
             </Link>
- 
-
-
-            {/* <Link className={s.ritualServices__link} to="/funeralportrait" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-              <ButtonMoreDetails  buttonDescription={buttonDescription} />
-            </Link> */}
        
       </div>
     </section>
