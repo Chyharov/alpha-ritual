@@ -71,6 +71,11 @@ const ButtonGetConsultation = () => {
                             +38 (099) 506 94 73
                         </li>
                     </a>
+                    <a className={s.phoneNumberListLink} href="tel:+380667858127">
+                        <li className={s.phoneNumberItem}>
+                            +38 (066) 7858127
+                        </li>
+                    </a>
                 </ul>
 
             
