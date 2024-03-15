@@ -11,7 +11,8 @@
   outline: 1px solid var(--primaryTextColor);
 
   @include mq(tab) {
-
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
 }
@@ -24,7 +25,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 20px;
   }
 }
 

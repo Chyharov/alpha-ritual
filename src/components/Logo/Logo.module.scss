@@ -8,29 +8,11 @@
 
 .logo__text {
   margin-left: 8px;
-
-  @include mq(tab) {
-    margin-left: 20px;
-  }
-
-  @media screen and (min-width: 1360px) {
-    margin-left: 30px;
-  }
 }
 
 .logo__img {
   height: 32px;
   width: 32px;
-
-  @include mq(tab) {
-    height: 65px;
-    width: 65px;
-  }
-
-  @include mq(desk) {
-    height: 80px;
-    width: 80px;
-  }
 }
 
 .logo__title {
@@ -42,31 +24,11 @@
     font-size: 12px;
     line-height: 1.17;
   }
-
-  @media screen and (min-width: 768px) {
-    font-size: 22px;
-  }
-
-  @media screen and (min-width: 1360px) {
-    font-size: 25px;
-  }
 }
 
 .logo__description {
-
   color: var(--secondaryTextColor);
-
-  @media screen and (min-width: 320px) {
-    font-family: Comfortaa Light;
-    font-size: 10px;
-    line-height: 1.2;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 15px;
-  }
-
-  @media screen and (min-width: 1360px) {
-    font-size: 18px;
-  }
+  font-family: Comfortaa Light;
+  font-size: 10px;
+  line-height: 1.2; 
 }
