@@ -14,8 +14,7 @@
     line-height: 1.43;
 
     @include mq(tab) {
-        font-size: 14px;
-        line-height: 1.43;
+        width: 18.1%;
     }
 
     @include mq(desk) {

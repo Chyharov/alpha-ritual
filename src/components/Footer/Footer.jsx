@@ -59,7 +59,10 @@ const Footer = () => {
           <p className={s.footerAllTimeDescription}>Щоденно | Цілодобово</p>
           </address>
         
-          <ButtonGetConsultation />
+        <div className={s.containerButtonGetConsultation}>
+         <ButtonGetConsultation />
+        </div>
+ 
               
           <div className={s.copyrightDescriptionContainer}>
             <p className={s.copyrightDescription}>АЛЬФА - Похоронний дім © 2023</p> <p className={s.copyrightDescription}>Всі права захищені.</p>
