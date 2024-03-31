@@ -103,6 +103,15 @@
     width: 100%;
 
     @include mq(tab) {
-        text-align: end;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.btnContainer {
+    width: 100%;
+
+    @include mq(desk) {
+        width: 20%;
     }
 }

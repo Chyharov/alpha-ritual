@@ -59,7 +59,9 @@ const Footer = () => {
           </address>
         
         <div className={s.containerButtonGetConsultation}>
-         <ButtonGetConsultation />
+          <div className={s.btnContainer}>
+           <ButtonGetConsultation />
+          </div>
         </div>
  
               
