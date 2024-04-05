@@ -49,7 +49,7 @@ const Footer = () => {
                   +38 (099) 506 94 73
                 </li>
               </a>
-              <a href="tel:++380667858127">
+              <a href="tel:+380667858127">
                 <li style={{ padding: '4px 8px', marginBottom: '8px' }} className={s.addressPhoneListItem}>
                   +38 (066) 785 81 27
                 </li>

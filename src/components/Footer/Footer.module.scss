@@ -111,6 +111,10 @@
 .btnContainer {
     width: 100%;
 
+    @include mq(tab) {
+        width: 30%;
+    }
+
     @include mq(desk) {
         width: 20%;
     }
