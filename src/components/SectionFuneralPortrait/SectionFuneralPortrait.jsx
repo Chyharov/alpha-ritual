@@ -9,8 +9,6 @@ const SectionFuneralPortrait = () => {
                 
                 <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Портрет на поховання</h2>
 
-                <h2>test changes</h2>
-
                 <p className="description" style={{ marginBottom: '64px' }}>У канонах православної віри, як і в інших світових релігіях, немає жодної згадки про необхідність наявності на поховальній церемонії прижиттєвого портрета покійного. Немає і обов’язкового перев’язування портрета чорною траурною стрічкою. Це виключно світська традиція, яка має глибоке значення.</p>
 
                 <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Традиції та пошана</h2>
