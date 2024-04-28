@@ -8,7 +8,9 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={'container ' + s.footerContainer}>
-          <Logo />
+        <Logo />
+        
+        <h2>Test changes</h2>
 
           <nav className={s.footerNavigation}>
             <ul className={s.footerNavList}>
