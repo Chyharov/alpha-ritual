@@ -9,8 +9,6 @@ const Footer = () => {
     <footer className={s.footer}>
       <div className={'container ' + s.footerContainer}>
         <Logo />
-        
-        <h2>Test changes</h2>
 
           <nav className={s.footerNavigation}>
             <ul className={s.footerNavList}>
