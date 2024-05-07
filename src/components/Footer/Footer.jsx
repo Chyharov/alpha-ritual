@@ -8,7 +8,9 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={'container ' + s.footerContainer}>
-        <Logo />
+        
+        <div className={s.navigationContainer}>
+          <Logo />
 
           <nav className={s.footerNavigation}>
             <ul className={s.footerNavList}>
@@ -20,6 +22,8 @@ const Footer = () => {
               <Link to="/additionalservices"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
             </ul>
           </nav>
+        </div>
+        
 
           <address className={s.address}>
             <h2 className={s.addressTitle}>Адреса</h2>
