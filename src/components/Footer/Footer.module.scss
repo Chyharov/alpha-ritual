@@ -8,6 +8,11 @@
     @include mq(tab) {
         border-top: 1px solid var(--hoverColorDark);
     }
+
+    @include mq(desk) {
+        padding-top: 40px;
+        padding-bottom: 16px;
+    }
 }
 
 .footerContainer {
@@ -30,6 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        padding-bottom: 0px;
     }
 }
 
@@ -53,6 +59,20 @@
     color: var(--primaryTextColorDark);
 }
 
+.footerNavListItem {
+    padding: 4px 8px;
+
+
+    @include mq(desk) {
+        font-family: Open Sans Regular;
+        font-size: 16px;
+        line-height: 1.37;
+        padding: 8px;
+    }
+
+
+}
+
 .footerNavListItem:not(:last-child) {
     margin-bottom: 8px;
 }
@@ -65,7 +85,8 @@
 
     @include mq(desk) {
         margin-top: 0px;
-        
+        width: 912px;
+        margin-bottom: 24px;
     }
 }
 
@@ -76,6 +97,7 @@
 
     @include mq(desk) {
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -111,6 +133,12 @@
     font-size: 10px;
     line-height: 2;
     color: var(--secondaryTextColor);
+
+    @include mq(desk) {
+        font-family: Open Sans Regular;
+        font-size: 14px;
+        line-height: 1.43;
+    }
 }
 
 .copyrightDescriptionContainer {
@@ -118,6 +146,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include mq(desk) {
+        margin-top: 40px;
+    }
 }
 
 .containerButtonGetConsultation {

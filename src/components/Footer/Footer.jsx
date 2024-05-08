@@ -14,12 +14,12 @@ const Footer = () => {
 
           <nav className={s.footerNavigation}>
             <ul className={s.footerNavList}>
-              <Link to="/"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Головна</li></Link>
-              <Link to="/about"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Про компанію</li></Link>
-              <Link to="/ritualgoods"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні товари</li></Link>
-              <Link to="/ritualtransport"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальний транспорт</li></Link>
-              <Link to="/ritualservices"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Ритуальні послуги</li></Link>
-              <Link to="/additionalservices"><li style={{ padding: '4px 8px' }} className={s.footerNavListItem}>Додаткові послуги</li></Link>
+              <Link to="/"><li className={s.footerNavListItem}>Головна</li></Link>
+              <Link to="/about"><li className={s.footerNavListItem}>Про компанію</li></Link>
+              <Link to="/ritualgoods"><li className={s.footerNavListItem}>Ритуальні товари</li></Link>
+              <Link to="/ritualtransport"><li className={s.footerNavListItem}>Ритуальний транспорт</li></Link>
+              <Link to="/ritualservices"><li className={s.footerNavListItem}>Ритуальні послуги</li></Link>
+              <Link to="/additionalservices"><li className={s.footerNavListItem}>Додаткові послуги</li></Link>
             </ul>
           </nav>
         </div>
@@ -44,12 +44,12 @@ const Footer = () => {
                 </li>
               </a>
               <a href="tel:+380442322408">
-                <li style={{ padding: '4px 8px' }} className={s.addressPhoneListItem}>
+                <li className={s.addressPhoneListItem}>
                   +38 (044) 232 24 08
                 </li>
               </a>
               <a href="tel:+380995069473">
-                <li style={{ padding: '4px 8px' }} className={s.addressPhoneListItem}>
+                <li className={s.addressPhoneListItem}>
                   +38 (099) 506 94 73
                 </li>
               </a>
