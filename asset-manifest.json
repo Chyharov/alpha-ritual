@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.e5984b20.css",
-    "main.js": "/alpha-ritual/static/js/main.5ee8cd2e.js",
-    "static/css/436.5076cca9.chunk.css": "/alpha-ritual/static/css/436.5076cca9.chunk.css",
-    "static/js/436.97c5bd6c.chunk.js": "/alpha-ritual/static/js/436.97c5bd6c.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.ce09b93c.js",
+    "static/css/461.37b4dac6.chunk.css": "/alpha-ritual/static/css/461.37b4dac6.chunk.css",
+    "static/js/461.9ec818eb.chunk.js": "/alpha-ritual/static/js/461.9ec818eb.chunk.js",
     "static/css/51.47a7e3ca.chunk.css": "/alpha-ritual/static/css/51.47a7e3ca.chunk.css",
     "static/js/51.7ca7000c.chunk.js": "/alpha-ritual/static/js/51.7ca7000c.chunk.js",
     "static/css/604.36f13e1d.chunk.css": "/alpha-ritual/static/css/604.36f13e1d.chunk.css",
@@ -45,6 +45,7 @@
     "static/js/898.69a2a0a2.chunk.js": "/alpha-ritual/static/js/898.69a2a0a2.chunk.js",
     "static/js/612.09fd56d4.chunk.js": "/alpha-ritual/static/js/612.09fd56d4.chunk.js",
     "static/js/382.3cb96808.chunk.js": "/alpha-ritual/static/js/382.3cb96808.chunk.js",
+    "static/media/blur.png": "/alpha-ritual/static/media/blur.ea8580c947d8e784cf5c.png",
     "static/media/decoration1.jpg": "/alpha-ritual/static/media/decoration1.1ef869484aed84effd54.jpg",
     "static/media/funeralSet12.jpg": "/alpha-ritual/static/media/funeralSet12.a98c90e0f2a25464d133.jpg",
     "static/media/funeralSet10.jpg": "/alpha-ritual/static/media/funeralSet10.e592004c465de76fa87a.jpg",
@@ -163,6 +164,7 @@
     "static/media/coffinsElitePrice10.jpg": "/alpha-ritual/static/media/coffinsElitePrice10.037c62ed9c65a82a215a.jpg",
     "static/media/coffinsElitePrice25.jpg": "/alpha-ritual/static/media/coffinsElitePrice25.b50cf6354de94a0eae99.jpg",
     "static/media/coffinsAveragePrice2.jpg": "/alpha-ritual/static/media/coffinsAveragePrice2.f62fb473ee2356ff8de4.jpg",
+    "static/media/pictHero.png": "/alpha-ritual/static/media/pictHero.d10d72465159790b5566.png",
     "static/media/coffinsEconomPrice9.jpg": "/alpha-ritual/static/media/coffinsEconomPrice9.6605ff1bf4111ec94b17.jpg",
     "static/media/coffinsElitePrice22.jpg": "/alpha-ritual/static/media/coffinsElitePrice22.e978acd2bc9ea5b96c49.jpg",
     "static/media/blackMercedes10.webp": "/alpha-ritual/static/media/blackMercedes10.f500ba22a1ee87b1f0d1.webp",
@@ -256,14 +258,15 @@
     "static/media/closeIcon.svg": "/alpha-ritual/static/media/closeIcon.6aff52bdc493825673f954b613e93f63.svg",
     "static/media/closeIcon2.svg": "/alpha-ritual/static/media/closeIcon2.34e28b6eb007009422700591c3182890.svg",
     "static/media/phoneIcon.svg": "/alpha-ritual/static/media/phoneIcon.742826cdd0e925008b377c517a3a6053.svg",
+    "static/media/Line5.svg": "/alpha-ritual/static/media/Line5.a19181ced16b17a20c5f85e06731015f.svg",
     "static/media/Line6.svg": "/alpha-ritual/static/media/Line6.bf2de7ce56ad6f84f07e4d2d3e12ef76.svg",
     "static/media/burgerMenu.svg": "/alpha-ritual/static/media/burgerMenu.e6e51b401b18c71deed4f15fa71c15c3.svg",
     "static/media/arrowLeft.svg": "/alpha-ritual/static/media/arrowLeft.ced4667617a94daa01f2833b1d67fd96.svg",
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "main.e5984b20.css.map": "/alpha-ritual/static/css/main.e5984b20.css.map",
-    "main.5ee8cd2e.js.map": "/alpha-ritual/static/js/main.5ee8cd2e.js.map",
-    "436.5076cca9.chunk.css.map": "/alpha-ritual/static/css/436.5076cca9.chunk.css.map",
-    "436.97c5bd6c.chunk.js.map": "/alpha-ritual/static/js/436.97c5bd6c.chunk.js.map",
+    "main.ce09b93c.js.map": "/alpha-ritual/static/js/main.ce09b93c.js.map",
+    "461.37b4dac6.chunk.css.map": "/alpha-ritual/static/css/461.37b4dac6.chunk.css.map",
+    "461.9ec818eb.chunk.js.map": "/alpha-ritual/static/js/461.9ec818eb.chunk.js.map",
     "51.47a7e3ca.chunk.css.map": "/alpha-ritual/static/css/51.47a7e3ca.chunk.css.map",
     "51.7ca7000c.chunk.js.map": "/alpha-ritual/static/js/51.7ca7000c.chunk.js.map",
     "604.36f13e1d.chunk.css.map": "/alpha-ritual/static/css/604.36f13e1d.chunk.css.map",
@@ -308,6 +311,6 @@
   },
   "entrypoints": [
     "static/css/main.e5984b20.css",
-    "static/js/main.5ee8cd2e.js"
+    "static/js/main.ce09b93c.js"
   ]
 }
