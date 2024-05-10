@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaTelegram } from 'react-icons/fa6';
 import { FaViber } from 'react-icons/fa';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
-import { IoMdClose } from 'react-icons/io';
+import closeIcon from '../../images/closeIcon2.svg'
 import s from './ButtonGetConsultation.module.scss';
 
 const ButtonGetConsultation = () => {
@@ -45,8 +45,8 @@ const ButtonGetConsultation = () => {
 
           {isModalOpen && (
         <div className={s.bgShadow}>
-        <div className={s.modal} onClick={handleOutsideClick}>
-            <IoMdClose className={s.btn__close} onClick={closeModal} />
+          <div className={s.modal} onClick={handleOutsideClick}>
+            <img className={s.btn__close} src={closeIcon} alt="closeIcon" onClick={closeModal}/>
             
             <div className={s.modalTitleContainer}>
                 <h2 className={s.titleNeedHelp}>Потрібна допомога?</h2>
