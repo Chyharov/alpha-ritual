@@ -1,6 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionHero {
+  position: relative;
   padding-bottom: 40px;
 
   @include mq(tab) {
@@ -8,6 +9,8 @@
 
   @include mq(desk) {
     padding-top: 48px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -18,6 +21,10 @@
 
   @include mq(desk) {
     width: 528px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
         
@@ -31,6 +38,12 @@
   @include mq(tab) {
     background-image: none;
   }
+
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+  }
 }
 
 .hero__container {
@@ -38,10 +51,9 @@
   padding: 8px;
 
   @include mq(desk) {
-    width: 445px;
+    width: 528px;
     padding: 16px;
-    margin: 0;
-
+    margin: 0px 0px 40px 0px;
   }
 }
 
@@ -78,6 +90,7 @@
   }
 
   @media screen and (min-width: 1360px) {
+    font-family: Open Sans Regular;
     font-size: 24px;
     line-height: 1.17;
     padding: 8px;
@@ -85,3 +98,53 @@
   }
 }
 
+.hero__image {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+    width: 590px;
+    height: 570px;
+  }
+}
+
+.heroDescription {
+  padding: 8px;
+  margin-bottom: 40px;
+
+  @include mq(desk) {
+    padding: 24px 24px 8px 24px;
+  }
+}
+
+.lineContainer {
+  width: 100%;
+
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+    width: 528px;
+    padding: 0px 24px 16px 16px;
+  }
+}
+
+.lineImage {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+  }
+}
+
+.blur {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+    position: absolute;
+    top: 234px;
+    right: 266px;
+    width: 682px;
+    height: 566px;
+  }
+}
