@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
+// import blurRitualGoodsDesk from '../../images/ritualGoods/blurRitualGoodsDesk.png'
+// import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDesk.svg'
+import logo512RitualGoodsDesk from '../../images/ritualGoods/logo512RitualGoodsDesk.svg'
 import s from './SectionRitualGoods.module.scss';
 
 const ritualServicesDescriptionArray = [
@@ -30,12 +33,20 @@ const SectionRitualGoods = () => {
       </div>
 
       <div className={`container ${s.ritualServicesContainerDesktop}`}>
-        <h2>Ритуальні товари</h2>
+        
+        <div className={s.containerForTitle}>
+          <img className={s.logo512RitualGoodsDesk} src={logo512RitualGoodsDesk} alt="logo__ritualGoodsDesk" />
 
-        <p>Поховальний дім "Альфа-ритуал" - наші фахівці допоможуть вам у важкі моменти життя. Ми розуміємо, наскільки важливо забезпечити гідне та шанобливе прощання з вашими близькими. Наша компанія готова надати вам широкий спектр ритуальних послуг та товарів, щоб зробити цей процес якомога менш тяжким.</p>
+          <div className={s.containerForRitualGoodsTitle}>
+            <h2 className={s.ritualGoodsTitle}>Ритуальні товари</h2>
 
-        <p>У нашому асортименті ви знайдете різноманітні ритуальні товари високої якості, які відповідають усім вашим побажанням та потребам. Ми пишаємось тим, що більшість товарів виготовляється безпосередньо на нашому власному виробництві, що дає нам можливість забезпечити контроль якості та зберегти доступні ціни.</p>
+            <p className='description' style={{ marginBottom: '32px' }}>Поховальний дім "Альфа-ритуал" - наші фахівці допоможуть вам у важкі моменти життя. Ми розуміємо, наскільки важливо забезпечити гідне та шанобливе прощання з вашими близькими. Наша компанія готова надати вам широкий спектр ритуальних послуг та товарів, щоб зробити цей процес якомога менш тяжким.</p>
 
+           <p className='description'>У нашому асортименті ви знайдете різноманітні ритуальні товари високої якості, які відповідають усім вашим побажанням та потребам. Ми пишаємось тим, що більшість товарів виготовляється безпосередньо на нашому власному виробництві, що дає нам можливість забезпечити контроль якості та зберегти доступні ціни.</p>
+        
+          </div>
+        </div>
+        
         <h2>Наш асортимент</h2>
 
         <ul>
@@ -58,8 +69,6 @@ const SectionRitualGoods = () => {
         </ul>
 
         <p>Ми розуміємо, що цей час важкий, і завданням нашої компанії є надання вам підтримки та допомоги на кожному етапі організації прощання. Наша команда професіоналів готова допомогти вам з усіма питаннями та деталями, щоб забезпечити гідне та тепле прощання з вашим близьким</p>
-        <p>Ми розуміємо, що цей час важкий</p>
-
 
       </div>
     </section>

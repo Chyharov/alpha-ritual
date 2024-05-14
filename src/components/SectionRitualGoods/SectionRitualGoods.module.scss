@@ -3,16 +3,18 @@
 .sectionRitualGoods {
   padding: 32px 0px 32px;
 
-  
-}
-
-.sectionRitualGoodsDesktop {
-  display: none;
-
   @include mq(desk) {
     display: block;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+
+.ritualServicesContainerDesktop {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
   }
 }
 
@@ -25,4 +27,30 @@
   @include mq(desk) {
     display: none;
   }
+}
+
+.ritualGoodsTitle {
+
+  @include mq(desk) {
+    font-family: Open Sans SemiBold;
+    font-size: 32px;
+    line-height: 1.25;
+    color: var(--secondaryTextColor);
+    padding: 8px;
+    margin-bottom: 40px;
+  }
+}
+
+.containerForTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo512RitualGoodsDesk {
+  width: 512px;
+  height: 512px;
+}
+
+.containerForRitualGoodsTitle {
+  width: 590px;
 }
