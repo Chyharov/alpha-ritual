@@ -45,6 +45,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .logo512RitualGoodsDesk {
@@ -58,7 +59,7 @@
 
 .flowersRitualGoodsDesk {
   position: absolute;
-  top: 160px;
+  top: 158px;
   left: 25%;
   width: 33.334%;
 }
@@ -66,4 +67,38 @@
 .ritualGoodsDeskription {
   position: relative;
   z-index: 9;
+}
+
+.ritualGoodsList {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.ritualGoodsListItem {
+  width: 288px;
+  height: 254px;
+  padding: 8px;
+  position: relative;
+  background-color: var(--cardBlackDark);
+  border-radius: 8px;
+  outline: 1px solid var(--secondaryTextColor);
+}
+
+.rectangleRitualGoodsDesk {
+  margin-bottom: 8px;
+  width: 278px;
+}
+
+.ritualGoodsListItemTitle {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Open Sans ExtraBold;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: start;
+  color: var(--primaryTextColorDark);
+  padding: 8px;
 }

@@ -3,6 +3,7 @@ import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 // import blurRitualGoodsDesk from '../../images/ritualGoods/blurRitualGoodsDesk.png'
 import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDesk.svg'
 import logo512RitualGoodsDesk from '../../images/ritualGoods/logo512RitualGoodsDesk.svg'
+import Rectangle from '../../images/ritualGoods/Rectangle.png'
 import s from './SectionRitualGoods.module.scss';
 
 const ritualServicesDescriptionArray = [
@@ -48,28 +49,32 @@ const SectionRitualGoods = () => {
           </div>
         </div>
         
-        <h2>Наш асортимент</h2>
+        <h2 className={s.ritualGoodsTitle} style={{ marginBottom: '32px' }}>Наш асортимент</h2>
 
-        <ul>
-          <li>
-            <h3>Труни</h3>
-            <p>Ми пропонуємо широкий вибір трун різних дизайнів та матеріалів. Ви зможете знайти труну, яка відповідає індивідуальному смаку та бажанням.</p>
+        <ul className={s.ritualGoodsList}>
+          <li className={s.ritualGoodsListItem}>
+            <img className={s.rectangleRitualGoodsDesk} src={Rectangle} alt="Rectangle" />
+            <h3 className={s.ritualGoodsListItemTitle}>Труни</h3>
+            <p className='secondaryDescription'>Ми пропонуємо широкий вибір трун різних дизайнів та матеріалів. Ви зможете знайти труну, яка відповідає індивідуальному смаку та бажанням.</p>
           </li>
-          <li>
-            <h3>Хрести</h3>
-            <p>Наші хрести виготовляються з різних порід дерев, що додає особливого значення вашому прощанню. Кожен хрест має унікальний дизайн та докладається зі спеціальною увагою до деталей.</p>
+          <li className={s.ritualGoodsListItem}>
+            <img className={s.rectangleRitualGoodsDesk} src={Rectangle} alt="Rectangle" />
+            <h3 className={s.ritualGoodsListItemTitle}>Хрести</h3>
+            <p className='secondaryDescription'>Наші хрести виготовляються з різних порід дерев, що додає особливого значення вашому прощанню. Кожен хрест має унікальний дизайн та докладається зі спеціальною увагою до деталей.</p>
           </li>
-          <li>
-            <h3>Транспорт</h3>
-            <p>Одне із основних видів поховальних послуг, комплексну організацію яких ми повністю беремо він. Транспортування померлого по Києву до місця проведення церемонії прощання та після неї на цвинтар чи крематорій має відповідати ситуації та статусу покійного.</p>
+          <li className={s.ritualGoodsListItem}>
+            <img className={s.rectangleRitualGoodsDesk} src={Rectangle} alt="Rectangle" />
+            <h3 className={s.ritualGoodsListItemTitle}>Транспорт</h3>
+            <p className='secondaryDescription'>Одне із основних видів поховальних послуг, комплексну організацію яких ми повністю беремо він. Транспортування померлого по Києву до місця проведення церемонії прощання та після неї на цвинтар чи крематорій має відповідати ситуації та статусу покійного.</p>
           </li>
-          <li>
-            <h3>Вінки, покривала, рушники</h3>
-            <p>Ми допоможемо вам підібрати відповідні аксесуари для оформлення церемонії. Від класичних до сучасних стилів – у нас є великий вибір, щоб ви змогли виразити свої почуття та шанобливо вшанувати пам'ять про вашого близького.</p>
+          <li className={s.ritualGoodsListItem}>
+            <img className={s.rectangleRitualGoodsDesk} src={Rectangle} alt="Rectangle" />
+            <h3 className={s.ritualGoodsListItemTitle}>Вінки, покривала, рушники</h3>
+            <p className='secondaryDescription'>Ми допоможемо вам підібрати відповідні аксесуари для оформлення церемонії. Від класичних до сучасних стилів – у нас є великий вибір, щоб ви змогли виразити свої почуття та шанобливо вшанувати пам'ять про вашого близького.</p>
           </li>
         </ul>
 
-        <p>Ми розуміємо, що цей час важкий, і завданням нашої компанії є надання вам підтримки та допомоги на кожному етапі організації прощання. Наша команда професіоналів готова допомогти вам з усіма питаннями та деталями, щоб забезпечити гідне та тепле прощання з вашим близьким</p>
+        <p className='secondaryDescription'>Ми розуміємо, що цей час важкий, і завданням нашої компанії є надання вам підтримки та допомоги на кожному етапі організації прощання. Наша команда професіоналів готова допомогти вам з усіма питаннями та деталями, щоб забезпечити гідне та тепле прощання з вашим близьким</p>
 
       </div>
     </section>
