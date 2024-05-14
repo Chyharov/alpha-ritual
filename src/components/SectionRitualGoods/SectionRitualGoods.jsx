@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 // import blurRitualGoodsDesk from '../../images/ritualGoods/blurRitualGoodsDesk.png'
-// import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDesk.svg'
+import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDesk.svg'
 import logo512RitualGoodsDesk from '../../images/ritualGoods/logo512RitualGoodsDesk.svg'
 import s from './SectionRitualGoods.module.scss';
 
@@ -40,10 +40,11 @@ const SectionRitualGoods = () => {
           <div className={s.containerForRitualGoodsTitle}>
             <h2 className={s.ritualGoodsTitle}>Ритуальні товари</h2>
 
-            <p className='description' style={{ marginBottom: '32px' }}>Поховальний дім "Альфа-ритуал" - наші фахівці допоможуть вам у важкі моменти життя. Ми розуміємо, наскільки важливо забезпечити гідне та шанобливе прощання з вашими близькими. Наша компанія готова надати вам широкий спектр ритуальних послуг та товарів, щоб зробити цей процес якомога менш тяжким.</p>
+            <p className={`description ${s.ritualGoodsDeskription}`} style={{ marginBottom: '32px' }}>Поховальний дім "Альфа-ритуал" - наші фахівці допоможуть вам у важкі моменти життя. Ми розуміємо, наскільки важливо забезпечити гідне та шанобливе прощання з вашими близькими. Наша компанія готова надати вам широкий спектр ритуальних послуг та товарів, щоб зробити цей процес якомога менш тяжким.</p>
 
-           <p className='description'>У нашому асортименті ви знайдете різноманітні ритуальні товари високої якості, які відповідають усім вашим побажанням та потребам. Ми пишаємось тим, що більшість товарів виготовляється безпосередньо на нашому власному виробництві, що дає нам можливість забезпечити контроль якості та зберегти доступні ціни.</p>
+            <p className={`description ${s.ritualGoodsDeskription}`}>У нашому асортименті ви знайдете різноманітні ритуальні товари високої якості, які відповідають усім вашим побажанням та потребам. Ми пишаємось тим, що більшість товарів виготовляється безпосередньо на нашому власному виробництві, що дає нам можливість забезпечити контроль якості та зберегти доступні ціни.</p>
         
+            <img className={s.flowersRitualGoodsDesk} src={flowersRitualGoodsDesk} alt="flowers__ritualGoodsDesk" />
           </div>
         </div>
         

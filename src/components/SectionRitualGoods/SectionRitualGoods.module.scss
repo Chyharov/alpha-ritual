@@ -42,15 +42,28 @@
 }
 
 .containerForTitle {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
 .logo512RitualGoodsDesk {
-  width: 512px;
-  height: 512px;
+  width: 42.67%;
+  height: 42.67%;
 }
 
 .containerForRitualGoodsTitle {
-  width: 590px;
+  width: 49.167%;
+}
+
+.flowersRitualGoodsDesk {
+  position: absolute;
+  top: 160px;
+  left: 25%;
+  width: 33.334%;
+}
+
+.ritualGoodsDeskription {
+  position: relative;
+  z-index: 9;
 }
