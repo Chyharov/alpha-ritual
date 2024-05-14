@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.fb41d986.css",
-    "main.js": "/alpha-ritual/static/js/main.210d640f.js",
-    "static/css/829.b376e19e.chunk.css": "/alpha-ritual/static/css/829.b376e19e.chunk.css",
-    "static/js/829.f6ee0d1f.chunk.js": "/alpha-ritual/static/js/829.f6ee0d1f.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.a76c885d.js",
+    "static/css/829.103b7807.chunk.css": "/alpha-ritual/static/css/829.103b7807.chunk.css",
+    "static/js/829.d97082b3.chunk.js": "/alpha-ritual/static/js/829.d97082b3.chunk.js",
     "static/css/51.5dd1c761.chunk.css": "/alpha-ritual/static/css/51.5dd1c761.chunk.css",
     "static/js/51.7ca7000c.chunk.js": "/alpha-ritual/static/js/51.7ca7000c.chunk.js",
     "static/css/604.b7101125.chunk.css": "/alpha-ritual/static/css/604.b7101125.chunk.css",
@@ -266,9 +266,9 @@
     "static/media/arrowLeft.svg": "/alpha-ritual/static/media/arrowLeft.ced4667617a94daa01f2833b1d67fd96.svg",
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "main.fb41d986.css.map": "/alpha-ritual/static/css/main.fb41d986.css.map",
-    "main.210d640f.js.map": "/alpha-ritual/static/js/main.210d640f.js.map",
-    "829.b376e19e.chunk.css.map": "/alpha-ritual/static/css/829.b376e19e.chunk.css.map",
-    "829.f6ee0d1f.chunk.js.map": "/alpha-ritual/static/js/829.f6ee0d1f.chunk.js.map",
+    "main.a76c885d.js.map": "/alpha-ritual/static/js/main.a76c885d.js.map",
+    "829.103b7807.chunk.css.map": "/alpha-ritual/static/css/829.103b7807.chunk.css.map",
+    "829.d97082b3.chunk.js.map": "/alpha-ritual/static/js/829.d97082b3.chunk.js.map",
     "51.5dd1c761.chunk.css.map": "/alpha-ritual/static/css/51.5dd1c761.chunk.css.map",
     "51.7ca7000c.chunk.js.map": "/alpha-ritual/static/js/51.7ca7000c.chunk.js.map",
     "604.b7101125.chunk.css.map": "/alpha-ritual/static/css/604.b7101125.chunk.css.map",
@@ -313,6 +313,6 @@
   },
   "entrypoints": [
     "static/css/main.fb41d986.css",
-    "static/js/main.210d640f.js"
+    "static/js/main.a76c885d.js"
   ]
 }
