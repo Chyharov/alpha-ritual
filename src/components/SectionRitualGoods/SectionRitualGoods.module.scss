@@ -4,9 +4,9 @@
   padding: 32px 0px 32px;
 
   @include mq(desk) {
+    position: relative;
     display: block;
     padding-top: 80px;
-    padding-bottom: 80px;
   }
 }
 
@@ -15,6 +15,8 @@
 
   @include mq(desk) {
     display: block;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--secondaryTextColor);
   }
 }
 
@@ -62,6 +64,7 @@
   top: 158px;
   left: 25%;
   width: 33.334%;
+  z-index: 2;
 }
 
 .ritualGoodsDeskription {
@@ -76,29 +79,44 @@
 }
 
 .ritualGoodsListItem {
+  position: relative;
   width: 288px;
   height: 254px;
   padding: 8px;
-  position: relative;
   background-color: var(--cardBlackDark);
   border-radius: 8px;
   outline: 1px solid var(--secondaryTextColor);
+  z-index: 2;
 }
 
 .rectangleRitualGoodsDesk {
+  background-image: url('../../images/ritualGoods/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 8px;
-  width: 278px;
+  width: 272px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ritualGoodsListItemTitle {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: Open Sans ExtraBold;
   font-size: 16px;
   line-height: 1.38;
   text-align: start;
   color: var(--primaryTextColorDark);
   padding: 8px;
+}
+
+.blurRitualGoodsDesk {
+  position: absolute;
+  top: 688px;
+  left: 150px;
+  border-radius: 20px;
+  z-index: 1;
+  width: 1060px;
+  height: 334px;
 }
