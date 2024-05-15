@@ -21,7 +21,7 @@ const RitualCarParBlackMercedesPhoto = [
   { id: 12, src: require('../../images/blackMercedes/blackMercedes12.webp'), alt: 'Зображення 12', width: '280', height: '210' }
 ];
 
-const BlackMercedes = () => {
+const BlackMercedes = ({ style }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -38,7 +38,7 @@ const BlackMercedes = () => {
 
   return (
     <>
-      <li className={s.ritualCarParkList}>
+      <li className={s.ritualCarParkList} style={style}>
         <h2 className={s.ritualCarParkList__title}>VIP</h2>
                 
           <CarouselProvider

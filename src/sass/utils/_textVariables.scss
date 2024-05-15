@@ -5,12 +5,12 @@
     color: var(--primaryTextColorDark);
     padding: 8px;
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 32px;
         line-height: 1.25;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 32px;
         line-height: 1.25;
     }
@@ -25,12 +25,12 @@
     padding: 8px;
 
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 28px;
         line-height: 1.12;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 28px;
         line-height: 1.12;
     }
@@ -44,12 +44,12 @@
     padding: 8px;
 
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 28px;
         line-height: 1.12;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 28px;
         line-height: 1.12;
     }
@@ -61,12 +61,12 @@
     line-height: 1.38;
     color: var(--primaryTextColorDark);
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 28px;
         line-height: 1.12;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 28px;
         line-height: 1.12;
     }
@@ -79,12 +79,12 @@
     color: var(--primaryTextColorDark);
     padding: 8px;
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.38;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 16px;
         line-height: 1.38;
     }
@@ -97,12 +97,12 @@
     color: var(--primaryTextColorDark);
     
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.43;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 14px;
         line-height: 1.43;
     }
@@ -115,12 +115,12 @@
     color: #D4CEBF;
 
 
-    @include mq(tab) {
+    @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.43;
     }
 
-    @include mq(desk) {
+    @media screen and (min-width: 1360px) {
         font-size: 14px;
         line-height: 1.43;
     }

@@ -2,10 +2,67 @@
 
 .sectionRitualTransport {
     padding: 32px 0px 32px;
+
+    @include mq(desk) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
 
 .ritualServicesContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mq(desk) {
+        display: none;
+    }
+}
+
+.ritualServicesContainerDesktop {
+    display: none;
+
+    @include mq(desk) {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        border-bottom: 1px solid var(--secondaryTextColor);
+    }
+}
+
+.containerRitualTransportTitle {
+
+    @include mq(desk) {
+        width: 568px;
+    }    
+}
+
+.containerRitualTransportPhoto {
+    @include mq(desk) {
+        width: 600px;
+    }
+}
+
+.transportList {
+
+    @include mq(desk) {
+        position: relative;
+        z-index: 9;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+.blurRitualTransport {
+    @include mq(desk) {
+        position: absolute;
+        top: 171px;
+        left: 486px;
+        width: 682px;
+        height: 566px;
+        border-radius: 20px;
+        z-index: 1;
+    }
 }

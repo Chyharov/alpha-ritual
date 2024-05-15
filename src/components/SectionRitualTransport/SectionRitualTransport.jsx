@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
+import BlackMercedesGallery from "components/BlackMercedesGallery/BlackMercedesGallery";
+import WhiteVolksWagen from "components/WhiteVolksWagen/WhiteVolksWagen";
+import blurRitualTransport from '../../images/ritualTransport/blurRitualTransport.png'
 import s from './SectionRitualTransport.module.scss';
 
 const ritualTransportDescriptionArray = [
@@ -27,6 +30,27 @@ const SectionRitualTransport = () => {
           {!showAll && (
             <ButtonMoreDetails buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />
           )}
+      </div>
+
+      <div className='container'>
+        <div className={s.ritualServicesContainerDesktop}>
+          <div className={s.containerRitualTransportTitle}>
+            <h2 className='title' style={{ marginBottom: '40px' }}>Ритуальний транспорт</h2>
+
+            {ritualTransportDescriptionArray.map((item) => (
+              <p className='description' style={{ marginBottom: '16px', padding: '8px' }}>{item.title}</p>
+            ))}
+          </div>
+          
+          <div className={s.containerRitualTransportPhoto}>
+            <ul className={s.transportList}>
+              <WhiteVolksWagen style={{ width: '288px', marginBottom: '80px' }}/>
+              <BlackMercedesGallery style={{ width: '288px', marginTop: '80px', marginBottom: '0px' }}/>
+            </ul>
+          </div>
+
+          <img className={s.blurRitualTransport} src={blurRitualTransport} alt="blurRitualTransport" />
+        </div>
       </div>
     </section>
   );

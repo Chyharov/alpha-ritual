@@ -15,7 +15,7 @@ const whiteVolksWagenPhotos = [
   { id: 6, src: require('../../images/whiteVolksWagen/whiteVolksWagen6.webp'), alt: 'Зображення 6', width: '280', height: '210' },
 ];
 
-const WhiteVolksWagen = () => {
+const WhiteVolksWagen = ({style}) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -32,7 +32,7 @@ const WhiteVolksWagen = () => {
 
   return (
     <>
-      <li className={s.ritualCarParkList}>
+      <li className={s.ritualCarParkList} style={style}>
         <h2 className={s.ritualCarParkList__title}>Економ клас</h2>
 
         <CarouselProvider
