@@ -1,0 +1,44 @@
+@import '../../sass/utils/mixin';
+
+.SectionRitualServices {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+        padding-top: 80px;
+    }
+}
+
+.ritualServicesContainer {
+
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-bottom: 80px;
+        border-bottom: 1px solid var(--secondaryTextColor);
+    }
+}
+
+.cremationContainer {
+    @include mq(desk) {
+        margin-top: 320px;
+    }
+}
+
+.ritualServicesList {
+    @include mq(desk) {
+        display: flex;
+    }
+}
+
+.ritualListTitle {
+    @include mq(desk) {
+        font-family: Open Sans Regular;
+        font-size: 24px;
+        line-height: 1.17;
+        color: var(--primaryTextColorDark);
+        padding: 8px;
+        margin-bottom: 24px;
+    }
+}
