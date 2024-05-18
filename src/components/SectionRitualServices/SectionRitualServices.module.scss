@@ -12,9 +12,6 @@
 .ritualServicesContainer {
 
     @include mq(desk) {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
         padding-bottom: 80px;
         border-bottom: 1px solid var(--secondaryTextColor);
     }
@@ -29,6 +26,13 @@
 .ritualServicesList {
     @include mq(desk) {
         display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.crimationServicesList {
+    @include mq(desk) {
+        display: flex;
     }
 }
 
@@ -40,5 +44,33 @@
         color: var(--primaryTextColorDark);
         padding: 8px;
         margin-bottom: 24px;
+    }
+}
+
+.ritualServiceListItem {
+
+    @include mq(desk) {
+        
+        border-radius: 8px;
+       
+        background-color: var(--cardBlackDark);
+        font-family: Open Sans ExtraBold;
+        font-size: 16px;
+        line-height: 1.38;
+        color: var(--primaryTextColorDark);
+        padding: 8px;
+    }
+}
+
+.containerRitualServiceListItem {
+
+    @include mq(desk) {
+        width: 264px;
+        height: 104px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--hoverColorDark);
+        border-radius: 8px;
     }
 }
