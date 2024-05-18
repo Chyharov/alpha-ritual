@@ -151,7 +151,7 @@ const SectionRitualServices = () => {
                             </ul>
 
                             <div className={s.containerForBtnGetConsultaton}>
-                            <ButtonGetConsultation />
+                            <ButtonGetConsultation style={{ width: '240px' }}/>
                             </div>
                         </div>
                         )}

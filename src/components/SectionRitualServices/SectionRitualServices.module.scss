@@ -69,7 +69,7 @@
     @include mq(desk) {
         position: relative;
         width: 272px;
-        height: 104px;
+        min-height: 104px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -109,4 +109,44 @@
 
 ul .ritualServiceListItem:last-child {
     margin-right: 0px;
+}
+
+.ritualServices__ContainerInfo {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerInfo__title {
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+}
+
+.ritualServices__price {
+    padding: 8px;
+}
+
+.ritualServices__price,
+.containerInfo__listItem {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--primaryTextColorDark);
+}
+
+.containerInfo__list {
+
+}
+
+.containerInfo__listItem {
+    padding: 8px 8px 0px 8px;
+}
+
+.containerForBtnGetConsultaton {
+    
 }

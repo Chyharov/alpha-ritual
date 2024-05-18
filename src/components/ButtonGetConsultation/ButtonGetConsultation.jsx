@@ -5,7 +5,7 @@ import { FaSquareWhatsapp } from 'react-icons/fa6';
 import closeIcon from '../../images/closeIcon2.svg'
 import s from './ButtonGetConsultation.module.scss';
 
-const ButtonGetConsultation = () => {
+const ButtonGetConsultation = ({ style }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -39,7 +39,7 @@ const ButtonGetConsultation = () => {
   });
   return (
     <>
-      <button type="button" className={s.getConsultation} onClick={openModal}>
+      <button style={style} type="button" className={s.getConsultation} onClick={openModal}>
         Отримати консультацію
       </button>
 
