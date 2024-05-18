@@ -1,6 +1,6 @@
 @import '../../sass/utils/mixin';
 
-.SectionRitualServices {
+.sectionRitualServices {
     display: none;
 
     @include mq(desk) {
@@ -17,12 +17,6 @@
     }
 }
 
-.cremationContainer {
-    @include mq(desk) {
-        margin-top: 320px;
-    }
-}
-
 .ritualServicesList {
     @include mq(desk) {
         display: flex;
@@ -30,9 +24,16 @@
     }
 }
 
-.crimationServicesList {
+.cremationList {
     @include mq(desk) {
         display: flex;
+    }
+}
+
+.ritualServicesList:first-child {
+    @include mq(desk) {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
@@ -50,22 +51,24 @@
 .ritualServiceListItem {
 
     @include mq(desk) {
-        
-        border-radius: 8px;
-       
-        background-color: var(--cardBlackDark);
-        font-family: Open Sans ExtraBold;
-        font-size: 16px;
-        line-height: 1.38;
-        color: var(--primaryTextColorDark);
         padding: 8px;
+        border-radius: 8px;
+        background-color: var(--cardBlackDark);
+    }
+}
+
+.containerRitualService {
+
+    @include mq(desk) {
+        margin-bottom: 320px;
     }
 }
 
 .containerRitualServiceListItem {
 
     @include mq(desk) {
-        width: 264px;
+        position: relative;
+        width: 272px;
         height: 104px;
         display: flex;
         align-items: center;
@@ -73,4 +76,37 @@
         border: 1px solid var(--hoverColorDark);
         border-radius: 8px;
     }
+}
+
+.ritualServiceListTitle {
+
+    @include mq(desk) {
+        font-family: Open Sans ExtraBold;
+        font-size: 16px;
+        line-height: 1.38;
+        color: var(--primaryTextColorDark);
+        padding: 8px;
+    }
+
+}
+
+.ritualServiceListLink {
+    border: none;
+    position: absolute;
+    bottom: -9px;
+    right: 31px;
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--secondaryTextColor);
+    background-color: var(--cardBlackDark);
+    padding: 4px 15px;
+}
+
+.ritualServiceListItem {
+    margin-right: 16px;
+}
+
+ul .ritualServiceListItem:last-child {
+    margin-right: 0px;
 }
