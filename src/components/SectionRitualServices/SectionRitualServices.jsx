@@ -122,108 +122,128 @@ const SectionRitualServices = () => {
   return (
     <section className={s.sectionRitualServices}>
       <div className="container">
-          <div className={s.ritualServicesContainer}>
-            {additionalServices.map(service => (
-                <div key={service.title} className={s.containerRitualService}>
-                <h2 className="title" style={{ marginBottom: '40px', textAlign: 'end' }}>
+        <div className={s.ritualServicesContainer}>
+          {additionalServices.map(service => (
+            <div key={service.title} className={s.containerRitualService}>
+              <h2
+                className="title"
+                style={{ marginBottom: '40px', textAlign: 'end' }}
+              >
                 {service.title}
-                </h2>
-                <ul className={s.ritualServicesList}>
+              </h2>
+              <ul className={s.ritualServicesList}>
                 {service.items.map(item => (
-                    <li key={item.id} className={s.ritualServiceListItem}>
-                    <div className={s.containerRitualServiceListItem}>
+                  <li key={item.id} className={s.ritualServiceListItem}>
+                    <div className={s.ritualServiceListItemContainer}>
+                      <div className={s.containerRitualServiceListItem}>
                         {!selectedServices[`${service.title}-${item.id}`] && (
-                        <h3 className={s.ritualServiceListTitle}>{item.title}</h3>
+                          <h3 className={s.ritualServiceListTitle}>
+                            {item.title}
+                          </h3>
                         )}
                         {selectedServices[`${service.title}-${item.id}`] && (
-                        <div className={s.ritualServices__ContainerInfo}>
-                            <h2 className={s.containerInfo__title}>{item.title}</h2>
-                            <p className={s.ritualServices__price}>{item.price}</p>
+                          <div className={s.ritualServices__ContainerInfo}>
+                            <h2 className={s.containerInfo__title}>
+                              {item.title}
+                            </h2>
+                            <p className={s.ritualServices__price}>
+                              {item.price}
+                            </p>
                             <ul className={s.containerInfo__list}>
-                            {item.description.map((desc, index) => (
+                              {item.description.map((desc, index) => (
                                 <li
-                                className={s.containerInfo__listItem}
-                                key={index}
+                                  className={s.containerInfo__listItem}
+                                  key={index}
                                 >
-                                {desc}
+                                  {desc}
                                 </li>
-                            ))}
+                              ))}
                             </ul>
 
                             <div className={s.containerForBtnGetConsultaton}>
-                            <ButtonGetConsultation style={{ width: '240px' }}/>
+                              <ButtonGetConsultation style={{ width: '240px' }} />
                             </div>
-                        </div>
+                          </div>
                         )}
                         {!selectedServices[`${service.title}-${item.id}`] && (
-                        <button
+                          <button
                             className={s.ritualServiceListLink}
                             type="button"
                             onClick={() =>
-                            toggleDetails(`${service.title}-${item.id}`)
+                              toggleDetails(`${service.title}-${item.id}`)
                             }
-                        >
+                          >
                             Деталі
-                        </button>
+                          </button>
                         )}
+                      </div>
                     </div>
-                    </li>
+                  </li>
                 ))}
-                </ul>
+              </ul>
             </div>
-            ))}
-                  
+          ))}
 
-                  {crimationServices.map(service => (
-                <div key={service.title} className={s.containerRitualService}>
-                <h2 className="title" style={{ marginBottom: '40px', textAlign: 'start' }}>
+          {crimationServices.map(service => (
+            <div key={service.title} className={s.containerCrimationService}>
+              <h2
+                className="title"
+                style={{ marginBottom: '40px', textAlign: 'start' }}
+              >
                 {service.title}
-                </h2>
-                <ul className={s.cremationList}>
+              </h2>
+              <ul className={s.cremationList}>
                 {service.items.map(item => (
-                    <li key={item.id} className={s.ritualServiceListItem}>
-                    <div className={s.containerRitualServiceListItem}>
+                  <li key={item.id} className={s.ritualServiceListItem}>
+                    <div className={s.ritualServiceListItemContainer}>
+                      <div className={s.containerRitualServiceListItem}>
                         {!selectedServices[`${service.title}-${item.id}`] && (
-                        <h3 className={s.ritualServiceListTitle}>{item.title}</h3>
+                          <h3 className={s.ritualServiceListTitle}>
+                            {item.title}
+                          </h3>
                         )}
                         {selectedServices[`${service.title}-${item.id}`] && (
-                        <div className={s.ritualServices__ContainerInfo}>
-                            <h2 className={s.containerInfo__title}>{item.title}</h2>
-                            <p className={s.ritualServices__price}>{item.price}</p>
+                          <div className={s.ritualServices__ContainerInfo}>
+                            <h2 className={s.containerInfo__title}>
+                              {item.title}
+                            </h2>
+                            <p className={s.ritualServices__price}>
+                              {item.price}
+                            </p>
                             <ul className={s.containerInfo__list}>
-                            {item.description.map((desc, index) => (
+                              {item.description.map((desc, index) => (
                                 <li
-                                className={s.containerInfo__listItem}
-                                key={index}
+                                  className={s.containerInfo__listItem}
+                                  key={index}
                                 >
-                                {desc}
+                                  {desc}
                                 </li>
-                            ))}
+                              ))}
                             </ul>
 
                             <div className={s.containerForBtnGetConsultaton}>
-                            <ButtonGetConsultation />
+                              <ButtonGetConsultation style={{ width: '240px' }} />
                             </div>
-                        </div>
+                          </div>
                         )}
                         {!selectedServices[`${service.title}-${item.id}`] && (
-                        <button
+                          <button
                             className={s.ritualServiceListLink}
                             type="button"
                             onClick={() =>
-                            toggleDetails(`${service.title}-${item.id}`)
+                              toggleDetails(`${service.title}-${item.id}`)
                             }
-                        >
+                          >
                             Деталі
-                        </button>
+                          </button>
                         )}
-                    </div>
-                    </li>
+                        </div>
+                      </div>
+                  </li>
                 ))}
-                </ul>
+              </ul>
             </div>
-            ))}
-
+          ))}
         </div>
       </div>
     </section>

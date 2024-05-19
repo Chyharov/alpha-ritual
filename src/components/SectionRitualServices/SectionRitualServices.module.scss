@@ -53,7 +53,6 @@
     @include mq(desk) {
         padding: 8px;
         border-radius: 8px;
-        background-color: var(--cardBlackDark);
     }
 }
 
@@ -74,6 +73,7 @@
         align-items: center;
         justify-content: center;
         border: 1px solid var(--hoverColorDark);
+        background-color: var(--cardBlackDark);
         border-radius: 8px;
     }
 }
@@ -111,6 +111,13 @@ ul .ritualServiceListItem:last-child {
     margin-right: 0px;
 }
 
+.ritualServiceListItemContainer {
+    min-height: 120px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--cardBlackDark);
+}
+
 .ritualServices__ContainerInfo {
     width: 100%;
     padding: 8px;
@@ -131,6 +138,10 @@ ul .ritualServiceListItem:last-child {
     padding: 8px;
 }
 
+.containerInfo__list {
+    margin-bottom: 16px;
+}
+
 .ritualServices__price,
 .containerInfo__listItem {
     font-family: Open Sans Regular;
@@ -139,14 +150,10 @@ ul .ritualServiceListItem:last-child {
     color: var(--primaryTextColorDark);
 }
 
-.containerInfo__list {
-
-}
-
 .containerInfo__listItem {
     padding: 8px 8px 0px 8px;
 }
 
 .containerForBtnGetConsultaton {
-    
+    margin-bottom: -13px;
 }
