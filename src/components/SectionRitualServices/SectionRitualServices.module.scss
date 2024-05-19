@@ -10,9 +10,10 @@
 }
 
 .ritualServicesContainer {
-
+    
     @include mq(desk) {
-        padding-bottom: 80px;
+        position: relative;
+        height: 1005px;
         border-bottom: 1px solid var(--secondaryTextColor);
     }
 }
@@ -48,18 +49,19 @@
     }
 }
 
-.ritualServiceListItem {
-
-    @include mq(desk) {
-        padding: 8px;
-        border-radius: 8px;
+.containerRitualService {
+    @include mq(desk) { 
+        position: relative;
+        z-index: 4;
     }
 }
 
-.containerRitualService {
-
+.containerCrimationService {
     @include mq(desk) {
-        margin-bottom: 320px;
+        position: absolute;
+        top: 600px;
+        left: 0;
+        z-index: 5;
     }
 }
 
@@ -156,4 +158,40 @@ ul .ritualServiceListItem:last-child {
 
 .containerForBtnGetConsultaton {
     margin-bottom: -13px;
+}
+
+.sectionRitualServicesBlur,
+.sectionRitualServicesFlowers,
+.sectionRitualServicesGirlFlowers,
+.sectionRitualServicesRectangle {
+    position: absolute;
+}
+
+.sectionRitualServicesGirlFlowers {
+    top: 160px;
+    left: 80px;
+    width: 400px;
+    height: 560px;
+    z-index: 2;
+}
+
+.sectionRitualServicesFlowers {
+    top: 390px;
+    right: 80px;
+    width: 400px;
+    height: 560px;
+}
+
+.sectionRitualServicesBlur {
+    top: 400px;
+    left: 93px;
+    width: 682px;
+    height: 566px;
+}
+
+.sectionRitualServicesRectangle {
+    top: 380px;
+    left: 281px;
+    width: 640px;
+    height: 280px;
 }

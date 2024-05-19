@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import SectionRitualServicesBlur from '../../images/RitualServices/SectionRitualServicesBlur.png'
+import SectionRitualServicesFlowers from '../../images/RitualServices/SectionRitualServicesFlowers.svg'
+import SectionRitualServicesGirlFlowers from '../../images/RitualServices/SectionRitualServicesGirlFlowers.svg'
+import SectionRitualServicesRectangle from '../../images/RitualServices/SectionRitualServicesRectangle.svg'
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import s from './SectionRitualServices.module.scss';
 
@@ -123,6 +127,7 @@ const SectionRitualServices = () => {
     <section className={s.sectionRitualServices}>
       <div className="container">
         <div className={s.ritualServicesContainer}>
+          <h2 className='title' style={{ marginBottom: '40px', textAlign: 'center' }}>Ритуальні послуги</h2>
           {additionalServices.map(service => (
             <div key={service.title} className={s.containerRitualService}>
               <h2
@@ -244,6 +249,10 @@ const SectionRitualServices = () => {
               </ul>
             </div>
           ))}
+          <img className={s.sectionRitualServicesBlur} src={SectionRitualServicesBlur} alt="ritualServicesBlur" />
+          <img className={s.sectionRitualServicesFlowers} src={SectionRitualServicesFlowers} alt="ritualServicesFlowers" />
+          <img className={s.sectionRitualServicesGirlFlowers} src={SectionRitualServicesGirlFlowers} alt="ritualServicesGirlFlowers" />
+          <img className={s.sectionRitualServicesRectangle} src={SectionRitualServicesRectangle} alt="ritualServicesRectangle" />
         </div>
       </div>
     </section>
