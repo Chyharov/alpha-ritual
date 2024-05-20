@@ -44,8 +44,8 @@ const ButtonGetConsultation = ({ style }) => {
       </button>
 
           {isModalOpen && (
-        <div className={s.bgShadow}>
-          <div className={s.modal} onClick={handleOutsideClick}>
+        <div className={s.bgShadow} onClick={handleOutsideClick}>
+          <div className={s.modal}>
             <img className={s.btn__close} src={closeIcon} alt="closeIcon" onClick={closeModal}/>
             
             <div className={s.modalTitleContainer}>
