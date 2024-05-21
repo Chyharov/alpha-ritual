@@ -78,7 +78,6 @@ const ButtonGetConsultation = ({ style }) => {
                     </a>
                 </ul>
 
-            
                 <ul className={s.contact__list}>
                   <li className={s.contact__item}>
                     <a

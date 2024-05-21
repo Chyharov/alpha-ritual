@@ -28,7 +28,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    padding: 32px 16px;
+    padding: 16px 32px;
     background-color: var(--primaryTextColorDark);
     color: var(--backgroundColor);
     border: 1px solid var(--hoverColor);
@@ -41,7 +41,7 @@
 
     @include mq(desk) {
         width: 38%;
-        padding: 58px 80px;
+        padding: 40px 80px;
         z-index: 9;
     }
 }
@@ -57,13 +57,13 @@
 }
 
 .contact__list {
+    width: 240px;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .contact__links {
-    padding: 20px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,7 @@
 .contact__icons {
     width: 40px;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .btn__close {
@@ -82,8 +82,8 @@
     top: 0;
     right: 0;
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
     @include mq(desk) {
         padding: 16px;
@@ -137,7 +137,11 @@
 
 .modalTitleContainer {
     padding: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
+
+    @include mq(desk) {
+        margin-bottom: 16px;
+    }
 }
 
 .titleNeedHelp {
@@ -204,4 +208,8 @@
         font-size: 16px;
         line-height: 1.38;
     }
+}
+
+.phoneNumberList {
+    margin-bottom: 8px;
 }
