@@ -19,7 +19,21 @@
   margin-right: auto;
 
   @include mq(tab) {
+
   }
+
+  @include mq(desk) {
+    display: none;
+  }
+}
+
+.ritualServicesDesktop__container {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+  }
+
 }
 
 .ritualServices__title {

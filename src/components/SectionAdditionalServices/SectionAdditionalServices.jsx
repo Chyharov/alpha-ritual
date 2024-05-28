@@ -41,6 +41,24 @@ const SectionAdditionalServices = () => {
         )}
         
       </div>
+        
+      
+      <div className={'container ' + s.ritualServicesDesktop__container}>
+
+        <h2 className='title' style={{ marginBottom: '24px' }}>Додаткові послуги</h2>
+
+        <ul className={s.ritualServices__list}>
+          {additionalServices.map((item) => (
+            <li className={s.ritualServices__listItem} key={item.id}>
+              <div className={s.ritualServices__border}>
+                <h2 className={s.ritualServices__title}>{item.title}</h2>
+                <Link className={s.ritualServices__link} to={item.link}>Деталі</Link>
+              </div>
+            </li>
+          ))}       
+        </ul>     
+        
+      </div>
     </section>
   );
 };
