@@ -72,15 +72,11 @@ const SectionAdditionalServices = () => {
 
           <ul className={s.otherAtributicsList}>
             <li className={s.otherAtributicsListItem}>
-              <a className={s.otherAtributicsLink} href="">
                 <p className={s.otherAtributicsDescription}>Поховальний набір</p>
-              </a>
             </li>
 
             <li className={s.otherAtributicsListItem}>
-              <a className={s.otherAtributicsLink} href="">
                 <p className={s.otherAtributicsDescription}>Портрет на поховання</p>
-              </a>
             </li>
           </ul>
 
