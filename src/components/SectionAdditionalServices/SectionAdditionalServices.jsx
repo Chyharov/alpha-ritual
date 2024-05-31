@@ -57,7 +57,7 @@ const SectionAdditionalServices = () => {
         <div className={s.additationContainer}>
         <h2 className='title' style={{ marginBottom: '40px' }}>Додаткові послуги</h2>
 
-        <ul className={s.ritualServices__list}>
+        <ul className={s.ritualServices__listDesk}>
           {additionalServicesDesktop.map((item) => (
             <li className={s.ritualServices__listItemDesktop} key={item.id}>
               <div className={s.ritualServices__border}>
@@ -66,10 +66,25 @@ const SectionAdditionalServices = () => {
               </div>
             </li>
           ))}    
-        </ul> 
+          </ul> 
+          
+          <h3 className={s.otherAtributicsTitle}>Інша атрибутика</h3>
+
+          <ul className={s.otherAtributicsList}>
+            <li className={s.otherAtributicsListItem}>
+              <a className={s.otherAtributicsLink} href="">
+                <p className={s.otherAtributicsDescription}>Поховальний набір</p>
+              </a>
+            </li>
+
+            <li className={s.otherAtributicsListItem}>
+              <a className={s.otherAtributicsLink} href="">
+                <p className={s.otherAtributicsDescription}>Портрет на поховання</p>
+              </a>
+            </li>
+          </ul>
 
         </div>
-        
         
       </div>
     </section>
