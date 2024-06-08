@@ -81,7 +81,6 @@ const SectionAdditionalServices = () => {
           </ul>
 
         </div>
-        
 
         <h2>Test change for gh-page</h2>
       </div>
