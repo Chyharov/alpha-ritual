@@ -33,10 +33,14 @@
   display: none;
 
   @include mq(desk) {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
   }
 
+}
+
+.additationContainerFlex {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .ritualServices__title {
@@ -108,6 +112,8 @@
 .additationContainer {
   @include mq(desk) {
     width: 592px;
+    margin-top: 47px;
+    margin-bottom: 80px;
   }
 }
 
@@ -125,9 +131,37 @@
   
   @include mq(desk) {
     display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      justify-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
   }
+}
+
+.otherAtributicsTitle {
+  font-family: Open Sans Regular;
+  font-size: 24px;
+  line-height: 1.67;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.otherAtributicsList {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.otherAtributicsListItem {
+  width: 288px;
+  height: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 8px;
+  border: 1px solid var(--hoverColorDark);
+  padding-bottom: 48px;
+}
+
+.otherAtributicsListItem:not(:last-child) {
+  margin-right: 16px;
 }

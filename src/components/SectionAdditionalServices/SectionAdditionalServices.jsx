@@ -54,20 +54,25 @@ const SectionAdditionalServices = () => {
       
       <div className={'container ' + s.ritualServicesDesktop__container}>
 
-        <div className={s.additationContainer}>
-        <h2 className='title' style={{ marginBottom: '40px' }}>Додаткові послуги</h2>
+        <div className={s.additationContainerFlex}>
+          <div className={s.additationContainer}>
+            <h2 className='title' style={{ marginBottom: '40px', textAlign: 'end' }}>Додаткові послуги</h2>
 
-        <ul className={s.ritualServices__listDesk}>
-          {additionalServicesDesktop.map((item) => (
-            <li className={s.ritualServices__listItemDesktop} key={item.id}>
-              <div className={s.ritualServices__border}>
-                <h2 className={s.ritualServices__title}>{item.title}</h2>
-                <Link className={s.ritualServices__link} to={item.link}>Деталі</Link>
-              </div>
-            </li>
-          ))}    
-          </ul> 
-          
+            <ul className={s.ritualServices__listDesk}>
+              {additionalServicesDesktop.map((item) => (
+                <li className={s.ritualServices__listItemDesktop} key={item.id}>
+                  <div className={s.ritualServices__border}>
+                    <h2 className={s.ritualServices__title}>{item.title}</h2>
+                    <Link className={s.ritualServices__link} to={item.link}>Деталі</Link>
+                  </div>
+                </li>
+              ))}    
+            </ul>
+          </div>
+        </div>
+        
+
+        <div className={s.otherAtributicsContainer}>
           <h3 className={s.otherAtributicsTitle}>Інша атрибутика</h3>
 
           <ul className={s.otherAtributicsList}>
@@ -76,7 +81,7 @@ const SectionAdditionalServices = () => {
             </li>
 
             <li className={s.otherAtributicsListItem}>
-                <p className={s.otherAtributicsDescription}>Портрет на поховання</p>
+              <p className={s.otherAtributicsDescription}>Портрет на поховання</p>
             </li>
           </ul>
 
