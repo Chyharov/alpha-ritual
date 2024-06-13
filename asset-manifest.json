@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.732e6426.css",
-    "main.js": "/alpha-ritual/static/js/main.4551e4c4.js",
-    "static/css/153.8135f013.chunk.css": "/alpha-ritual/static/css/153.8135f013.chunk.css",
-    "static/js/153.c269249e.chunk.js": "/alpha-ritual/static/js/153.c269249e.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.1d1e3173.js",
+    "static/css/153.7489edd6.chunk.css": "/alpha-ritual/static/css/153.7489edd6.chunk.css",
+    "static/js/153.c3177afa.chunk.js": "/alpha-ritual/static/js/153.c3177afa.chunk.js",
     "static/css/653.4417327e.chunk.css": "/alpha-ritual/static/css/653.4417327e.chunk.css",
     "static/js/653.4484e50f.chunk.js": "/alpha-ritual/static/js/653.4484e50f.chunk.js",
     "static/css/882.54b69e6a.chunk.css": "/alpha-ritual/static/css/882.54b69e6a.chunk.css",
@@ -272,9 +272,9 @@
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "/alpha-ritual/static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.732e6426.css.map": "/alpha-ritual/static/css/main.732e6426.css.map",
-    "main.4551e4c4.js.map": "/alpha-ritual/static/js/main.4551e4c4.js.map",
-    "153.8135f013.chunk.css.map": "/alpha-ritual/static/css/153.8135f013.chunk.css.map",
-    "153.c269249e.chunk.js.map": "/alpha-ritual/static/js/153.c269249e.chunk.js.map",
+    "main.1d1e3173.js.map": "/alpha-ritual/static/js/main.1d1e3173.js.map",
+    "153.7489edd6.chunk.css.map": "/alpha-ritual/static/css/153.7489edd6.chunk.css.map",
+    "153.c3177afa.chunk.js.map": "/alpha-ritual/static/js/153.c3177afa.chunk.js.map",
     "653.4417327e.chunk.css.map": "/alpha-ritual/static/css/653.4417327e.chunk.css.map",
     "653.4484e50f.chunk.js.map": "/alpha-ritual/static/js/653.4484e50f.chunk.js.map",
     "882.54b69e6a.chunk.css.map": "/alpha-ritual/static/css/882.54b69e6a.chunk.css.map",
@@ -319,6 +319,6 @@
   },
   "entrypoints": [
     "static/css/main.732e6426.css",
-    "static/js/main.4551e4c4.js"
+    "static/js/main.1d1e3173.js"
   ]
 }
