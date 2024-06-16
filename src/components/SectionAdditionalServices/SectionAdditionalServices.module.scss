@@ -152,6 +152,10 @@
 }
 
 .otherAtributicsListItem {
+  background-image: url(../../images/additionalServices/card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 288px;
   height: 288px;
   display: flex;
@@ -167,8 +171,7 @@
 }
 
 .otherAtributicsDescription {
-  font-family: Open Sans Regular;
-  font-weight: 600;
+  font-family: Open Sans Medium;
   font-size: 20px;
   line-height: 1;
   padding: 4px;
