@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.732e6426.css",
-    "main.js": "/alpha-ritual/static/js/main.1d1e3173.js",
-    "static/css/153.7489edd6.chunk.css": "/alpha-ritual/static/css/153.7489edd6.chunk.css",
+    "main.js": "/alpha-ritual/static/js/main.f23e0904.js",
+    "static/css/153.5acfc262.chunk.css": "/alpha-ritual/static/css/153.5acfc262.chunk.css",
     "static/js/153.c3177afa.chunk.js": "/alpha-ritual/static/js/153.c3177afa.chunk.js",
     "static/css/653.4417327e.chunk.css": "/alpha-ritual/static/css/653.4417327e.chunk.css",
     "static/js/653.4484e50f.chunk.js": "/alpha-ritual/static/js/653.4484e50f.chunk.js",
@@ -213,6 +213,7 @@
     "static/media/crosses12.jpg": "/alpha-ritual/static/media/crosses12.840cab318c1bd702c725.jpg",
     "static/media/whiteVolksWagen4.webp": "/alpha-ritual/static/media/whiteVolksWagen4.c92cc9cbe0f2b4b1ba98.webp",
     "static/media/whiteVolksWagen6.webp": "/alpha-ritual/static/media/whiteVolksWagen6.5b50c4faffa7c7dc49cd.webp",
+    "static/media/card.jpg": "/alpha-ritual/static/media/card.6510d0a5829616b4b2c0.jpg",
     "static/media/crosses9.jpg": "/alpha-ritual/static/media/crosses9.839c57cbcb5533337b40.jpg",
     "static/media/coffinsEconomPrice5.jpg": "/alpha-ritual/static/media/coffinsEconomPrice5.e8621461b3bef90247c6.jpg",
     "static/media/whiteVolksWagen5.webp": "/alpha-ritual/static/media/whiteVolksWagen5.bfa77970794f4cd2d4f7.webp",
@@ -272,8 +273,8 @@
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "/alpha-ritual/static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.732e6426.css.map": "/alpha-ritual/static/css/main.732e6426.css.map",
-    "main.1d1e3173.js.map": "/alpha-ritual/static/js/main.1d1e3173.js.map",
-    "153.7489edd6.chunk.css.map": "/alpha-ritual/static/css/153.7489edd6.chunk.css.map",
+    "main.f23e0904.js.map": "/alpha-ritual/static/js/main.f23e0904.js.map",
+    "153.5acfc262.chunk.css.map": "/alpha-ritual/static/css/153.5acfc262.chunk.css.map",
     "153.c3177afa.chunk.js.map": "/alpha-ritual/static/js/153.c3177afa.chunk.js.map",
     "653.4417327e.chunk.css.map": "/alpha-ritual/static/css/653.4417327e.chunk.css.map",
     "653.4484e50f.chunk.js.map": "/alpha-ritual/static/js/653.4484e50f.chunk.js.map",
@@ -319,6 +320,6 @@
   },
   "entrypoints": [
     "static/css/main.732e6426.css",
-    "static/js/main.1d1e3173.js"
+    "static/js/main.f23e0904.js"
   ]
 }
