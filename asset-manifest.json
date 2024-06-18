@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.732e6426.css",
-    "main.js": "/alpha-ritual/static/js/main.f23e0904.js",
-    "static/css/153.5acfc262.chunk.css": "/alpha-ritual/static/css/153.5acfc262.chunk.css",
-    "static/js/153.c3177afa.chunk.js": "/alpha-ritual/static/js/153.c3177afa.chunk.js",
+    "main.js": "/alpha-ritual/static/js/main.02abfe1d.js",
+    "static/css/153.1eba590b.chunk.css": "/alpha-ritual/static/css/153.1eba590b.chunk.css",
+    "static/js/153.145059e8.chunk.js": "/alpha-ritual/static/js/153.145059e8.chunk.js",
     "static/css/653.4417327e.chunk.css": "/alpha-ritual/static/css/653.4417327e.chunk.css",
     "static/js/653.4484e50f.chunk.js": "/alpha-ritual/static/js/653.4484e50f.chunk.js",
     "static/css/882.54b69e6a.chunk.css": "/alpha-ritual/static/css/882.54b69e6a.chunk.css",
@@ -213,10 +213,10 @@
     "static/media/crosses12.jpg": "/alpha-ritual/static/media/crosses12.840cab318c1bd702c725.jpg",
     "static/media/whiteVolksWagen4.webp": "/alpha-ritual/static/media/whiteVolksWagen4.c92cc9cbe0f2b4b1ba98.webp",
     "static/media/whiteVolksWagen6.webp": "/alpha-ritual/static/media/whiteVolksWagen6.5b50c4faffa7c7dc49cd.webp",
-    "static/media/card.jpg": "/alpha-ritual/static/media/card.6510d0a5829616b4b2c0.jpg",
     "static/media/crosses9.jpg": "/alpha-ritual/static/media/crosses9.839c57cbcb5533337b40.jpg",
     "static/media/coffinsEconomPrice5.jpg": "/alpha-ritual/static/media/coffinsEconomPrice5.e8621461b3bef90247c6.jpg",
     "static/media/whiteVolksWagen5.webp": "/alpha-ritual/static/media/whiteVolksWagen5.bfa77970794f4cd2d4f7.webp",
+    "static/media/funeralPortraitCard.jpg": "/alpha-ritual/static/media/funeralPortraitCard.1a17f7034448f7be5c6e.jpg",
     "static/media/artificialWreaths3.jpg": "/alpha-ritual/static/media/artificialWreaths3.31fbc8199136492f8893.jpg",
     "static/media/blackMercedes2.webp": "/alpha-ritual/static/media/blackMercedes2.12dc9a1bc86f849cbc70.webp",
     "static/media/crosses6.jpg": "/alpha-ritual/static/media/crosses6.dc108c159c99c633b4c8.jpg",
@@ -245,6 +245,7 @@
     "static/media/heroBgMobile.jpg": "/alpha-ritual/static/media/heroBgMobile.2b1977f3b95a71d62871.jpg",
     "static/media/backgroundArtificalWreathsMob.jpg": "/alpha-ritual/static/media/backgroundArtificalWreathsMob.9a6be3c9b3c616da0147.jpg",
     "static/media/WreathsBackgroundMob.jpg": "/alpha-ritual/static/media/WreathsBackgroundMob.3b700ae7fd5c82b23a20.jpg",
+    "static/media/funeralSetCard.jpg": "/alpha-ritual/static/media/funeralSetCard.e6b558018403003fe9c6.jpg",
     "static/media/VasesBackgroundMob.jpg": "/alpha-ritual/static/media/VasesBackgroundMob.8bd77b05650c7239f6ab.jpg",
     "static/media/blackMercedes4.webp": "/alpha-ritual/static/media/blackMercedes4.133bffafa15493948b40.webp",
     "static/media/backgroundAdditionalServicesMob.jpg": "/alpha-ritual/static/media/backgroundAdditionalServicesMob.12acf46f93d1210efc6f.jpg",
@@ -273,9 +274,9 @@
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "/alpha-ritual/static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.732e6426.css.map": "/alpha-ritual/static/css/main.732e6426.css.map",
-    "main.f23e0904.js.map": "/alpha-ritual/static/js/main.f23e0904.js.map",
-    "153.5acfc262.chunk.css.map": "/alpha-ritual/static/css/153.5acfc262.chunk.css.map",
-    "153.c3177afa.chunk.js.map": "/alpha-ritual/static/js/153.c3177afa.chunk.js.map",
+    "main.02abfe1d.js.map": "/alpha-ritual/static/js/main.02abfe1d.js.map",
+    "153.1eba590b.chunk.css.map": "/alpha-ritual/static/css/153.1eba590b.chunk.css.map",
+    "153.145059e8.chunk.js.map": "/alpha-ritual/static/js/153.145059e8.chunk.js.map",
     "653.4417327e.chunk.css.map": "/alpha-ritual/static/css/653.4417327e.chunk.css.map",
     "653.4484e50f.chunk.js.map": "/alpha-ritual/static/js/653.4484e50f.chunk.js.map",
     "882.54b69e6a.chunk.css.map": "/alpha-ritual/static/css/882.54b69e6a.chunk.css.map",
@@ -320,6 +321,6 @@
   },
   "entrypoints": [
     "static/css/main.732e6426.css",
-    "static/js/main.f23e0904.js"
+    "static/js/main.02abfe1d.js"
   ]
 }
