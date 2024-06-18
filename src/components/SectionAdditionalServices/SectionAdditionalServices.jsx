@@ -76,13 +76,17 @@ const SectionAdditionalServices = () => {
           <h3 className={s.otherAtributicsTitle}>Інша атрибутика</h3>
 
           <ul className={s.otherAtributicsList}>
-            <li className={s.otherAtributicsListItem}>
+            <Link className={s.otherAtributicsListLink} to="/funeralset">
+              <li className={`${s.otherAtributicsListItem} ${s.funeralSetCard}`}>
                 <p className={s.otherAtributicsDescription}>Поховальний набір</p>
-            </li>
+              </li>
+            </Link>
 
-            <li className={s.otherAtributicsListItem}>
-              <p className={s.otherAtributicsDescription}>Портрет на поховання</p>
-            </li>
+            <Link className={s.otherAtributicsListLink} to="/funeralportrait">
+              <li className={`${s.otherAtributicsListItem} ${s.funeralPortraitCard}`}>
+                <p className={s.otherAtributicsDescription}>Портрет на поховання</p>
+              </li>
+            </Link>
           </ul>
 
         </div>
