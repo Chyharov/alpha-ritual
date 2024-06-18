@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import whiteFlowersForSectionAdditionalService from '../../images/additionalServices/whiteFlowersForSectionAdditionalService.jpg'
-import whiteFlowerForSectionAdditionalService from '../../images/additionalServices/whiteFlowerForSectionAdditionalService.jpg.jpg'
-
+import whiteFlowerForSectionAdditionalService from '../../images/additionalServices/whiteFlowerForSectionAdditionalService.jpg'
+import blurForSectionAdditionalService from '../../images/additionalServices/blurForSectionAdditionalService.svg'
 import s from './SectionAdditionalServices.module.scss';
 
 const additionalServices = [
@@ -97,6 +97,7 @@ const SectionAdditionalServices = () => {
 
         <img className={s.whiteFlowersForSectionAdditionalService} src={whiteFlowersForSectionAdditionalService} alt="whiteFlowersForSectionAdditionalService" />
         <img className={s.whiteFlowerForSectionAdditionalService} src={whiteFlowerForSectionAdditionalService} alt="whiteFlowerForSectionAdditionalService" />
+        <img className={s.blurForSectionAdditionalService} src={blurForSectionAdditionalService} alt="blurForSectionAdditionalService" />
 
       </div>
     </section>
