@@ -34,6 +34,8 @@
 
   @include mq(desk) {
     display: block;
+    position: relative;
+    padding-bottom: 204px;
   }
 
 }
@@ -182,4 +184,22 @@
   font-size: 20px;
   line-height: 1;
   padding: 4px;
+}
+
+.whiteFlowersForSectionAdditionalService {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  width: 400px;
+  height: 560px;
+  border-radius: 20px;
+}
+
+.whiteFlowerForSectionAdditionalService {
+  position: absolute;
+  bottom: 0px;
+  right: 120px;
+  width: 400px;
+  height: 560px;
+  border-radius: 20px;
 }

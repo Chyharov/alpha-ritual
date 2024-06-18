@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
+import whiteFlowersForSectionAdditionalService from '../../images/additionalServices/whiteFlowersForSectionAdditionalService.jpg'
+import whiteFlowerForSectionAdditionalService from '../../images/additionalServices/whiteFlowerForSectionAdditionalService.jpg.jpg'
+
 import s from './SectionAdditionalServices.module.scss';
 
 const additionalServices = [
@@ -76,6 +79,7 @@ const SectionAdditionalServices = () => {
           <h3 className={s.otherAtributicsTitle}>Інша атрибутика</h3>
 
           <ul className={s.otherAtributicsList}>
+            
             <Link className={s.otherAtributicsListLink} to="/funeralset">
               <li className={`${s.otherAtributicsListItem} ${s.funeralSetCard}`}>
                 <p className={s.otherAtributicsDescription}>Поховальний набір</p>
@@ -90,6 +94,9 @@ const SectionAdditionalServices = () => {
           </ul>
 
         </div>
+
+        <img className={s.whiteFlowersForSectionAdditionalService} src={whiteFlowersForSectionAdditionalService} alt="whiteFlowersForSectionAdditionalService" />
+        <img className={s.whiteFlowerForSectionAdditionalService} src={whiteFlowerForSectionAdditionalService} alt="whiteFlowerForSectionAdditionalService" />
 
       </div>
     </section>
