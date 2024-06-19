@@ -1,0 +1,24 @@
+@import '../../sass/utils/mixin';
+
+.sectionContactsAndMap {
+    @include mq(mob) {
+        display: none;
+    }
+
+    @include mq(desk) {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 168px;
+    }
+}
+
+.contactsAndMap__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapContainer {
+    width: 676px;
+    height: 420px;
+    background-color: #fff;
+}
