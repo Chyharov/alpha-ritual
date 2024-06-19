@@ -22,3 +22,53 @@
     height: 420px;
     background-color: #fff;
 }
+
+.contactTitle {
+    font-family: Open Sans SemiBold;
+    font-size: 32px;
+    line-height: 1.25;
+    color: var(--secondaryTextColor);
+    padding: 8px;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.addressTitle {
+    font-family: Open Sans ExtraBold;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+    font-style: normal;
+}
+
+.addressDescription {
+    font-family: Open Sans Regular;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+    font-style: normal;
+}
+
+.addressList {
+    margin-bottom: 24px;
+}
+
+.telDescription {
+    font-family: Open Sans Regular;
+    font-size: 16px;
+    line-height: 1.38;
+    color: var(--primaryTextColorDark);
+    padding: 4px 8px;
+    font-style: normal;
+}
+
+.contactsMapContainer {
+    margin-top: 40px;
+}
+
+.mapContainer {
+    margin-top: 8px;
+    border-radius: 16px;
+}
