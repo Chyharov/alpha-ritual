@@ -1,4 +1,5 @@
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
+import phoneIcon from 'images/phoneIcon.svg'
 import s from './SectionContactsAndMap.module.scss';
 
 const SectionContactsAndMap = () => {
@@ -28,8 +29,10 @@ const SectionContactsAndMap = () => {
                   м.Київ, вул. Колоскова 9 (район Совського кладовища)
                 </a>
               </li>
-            </ul>
-            <h3 className={s.addressTitle}>Телефон</h3>
+          </ul>
+          <h3 className={s.addressTitle}>Телефон</h3>
+          <div className={s.phoneNumbersContainer}>
+            <img className={s.contactsIcon} src={phoneIcon} alt="phoneIcon" />
             <ul className={s.addressList}>
               <li className={s.telDescription}>
                 <a href="tel:+380672459505">+38 (067) 245 95 05</a>
@@ -44,16 +47,18 @@ const SectionContactsAndMap = () => {
                 <a href="tel:+380667858127">+38 (066) 785 81 27</a>
               </li>
             </ul>
+          </div>
+          
 
             <p style={{ marginBottom: '10px'}} className={s.addressTitle}>Щоденно | Цілодобово</p>
           <ButtonGetConsultation />
         </address>
-              
+
         <div className={s.contactsMapContainer}>
           <h3 className={s.addressTitle}>на мапі</h3>
           <div className={s.mapContainer}></div>
         </div>
-              
+
       </div>
     </section>
   );
