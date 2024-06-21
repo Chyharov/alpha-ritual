@@ -1,5 +1,7 @@
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import phoneIcon from 'images/phoneIcon.svg'
+import locationIcon from 'images/locationIcon.svg'
+import blurAddressAndMap from 'images/blurAddressAndMap.svg'
 import s from './SectionContactsAndMap.module.scss';
 
 const SectionContactsAndMap = () => {
@@ -9,27 +11,31 @@ const SectionContactsAndMap = () => {
               
           <address>
           <h2 className={s.contactTitle}>Контакти</h2>
-            <h3 className={s.addressTitle}>Адреса</h3>
-            <ul className={s.addressList}>
-              <li className={s.contactsAddressItem}>
-                <a className={s.addressDescription}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA"
-                >
-                  м.Київ, вул. Івана Федорова, 33
-                </a>
-              </li>
-              <li className={s.contactsAddressItem}>
-                <a className={s.addressDescription}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://maps.app.goo.gl/AwovKjfD7p53WbF56"
-                >
-                  м.Київ, вул. Колоскова 9 (район Совського кладовища)
-                </a>
-              </li>
-          </ul>
+          <h3 className={s.addressTitle}>Адреса</h3>
+          <div className={s.phoneNumbersContainer}>
+            <img className={s.contactsIcon} src={locationIcon} alt="locationIcon" />
+              <ul className={s.addressList}>
+                <li className={s.addressDescription}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA"
+                  >
+                    м.Київ, вул. Івана Федорова, 33
+                  </a>
+                </li>
+                <li className={s.addressDescription}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://maps.app.goo.gl/AwovKjfD7p53WbF56"
+                  >
+                    м.Київ, вул. Колоскова 9 (район Совського кладовища)
+                  </a>
+                </li>
+            </ul>
+          </div>
+            
           <h3 className={s.addressTitle}>Телефон</h3>
           <div className={s.phoneNumbersContainer}>
             <img className={s.contactsIcon} src={phoneIcon} alt="phoneIcon" />
@@ -60,6 +66,9 @@ const SectionContactsAndMap = () => {
         </div>
 
       </div>
+
+      <img className={s.blurAddressAndMap} src={blurAddressAndMap} alt="blurAddressAndMap" />
+
     </section>
   );
 };

@@ -9,6 +9,7 @@
         display: block;
         padding-top: 80px;
         padding-bottom: 168px;
+        position: relative;
     }
 }
 
@@ -42,20 +43,12 @@
     font-style: normal;
 }
 
-.addressDescription {
-    font-family: Open Sans Regular;
-    font-size: 16px;
-    line-height: 1.38;
-    color: var(--primaryTextColorDark);
-    padding: 8px;
-    font-style: normal;
-}
-
 .addressList {
     margin-bottom: 24px;
 }
 
-.telDescription {
+.telDescription,
+.addressDescription {
     font-family: Open Sans Regular;
     font-size: 16px;
     line-height: 1.38;
@@ -82,4 +75,12 @@
     display: flex;
     padding: 8px;
     margin-bottom: 16px;
+}
+
+.blurAddressAndMap {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: 282px;
+    left: 400px;
 }
