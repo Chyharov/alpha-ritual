@@ -2,6 +2,7 @@ import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetCon
 import phoneIcon from 'images/phoneIcon.svg'
 import locationIcon from 'images/locationIcon.svg'
 import blurAddressAndMap from 'images/blurAddressAndMap.svg'
+import MapComponent from 'components/MapComponent/MapComponent'
 import s from './SectionContactsAndMap.module.scss';
 
 const SectionContactsAndMap = () => {
@@ -62,7 +63,7 @@ const SectionContactsAndMap = () => {
 
         <div className={s.contactsMapContainer}>
           <h3 className={s.addressTitle}>на мапі</h3>
-          <div className={s.mapContainer}></div>
+          <MapComponent />
         </div>
 
       </div>
