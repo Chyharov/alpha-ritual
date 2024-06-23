@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import s from './MapComponent.module.scss'
 
-
 const MapComponent = () => {
   const mapRef = useRef(null);
 

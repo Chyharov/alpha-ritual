@@ -1,5 +1,6 @@
 import phoneIcon from '../../images/phoneIcon.svg';
 import locationIcon from '../../images/locationIcon.svg';
+import MapComponent from 'components/MapComponent/MapComponent'
 import s from './SectionAboutCompany.module.scss';
 
 const SectionAboutCompany = () => {
@@ -22,6 +23,8 @@ const SectionAboutCompany = () => {
                 </div>
 
                 <h2 className={s.aboutCompanyTitle} style={{ marginBottom: '8px' }}>На мапі</h2>
+
+                <MapComponent />
                 
                 <h2 className={s.aboutCompanyTitle} style={{ marginBottom: '8px' }}>Адреса</h2>
                 <div className={s.aboutCompanyListContainer}>
