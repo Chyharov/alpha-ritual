@@ -12,8 +12,7 @@ const MapComponent = () => {
 
     new window.google.maps.Marker({
       position: { lat: 50.427392, lng: 30.5086165 },
-      map,
-      title: 'м.Київ, вул. Івана Федорова, 33',
+      map
     });
   }, []);
 
