@@ -168,11 +168,15 @@
 }
 
 .funeralPortraitCard {
-  background-image: url(../../images/additionalServices/funeralPortraitCard.jpg);
+  @include mq(desk) {
+    background-image: url(../../images/additionalServices/funeralPortraitCard.jpg);
+  }
 }
 
 .funeralSetCard {
+  @include mq(desk) {
   background-image: url(../../images/additionalServices/funeralSetCard.jpg);
+  }
 }
 
 .otherAtributicsListLink:not(:last-child) {
