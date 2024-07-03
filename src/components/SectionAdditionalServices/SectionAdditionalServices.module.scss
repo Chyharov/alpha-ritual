@@ -130,7 +130,6 @@
 }
 
 .ritualServices__listDesk {
-  
   @include mq(desk) {
     display: grid;
     gap: 1rem;
@@ -141,30 +140,36 @@
 }
 
 .otherAtributicsTitle {
-  font-family: Open Sans Regular;
-  font-size: 24px;
-  line-height: 1.67;
-  padding: 8px;
-  margin-bottom: 24px;
+  @include mq(desk) {
+    font-family: Open Sans Regular;
+    font-size: 24px;
+    line-height: 1.67;
+    padding: 8px;
+    margin-bottom: 24px;
+  }
 }
 
 .otherAtributicsList {
-  display: flex;
-  justify-content: flex-start;
+  @include mq(desk) {  
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .otherAtributicsListItem {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 288px;
-  height: 288px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border-radius: 8px;
-  border: 1px solid var(--hoverColorDark);
-  padding-bottom: 48px;
+  @include mq(desk) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 288px;
+    height: 288px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 8px;
+    border: 1px solid var(--hoverColorDark);
+    padding-bottom: 48px;
+  }
 }
 
 .funeralPortraitCard {
@@ -175,44 +180,54 @@
 
 .funeralSetCard {
   @include mq(desk) {
-  background-image: url(../../images/additionalServices/funeralSetCard.jpg);
+    background-image: url(../../images/additionalServices/funeralSetCard.jpg);
   }
 }
 
 .otherAtributicsListLink:not(:last-child) {
-  margin-right: 16px;
+  @include mq(desk) {  
+    margin-right: 16px;
+  }
 }
 
 .otherAtributicsDescription {
-  font-family: Open Sans Medium;
-  font-size: 20px;
-  line-height: 1;
-  padding: 4px;
+  @include mq(desk) {
+    font-family: Open Sans Medium;
+    font-size: 20px;
+    line-height: 1;
+    padding: 4px;
+  }
 }
 
 .whiteFlowersForSectionAdditionalService {
-  position: absolute;
-  top: 0px;
-  left: 200px;
-  width: 400px;
-  height: 560px;
-  border-radius: 20px;
+  @include mq(desk) {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 400px;
+    height: 560px;
+    border-radius: 20px;
+  }
 }
 
 .whiteFlowerForSectionAdditionalService {
-  position: absolute;
-  bottom: 0px;
-  right: 120px;
-  width: 400px;
-  height: 560px;
-  border-radius: 20px;
+  @include mq(desk) {
+    position: absolute;
+    bottom: 0px;
+    right: 120px;
+    width: 400px;
+    height: 560px;
+    border-radius: 20px;
+  }
 }
 
 .blurForSectionAdditionalService {
-  position: absolute;
-  top: 462px;
-  left: 526px;
-  width: 340px;
-  height: 490px;
-  border-radius: 20px;
+  @include mq(desk) {
+    position: absolute;
+    top: 462px;
+    left: 526px;
+    width: 340px;
+    height: 490px;
+    border-radius: 20px;
+  }
 }

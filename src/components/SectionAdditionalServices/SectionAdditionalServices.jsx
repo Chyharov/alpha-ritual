@@ -51,12 +51,10 @@ const SectionAdditionalServices = () => {
         {showAll || (
          <ButtonMoreDetails buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />
         )}
-        
       </div>
         
       
       <div className={'container ' + s.ritualServicesDesktop__container}>
-
         <div className={s.additationContainerFlex}>
           <div className={s.additationContainer}>
             <h2 className='title' style={{ marginBottom: '40px', textAlign: 'end' }}>Додаткові послуги</h2>
