@@ -1,0 +1,117 @@
+@import '../../sass/utils/mixin';
+
+.SectionTitleForPageDesktop {
+    display: none;
+
+    @include mq(tab) {
+        display: block;
+    }
+
+    @include mq(desk) {
+        padding-top: 48px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 0px;
+    }
+}
+
+.linksContainer {
+    display: flex;
+}
+
+.titleLine {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.bgimg {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        height: 605px;
+        border-bottom: 1px solid var(--secondaryTextColor);
+    }
+}
+
+.titleImg__container {
+    @include mq(desk) {
+        width: 528px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.title__container {
+    @include mq(desk) {
+        width: 528px;
+        padding: 16px;
+        margin: 0px 0px 40px 0px;
+    }
+}
+
+.title {
+    @include mq(desk) {
+        font-family: Comfortaa Regular;
+        font-size: 48px;
+        line-height: 1.17;
+        color: var(--secondaryTextColor);
+        padding: 8px;
+        margin-top: 0px;
+    }
+}
+
+.description {
+    @include mq(desk) {
+        font-family: Open Sans Regular;
+        font-size: 24px;
+        line-height: 1.17;
+        color: var(--secondaryTextColor);
+        padding: 8px;
+        margin-bottom: 0px;
+    }
+}
+
+.descriptionForTitle {
+    @include mq(desk) {
+        padding: 24px 24px 8px 24px;
+        margin-bottom: 40px;
+    }
+}
+
+.lineContainer {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        width: 528px;
+        padding: 0px 24px 16px 16px;
+    }
+}
+
+.section__image {
+    @include mq(desk) {
+        display: block;
+        width: 590px;
+        margin-bottom: 80px;
+    }
+}
+
+.lineImage {
+    @include mq(desk) {
+        display: block;
+    }
+}
+
+.blur {
+    @include mq(desk) {
+        display: block;
+        position: absolute;
+        top: 234px;
+        right: 266px;
+        width: 682px;
+        height: 566px;
+    }
+}

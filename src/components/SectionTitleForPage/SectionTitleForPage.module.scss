@@ -8,7 +8,9 @@
 
     @include mq(tab) {}
 
-    @include mq(desk) {}
+    @include mq(desk) {
+        display: none;
+    }
 }
 
 .titleLine {
@@ -22,6 +24,10 @@
     padding: 8px;
     display: flex;
     margin-bottom: 288px;
+
+    @include mq(desk) {
+        display: none;
+    }
 }
 
 .descriptionTitleForPage,
