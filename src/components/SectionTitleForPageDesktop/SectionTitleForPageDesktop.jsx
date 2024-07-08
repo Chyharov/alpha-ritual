@@ -1,18 +1,18 @@
+import { Link } from 'react-router-dom';
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
-import titlePicture from '../../images/wreaths/WreathsBackgroundDesk.png'
 import lineBottom from '../../images/Line5.svg'
 import blur from '../../images/blur.png'
 import line from '../../images/TitleForPage/Line6.svg';
 import s from '../SectionTitleForPageDesktop/SectionTitleForPageDesktop.module.scss';
 
-const SectionTitleForPageDesktop = ({ prevTitle, title }) => {
+const SectionTitleForPageDesktop = ({ prevTitle, title, titlePicture, prevLink }) => {
   return (
     <section className={s.SectionTitleForPageDesktop}>
       <div className={s.bgimg}>
         <div className={'container ' + s.titleImg__container}>
 
         <div className={s.linksContainer}>
-          <p className='links'>{prevTitle}</p>
+          <Link to={prevLink} className='links'>{prevTitle}</Link>
           <img className={s.titleLine} src={line} alt="line" />
           <p className='linksIsActive'>{title}</p>
         </div>

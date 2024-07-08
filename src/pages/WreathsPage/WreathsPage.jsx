@@ -1,7 +1,8 @@
-import Header from '../../components/Header/Header';
-import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
-import SectionTitleForPageDesktop from '../../components/SectionTitleForPageDesktop/SectionTitleForPageDesktop';
-import backgroundImg from '../../images/wreaths/WreathsBackgroundMob.jpg';
+import Header from 'components/Header/Header';
+import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForPage';
+import SectionTitleForPageDesktop from 'components/SectionTitleForPageDesktop/SectionTitleForPageDesktop';
+import titlePicture from 'images/wreaths/WreathsBackgroundDesk.png'
+import backgroundImg from 'images/wreaths/WreathsBackgroundMob.jpg';
 import SectionWreath from 'components/SectionWreaths/SectionWreaths';
 import Footer from 'components/Footer/Footer';
 
@@ -9,6 +10,8 @@ const titleProps = {
   title: 'Вінки',
   backgroundImg: backgroundImg,
   prevTitle: 'Додаткові послуги',
+  titlePicture: titlePicture,
+  prevLink: '/additionalservices'
 };
 
 const WreathsPage = () => {
