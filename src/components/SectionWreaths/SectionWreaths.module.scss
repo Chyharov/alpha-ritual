@@ -1,8 +1,13 @@
 @import '../../sass/utils/mixin';
 
 .sectionWreaths {
-    padding-top: 80px;
+    margin-top: -125px;
     padding-bottom: 80px;
+
+    @include mq(desk) {
+        margin-top: 0px;
+        padding-top: 80px;
+    }
 }
 
 .wreathsContainer {
