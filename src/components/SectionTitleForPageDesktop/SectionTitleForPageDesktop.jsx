@@ -8,13 +8,15 @@ import s from '../SectionTitleForPageDesktop/SectionTitleForPageDesktop.module.s
 const SectionTitleForPageDesktop = ({ prevTitle, title }) => {
   return (
     <section className={s.SectionTitleForPageDesktop}>
-      <div className={s.linksContainer}>
-        <p>{prevTitle}</p>
-        <img className={s.titleLine} src={line} alt="line" />
-        <p>{title}</p>
-      </div>
       <div className={s.bgimg}>
         <div className={'container ' + s.titleImg__container}>
+
+        <div className={s.linksContainer}>
+          <p className='links'>{prevTitle}</p>
+          <img className={s.titleLine} src={line} alt="line" />
+          <p className='linksIsActive'>{title}</p>
+        </div>
+
           <div className={s.title__container}>
             <h1 className={s.title}>АЛЬФА-РИТУАЛ</h1>
             <h2 className={s.description}>похоронний дім</h2>

@@ -17,6 +17,8 @@
 
 .linksContainer {
     display: flex;
+    padding: 8px;
+    margin-bottom: 80px;
 }
 
 .titleLine {
@@ -30,7 +32,6 @@
     @include mq(desk) {
         display: flex;
         justify-content: space-between;
-        height: 605px;
         border-bottom: 1px solid var(--secondaryTextColor);
     }
 }
@@ -95,7 +96,9 @@
     @include mq(desk) {
         display: block;
         width: 590px;
+        height: 570px;
         margin-bottom: 80px;
+        z-index: 1;
     }
 }
 
@@ -109,8 +112,8 @@
     @include mq(desk) {
         display: block;
         position: absolute;
-        top: 234px;
-        right: 266px;
+        top: 340px;
+        left: 413px;
         width: 682px;
         height: 566px;
     }
