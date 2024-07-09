@@ -27,7 +27,6 @@ const Footer = () => {
 
           <address className={s.address}>
             <h2 className={s.addressTitle}>Адреса</h2>
-            <h3>Test</h3>
             <ul className={s.addressList}>
               <a href="https://maps.app.goo.gl/JeAMk5y2yX5DnuHFA" target="_blank" rel="noopener noreferrer">
                 <li style={{ padding: '8px 8px 4px' }} className={s.addressListItem}>
