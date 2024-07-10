@@ -15,8 +15,7 @@ const SectionHero = () => {
           </div>
           
           <p className={'description ' + s.heroDescription}>Похоронний дім Альфа має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
-          <p className={'description ' + s.heroDescription}>Похоронний дім Альфа має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
-        
+          
           <div className={s.lineContainer}>
             <img className={s.lineImage} src={line} alt="line" />
 
