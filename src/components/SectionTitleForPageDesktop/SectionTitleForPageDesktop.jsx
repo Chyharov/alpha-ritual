@@ -5,7 +5,7 @@ import blur from '../../images/blur.png'
 import line from '../../images/TitleForPage/Line6.svg';
 import s from '../SectionTitleForPageDesktop/SectionTitleForPageDesktop.module.scss';
 
-const SectionTitleForPageDesktop = ({ prevTitle, title, titlePicture, prevLink }) => {
+const SectionTitleForPageDesktop = ({ prevTitle, title, backgroundImgDesktop, prevLink }) => {
   return (
     <section className={s.SectionTitleForPageDesktop}>
       <div className={s.bgimg}>
@@ -31,7 +31,7 @@ const SectionTitleForPageDesktop = ({ prevTitle, title, titlePicture, prevLink }
           </div>
           
         </div>
-        <img className={s.section__image} src={titlePicture} alt="section__image" />
+        <img className={s.section__image} src={backgroundImgDesktop} alt="section__image" />
       </div>
       <img className={s.blur} src={blur} alt="blur" />
     </section>

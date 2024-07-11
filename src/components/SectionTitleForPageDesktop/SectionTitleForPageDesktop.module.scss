@@ -8,7 +8,7 @@
     }
 
     @include mq(desk) {
-        padding-top: 48px;
+        padding-top: 43px;
         padding-left: 80px;
         padding-right: 80px;
         padding-bottom: 0px;
@@ -94,7 +94,7 @@
 
 .section__image {
     @include mq(desk) {
-        display: block;
+        margin-top: 16px;
         width: 590px;
         height: 570px;
         margin-bottom: 80px;
