@@ -20,7 +20,6 @@ const SectionTitleForPageDesktop = ({ prevTitle, title, backgroundImgDesktop, pr
           <div className={s.title__container}>
             <h1 className={s.title}>АЛЬФА-РИТУАЛ</h1>
             <h2 className={s.description}>похоронний дім</h2>
-            <h2 className={s.description}>test</h2>
           </div>
           
           <p className={'description ' + s.descriptionForTitle}>Похоронний дім Альфа має у своєму розпорядженні всі необхідні товари та послуги, що дозволяють проводити поховання або кремацію будь-якого рівня.</p>
