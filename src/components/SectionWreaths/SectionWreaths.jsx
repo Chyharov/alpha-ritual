@@ -103,6 +103,52 @@ const SectionWreath = () => {
         )}
 
       </div>
+
+      <div className={`container ${s.wreathsContainerDesktop}`}>
+
+        <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Похороний вінок чи композиція?</h2>
+
+        {wreathsDescriptionArray.map((item) => (
+          <p key={item.id} className="description" style={{ marginBottom: '16px' }}>{item.title}</p>
+        ))}
+
+        <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Які квіти найкращі для поховального вінка?</h2>
+
+        <p className="description" style={{ marginBottom: '16px' }}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні похоронні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
+
+        <ul>
+          <li>
+            <p>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
+          </li>
+          <li>
+            <p>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
+          </li>
+          <li>
+            <p>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
+          </li>
+          <li>
+            <p>Гілки верби символізують перехід у Царство Небесне.</p>
+          </li>
+        </ul>
+
+        <ul className='list' style={{ marginBottom: '64px' }}>
+          <Link to="/freshflowerswreath">
+            <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginBottom: '16px' }} className={s.wreathsLinkitem}>
+              <h2 className='title'>Вінок із живих квітів</h2>
+            </li>
+          </Link>
+          <Link to="/artificialwreaths">
+            <li style={{ backgroundImage: `url(${artificialwreathsImg})` }} className={s.wreathsLinkitem}>
+              <h2 className='title'>Вінок із штучних квітів</h2>
+            </li>
+          </Link>
+        </ul>
+
+        <p>Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
+
+        <p>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
+
+      </div>
     </section>
   );
 };
