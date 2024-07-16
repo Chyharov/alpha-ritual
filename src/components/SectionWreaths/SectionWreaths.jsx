@@ -106,11 +106,15 @@ const SectionWreath = () => {
 
       <div className={`container ${s.wreathsContainerDesktop}`}>
 
-        <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Похороний вінок чи композиція?</h2>
+        <div className={s.containerForWreathsDescription}>
 
-        {wreathsDescriptionArray.map((item) => (
-          <p key={item.id} className="description" style={{ marginBottom: '16px' }}>{item.title}</p>
-        ))}
+          <h2 className="title" style={{ marginBottom: '40px', textAlign: 'start' }}>Похороний вінок чи композиція?</h2>
+
+          {wreathsDescriptionArray.map((item) => (
+            <p key={item.id} className="description" style={{ marginBottom: '16px' }}>{item.title}</p>
+          ))}
+
+        </div>
 
         <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Які квіти найкращі для поховального вінка?</h2>
 
