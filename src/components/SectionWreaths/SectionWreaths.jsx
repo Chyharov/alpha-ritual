@@ -120,18 +120,18 @@ const SectionWreath = () => {
 
         <p className="description" style={{ marginBottom: '16px' }}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні похоронні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
 
-        <ul>
-          <li>
-            <p>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
+        <ul className={s.wreathsDescription_list}>
+          <li className={s.wreathsDescription__listItems}>
+            <p className='links' style={{ padding: '16px' }}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
           </li>
-          <li>
-            <p>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
+          <li className={s.wreathsDescription__listItems}>
+            <p className='links' style={{ padding: '16px' }}>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
           </li>
-          <li>
-            <p>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
+          <li className={s.wreathsDescription__listItems}>
+            <p className='links' style={{ padding: '16px' }}>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
           </li>
-          <li>
-            <p>Гілки верби символізують перехід у Царство Небесне.</p>
+          <li className={s.wreathsDescription__listItems}>
+            <p className='links' style={{ padding: '16px' }}>Гілки верби символізують перехід у Царство Небесне.</p>
           </li>
         </ul>
 
