@@ -120,30 +120,30 @@ const SectionWreath = () => {
 
         <p className="description" style={{ marginBottom: '16px' }}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні похоронні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
 
-        <ul className={s.wreathsDescription_list}>
+        <ul className={s.wreathsDescription__list}>
           <li className={s.wreathsDescription__listItems}>
-            <p className='links' style={{ padding: '16px' }}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
+            <p className={s.wreathsDescription__listItemsDescription} style={{ padding: '16px' }}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
+          </li>
+          <li className={s.wreathsDescription__listItems} style={{ margin: '0px 0px 16px auto' }}>
+            <p className={s.wreathsDescription__listItemsDescription} style={{ padding: '16px' }}>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
           </li>
           <li className={s.wreathsDescription__listItems}>
-            <p className='links' style={{ padding: '16px' }}>Червоні гвоздики та троянди – символ страждань та важкого земного життя покійного.</p>
+            <p className={s.wreathsDescription__listItemsDescription} style={{ padding: '16px' }}>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
           </li>
-          <li className={s.wreathsDescription__listItems}>
-            <p className='links' style={{ padding: '16px' }}>Хвойні гілки у поєднанні з барвінком виражають вічне кохання до покійного.</p>
-          </li>
-          <li className={s.wreathsDescription__listItems}>
-            <p className='links' style={{ padding: '16px' }}>Гілки верби символізують перехід у Царство Небесне.</p>
+          <li className={s.wreathsDescription__listItems} style={{ margin: '0px 0px 16px auto' }}>
+            <p className={s.wreathsDescription__listItemsDescription} style={{ padding: '16px' }}>Гілки верби символізують перехід у Царство Небесне.</p>
           </li>
         </ul>
 
         <ul className='list' style={{ marginBottom: '64px' }}>
           <Link to="/freshflowerswreath">
             <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginBottom: '16px' }} className={s.wreathsLinkitem}>
-              <h2 className='title'>Вінок із живих квітів</h2>
+              <h2 className={s.wreathsLinkitem__title}>Вінок із живих квітів</h2>
             </li>
           </Link>
           <Link to="/artificialwreaths">
             <li style={{ backgroundImage: `url(${artificialwreathsImg})` }} className={s.wreathsLinkitem}>
-              <h2 className='title'>Вінок із штучних квітів</h2>
+              <h2 className={s.wreathsLinkitem__title}>Вінок із штучних квітів</h2>
             </li>
           </Link>
         </ul>

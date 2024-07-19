@@ -45,7 +45,19 @@
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    border: 1px solid var(--secondaryTextColor);
+    outline: 1px solid var(--secondaryTextColor);
+
+    @include mq(desk) {
+        width: 288px;
+        outline: 1px solid var(--hoverColorDark);
+        align-items: flex-end;
+        padding-bottom: 48px;
+        text-align: center;
+    }
+}
+
+.wreathsDescription__list {
+ width: 416px;
 }
 
 .wreathsDescription__listItems {
@@ -53,4 +65,20 @@
     border-radius: 8px;
     background-color: var(--cardBlackDark);
     margin-bottom: 16px;
+    outline: 1px solid var(--secondaryTextColor);
+}
+
+.wreathsLinkitem__title {
+    font-family: Open Sans SemiBold;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+}
+
+.wreathsDescription__listItemsDescription {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--primaryTextColorDark);
 }
