@@ -7,7 +7,7 @@
     @include mq(desk) {
         margin-top: 0px;
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
     }
 }
 
@@ -57,7 +57,7 @@
 }
 
 .wreathsDescription__list {
- width: 416px;
+    width: 416px;
 }
 
 .wreathsDescription__listItems {
@@ -81,4 +81,18 @@
     font-size: 14px;
     line-height: 1.43;
     color: var(--primaryTextColorDark);
+}
+
+.containerForWreathsList {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.wreathsListLinks {
+    width: 616px;
+    display: flex;
+    justify-content: space-between;
 }

@@ -118,9 +118,10 @@ const SectionWreath = () => {
 
         <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Які квіти найкращі для поховального вінка?</h2>
 
-        <p className="description" style={{ marginBottom: '16px' }}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні похоронні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
+        <p className="description" style={{ marginBottom: '40px' }}>Це питання також жодними правилами, традиціями та християнськими ритуалами не регламентовано. Однак ритуальні похоронні вінки все ж таки можуть бути наповнені особливим символізмом, який виражається через колірну гаму та поєднання тих чи інших кольорів.</p>
 
-        <ul className={s.wreathsDescription__list}>
+        <div className={s.containerForWreathsList}>
+          <ul className={s.wreathsDescription__list}>
           <li className={s.wreathsDescription__listItems}>
             <p className={s.wreathsDescription__listItemsDescription} style={{ padding: '16px' }}>Білі лілії та троянди у поєднанні з фіалками символізують духовну чистоту.</p>
           </li>
@@ -135,23 +136,26 @@ const SectionWreath = () => {
           </li>
         </ul>
 
-        <ul className='list' style={{ marginBottom: '64px' }}>
+        <ul className={s.wreathsListLinks} >
           <Link to="/freshflowerswreath">
-            <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginBottom: '16px' }} className={s.wreathsLinkitem}>
+            <li style={{ backgroundImage: `url(${freshflowerswreathImg})`, marginTop: '24px' }} className={s.wreathsLinkitem}>
               <h2 className={s.wreathsLinkitem__title}>Вінок із живих квітів</h2>
             </li>
           </Link>
           <Link to="/artificialwreaths">
-            <li style={{ backgroundImage: `url(${artificialwreathsImg})` }} className={s.wreathsLinkitem}>
+            <li style={{ backgroundImage: `url(${artificialwreathsImg})`, marginTop: '104px' }} className={s.wreathsLinkitem}>
               <h2 className={s.wreathsLinkitem__title}>Вінок із штучних квітів</h2>
             </li>
           </Link>
         </ul>
 
-        <p>Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
+        </div>
 
-        <p>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
+        <p className="description" style={{ marginBottom: '16px' }}>Звідси й пішла традиція покладати вінки з червоних гвоздик на похованнях чоловіків і особливо військових, як символ нелегкої частки солдата та важкої чоловічої праці.</p>
 
+        <p className="description" style={{ marginBottom: '80px' }}>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
+
+        <div style={{ borderBottom: '1px solid #fff' }}></div>
       </div>
     </section>
   );
