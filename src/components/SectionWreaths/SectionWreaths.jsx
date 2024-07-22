@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import freshflowerswreathImg from '../../images/wreaths/freshflowerswreathImg.jpg'
 import artificialwreathsImg from '../../images/wreaths/artificialwreathsImg.jpg'
+import frontViewWreathsDesktop from '../../images/wreaths/frontViewWreathsDesktop.jpg'
 import s from './SectionWreaths.module.scss'
 
 const wreathsDescriptionArray = [
@@ -107,6 +108,8 @@ const SectionWreath = () => {
       <div className={`container ${s.wreathsContainerDesktop}`}>
 
         <div className={s.containerForWreathsDescription}>
+
+          <img className={s.frontViewWreathsDesktop} src={frontViewWreathsDesktop} alt="frontViewWreathsDesktop" />
 
           <h2 className="title" style={{ marginBottom: '40px', textAlign: 'start' }}>Похороний вінок чи композиція?</h2>
 
