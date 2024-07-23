@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/alpha-ritual/static/css/main.bfac7ebd.css",
-    "main.js": "/alpha-ritual/static/js/main.a5c96555.js",
+    "main.js": "/alpha-ritual/static/js/main.92ad590b.js",
     "static/css/204.05078555.chunk.css": "/alpha-ritual/static/css/204.05078555.chunk.css",
     "static/js/204.57b67e1b.chunk.js": "/alpha-ritual/static/js/204.57b67e1b.chunk.js",
-    "static/css/567.f19aae84.chunk.css": "/alpha-ritual/static/css/567.f19aae84.chunk.css",
-    "static/js/567.12ccc108.chunk.js": "/alpha-ritual/static/js/567.12ccc108.chunk.js",
+    "static/css/567.5586345f.chunk.css": "/alpha-ritual/static/css/567.5586345f.chunk.css",
+    "static/js/567.1940024d.chunk.js": "/alpha-ritual/static/js/567.1940024d.chunk.js",
     "static/css/882.6a6b75f4.chunk.css": "/alpha-ritual/static/css/882.6a6b75f4.chunk.css",
     "static/js/882.17515fd6.chunk.js": "/alpha-ritual/static/js/882.17515fd6.chunk.js",
     "static/css/652.e5059088.chunk.css": "/alpha-ritual/static/css/652.e5059088.chunk.css",
@@ -137,6 +137,7 @@
     "static/media/coffinsAveragePrice8.jpg": "/alpha-ritual/static/media/coffinsAveragePrice8.ee9ce4d8b733cc2be24b.jpg",
     "static/media/artificialWreaths13.jpg": "/alpha-ritual/static/media/artificialWreaths13.4362104dd81ea5080c08.jpg",
     "static/media/freshFlowersWreath5.jpg": "/alpha-ritual/static/media/freshFlowersWreath5.fe2c51f8adf58358de08.jpg",
+    "static/media/frontViewWreathsDesktop.jpg": "/alpha-ritual/static/media/frontViewWreathsDesktop.f6a2d97a58ef4d63e5d2.jpg",
     "static/media/artificialWreaths12.jpg": "/alpha-ritual/static/media/artificialWreaths12.f8b2ce98565a74b2e7b2.jpg",
     "static/media/artificialWreaths2.jpg": "/alpha-ritual/static/media/artificialWreaths2.fbb2639eddbd86aacd14.jpg",
     "static/media/freshFlowersWreath18.jpg": "/alpha-ritual/static/media/freshFlowersWreath18.4b932629cceb714211fb.jpg",
@@ -219,7 +220,6 @@
     "static/media/crosses9.jpg": "/alpha-ritual/static/media/crosses9.839c57cbcb5533337b40.jpg",
     "static/media/coffinsEconomPrice5.jpg": "/alpha-ritual/static/media/coffinsEconomPrice5.e8621461b3bef90247c6.jpg",
     "static/media/whiteVolksWagen5.webp": "/alpha-ritual/static/media/whiteVolksWagen5.bfa77970794f4cd2d4f7.webp",
-    "static/media/frontViewWreathsDesktop.jpg": "/alpha-ritual/static/media/frontViewWreathsDesktop.d8a2015d36d301b7c986.jpg",
     "static/media/funeralPortraitCard.jpg": "/alpha-ritual/static/media/funeralPortraitCard.1a17f7034448f7be5c6e.jpg",
     "static/media/artificialWreaths3.jpg": "/alpha-ritual/static/media/artificialWreaths3.31fbc8199136492f8893.jpg",
     "static/media/blackMercedes2.webp": "/alpha-ritual/static/media/blackMercedes2.12dc9a1bc86f849cbc70.webp",
@@ -280,11 +280,11 @@
     "static/media/arrowRight.svg": "/alpha-ritual/static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "/alpha-ritual/static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.bfac7ebd.css.map": "/alpha-ritual/static/css/main.bfac7ebd.css.map",
-    "main.a5c96555.js.map": "/alpha-ritual/static/js/main.a5c96555.js.map",
+    "main.92ad590b.js.map": "/alpha-ritual/static/js/main.92ad590b.js.map",
     "204.05078555.chunk.css.map": "/alpha-ritual/static/css/204.05078555.chunk.css.map",
     "204.57b67e1b.chunk.js.map": "/alpha-ritual/static/js/204.57b67e1b.chunk.js.map",
-    "567.f19aae84.chunk.css.map": "/alpha-ritual/static/css/567.f19aae84.chunk.css.map",
-    "567.12ccc108.chunk.js.map": "/alpha-ritual/static/js/567.12ccc108.chunk.js.map",
+    "567.5586345f.chunk.css.map": "/alpha-ritual/static/css/567.5586345f.chunk.css.map",
+    "567.1940024d.chunk.js.map": "/alpha-ritual/static/js/567.1940024d.chunk.js.map",
     "882.6a6b75f4.chunk.css.map": "/alpha-ritual/static/css/882.6a6b75f4.chunk.css.map",
     "882.17515fd6.chunk.js.map": "/alpha-ritual/static/js/882.17515fd6.chunk.js.map",
     "652.e5059088.chunk.css.map": "/alpha-ritual/static/css/652.e5059088.chunk.css.map",
@@ -327,6 +327,6 @@
   },
   "entrypoints": [
     "static/css/main.bfac7ebd.css",
-    "static/js/main.a5c96555.js"
+    "static/js/main.92ad590b.js"
   ]
 }
