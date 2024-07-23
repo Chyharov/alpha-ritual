@@ -27,6 +27,14 @@
     }
 }
 
+.containerForTitleWreaths {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+}
+
 .wreathsContainerDesktop {
     display: none;
 
