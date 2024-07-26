@@ -4,6 +4,7 @@ import SectionTitleForPageDesktop from 'components/SectionTitleForPageDesktop/Se
 import backgroundImgDesktop from 'images/wreaths/WreathsBackgroundDesk.png'
 import backgroundImg from 'images/wreaths/WreathsBackgroundMob.jpg';
 import SectionWreath from 'components/SectionWreaths/SectionWreaths';
+import SectionMakingFuneralWreath from 'components/SectionMakingFuneralWreath/SectionMakingFuneralWreath';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -21,7 +22,8 @@ const WreathsPage = () => {
         <main>
         <SectionTitleForPage {...titleProps} />
         <SectionTitleForPageDesktop {...titleProps}/>
-          <SectionWreath />
+        <SectionWreath />
+        <SectionMakingFuneralWreath />
         </main>
       <Footer />
     </>
