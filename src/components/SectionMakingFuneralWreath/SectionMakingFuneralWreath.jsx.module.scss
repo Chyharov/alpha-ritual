@@ -1,0 +1,29 @@
+@import '../../sass/utils/mixin';
+
+.sectionMakingFuneralWreaths {
+    display: none;
+
+    @include mq(desk) {
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 160px;
+    }
+}
+
+.wreathsMakingContainer {
+    @include mq(desk) {
+    }
+}
+
+.wreathsMakingDescriptionList {
+    @include mq(desk) {
+        display: flex;
+    }
+}
+
+.wreathsMakingDescriptionList__item {
+    @include mq(desk) {
+        width: 288px;
+        height: 152px;
+    }
+}
