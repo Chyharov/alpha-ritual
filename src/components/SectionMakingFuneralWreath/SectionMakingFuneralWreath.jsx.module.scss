@@ -15,15 +15,43 @@
     }
 }
 
-.wreathsMakingDescriptionList {
+.wreathsMakingDescriptionList,
+.wreathsMakingDescriptionListSecond {
     @include mq(desk) {
         display: flex;
     }
 }
 
+.wreathsMakingDescriptionList {
+    @include mq(desk) {   
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+}
+
+.wreathsMakingDescriptionListSecond {
+    @include mq(desk) {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+}
+
 .wreathsMakingDescriptionList__item {
+    @include mq(desk) {
+        border-radius: 8px;
+        outline: 1px solid var(--secondaryTextColor);
+        background-color: var(--cardBlackDark);
+    }
+}
+
+.wreathsMakingDescriptionList__item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.wreathsMakingDescriptionList__itemDescription {
     @include mq(desk) {
         width: 288px;
         height: 152px;
+        padding: 16px;
     }
 }

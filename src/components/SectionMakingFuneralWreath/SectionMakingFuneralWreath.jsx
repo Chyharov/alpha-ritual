@@ -15,20 +15,28 @@ const SectionMakingFuneralWreath = () => {
     <section className={s.sectionMakingFuneralWreaths}>
       <div className={`container ${s.wreathsMakingContainer}`}>
 
-        <h2 style={{textAlign: 'end'}}>Правила складання поховального вінка</h2>
+        <h2 style={{textAlign: 'end', marginBottom: '40px'}}>Правила складання поховального вінка</h2>
 
-        <p style={{textAlign: 'end', margin: '0px 0px 0px auto', width: '692px'}}>Незважаючи на досить вільні традиції та відсутність чітких ритуальних засад, існують деякі правила, що склалися в культурі нашого народу, яких прийнято дотримуватися.</p>
+        <p style={{textAlign: 'end', margin: '0px 0px 40px auto', width: '692px'}}>Незважаючи на досить вільні традиції та відсутність чітких ритуальних засад, існують деякі правила, що склалися в культурі нашого народу, яких прийнято дотримуватися.</p>
 
           <ul className={s.wreathsMakingDescriptionList}>
-            {wreathsMakingDescriptionArray.map(item => (
+            {wreathsMakingDescriptionArray.slice(0, 3).map(item => (
               <li className={s.wreathsMakingDescriptionList__item} key={item.id}>
-                <p>{item.title}</p>
+                <p className={`secondaryDescription ${s.wreathsMakingDescriptionList__itemDescription}`}>{item.title}</p>
+              </li>
+            ))}
+          </ul>
+        
+          <ul className={s.wreathsMakingDescriptionListSecond}>
+            {wreathsMakingDescriptionArray.slice(3, 6).map(item => (
+              <li className={s.wreathsMakingDescriptionList__item} key={item.id}>
+                <p className={`secondaryDescription ${s.wreathsMakingDescriptionList__itemDescription}`}>{item.title}</p>
               </li>
             ))}
           </ul>
 
-        <p>Для людей творчої натури та померлим у поважному віці використовують квіти червоних та темно-рожевих відтінків. Білі та фіолетові відтінки використовують у вінках на похороні молодих жінок.</p>
-        <p>складання ритуальних вінків. Ви можете купити як окремо вінок на поховання з доставкою по Києву, так і замовити комплексне флористичне оформлення церемонії прощання.</p>
+        <p style={{marginBottom: '40px'}}>Для людей творчої натури та померлим у поважному віці використовують квіти червоних та темно-рожевих відтінків. Білі та фіолетові відтінки використовують у вінках на похороні молодих жінок.</p>
+        <p>Флористи поховального будинку «Альфа» точно знають усі правила та традиції складання ритуальних вінків. Ви можете купити як окремо вінок на поховання з доставкою по Києву, так і замовити комплексне флористичне оформлення церемонії прощання.</p>
       </div>
     </section>
   );
