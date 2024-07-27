@@ -66,6 +66,7 @@
 
 .wreathsDescription__list {
     width: 416px;
+    z-index: 1;
 }
 
 .wreathsDescription__listItems {
@@ -103,10 +104,24 @@
     width: 616px;
     display: flex;
     justify-content: space-between;
+    
+    @include mq(desk) {
+        z-index: 1;
+    }
 }
 
 .frontViewWreathsDesktop {
     width: 400px;
     height: 560px;
     border-radius: 20px;
+}
+
+.blurForSectionWreaths {
+    @include mq(desk) {
+        position: absolute;
+        top: 1690px;
+        left: 150px;
+        width: 1060px;
+        height: 334px;
+    }
 }

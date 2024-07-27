@@ -4,6 +4,7 @@ import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import freshflowerswreathImg from '../../images/wreaths/freshflowerswreathImg.jpg'
 import artificialwreathsImg from '../../images/wreaths/artificialwreathsImg.jpg'
 import frontViewWreathsDesktop from '../../images/wreaths/frontViewWreathsDesktop.jpg'
+import blurForSectionWreaths from '../../images/wreaths/blurForSectionWreaths.png'
 import s from './SectionWreaths.module.scss'
 
 const wreathsDescriptionArray = [
@@ -160,6 +161,7 @@ const SectionWreath = () => {
         <p className="description" style={{ marginBottom: '80px' }}>Білі квіти використовують у ритуальних поховальних квіткових композиціях для померлих непорочних дівчат та дітей.</p>
 
         <div style={{ borderBottom: '1px solid #fff' }}></div>
+        <img className={s.blurForSectionWreaths} src={blurForSectionWreaths} alt="blurForSectionWreaths" />
       </div>
     </section>
   );
