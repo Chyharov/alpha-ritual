@@ -55,3 +55,15 @@
         padding: 16px;
     }
 }
+
+.makingFuneralWreathsTitle {
+    @include mq(desk) {
+        font-family: Open Sans SemiBold;
+        font-size: 32px;
+        line-height: 1.25;
+        color: var(--secondaryTextColor);
+        padding: 8px;
+        text-align: end;
+        margin-bottom: 40px;
+    }
+}
