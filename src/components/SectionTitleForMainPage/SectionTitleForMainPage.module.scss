@@ -1,0 +1,49 @@
+@import '../../sass/utils/mixin';
+
+.SectionTitleForMainPage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 478px;
+
+    @include mq(tab) {}
+
+    @include mq(desk) {
+        display: none;
+    }
+}
+
+.titleLine {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.titleContainer {
+    padding: 8px;
+    display: flex;
+    margin-bottom: 288px;
+
+    @include mq(desk) {
+        display: none;
+    }
+}
+
+.descriptionTitleForPage,
+.linkTitleForPage,
+.prevPage {
+    font-family: Open Sans Regular;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+
+.linkTitleForPage,
+.prevPage {
+    color: var(--secondaryTextColor);
+}
+
+.descriptionTitleForPage {
+    color: var(--hoverColor);
+}

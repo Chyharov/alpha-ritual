@@ -3,6 +3,11 @@
 .sectionFreshFlowersWreath {
     margin-top: -150px;
     padding-bottom: 80px;
+
+    @include mq(desk) {
+        padding-top: 80px;
+        margin-top: 0px;
+    }
 }
 
 .wreathsContainer {

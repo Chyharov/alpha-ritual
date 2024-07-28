@@ -1,10 +1,18 @@
 import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
+import SectionTitleForPageDesktop from 'components/SectionTitleForPageDesktop/SectionTitleForPageDesktop';
+import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgroundDesk.png';
 import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg'
 import SectionFreshFlowersWreath from 'components/SectionFreshFlowersWreath/SectionFreshFlowersWreath';
 import Footer from 'components/Footer/Footer';
 
-const title = 'Вінок із живих квітів';
+const titleProps = {
+  title: 'Вінки',
+  backgroundImg: backgroundImg,
+  prevTitle: 'Додаткові послуги',
+  backgroundImgDesktop: backgroundImgDesktop,
+  prevLink: '/additionalservices'
+};
 
 const freshFlowersWreathPage = () => {
 
@@ -12,7 +20,8 @@ const freshFlowersWreathPage = () => {
       <>
         <Header />
           <main>
-            <SectionTitleForPage title={title} backgroundImg={backgroundImg} />
+          <SectionTitleForPage {...titleProps} />
+          <SectionTitleForPageDesktop {...titleProps}/>
             <SectionFreshFlowersWreath />
           </main>
         <Footer />
