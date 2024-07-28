@@ -4,15 +4,15 @@
     display: none;
 
     @include mq(desk) {
-    display: block;
-    padding-top: 80px;
-    padding-bottom: 160px;
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 160px;
+        position: relative;
     }
 }
 
 .wreathsMakingContainer {
     @include mq(desk) {
-        position: relative;
     }
 }
 
@@ -20,6 +20,8 @@
 .wreathsMakingDescriptionListSecond {
     @include mq(desk) {
         display: flex;
+        z-index: 2;
+        position: static;
     }
 }
 
@@ -42,6 +44,7 @@
         border-radius: 8px;
         outline: 1px solid var(--secondaryTextColor);
         background-color: var(--cardBlackDark);
+        z-index: 2;
     }
 }
 
@@ -66,5 +69,55 @@
         padding: 8px;
         text-align: end;
         margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+.fronImgMakingFuneralWreath,
+.fronImgMakingFuneralWreathSecond,
+.rectangleMakingFuneralWreath,
+.blurMakingFuneralWreath {
+    @include mq(desk) {
+        position: absolute;
+        border-radius: 20px;
+    }
+}
+
+.fronImgMakingFuneralWreath {
+    @include  mq(desk) {
+        top: 80px;
+        left: 120px;
+        width: 320px;
+        height: 400px;
+        z-index: 1;
+    }
+}
+
+.fronImgMakingFuneralWreathSecond {
+    @include mq(desk) {
+        top: 346px;
+        right: 120px;
+        width: 320px;
+        height: 400px;
+        z-index: 1;
+    }
+}
+
+.rectangleMakingFuneralWreath {
+    @include mq(desk) {
+        top: 345px;
+        left: 283px;
+        width: 794px;
+        height: 212px;
+        z-index: 1;
+    }
+}
+
+.blurMakingFuneralWreath {
+    @include mq(desk) {
+        top: 190px;
+        left: 218px;
+        width: 774px;
+        height: 566px;
     }
 }
