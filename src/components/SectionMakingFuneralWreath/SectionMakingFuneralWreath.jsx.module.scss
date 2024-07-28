@@ -12,6 +12,7 @@
 
 .wreathsMakingContainer {
     @include mq(desk) {
+        position: relative;
     }
 }
 
