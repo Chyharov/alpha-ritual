@@ -1,6 +1,6 @@
 import Header from 'components/Header/Header';
 import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForPage';
-import SectionTitleForMainPageDesktop from 'components/SectionTitleForPageDesktop/SectionTitleForPageDesktop';
+import SectionTitleForMainPageDesktop from 'components/SectionTitleForMainPageDesktop/SectionTitleForMainPageDesktop';
 import backgroundImgDesktop from 'images/wreaths/WreathsBackgroundDesk.png'
 import backgroundImg from 'images/wreaths/WreathsBackgroundMob.jpg';
 import SectionWreath from 'components/SectionWreaths/SectionWreaths';

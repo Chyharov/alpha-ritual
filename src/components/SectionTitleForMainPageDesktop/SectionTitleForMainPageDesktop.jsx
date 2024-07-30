@@ -3,7 +3,7 @@ import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetCon
 import lineBottom from '../../images/Line5.svg'
 import blur from '../../images/blur.png'
 import line from '../../images/TitleForPage/Line6.svg';
-import s from './SectionTitleForPageDesktop.module.scss';
+import s from './SectionTitleForMainPageDesktop.module.scss';
 
 const SectionTitleForMainPageDesktop = ({ prevTitle, title, backgroundImgDesktop, prevLink }) => {
   return (
