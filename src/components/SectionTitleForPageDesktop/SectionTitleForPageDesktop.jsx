@@ -3,11 +3,11 @@ import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetCon
 import lineBottom from '../../images/Line5.svg'
 import blur from '../../images/blur.png'
 import line from '../../images/TitleForPage/Line6.svg';
-import s from '../SectionTitleForPageDesktop/SectionTitleForPageDesktop.module.scss';
+import s from './SectionTitleForPageDesktop.module.scss';
 
-const SectionTitleForPageDesktop = ({ prevTitle, title, backgroundImgDesktop, prevLink }) => {
+const SectionTitleForMainPageDesktop = ({ prevTitle, title, backgroundImgDesktop, prevLink }) => {
   return (
-    <section className={s.SectionTitleForPageDesktop}>
+    <section className={s.sectionTitleForMainPageDesktop}>
       <div className={s.bgimg}>
         <div className={'container ' + s.titleImg__container}>
 
@@ -38,4 +38,4 @@ const SectionTitleForPageDesktop = ({ prevTitle, title, backgroundImgDesktop, pr
   );
 };
 
-export default SectionTitleForPageDesktop;
+export default SectionTitleForMainPageDesktop;

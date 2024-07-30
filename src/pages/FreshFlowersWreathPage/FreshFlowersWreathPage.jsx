@@ -1,6 +1,6 @@
 import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
-import SectionTitleForPageDesktop from 'components/SectionTitleForPageDesktop/SectionTitleForPageDesktop';
+import SectionTitleForMainPageDesktop from 'components/SectionTitleForPageDesktop/SectionTitleForPageDesktop';
 import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgroundDesk.png';
 import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg'
 import SectionFreshFlowersWreath from 'components/SectionFreshFlowersWreath/SectionFreshFlowersWreath';
@@ -21,7 +21,7 @@ const freshFlowersWreathPage = () => {
         <Header />
           <main>
           <SectionTitleForPage {...titleProps} />
-          <SectionTitleForPageDesktop {...titleProps}/>
+          <SectionTitleForMainPageDesktop {...titleProps}/>
             <SectionFreshFlowersWreath />
           </main>
         <Footer />

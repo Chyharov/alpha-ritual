@@ -1,6 +1,6 @@
 @import '../../sass/utils/mixin';
 
-.SectionTitleForPageDesktop {
+.sectionTitleForMainPageDesktop {
     display: none;
 
     @include mq(tab) {
