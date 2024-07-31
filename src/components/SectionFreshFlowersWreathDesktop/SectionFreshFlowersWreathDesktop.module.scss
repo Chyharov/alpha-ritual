@@ -1,0 +1,11 @@
+@import '../../sass/utils/mixin';
+
+.sectionFreshFlowersWreathDesktop {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
