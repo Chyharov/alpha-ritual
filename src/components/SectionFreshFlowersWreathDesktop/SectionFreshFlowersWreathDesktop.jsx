@@ -2,7 +2,6 @@ import s from './SectionFreshFlowersWreathDesktop.module.scss'
 
 const SectionFreshFlowersWreathDesktop = () => {
 
-
     return (
         <section className={s.sectionFreshFlowersWreathDesktop}>
             <div className={'container ' + s.freshFlowersWreathDesktopContainer}>
