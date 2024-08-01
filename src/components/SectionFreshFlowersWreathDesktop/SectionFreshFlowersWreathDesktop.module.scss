@@ -9,3 +9,20 @@
         padding-bottom: 80px;
     }
 }
+
+.freshFlowersWreathDesktopContainer {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.freshFlowersWreathDesktopblurSecond {
+    width: 400px;
+    height: 560px;
+    border-radius: 20px;
+}
+
+.freshFlowersWreathDesktopContainerDescription {
+    width: 692px;
+}
