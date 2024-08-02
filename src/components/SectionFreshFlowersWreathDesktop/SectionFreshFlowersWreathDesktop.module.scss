@@ -61,3 +61,20 @@
     color: var(--primaryTextColorDark);
     padding: 8px;
 }
+
+.freshFlowersWreathListThird {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 40px;
+}
+
+.freshFlowersWreathListThird__item {
+    width: 320px;
+    height: 152px;
+    background-color: var(--cardBlackDark);
+    padding: 8px;
+    border-radius: 8px;
+    outline: 1px solid var(--secondaryTextColor);
+}

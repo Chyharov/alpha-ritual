@@ -90,18 +90,16 @@
     }
 }
 
+.links,
+.linksIsActive,
 .secondaryDescription {
     font-family: Open Sans Regular;
     font-size: 14px;
     line-height: 1.43;
-    color: var(--primaryTextColorDark);
 }
 
-.links,
-.linksIsActive {
-    font-family: Open Sans Regular;
-    font-size: 14px;
-    line-height: 1.43;
+.secondaryDescription {
+    color: var(--primaryTextColorDark);
 }
 
 .linksIsActive {
@@ -111,8 +109,6 @@
 .links {
     color: var(--secondaryTextColor);
 }
-
-
 
 .buttonDescription {
     font-family: Open Sans SemiBold;
@@ -141,4 +137,8 @@
     border-radius: 8px;
     background-color: #2B2925;
     margin-bottom: 8px;
+}
+
+.outline {
+    outline: 1px solid var(--secondaryTextColor);
 }

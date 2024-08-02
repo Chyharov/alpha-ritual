@@ -48,32 +48,35 @@ const SectionFreshFlowersWreathDesktop = () => {
           </div>
         </div>
 
-        <h2>Форма, склад та кольорова гама</h2>
+        <h2 className='title' style={{marginBottom: '40px'}}>Форма, склад та кольорова гама</h2>
 
-        <p>
+        <p className='description' style={{marginBottom: '40px'}}>
           Сам вінок на похованні може бути будь-якої форми, найбільш традиційні
           три з них.
         </p>
 
-        <ul>
-          <li>
+        <ul className={s.freshFlowersWreathListThird}>
+          <li className={s.freshFlowersWreathListThird__item}><p className='secondaryDescription' style={{padding: '8px'}}>
             Круглий – найдавніший символ нескінченності буття та відродження. Це
             сонце як джерело вічного життя. Круглі вінки можуть бути складені
             кільцем або із суцільним заповненням живими квітами.
+          </p>
           </li>
-          <li>
+          <li className={s.freshFlowersWreathListThird__item}><p className='secondaryDescription' style={{padding: '8px'}}>
             Серце – найвідоміший символ кохання, який виражає щирі почуття до
             померлого та їх нетлінність навіть після смерті.
+          </p>
           </li>
-          <li>
+          <li className={s.freshFlowersWreathListThird__item}><p className='secondaryDescription' style={{padding: '8px'}}>
             Крапля – традиційний у нашій культурі жалобний вінок. Каплеподібна
             форма символізує скорботу і смуток за вчасною втратою дорогої
             людини. Така форма за іншою версією символізує полум’я, що очищає,
             спрямоване вгору на небеса.
+          </p>
           </li>
         </ul>
 
-        <p>
+        <p className='description' style={{marginBottom: '10px'}}>
           Традиційно червоними живими квітами (цвяхами та трояндами) прикрашають
           жалобні вінки на похованнях чоловіків та людей з тяжкою долею.
           Фіолетові або білі троянди та лілії використовують для поховальних
@@ -84,12 +87,13 @@ const SectionFreshFlowersWreathDesktop = () => {
           Небесне.
         </p>
 
-        <p>
+        <p className='description'>
           Вінки та букети не можна перевантажувати надто жалобними темними та
           темно-червоними живими квітами. Це посилить і без того важке емоційне
           тло на похованні. Самі ж композиції складають не більше п’яти видів
           квіток і рослинних елементів.
         </p>
+
 
         <img
           className={s.freshFlowersWreathDesktopblur}
@@ -101,6 +105,7 @@ const SectionFreshFlowersWreathDesktop = () => {
           src={freshFlowersWreathDesktopblurSecond}
           alt="freshFlowersWreathDesktopblurSecond"
         />
+        <div className='outline'></div>
       </div>
     </section>
   );
