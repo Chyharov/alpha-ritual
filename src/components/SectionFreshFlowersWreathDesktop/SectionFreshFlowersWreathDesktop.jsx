@@ -29,15 +29,18 @@ const SectionFreshFlowersWreathDesktop = () => {
               Поховальна квіткова композиція може бути у будь-якому вигляді:
             </p>
 
-            <ul>
-              <li>вінок із живих квітів</li>
-              <li>монограма</li>
-              <li>надгробна композиція</li>
-              <li>траурний букет</li>
-              <li>квітковий кошик</li>
+            <ul className={s.freshFlowersWreathList}>
+              <li className={s.freshFlowersWreathList__item}><p className={s.freshFlowersWreathList__itemDescription}>вінок із живих квітів</p></li>
+              <li className={s.freshFlowersWreathList__item}><p className={s.freshFlowersWreathList__itemDescription}>монограма</p></li>
+              <li className={s.freshFlowersWreathList__item}><p className={s.freshFlowersWreathList__itemDescription}>надгробна композиція</p></li>
             </ul>
 
-            <p>
+            <ul className={s.freshFlowersWreathListSecond} >
+              <li className={s.freshFlowersWreathList__item}><p className={s.freshFlowersWreathList__itemDescription}>траурний букет</p></li>
+              <li className={s.freshFlowersWreathList__item}><p className={s.freshFlowersWreathList__itemDescription}>квітковий кошик</p></li>
+            </ul>
+
+            <p className='description'>
               Незважаючи на відсутність будь-яких суворих правил, існують
               специфічні культурні традиції та символізм, який вкладають у
               траурну квіткову композицію.
