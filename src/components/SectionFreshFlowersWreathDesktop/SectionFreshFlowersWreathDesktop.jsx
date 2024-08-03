@@ -1,6 +1,5 @@
 import freshFlowersWreathDesktopHeroPicture from '../../images/SectionFreshFlowersWreathDesktop/freshFlowersWreathDesktopHeroPicture.jpg';
-import freshFlowersWreathDesktopblur from '../../images/SectionFreshFlowersWreathDesktop/freshFlowersWreathDesktopblur.png';
-import freshFlowersWreathDesktopblurSecond from '../../images/SectionFreshFlowersWreathDesktop/freshFlowersWreathDesktopblurSecond.png';
+import freshFlowersWreathDesktopblur from '../../images/SectionFreshFlowersWreathDesktop/freshFlowersWreathDesktopblurSecond.png';
 import s from './SectionFreshFlowersWreathDesktop.module.scss';
 
 const SectionFreshFlowersWreathDesktop = () => {
@@ -9,7 +8,7 @@ const SectionFreshFlowersWreathDesktop = () => {
       <div className="container">
         <div className={s.freshFlowersWreathDesktopContainer}>
           <img
-            className={s.freshFlowersWreathDesktopblurSecond}
+            className={s.freshFlowersWreathDesktopHeroPicture}
             src={freshFlowersWreathDesktopHeroPicture}
             alt="freshFlowersWreathDesktopHeroPicture"
           />
@@ -87,23 +86,17 @@ const SectionFreshFlowersWreathDesktop = () => {
           Небесне.
         </p>
 
-        <p className='description'>
+        <p className='description' style={{marginBottom: '80px'}}>
           Вінки та букети не можна перевантажувати надто жалобними темними та
           темно-червоними живими квітами. Це посилить і без того важке емоційне
           тло на похованні. Самі ж композиції складають не більше п’яти видів
           квіток і рослинних елементів.
         </p>
 
-
         <img
           className={s.freshFlowersWreathDesktopblur}
           src={freshFlowersWreathDesktopblur}
           alt="freshFlowersWreathDesktopblur"
-        />
-        <img
-          className={s.freshFlowersWreathDesktopblurSecond}
-          src={freshFlowersWreathDesktopblurSecond}
-          alt="freshFlowersWreathDesktopblurSecond"
         />
         <div className='outline'></div>
       </div>
