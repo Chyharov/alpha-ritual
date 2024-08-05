@@ -1,0 +1,36 @@
+@import '../../sass/utils/mixin';
+
+.galleryWindowContainer {
+    width: 100%;
+    padding: 20px 0px 24px;
+    outline: 1px solid var(--secondaryTextColor);
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    @include mq(tab) {
+        width: 288px;
+        height: 480px;
+        padding: 30px 10px 30px;
+    }
+}
+
+.containerForButtons {
+    width: 58.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.buttonNavigation {
+    background-color: var(--backgroundColorDark);
+    border: 1px solid var(--secondaryTextColor);
+    border-radius: 16px;
+    padding: 11px;
+    cursor: pointer;
+
+    @include mq(tab) {
+        font-size: 25px;
+        padding: 10px;
+    }
+}
