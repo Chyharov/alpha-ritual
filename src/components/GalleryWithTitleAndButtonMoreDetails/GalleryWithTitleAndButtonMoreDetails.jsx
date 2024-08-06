@@ -20,11 +20,10 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, title, material, material
   return (
     <>
       <div className={s.galleryWindowContainer} style={style}>
-        <h2 className="smallTitle" style={{ marginBottom: '20px', textAlign: 'center' }}>{title}</h2>
 
-        <CarouselProvider
-          naturalSlideWidth={288}
-          naturalSlideHeight={288}
+        <CarouselProvider 
+          naturalSlideWidth={272}
+          naturalSlideHeight={352}
           totalSlides={array.length}
           infinite={true}>
           
@@ -36,8 +35,6 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, title, material, material
             ))}
           </Slider>
 
-          <p className="smallTitle" style={{ marginTop: '12px', textAlign: 'center' }}>{material}</p>
-          <p className="secondaryDescription" style={{ marginBottom: '40px', textAlign: 'center' }}>{materialDescription}</p>
           <div className={s.containerForButtons}>
             <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
             <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
