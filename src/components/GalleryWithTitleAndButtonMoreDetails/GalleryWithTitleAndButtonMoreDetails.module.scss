@@ -10,7 +10,7 @@
     @include mq(tab) {
         width: 288px;
         height: 480px;
-        padding: 30px 10px 30px;
+        padding: 8px 8px 32px 8px;
     }
 }
 
@@ -32,5 +32,12 @@
     @include mq(tab) {
         font-size: 25px;
         padding: 10px;
+    }
+}
+
+.imageWindow {
+    @include mq(image) {
+        width: 300px;
+        height: 352px;
     }
 }

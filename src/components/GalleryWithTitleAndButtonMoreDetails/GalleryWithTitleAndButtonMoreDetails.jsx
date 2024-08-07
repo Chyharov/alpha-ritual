@@ -6,7 +6,7 @@ import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
 import s from './GalleryWithTitleAndButtonMoreDetails.module.scss'
 
-const GalleryWithTitleAndButtonMoreDetails = ({ array, title, material, materialDescription, style }) => {
+const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -21,8 +21,8 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, title, material, material
     <>
       <div className={s.galleryWindowContainer} style={style}>
 
-        <CarouselProvider 
-          naturalSlideWidth={272}
+        <CarouselProvider
+          naturalSlideWidth={300}
           naturalSlideHeight={352}
           totalSlides={array.length}
           infinite={true}>
