@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Modal from '../ModalWindow/ModalWindow';
@@ -7,9 +8,7 @@ import arrowRight from '../../images/arrowRight.svg';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './GalleryWithTitleAndButtonMoreDetails.module.scss'
 
-const buttonDescription = 'Переглянути всі';
-
-const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
+const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription ,link }) => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -21,8 +20,8 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
   };
 
   return (
-    <div>
-      <h2 style={{textAlign: 'center', marginBottom: '16px'}}>Вінки із живих квітів</h2>
+    <div className={s.galleryWithTitleAndButtonMoreDetailsContainer}>
+      <h2 className='titleThird' style={{textAlign: 'center', marginBottom: '16px'}}>Вінки із живих квітів</h2>
       
       <div className={s.galleryWindowContainer} style={style}>
 
@@ -49,7 +48,7 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
           </div>
         </CarouselProvider>
       </div>
-      <ButtonMoreDetails buttonDescription={buttonDescription} />
+      <Link className={s.ritualServices__link} to={link}><ButtonMoreDetails buttonDescription={buttonDescription} /></Link>
 
       {modalOpen && selectedImage && (
         <Modal

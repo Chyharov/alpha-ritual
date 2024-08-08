@@ -55,6 +55,16 @@
     }
 }
 
+.titleThird {
+    @media screen and (min-width: 1360px) {
+        font-family: Open Sans Regular;
+        font-size: 24px;
+        line-height: 1.17;
+        color: var(--primaryTextColorDark);
+        padding: 8px;
+    }
+}
+
 .forCardTitle {
     font-family: Open Sans Regular;
     font-size: 16px;

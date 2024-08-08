@@ -9,6 +9,9 @@ const freshFlowersWreathArray = [
   },
 ];
 
+const buttonDescription = 'Переглянути всі';
+const link = '/'
+
 const SectionFreshFlowersWreathDescriptionDesktop = () => {
   return (
     <section className={s.sectionFreshFlowersWreathDescriptionDesktop}>
@@ -50,6 +53,8 @@ const SectionFreshFlowersWreathDescriptionDesktop = () => {
 
           <GalleryWithTitleAndButtonMoreDetails
             array={freshFlowersWreathArray}
+            buttonDescription={buttonDescription}
+            link={link}
           />
         </div>
       </div>
