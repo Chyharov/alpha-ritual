@@ -4,7 +4,10 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Modal from '../ModalWindow/ModalWindow';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
+import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './GalleryWithTitleAndButtonMoreDetails.module.scss'
+
+const buttonDescription = 'Переглянути всі';
 
 const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
 
@@ -18,22 +21,27 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
   };
 
   return (
-    <>
+    <div>
+      <h2 style={{textAlign: 'center', marginBottom: '16px'}}>Вінки із живих квітів</h2>
+      
       <div className={s.galleryWindowContainer} style={style}>
 
         <CarouselProvider
-          naturalSlideWidth={300}
+          naturalSlideWidth={272}
           naturalSlideHeight={352}
           totalSlides={array.length}
           infinite={true}>
           
-          <Slider>
+        <div className={s.imageGallery}>
+            <Slider>
             {array.map(photo => (
               <Slide key={photo.id}>
-                <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
+                <img style={{borderRadius: '8px'}} src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
               </Slide>
             ))}
           </Slider>
+
+          </div>
 
           <div className={s.containerForButtons}>
             <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
@@ -41,6 +49,7 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
           </div>
         </CarouselProvider>
       </div>
+      <ButtonMoreDetails buttonDescription={buttonDescription} />
 
       {modalOpen && selectedImage && (
         <Modal
@@ -50,7 +59,7 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style }) => {
           setModalOpen={setModalOpen}
         />
       )}
-    </>
+    </div>
     );
   };
 
