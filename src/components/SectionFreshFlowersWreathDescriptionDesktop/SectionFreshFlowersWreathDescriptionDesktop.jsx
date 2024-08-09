@@ -1,18 +1,7 @@
 import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import s from './SectionFreshFlowersWreathDescriptionDesktop.module.scss';
 
-const freshFlowersWreathArray = [
-  {
-    id: 1,
-    src: require('../../images/freshFlowersWreath/pict.jpg'),
-    alt: 'Зображення 1',
-  },
-];
-
-const buttonDescription = 'Переглянути всі';
-const link = '/'
-
-const SectionFreshFlowersWreathDescriptionDesktop = () => {
+const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link}) => {
   return (
     <section className={s.sectionFreshFlowersWreathDescriptionDesktop}>
       <div className="container">
@@ -52,7 +41,7 @@ const SectionFreshFlowersWreathDescriptionDesktop = () => {
           </div>
 
           <GalleryWithTitleAndButtonMoreDetails
-            array={freshFlowersWreathArray}
+            array={array}
             buttonDescription={buttonDescription}
             link={link}
           />
