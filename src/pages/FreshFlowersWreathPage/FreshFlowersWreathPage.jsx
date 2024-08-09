@@ -285,9 +285,9 @@ const freshFlowersWreathArray = [
     alt: 'Зображення 52',
   }
 ];
-
 const buttonDescription = 'Переглянути всі';
 const link = '/'
+const titleForGallery = 'Вінки із живих квітів'
 
 const freshFlowersWreathPage = () => {
 
@@ -299,7 +299,7 @@ const freshFlowersWreathPage = () => {
             <SectionTitleForDefaultPageDesktop {...titleProps}/>
             <SectionFreshFlowersWreath />
             <SectionFreshFlowersWreathDesktop />
-            <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} />
+          <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} titleForGallery={titleForGallery} />
           </main>
         <Footer />
       </>

@@ -1,7 +1,8 @@
 import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
+import freshFlowersWreathDesktopBlur from '../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktopBlur.png'
 import s from './SectionFreshFlowersWreathDescriptionDesktop.module.scss';
 
-const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link}) => {
+const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link, titleForGallery}) => {
   return (
     <section className={s.sectionFreshFlowersWreathDescriptionDesktop}>
       <div className="container">
@@ -44,9 +45,11 @@ const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, 
             array={array}
             buttonDescription={buttonDescription}
             link={link}
+            titleForGallery={titleForGallery}
           />
         </div>
       </div>
+      <img className={s.freshFlowersWreathDesktopBlur} src={freshFlowersWreathDesktopBlur} alt="freshFlowersWreathDesktopBlur" />
     </section>
   );
 };

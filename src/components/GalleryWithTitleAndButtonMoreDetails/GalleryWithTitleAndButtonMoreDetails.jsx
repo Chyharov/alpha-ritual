@@ -8,7 +8,7 @@ import arrowRight from '../../images/arrowRight.svg';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './GalleryWithTitleAndButtonMoreDetails.module.scss'
 
-const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription ,link }) => {
+const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription, link, titleForGallery }) => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -21,34 +21,38 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription 
 
   return (
     <div className={s.galleryWithTitleAndButtonMoreDetailsContainer}>
-      <h2 className='titleThird' style={{textAlign: 'center', marginBottom: '16px'}}>Вінки із живих квітів</h2>
+      <h2 className='titleThird' style={{ textAlign: 'center', marginBottom: '16px' }}>{titleForGallery}</h2>
       
       <div className={s.galleryWindowContainer} style={style}>
 
         <CarouselProvider
           naturalSlideWidth={272}
-          naturalSlideHeight={352}
+          naturalSlideHeight={272}
           totalSlides={array.length}
           infinite={true}>
           
-        <div className={s.imageGallery}>
+          <div className={s.imageGallery}>
             <Slider>
-            {array.map(photo => (
-              <Slide key={photo.id}>
-                <img style={{borderRadius: '8px'}} src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
-              </Slide>
-            ))}
-          </Slider>
-
+              {array.map(photo => (
+                <Slide key={photo.id}>
+                  <img style={{borderRadius: '8px'}} src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
+                </Slide>
+              ))}
+            </Slider>
           </div>
 
           <div className={s.containerForButtons}>
-            <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
-            <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
+            <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft"/></ButtonBack>
+            <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight"/></ButtonNext>
           </div>
+
         </CarouselProvider>
+
       </div>
-      <Link className={s.ritualServices__link} to={link}><ButtonMoreDetails buttonDescription={buttonDescription} /></Link>
+
+      <Link className={s.ritualServices__link} to={link}>
+        <ButtonMoreDetails buttonDescription={buttonDescription} />
+      </Link>
 
       {modalOpen && selectedImage && (
         <Modal
@@ -58,6 +62,7 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription 
           setModalOpen={setModalOpen}
         />
       )}
+
     </div>
     );
   };
