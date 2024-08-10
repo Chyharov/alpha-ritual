@@ -1,0 +1,31 @@
+import Header from '../../components/Header/Header';
+import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
+import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgroundDesk.png';
+import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg'
+import SectionFreshFlowersWreathPageGallery from '../../components/SectionFreshFlowersWreathPageGallery/SectionFreshFlowersWreathPageGallery'
+import Footer from 'components/Footer/Footer';
+
+const titleProps = {
+  titleLink: 'Вінки',
+  backgroundImg: backgroundImg,
+  prevTitleLink: 'Додаткові послуги',
+  backgroundImgDesktop: backgroundImgDesktop,
+  prevLink: '/additionalservices',
+  title: 'Вінок із живих квітів',
+  description: 'Навіть для атеїстів та нерелігійних людей жалобні вінки з живих квітів на похованні – це символ поваги, вічного кохання та поваги до померлого. Квіткові композиції на церемонії прощання виконують і більш практичну функцію – згладити емоційне траурне напруження та зменшити стрес рідних та близьких покійного, які прийшли провести його в останню путь.'
+};
+
+const FreshFlowersWreathPageGallery = () => {
+    return (
+      <>
+        <Header />
+            <main>
+              <SectionTitleForDefaultPageDesktop {...titleProps} />
+              <SectionFreshFlowersWreathPageGallery />
+            </main>
+        <Footer />
+      </>
+    );
+  };
+
+export default FreshFlowersWreathPageGallery;

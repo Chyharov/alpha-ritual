@@ -1,0 +1,19 @@
+@import '../../sass/utils/mixin';
+
+.sectionFreshFlowersWreathPageGallery {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
+}
+
+.freshFlowersWreathPageGalleryContainer {
+    @include mq(desk) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

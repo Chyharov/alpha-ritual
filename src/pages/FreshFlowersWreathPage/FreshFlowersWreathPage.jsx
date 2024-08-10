@@ -286,10 +286,10 @@ const freshFlowersWreathArray = [
   }
 ];
 const buttonDescription = 'Переглянути всі';
-const link = '/'
+const link = '/freshFlowersWreathPageGallery'
 const titleForGallery = 'Вінки із живих квітів'
 
-const freshFlowersWreathPage = () => {
+const FreshFlowersWreathPage = () => {
 
     return (
       <>
@@ -299,11 +299,11 @@ const freshFlowersWreathPage = () => {
             <SectionTitleForDefaultPageDesktop {...titleProps}/>
             <SectionFreshFlowersWreath />
             <SectionFreshFlowersWreathDesktop />
-          <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} titleForGallery={titleForGallery} />
+            <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} titleForGallery={titleForGallery} />
           </main>
         <Footer />
       </>
     );
   };
 
-export default freshFlowersWreathPage;
+export default FreshFlowersWreathPage;
