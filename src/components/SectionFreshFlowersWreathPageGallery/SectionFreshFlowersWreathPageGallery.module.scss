@@ -17,3 +17,21 @@
         align-items: center;
     }
 }
+
+.freshFlowersWreathPageGallerList {
+    @include mq(desk) {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.freshFlowersWreathPageGallerList__itemImage {
+    @include mq(desk) {
+        width: 380px;
+        height: 380px;
+        border-radius: 8px;
+    }
+}
