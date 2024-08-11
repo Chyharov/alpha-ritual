@@ -1,7 +1,9 @@
 import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import s from './SectionFreshFlowersWreathDescriptionDesktop.module.scss';
 
-const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link, titleForGallery}) => {
+const titleForModalWindow = 'Вінки із живих квітів';
+
+const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link, titleForGallery }) => {
   return (
     <section className={s.sectionFreshFlowersWreathDescriptionDesktop}>
       <div className="container">
@@ -45,6 +47,7 @@ const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, 
             buttonDescription={buttonDescription}
             link={link}
             titleForGallery={titleForGallery}
+            titleForModalWindow={titleForModalWindow}
           />
         </div>
       </div>

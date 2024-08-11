@@ -1,12 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import closeIcon from '../../images/closeIcon.svg'
-import arrowLeft from '../../images/arrowLeft.svg'
-import arrowRight from '../../images/arrowRight.svg'
+import closeIcon from '../../images/closeIcon.svg';
+import arrowPrev from '../../images/arrowLeft.svg';
+import arrowNext from '../../images/arrowRight.svg';
 import s from './ModalWindowForDestopVersion.module.scss';
 
-const ModalWindowForDestopVersion = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen }) => {
+const ModalWindowForDestopVersion = ({
+  selectedImage,
+  arrayPhoto,
+  setSelectedImage,
+  setModalOpen,
+  titleForGallery
+}) => {
   const [currentImage, setCurrentImage] = useState(null);
 
   useEffect(() => {
@@ -21,29 +33,35 @@ const ModalWindowForDestopVersion = ({ selectedImage, arrayPhoto, setSelectedIma
     setSelectedImage(currentImage);
   };
 
-  const handleOutsideClick = (event) => {
+  const handleOutsideClick = event => {
     if (event.target === event.currentTarget) {
       closeModal();
     }
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = event => {
     if (event.key === 'Escape') {
       closeModal();
     }
   };
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   });
 
-   return (
+  return (
     <div className={s.modal} onClick={handleOutsideClick}>
       <div className={s.modalContent}>
+        <h2
+          className="titleThird"
+          style={{ textAlign: 'center', marginBottom: '16px' }}
+        >
+          {titleForGallery}
+        </h2>
         <span className={s.closeModal} onClick={closeModal}>
           <img src={closeIcon} alt="closeIcon" />
         </span>
@@ -54,22 +72,32 @@ const ModalWindowForDestopVersion = ({ selectedImage, arrayPhoto, setSelectedIma
           infinite={true}
           currentSlide={selectedImage.id - 1}
         >
+          <ButtonBack
+            className={s.buttonModalPrev}
+            aria-label="Попередній слайд"
+          >
+            <img src={arrowPrev} alt="arrowPrev" />
+          </ButtonBack>
+
           <Slider>
             {arrayPhoto.map((photo, id) => (
               <Slide key={id}>
-                <img className={s.modalImage} id={photo.id} src={photo.src} alt={photo.alt} />
+                <img
+                  className={s.modalImage}
+                  id={photo.id}
+                  src={photo.src}
+                  alt={photo.alt}
+                />
               </Slide>
             ))}
           </Slider>
-          
-          <div className={s.centerButtonModal}>
-            <ButtonBack className={s.buttonModal} aria-label="Попередній слайд">
-              <img src={arrowLeft} alt="arrowLeft" />
-            </ButtonBack>
-            <ButtonNext className={s.buttonModal} aria-label="Наступний слайд">
-              <img src={arrowRight} alt="arrowRight" />
-            </ButtonNext>
-          </div>
+
+          <ButtonNext
+            className={s.buttonModalNext}
+            aria-label="Наступний слайд"
+          >
+            <img src={arrowNext} alt="arrowNext" />
+          </ButtonNext>
         </CarouselProvider>
       </div>
     </div>

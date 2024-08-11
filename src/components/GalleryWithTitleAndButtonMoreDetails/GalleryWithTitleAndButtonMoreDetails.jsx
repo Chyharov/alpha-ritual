@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import Modal from '../ModalWindow/ModalWindow';
+import ModalWindowForDestopVersion from '../ModalWindowForDestopVersion/ModalWindowForDestopVersion';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './GalleryWithTitleAndButtonMoreDetails.module.scss'
 
-const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription, link, titleForGallery }) => {
+const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription, link, titleForGallery, titleForModalWindow }) => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -55,11 +55,12 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription,
       </Link>
 
       {modalOpen && selectedImage && (
-        <Modal
+        <ModalWindowForDestopVersion
           selectedImage={selectedImage}
           arrayPhoto={array}
           setSelectedImage={setSelectedImage}
           setModalOpen={setModalOpen}
+          titleForGallery={titleForGallery}
         />
       )}
 
