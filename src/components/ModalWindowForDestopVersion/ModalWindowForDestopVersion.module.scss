@@ -25,7 +25,7 @@
     @include mq(desk) {
         border-radius: 20px;
         padding: 16px 96px 24px 96px;
-        width: 800px;
+        width: 50%;
     }
 }
 
@@ -75,7 +75,7 @@
     bottom: 24px;
 
     @include mq(desk) {
-        bottom: 350px;
+        bottom: 50%;
     }
 }
 
