@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import Modal from '../ModalWindow/ModalWindow'
-import arrowLeft from '../../images/arrowLeft.svg';
-import arrowRight from '../../images/arrowRight.svg';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
+import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import s from './SectionArtificialWreath.module.scss'
 
 const ArtificialWreathsPictureList = [
@@ -47,6 +43,11 @@ const whyArtificialWreath = [
   { id: 3, title: "Ми підберемо для вас ідеальну композицію, щоб ви змогли наповнити своїми символами кожну квітку та кожну гілку у вінку. Такий символізм допоможе вам висловити любов і скорботу через вчасну втрату, повагу і повагу до померлої близької людини, християнські сподівання набуття Царства Небесного і вічного життя на небесах." },
 ];
 
+const link = '/artificialwreathgallery';
+const titleForGallery = 'Artificial';
+const titleForModalWindow = 'ArtificialModal'
+
+
 const SectionArtificialWreath = () => {
   const buttonDescription = 'Детальніше';
   const buttonShowAll = 'Переглянути всі';
@@ -54,19 +55,12 @@ const SectionArtificialWreath = () => {
   const [showAllComposition, setShowAllComposition] = useState(false);
   const displayedWhyArtificialWreath = showAll ? whyArtificialWreath : whyArtificialWreath.slice(0, 1);
   const displayedFormCompositionForArtificialWreath = showAllComposition ? formCompositionForArtificialWreath : formCompositionForArtificialWreath.slice(0, 1);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-  
-
-  const openModal = (id) => {
-    setSelectedImage(ArtificialWreathsPictureList.find(image => image.id === id));
-    setModalOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
 
     return (
         <section className={s.sectionArtificialWreaths}>
-          <div className={'container ' + s.artificialWreathsContainer}>
+        <div className='container'>
+          <div className={s.artificialWreathsContainer}>
+
             
             <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінок із штучних квітів</h2>
               
@@ -105,8 +99,8 @@ const SectionArtificialWreath = () => {
                   );
                 default:
                   return null;
-              }
-            })}
+                }
+              })}
 
             {!showAllComposition && (
               <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '64px' }} buttonDescription={buttonDescription} onClick={() => setShowAllComposition(true)} />  
@@ -122,43 +116,15 @@ const SectionArtificialWreath = () => {
               <ButtonMoreDetails style={{ marginTop: '8px', marginBottom: '64px' }} buttonDescription={buttonDescription} onClick={() => setShowAll(true)} />  
             )}
 
-            <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Вінки із штучних квітів</h2>
-
-            <div className={s.artificialWreathsPhotoContainer}>
-              <CarouselProvider
-              naturalSlideWidth={288}
-              naturalSlideHeight={288}
-              totalSlides={ArtificialWreathsPictureList.length}
-              infinite={true}>
+          <GalleryWithTitleAndButtonMoreDetails
+            array={ArtificialWreathsPictureList}
+            buttonDescription={buttonShowAll}
+            link={link}
+            titleForGallery={titleForGallery}
+            titleForModalWindow={titleForModalWindow}
+          />
             
-              <Slider className={s.sliderPhoto}>
-                {ArtificialWreathsPictureList.map(photo => (
-                  <Slide key={photo.id}>
-                    <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
-                  </Slide>
-                ))}
-              </Slider>
-
-              <div className={s.containerForButtons}>
-                <ButtonBack className={s.buttonNavigation}><img src={arrowLeft} alt="arrowLeft" /></ButtonBack>
-                <ButtonNext className={s.buttonNavigation}><img src={arrowRight} alt="arrowRight" /></ButtonNext>
-              </div>
-              </CarouselProvider>
-            </div>
-            
-          <Link to="/artificialwreathgallery" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-            <ButtonMoreDetails buttonDescription={buttonShowAll} />  
-          </Link>
-
-          {modalOpen && selectedImage && (
-              <Modal
-                selectedImage={selectedImage}
-                arrayPhoto={ArtificialWreathsPictureList}
-                setSelectedImage={setSelectedImage}
-                setModalOpen={setModalOpen}
-              />
-            )} 
-            
+          </div>
           </div>
         </section>
     );

@@ -16,12 +16,17 @@
 .modalContent {
     width: 99%;
     background-color: var(--backgroundColorDark);
-    padding: 16px 96px 24px 96px;
-    border-radius: 20px;
+    padding: 8px 8px 120px 8px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     outline: 1px solid var(--primaryTextColor);
     position: relative;
-    width: 800px;
+
+    @include mq(desk) {
+        border-radius: 20px;
+        padding: 16px 96px 24px 96px;
+        width: 800px;
+    }
 }
 
 .modalImage {
@@ -32,10 +37,16 @@
 
 .closeModal {
     position: absolute;
-    top: 16px;
-    right: 16px;
     width: 42px;
     height: 42px;
+    top: 8px;
+    right: 8px;
+
+    @include mq(desk) {
+        top: 16px;
+        right: 16px;
+    }
+    
 }
 
 .closeModalIcon:hover,
@@ -61,15 +72,27 @@
     cursor: pointer;
     border: none;
     position: absolute;
-    top: 350px;
+    bottom: 24px;
+
+    @include mq(desk) {
+        bottom: 350px;
+    }
 }
 
 .buttonModalPrev {
-    left: 16px;
+    left: 60px;
+
+    @include mq(desk) {
+        left: 16px;
+    }
 }
 
 .buttonModalNext {
-    right: 16px;
+    right: 60px;
+
+    @include mq(desk) {
+        right: 16px;
+    }
 }
 
 

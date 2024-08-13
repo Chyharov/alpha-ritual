@@ -2,7 +2,7 @@
 
 .galleryWindowContainer {
     width: 100%;
-    padding: 20px 0px 24px;
+    padding: 8px 8px 24px 8px;
     outline: 1px solid var(--secondaryTextColor);
     border-radius: 8px;
     margin-bottom: 24px;
@@ -42,13 +42,18 @@
 }
 
 .imageGallery {
+    margin-bottom: 24px;
+    
     @include mq(tab) {
         width: 272px;
     }
 }
 
 .galleryWithTitleAndButtonMoreDetailsContainer {
+    width: 100%;
+
     @include mq(tab) {
+        width: 288px;
         display: flex;
         flex-direction: column;
         align-items: center;
