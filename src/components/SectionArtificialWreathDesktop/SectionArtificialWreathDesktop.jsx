@@ -1,8 +1,9 @@
 import artificialWreathsImageDescription from '../../images/artificialWreaths/artificialWreathsImageDescription.png';
 import artificialWreathsImageListDescription from '../../images/artificialWreaths/artificialWreathsImageListDescription.png';
+import GalleryWithTitleAndButtonMoreDetails from 'components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import s from './SectionArtificialWreathDesktop.module.scss';
 
-const SectionArtificialWreathDesktop = () => {
+const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleForGallery, titleForModalWindow }) => {
   return (
     <section className={s.sectionArtificialWreaths}>
       <div className="container">
@@ -122,13 +123,13 @@ const SectionArtificialWreathDesktop = () => {
         </p>
         <div className="outline"></div>
         <div className={s.artificialWreathsGalleryDesktopContainer}>
-          <h2 className="title" style={{ marginBottom: '80px' }}>
+          <h2 className="title" style={{ textAlign: 'center', marginBottom: '80px' }}>
             Чому штучні квіти найкращі для жалобного вінка?
           </h2>
           <div className={s.artificialWreathsGalleryContainer}>
-            <ul>
+            <ul className={s.artificialWreathsGalleryList}>
               <li>
-                <p>
+                <p className='description'>
                   Флористи поховального будинку «Альфа» складають будь-які
                   траурні композиції з ботанічних копій різних видів квітів та
                   рослин. Букети, надгробні квіткові монограми та поховальні
@@ -137,7 +138,7 @@ const SectionArtificialWreathDesktop = () => {
                 </p>
               </li>
               <li>
-                <p>
+                <p className='description'>
                   Натуральність зовнішнього вигляду, постійна «свіжість» та
                   порівняно низька ціна – головні переваги штучних кольорів, які
                   ми використовуємо при складанні жалобних кошиків та вінків для
@@ -145,7 +146,7 @@ const SectionArtificialWreathDesktop = () => {
                 </p>
               </li>
               <li>
-                <p>
+                <p className='description'>
                   Ми підберемо для вас ідеальну композицію, щоб ви змогли
                   наповнити своїми символами кожну квітку та кожну гілку у
                   вінку. Такий символізм допоможе вам висловити любов і скорботу
@@ -155,6 +156,13 @@ const SectionArtificialWreathDesktop = () => {
                 </p>
               </li>
             </ul>
+            <GalleryWithTitleAndButtonMoreDetails
+                array={array}
+                buttonDescription={buttonDescription}
+                link={link}
+                titleForGallery={titleForGallery}
+                titleForModalWindow={titleForModalWindow}
+            />
           </div>
         </div>
       </div>

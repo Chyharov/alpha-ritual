@@ -1,9 +1,7 @@
 import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import s from './SectionFreshFlowersWreathDescriptionDesktop.module.scss';
 
-const titleForModalWindow = 'Вінки із живих квітів';
-
-const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link, titleForGallery }) => {
+const SectionFreshFlowersWreathDescriptionDesktop = ({array, buttonDescription, link, titleForGallery, titleForModalWindow }) => {
   return (
     <section className={s.sectionFreshFlowersWreathDescriptionDesktop}>
       <div className="container">
