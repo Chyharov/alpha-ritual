@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionRitualServicesBlur from '../../images/RitualServices/SectionRitualServicesBlur.png'
-import SectionRitualServicesFlowers from '../../images/RitualServices/SectionRitualServicesFlowers.svg'
-import SectionRitualServicesGirlFlowers from '../../images/RitualServices/SectionRitualServicesGirlFlowers.svg'
+import SectionRitualServicesFlowers from '../../images/RitualServices/SectionRitualServicesFlowers.png'
+import SectionRitualServicesGirlFlowers from '../../images/RitualServices/SectionRitualServicesGirlFlowers.png'
 import SectionRitualServicesRectangle from '../../images/RitualServices/SectionRitualServicesRectangle.svg'
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import s from './SectionRitualServices.module.scss';
