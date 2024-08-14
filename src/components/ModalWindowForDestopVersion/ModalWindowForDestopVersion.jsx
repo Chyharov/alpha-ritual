@@ -17,7 +17,8 @@ const ModalWindowForDestopVersion = ({
   arrayPhoto,
   setSelectedImage,
   setModalOpen,
-  titleForGallery
+  titleForGallery,
+  titleForModalWindow,
 }) => {
   const [currentImage, setCurrentImage] = useState(null);
 
@@ -60,7 +61,7 @@ const ModalWindowForDestopVersion = ({
           className="titleThird"
           style={{ textAlign: 'center', marginBottom: '16px' }}
         >
-          {titleForGallery}
+          {titleForModalWindow}
         </h2>
         <span className={s.closeModal} onClick={closeModal}>
           <img src={closeIcon} alt="closeIcon" />

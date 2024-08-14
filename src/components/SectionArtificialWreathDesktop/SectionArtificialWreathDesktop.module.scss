@@ -14,6 +14,7 @@
     @include mq(desk) {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
 }
 
@@ -29,4 +30,76 @@
     @include mq(desk) {
         width: 786px;
     }
+}
+
+.artificialWreathsImageListDescription {
+    @include mq(desk) {
+        width: 400px;
+        height: 560px;
+        border-radius: 20px;
+    }
+}
+
+.artificialWreathsImageListDescriptionContainer {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
+
+.artificialWreathsListContainer {
+    @include mq(desk) {
+        width: 368px;
+    }
+}
+
+.artificialWreathsListSecondContainer {
+    @include mq(desk) {
+        width: 368px;
+    }
+}
+
+.artificialWreathsListTitle {
+    @include mq(desk) {
+        font-family: Open Sans ExtraBold;
+        font-size: 16px;
+        line-height: 1.38;
+        text-align: center;
+        color: var(--primaryTextColorDark);
+        padding: 8px;
+        margin-bottom: 24px;
+    }
+}
+
+.artificialWreathsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artificialWreathsList__item {
+    @include mq(desk) {
+        width: 320px;
+        padding: 16px;
+        background-color: var(--cardBlackDark);
+        border-radius: 8px;
+        outline: 1px solid var(--secondaryTextColor);
+    }
+}
+
+.artificialWreathsList__item:not(:last-child) {
+    @include mq(desk) {
+        margin-bottom: 24px;
+    }
+
+}
+
+.artificialWreathsGalleryDesktopContainer {
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.artificialWreathsGalleryContainer {
+    display: flex;
 }

@@ -61,6 +61,7 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription,
           setSelectedImage={setSelectedImage}
           setModalOpen={setModalOpen}
           titleForGallery={titleForGallery}
+          titleForModalWindow={titleForModalWindow}
         />
       )}
 
