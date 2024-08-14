@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
-import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
+import GalleryWithTitleAndButtonMoreDetails from 'components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import s from './SectionArtificialWreath.module.scss'
 
 const ArtificialWreathsPictureList = [

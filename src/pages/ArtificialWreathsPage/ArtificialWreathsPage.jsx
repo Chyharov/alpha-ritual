@@ -4,6 +4,7 @@ import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForP
 import backgroundImg from '../../images/artificialWreaths/backgroundArtificalWreathsMob.jpg'
 import backgroundImgDesktop from 'images/artificialWreaths/artificialWreathsBackgroundDesk.png';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
+import SectionArtificialWreathDesktop from 'components/SectionArtificialWreathDesktop/SectionArtificialWreathDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -23,7 +24,8 @@ const ArtificialWreathsPage = () => {
         <main>
           <SectionTitleForPage {...titleProps} />
           <SectionTitleForDefaultPageDesktop {...titleProps}/>
-          <SectionArtificialWreath/>
+          <SectionArtificialWreath />
+          <SectionArtificialWreathDesktop />
         </main>
       <Footer />
     </>

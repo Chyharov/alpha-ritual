@@ -1,0 +1,32 @@
+@import '../../sass/utils/mixin';
+
+.sectionArtificialWreaths {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.artificialWreathsDesktopContainer {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.artificialWreathsImageDescription {
+    @include mq(desk) {
+    width: 400px;
+    height: 560px;
+    border-radius: 20px
+    }
+}
+
+.artificialWreathsImageDescriptionContainer {
+    @include mq(desk) {
+        width: 786px;
+    }
+}
