@@ -1,6 +1,8 @@
-import artificialWreathsImageDescription from '../../images/artificialWreaths/artificialWreathsImageDescription.png';
-import artificialWreathsImageListDescription from '../../images/artificialWreaths/artificialWreathsImageListDescription.png';
+import artificialWreathsImageDescription from 'images/artificialWreaths/artificialWreathsImageDescription.png';
+import artificialWreathsImageListDescription from 'images/artificialWreaths/artificialWreathsImageListDescription.png';
 import GalleryWithTitleAndButtonMoreDetails from 'components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
+import artificialWreathsblur from 'images/artificialWreaths/artificialWreathsblur.png';
+import artificialWreathsblur2 from 'images/artificialWreaths/artificialWreathsblur2.png';
 import s from './SectionArtificialWreathDesktop.module.scss';
 
 const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleForGallery, titleForModalWindow }) => {
@@ -113,6 +115,7 @@ const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleFo
               </li>
             </ul>
           </div>
+          <img className={s.artificialWreathsblur} src={artificialWreathsblur} alt="artificialWreathsblur" />
         </div>
         <p className="description" style={{ marginBottom: '40px' }}>
           Використовують трохи більше п’яти видів квіток. Не можна
@@ -164,6 +167,7 @@ const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleFo
                 titleForModalWindow={titleForModalWindow}
             />
           </div>
+          <img className={s.artificialWreathsblur2} src={artificialWreathsblur2} alt="artificialWreathsblur2" />
         </div>
       </div>
     </section>
