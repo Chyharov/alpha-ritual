@@ -287,7 +287,7 @@ const freshFlowersWreathArray = [
 const buttonDescription = 'Переглянути всі';
 const titleForGallery = 'Вінки із живих квітів';
 
-const FreshFlowersWreathPageGallery = () => {
+const ArtificialWreathGalleryPageDesktop = () => {
   return (
     <>
       <Header />
@@ -304,4 +304,4 @@ const FreshFlowersWreathPageGallery = () => {
   );
 };
 
-export default FreshFlowersWreathPageGallery;
+export default ArtificialWreathGalleryPageDesktop;

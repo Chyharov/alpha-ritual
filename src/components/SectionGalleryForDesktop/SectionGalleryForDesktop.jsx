@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
-import Modal from '../../components/ModalWindowForDestopVersion/ModalWindowForDestopVersion';
-import s from './SectionFreshFlowersWreathPageGallery.module.scss';
+import Modal from '../ModalWindowForDestopVersion/ModalWindowForDestopVersion';
+import s from './SectionGalleryForDesktop.module.scss';
 
-const SectionFreshFlowersWreathPageGallery = ({titleForGallery, buttonDescription, array}) => {
+const SectionGalleryForDesktop = ({titleForGallery, buttonDescription, array}) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -24,18 +24,18 @@ const SectionFreshFlowersWreathPageGallery = ({titleForGallery, buttonDescriptio
     : array.slice(0, 6);
 
   return (
-    <section className={s.sectionFreshFlowersWreathPageGallery}>
-      <div className={'container ' + s.freshFlowersWreathPageGalleryContainer}>
+    <section className={s.sectionGalleryForDesktop}>
+      <div className={'container ' + s.galleryForDesktopContainer}>
         <h2
           className="title"
           style={{ textAlign: 'center', marginBottom: '40px' }}
         >
           Галерея
         </h2>
-        <ul className={s.freshFlowersWreathPageGallerList}>
+        <ul className={s.galleryForDesktopList}>
           {displayedPhotos.map(photo => (
-            <li key={photo.id} className={s.freshFlowersWreathPageGallerList__item}>
-              <img src={photo.src} alt={photo.alt} className={s.freshFlowersWreathPageGallerList__itemImage} onClick={() => openModal(photo.id)}/>
+            <li key={photo.id} className={s.galleryForDesktopList__item}>
+              <img src={photo.src} alt={photo.alt} className={s.galleryForDesktopList__itemImage} onClick={() => openModal(photo.id)}/>
             </li>
           ))}
         </ul>
@@ -54,4 +54,4 @@ const SectionFreshFlowersWreathPageGallery = ({titleForGallery, buttonDescriptio
   );
 };
 
-export default SectionFreshFlowersWreathPageGallery;
+export default SectionGalleryForDesktop;

@@ -1,6 +1,6 @@
 @import '../../sass/utils/mixin';
 
-.sectionFreshFlowersWreathPageGallery {
+.sectionGalleryForDesktop {
     display: none;
 
     @include mq(desk) {
@@ -10,7 +10,7 @@
     }
 }
 
-.freshFlowersWreathPageGalleryContainer {
+.galleryForDesktopContainer {
     @include mq(desk) {
         display: flex;
         flex-direction: column;
@@ -18,7 +18,7 @@
     }
 }
 
-.freshFlowersWreathPageGallerList {
+.galleryForDesktopList {
     @include mq(desk) {
         display: grid;
         gap: 1rem;
@@ -28,7 +28,7 @@
     }
 }
 
-.freshFlowersWreathPageGallerList__itemImage {
+.galleryForDesktopList__itemImage {
     @include mq(desk) {
         width: 380px;
         height: 380px;
