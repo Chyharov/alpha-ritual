@@ -38,7 +38,7 @@ const ArtificialWreathsPictureList = [
 ];
 
 const buttonDescription = 'Переглянути всі';
-const link = '/freshFlowersWreathPageGallery'
+const link = '/artificialWreathsGalleryDesktop'
 const titleForGallery = 'Вінки із штучних квітів';
 const titleForModalWindow = 'Вінки із штучних квітів';
 
