@@ -125,23 +125,18 @@ const freshFlowersWreathArray = [
     alt: 'Зображення 21',
   },
   {
-    id: 21,
-    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop21.jpg'),
-    alt: 'Зображення 21',
-  },
-  {
     id: 22,
-    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop22.jpg'),
+    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop21.jpg'),
     alt: 'Зображення 22',
   },
   {
     id: 23,
-    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop23.jpg'),
+    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop22.jpg'),
     alt: 'Зображення 23',
   },
   {
     id: 24,
-    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop24.jpg'),
+    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop23.jpg'),
     alt: 'Зображення 24',
   },
   {
@@ -285,6 +280,7 @@ const freshFlowersWreathArray = [
     alt: 'Зображення 52',
   }
 ];
+
 const buttonDescription = 'Переглянути всі';
 const link = '/freshFlowersWreathPageGallery'
 const titleForGallery = 'Вінки із живих квітів'
@@ -298,9 +294,9 @@ const FreshFlowersWreathPage = () => {
           <main>
             <SectionTitleForPage {...titleProps} />
             <SectionTitleForDefaultPageDesktop {...titleProps}/>
-            <SectionFreshFlowersWreath />
+            <SectionFreshFlowersWreath array={freshFlowersWreathArray} />
             <SectionFreshFlowersWreathDesktop />
-          <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} titleForGallery={titleForGallery} titleForModalWindow={titleForModalWindow} />
+            <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} titleForGallery={titleForGallery} titleForModalWindow={titleForModalWindow} />
           </main>
         <Footer />
       </>

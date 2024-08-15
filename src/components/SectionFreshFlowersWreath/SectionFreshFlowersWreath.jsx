@@ -8,33 +8,6 @@ import arrowRight from '../../images/arrowRight.svg';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionFreshFlowersWreath.module.scss'
 
-const FreshFlowersWreathPictureList = [
-  { id: 1, src: require('../../images/freshFlowersWreath/freshFlowersWreath1.jpg'), alt: 'Зображення 1' },
-  { id: 2, src: require('../../images/freshFlowersWreath/freshFlowersWreath2.jpg'), alt: 'Зображення 2' },
-  { id: 3, src: require('../../images/freshFlowersWreath/freshFlowersWreath3.jpg'), alt: 'Зображення 3' },
-  { id: 4, src: require('../../images/freshFlowersWreath/freshFlowersWreath4.jpg'), alt: 'Зображення 4' },
-  { id: 5, src: require('../../images/freshFlowersWreath/freshFlowersWreath5.jpg'), alt: 'Зображення 5' },
-  { id: 6, src: require('../../images/freshFlowersWreath/freshFlowersWreath6.jpg'), alt: 'Зображення 6' },
-  { id: 7, src: require('../../images/freshFlowersWreath/freshFlowersWreath7.jpg'), alt: 'Зображення 7' },
-  { id: 8, src: require('../../images/freshFlowersWreath/freshFlowersWreath8.jpg'), alt: 'Зображення 8' },
-  { id: 9, src: require('../../images/freshFlowersWreath/freshFlowersWreath9.jpg'), alt: 'Зображення 9' },
-  { id: 10, src: require('../../images/freshFlowersWreath/freshFlowersWreath10.jpg'), alt: 'Зображення 10' },
-  { id: 11, src: require('../../images/freshFlowersWreath/freshFlowersWreath11.jpg'), alt: 'Зображення 11' },
-  { id: 12, src: require('../../images/freshFlowersWreath/freshFlowersWreath12.jpg'), alt: 'Зображення 12' },
-  { id: 13, src: require('../../images/freshFlowersWreath/freshFlowersWreath13.jpg'), alt: 'Зображення 13' },
-  { id: 14, src: require('../../images/freshFlowersWreath/freshFlowersWreath14.jpg'), alt: 'Зображення 14' },
-  { id: 15, src: require('../../images/freshFlowersWreath/freshFlowersWreath15.jpg'), alt: 'Зображення 15' },
-  { id: 16, src: require('../../images/freshFlowersWreath/freshFlowersWreath16.jpg'), alt: 'Зображення 16' },
-  { id: 17, src: require('../../images/freshFlowersWreath/freshFlowersWreath17.jpg'), alt: 'Зображення 17' },
-  { id: 18, src: require('../../images/freshFlowersWreath/freshFlowersWreath18.jpg'), alt: 'Зображення 18' },
-  { id: 19, src: require('../../images/freshFlowersWreath/freshFlowersWreath19.jpg'), alt: 'Зображення 19' },
-  { id: 20, src: require('../../images/freshFlowersWreath/freshFlowersWreath20.jpg'), alt: 'Зображення 20' },
-  { id: 21, src: require('../../images/freshFlowersWreath/freshFlowersWreath21.jpg'), alt: 'Зображення 21' },
-  { id: 22, src: require('../../images/freshFlowersWreath/freshFlowersWreath22.jpg'), alt: 'Зображення 22' },
-  { id: 23, src: require('../../images/freshFlowersWreath/freshFlowersWreath23.jpg'), alt: 'Зображення 23' },
-  { id: 24, src: require('../../images/freshFlowersWreath/freshFlowersWreath24.jpg'), alt: 'Зображення 24' },
-];
-
 const formCompositionColorRange = [
   { id: 1, title: "Сам вінок на похованні може бути будь-якої форми, найбільш традиційні три з них." },
   { id: 2, title: "Круглий – найдавніший символ нескінченності буття та відродження. Це сонце як джерело вічного життя. Круглі вінки можуть бути складені кільцем або із суцільним заповненням живими квітами." },
@@ -50,7 +23,7 @@ const howSaveFreshFlowers = [
   { id: 3, title: "Флористи поховального будинку «Альфа» підберуть для вас ідеальну композицію з живих квітів у вигляді жалобного вінка, кошика, монограми або букета на похорон. Ми вкладемо у кожну квітку свій символ, щоб ви змогли яскравіше висловити свої почуття до покійного. Ви можете купити вінок або жалобний кошик із живих квітів для покладання на похованні близької людини або замовити комплексне флористичне оформлення церемонії прощання." },
 ];
 
-const SectionFreshFlowersWreath = () => {
+const SectionFreshFlowersWreath = ({ array }) => {
   const buttonDescription = 'Детальніше';
   const buttonShowAll = 'Переглянути всі';
   const [showAll, setShowAll] = useState(false);
@@ -61,7 +34,7 @@ const SectionFreshFlowersWreath = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (id) => {
-    setSelectedImage(FreshFlowersWreathPictureList.find(image => image.id === id));
+    setSelectedImage(array.find(image => image.id === id));
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
@@ -138,11 +111,11 @@ const SectionFreshFlowersWreath = () => {
             <CarouselProvider
             naturalSlideWidth={288}
             naturalSlideHeight={288}
-            totalSlides={FreshFlowersWreathPictureList.length}
+            totalSlides={array.length}
             infinite={true}>
           
             <Slider className={s.sliderPhoto}>
-              {FreshFlowersWreathPictureList.map(photo => (
+              {array.map(photo => (
                 <Slide key={photo.id}>
                   <img src={photo.src} alt={photo.alt} onClick={() => openModal(photo.id)} />
                 </Slide>
@@ -162,7 +135,7 @@ const SectionFreshFlowersWreath = () => {
               {modalOpen && selectedImage && (
               <Modal
                 selectedImage={selectedImage}
-                arrayPhoto={FreshFlowersWreathPictureList}
+                arrayPhoto={array}
                 setSelectedImage={setSelectedImage}
                 setModalOpen={setModalOpen}
               />
