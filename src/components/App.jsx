@@ -49,7 +49,7 @@ export const App = () => {
           <Route path="/freshflowerswreathgallery" element={<FreshFlowersWreathGallery />} />
           <Route path="/artificialwreathgallery" element={<ArtificialWreathGallery />} />
           <Route path="/funeralvasesgallery" element={<FuneralVasesGalleryPage />} />
-          <Route path="/freshFlowersWreathPageGallery" element={<FreshFlowersWreathPageGallery />} />
+          <Route path="/freshFlowersWreathGallery" element={<FreshFlowersWreathPageGallery />} />
           <Route path="/artificialWreathsGalleryDesktop" element={<ArtificialWreathGalleryPageDesktop />} />
         </Routes>
       </Suspense>
