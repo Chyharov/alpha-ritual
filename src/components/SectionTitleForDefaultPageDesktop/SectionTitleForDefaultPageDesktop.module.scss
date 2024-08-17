@@ -32,7 +32,6 @@
     @include mq(desk) {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid var(--secondaryTextColor);
     }
 }
 
@@ -97,7 +96,6 @@
         margin-top: 16px;
         width: 590px;
         height: 570px;
-        margin-bottom: 80px;
         z-index: 1;
     }
 }
@@ -116,5 +114,16 @@
         left: 413px;
         width: 682px;
         height: 566px;
+    }
+}
+
+.descriptionTitle {
+    @include mq(desk) {
+        font-family: Open Sans ExtraBold;
+        font-size: 16px;
+        line-height: 1.38;
+        color: var(--secondaryTextColor);
+        padding: 8px;
+        margin-bottom: 24px;
     }
 }

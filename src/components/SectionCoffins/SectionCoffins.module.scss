@@ -3,6 +3,10 @@
 .sectionCoffinsWreaths {
     margin-top: -150px;
     padding-bottom: 80px;
+
+    @include mq(desk) {
+        display: none;
+    }
 }
 
 .coffinsContainer {
