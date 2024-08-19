@@ -1,9 +1,10 @@
-import Header from '../../components/Header/Header'
-import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
+import Header from 'components/Header/Header'
+import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImgDesktop from 'images/coffins/coffinsBackgroundDesk.png';
-import backgroundImg from '../../images/coffins/backgroundCoffinsMob.jpg';
-import SectionCoffins from '../../components/SectionCoffins/SectionCoffins';
+import backgroundImg from 'images/coffins/backgroundCoffinsMob.jpg';
+import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
+import SectionCoffinsDesktop from 'components/SectionCoffinsDesktop/SectionCoffinsDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -28,6 +29,7 @@ const CoffinsPage = () => {
           <SectionTitleForPage title={title} backgroundImg={backgroundImg} />
           <SectionTitleForDefaultPageDesktop {...titleProps}/>
           <SectionCoffins />
+          <SectionCoffinsDesktop />
         </main>
       <Footer />
     </>

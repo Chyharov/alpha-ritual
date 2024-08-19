@@ -1,0 +1,11 @@
+@import '../../sass/utils/mixin';
+
+.sectionCoffinsDesktop {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
+}
