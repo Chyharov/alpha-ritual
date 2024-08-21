@@ -20,10 +20,10 @@ const GalleryWithTitleAndButtonMoreDetails = ({ array, style, buttonDescription,
   };
 
   return (
-    <div className={s.galleryWithTitleAndButtonMoreDetailsContainer}>
+    <div className={s.galleryWithTitleAndButtonMoreDetailsContainer} style={style}>
       <h2 className='titleThird' style={{ textAlign: 'center', marginBottom: '16px' }}>{titleForGallery}</h2>
       
-      <div className={s.galleryWindowContainer} style={style}>
+      <div className={s.galleryWindowContainer}>
 
         <CarouselProvider
           naturalSlideWidth={272}
