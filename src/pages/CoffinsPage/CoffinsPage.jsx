@@ -5,6 +5,7 @@ import backgroundImgDesktop from 'images/coffins/coffinsBackgroundDesk.png';
 import backgroundImg from 'images/coffins/backgroundCoffinsMob.jpg';
 import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
 import SectionCoffinsDesktop from 'components/SectionCoffinsDesktop/SectionCoffinsDesktop';
+import SectionEliteCoffinsDesktop from 'components/SectionEliteCoffinsDesktop/SectionEliteCoffinsDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -20,8 +21,6 @@ const titleProps = {
   descriptionSecond:
     'Труна – це обов’язковий ритуальний атрибут поховання в більшості культур та релігій світу. На відміну від ісламу, де прийнято надавати тіло землі в тканинах та багатих килимах, або індуїзму, де покійного кремують у поховальному савані, у християнстві померлих ховають у дерев’яних трунах із багатим декоративним оздобленням. Урочисті шати покійного, атласні, оксамитові та шовкові тканини внутрішньої та зовнішньої оббивки – все це символ останніх почестей, наданих покійному в його останньому шляху.',
 };
-
-const title = 'Труни';
 
 const CoffinsPictureElitePrice = [
   {
@@ -167,27 +166,37 @@ const CoffinsPictureElitePrice = [
 ];
 
 const buttonDescription = 'Переглянути всі';
-const link = '/freshFlowersWreathGallery';
-const titleForGallery = 'Елітні труни';
-const titleForModalWindow = 'Елітні труни';
+const eliteCoffinsLink = '/freshFlowersWreathGallery';
+const eliteTitleForGallery = 'Елітні труни';
+const eliteTitleForModalWindow = 'Елітні труни';
+const standartCoffinsLink = '/freshFlowersWreathGallery';
+const standartTitleForGallery = 'Стандартні та недорогі бюджетні труни';
+const standartTitleForModalWindow = 'Стандартні та недорогі бюджетні труни';
 
 const CoffinsPage = () => {
   return (
     <>
       <Header />
       <main>
-        <SectionTitleForPage title={title} backgroundImg={backgroundImg} />
+        <SectionTitleForPage {...titleProps} />
         <SectionTitleForDefaultPageDesktop
           {...titleProps}
           array={CoffinsPictureElitePrice}
         />
         <SectionCoffins />
-        <SectionCoffinsDesktop
-          array={CoffinsPictureElitePrice}
+        <SectionEliteCoffinsDesktop
+          CoffinsPictureElitePrice={CoffinsPictureElitePrice}
           buttonDescription={buttonDescription}
-          link={link}
-          titleForGallery={titleForGallery}
-          titleForModalWindow={titleForModalWindow}
+          eliteCoffinsLink={eliteCoffinsLink}
+          eliteTitleForGallery={eliteTitleForGallery}
+          eliteTitleForModalWindow={eliteTitleForModalWindow}
+        />
+        <SectionCoffinsDesktop
+          CoffinsPictureElitePrice={CoffinsPictureElitePrice}
+          buttonDescription={buttonDescription}
+          standartCoffinsLink={standartCoffinsLink}
+          standartTitleForGallery={standartTitleForGallery}
+          standartTitleForModalWindow={standartTitleForModalWindow}
         />
       </main>
       <Footer />

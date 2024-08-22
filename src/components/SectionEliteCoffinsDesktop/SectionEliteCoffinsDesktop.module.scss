@@ -1,45 +1,27 @@
 @import '../../sass/utils/mixin';
 
-.sectionCoffinsDesktop {
-  display: none;
+.sectionEliteCoffinsDesktop {
+    display: none;
 
-  @include mq(desk) {
-    display: block;
-    padding-top: 80px;
-    padding-bottom: 160px;
-  }
-}
-
-.eliteCoffinsContainer {
-  @include mq(desk) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin-bottom: 40px;
-  }
-}
-
-.standartCoffinsContainerDesktop {
     @include mq(desk) {
+        display: block;
         padding-top: 80px;
-        padding-bottom: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 }
 
-.standartCoffinsContainer {
+.eliteCoffinsContainer {
     @include mq(desk) {
-        width: 692px;
-        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 40px;
     }
 }
 
 .eliteCoffinsDescriptionContainerWithGallery {
-  @include mq(desk) {
-    width: 692px;
-  }
+    @include mq(desk) {
+        width: 692px;
+    }
 }
 
 .eliteCoffinsListDesktop {
