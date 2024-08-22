@@ -1,0 +1,25 @@
+@import '../../sass/utils/mixin';
+
+.sectionStandartCoffinsDesktop {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+    padding-top: 80px;
+  }
+}
+
+.standartCoffinsContainerDesktop {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+}
+
+.standartCoffinsContainer {
+    @include mq(desk) {
+        width: 692px;
+    }
+}

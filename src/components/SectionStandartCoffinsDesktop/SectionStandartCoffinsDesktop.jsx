@@ -1,16 +1,16 @@
-import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
-import s from './SectionCoffinsDesktop.module.scss';
+import GalleryWithTitleAndButtonMoreDetails from '../GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
+import s from './SectionStandartCoffinsDesktop.module.scss';
 
-const SectionCoffinsDesktop = ({
-  CoffinsPictureElitePrice,
+const SectionStandartCoffinsDesktop = ({
+  coffinsPictureStandartPrice,
   buttonDescription,
   standartCoffinsLink,
   standartTitleForGallery,
   standartTitleForModalWindow,
 }) => {
   return (
-    <section className={s.sectionCoffinsDesktop}>
-      <div className="container">
+    <section className={s.sectionStandartCoffinsDesktop}>
+      <div className='container'>
         <div className={s.standartCoffinsContainerDesktop}>
           <div className={s.standartCoffinsContainer}>
             <h2 className="title">Стандартні та недорогі бюджетні труни</h2>
@@ -28,7 +28,7 @@ const SectionCoffinsDesktop = ({
           </div>
 
           <GalleryWithTitleAndButtonMoreDetails
-            array={CoffinsPictureElitePrice}
+            array={coffinsPictureStandartPrice}
             buttonDescription={buttonDescription}
             link={standartCoffinsLink}
             titleForGallery={standartTitleForGallery}
@@ -36,10 +36,10 @@ const SectionCoffinsDesktop = ({
             style={{ marginRight: '64px' }}
           />
         </div>
-        <div className="outline"></div>
+      <div className="outline"></div>
       </div>
     </section>
   );
 };
 
-export default SectionCoffinsDesktop;
+export default SectionStandartCoffinsDesktop;

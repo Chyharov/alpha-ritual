@@ -4,7 +4,7 @@ import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefault
 import backgroundImgDesktop from 'images/coffins/coffinsBackgroundDesk.png';
 import backgroundImg from 'images/coffins/backgroundCoffinsMob.jpg';
 import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
-import SectionCoffinsDesktop from 'components/SectionCoffinsDesktop/SectionCoffinsDesktop';
+import SectionStandartCoffinsDesktop from 'components/SectionStandartCoffinsDesktop/SectionStandartCoffinsDesktop';
 import SectionEliteCoffinsDesktop from 'components/SectionEliteCoffinsDesktop/SectionEliteCoffinsDesktop';
 import Footer from 'components/Footer/Footer';
 
@@ -165,6 +165,21 @@ const CoffinsPictureElitePrice = [
   },
 ];
 
+const coffinsPictureStandartPrice = [
+  { id: 1, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice1.jpg'), alt: 'Зображення 1' },
+  { id: 2, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice2.jpg'), alt: 'Зображення 2' },
+  { id: 3, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice3.jpg'), alt: 'Зображення 3' },
+  { id: 4, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice4.jpg'), alt: 'Зображення 4' },
+  { id: 5, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice5.jpg'), alt: 'Зображення 5' },
+  { id: 6, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice6.jpg'), alt: 'Зображення 6' },
+  { id: 7, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice7.jpg'), alt: 'Зображення 7' },
+  { id: 8, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice8.jpg'), alt: 'Зображення 8' },
+  { id: 9, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice9.jpg'), alt: 'Зображення 9' },
+  { id: 10, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice10.jpg'), alt: 'Зображення 10' },
+  { id: 11, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice11.jpg'), alt: 'Зображення 11' },
+  { id: 12, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice12.jpg'), alt: 'Зображення 12' },    
+];
+
 const buttonDescription = 'Переглянути всі';
 const eliteCoffinsLink = '/freshFlowersWreathGallery';
 const eliteTitleForGallery = 'Елітні труни';
@@ -191,8 +206,8 @@ const CoffinsPage = () => {
           eliteTitleForGallery={eliteTitleForGallery}
           eliteTitleForModalWindow={eliteTitleForModalWindow}
         />
-        <SectionCoffinsDesktop
-          CoffinsPictureElitePrice={CoffinsPictureElitePrice}
+        <SectionStandartCoffinsDesktop
+          coffinsPictureStandartPrice={coffinsPictureStandartPrice}
           buttonDescription={buttonDescription}
           standartCoffinsLink={standartCoffinsLink}
           standartTitleForGallery={standartTitleForGallery}
