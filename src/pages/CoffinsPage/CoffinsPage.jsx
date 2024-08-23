@@ -6,6 +6,7 @@ import backgroundImg from 'images/coffins/backgroundCoffinsMob.jpg';
 import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
 import SectionStandartCoffinsDesktop from 'components/SectionStandartCoffinsDesktop/SectionStandartCoffinsDesktop';
 import SectionEliteCoffinsDesktop from 'components/SectionEliteCoffinsDesktop/SectionEliteCoffinsDesktop';
+import SectionEconomCoffinsDesktop from 'components/SectionEconomCoffinsDesktop/SectionEconomCoffinsDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -180,6 +181,25 @@ const coffinsPictureStandartPrice = [
   { id: 12, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice12.jpg'), alt: 'Зображення 12' },    
 ];
 
+const coffinsPictureEconomPrice = [
+  { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice1.jpg'), alt: 'Зображення 1' },
+  { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice2.jpg'), alt: 'Зображення 2' },
+  { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice3.jpg'), alt: 'Зображення 3' },
+  { id: 4, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice4.jpg'), alt: 'Зображення 4' },
+  { id: 5, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice5.jpg'), alt: 'Зображення 5' },
+  { id: 6, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice6.jpg'), alt: 'Зображення 6' },
+  { id: 7, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice7.jpg'), alt: 'Зображення 7' },
+  { id: 8, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice8.jpg'), alt: 'Зображення 8' },
+  { id: 9, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice9.jpg'), alt: 'Зображення 9' },
+  { id: 10, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice10.jpg'), alt: 'Зображення 10' },
+  { id: 11, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice11.jpg'), alt: 'Зображення 11' }, 
+  { id: 12, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice12.jpg'), alt: 'Зображення 12' },
+  { id: 13, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice13.jpg'), alt: 'Зображення 13' },
+  { id: 14, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice14.jpg'), alt: 'Зображення 14' },
+  { id: 15, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice15.jpg'), alt: 'Зображення 15' },
+  { id: 16, src: require('../../images/coffinsEconomPrice/coffinsEconomPrice16.jpg'), alt: 'Зображення 16' },
+];
+
 const buttonDescription = 'Переглянути всі';
 const eliteCoffinsLink = '/freshFlowersWreathGallery';
 const eliteTitleForGallery = 'Елітні труни';
@@ -187,6 +207,9 @@ const eliteTitleForModalWindow = 'Елітні труни';
 const standartCoffinsLink = '/freshFlowersWreathGallery';
 const standartTitleForGallery = 'Стандартні та недорогі бюджетні труни';
 const standartTitleForModalWindow = 'Стандартні та недорогі бюджетні труни';
+const economCoffinsLink = '/freshFlowersWreathGallery';
+const economTitleForGallery = 'Економ труни';
+const economTitleForModalWindow = 'Економ труни';
 
 const CoffinsPage = () => {
   return (
@@ -209,9 +232,16 @@ const CoffinsPage = () => {
         <SectionStandartCoffinsDesktop
           coffinsPictureStandartPrice={coffinsPictureStandartPrice}
           buttonDescription={buttonDescription}
-          standartCoffinsLink={standartCoffinsLink}
+          standartCoffinsLink={standartCoffinsLink} 
           standartTitleForGallery={standartTitleForGallery}
           standartTitleForModalWindow={standartTitleForModalWindow}
+        /> 
+        <SectionEconomCoffinsDesktop
+          coffinsPictureEconomPrice={coffinsPictureEconomPrice}
+          buttonDescription={buttonDescription}
+          economCoffinsLink={economCoffinsLink} 
+          economTitleForGallery={economTitleForGallery}
+          economTitleForModalWindow={economTitleForModalWindow}
         />
       </main>
       <Footer />

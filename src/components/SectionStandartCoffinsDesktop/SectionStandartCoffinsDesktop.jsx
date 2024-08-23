@@ -13,7 +13,7 @@ const SectionStandartCoffinsDesktop = ({
       <div className='container'>
         <div className={s.standartCoffinsContainerDesktop}>
           <div className={s.standartCoffinsContainer}>
-            <h2 className="title">Стандартні та недорогі бюджетні труни</h2>
+            <h2 className="title" style={{marginBottom: '40px'}}>Стандартні та недорогі бюджетні труни</h2>
             <p className="description">
               Вартість стандартної дерев’яної ритуальної труни середнього
               цінового рівня в нашому поховальному бюро також є однією з
