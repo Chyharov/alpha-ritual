@@ -23,6 +23,8 @@ const ArtificialWreathGallery = lazy(() => import('pages/ArtificialWreathGallery
 const FuneralVasesGalleryPage = lazy(() => import('pages/FuneralVasesGalleryPage/FuneralVasesGalleryPage'));
 const FreshFlowersWreathPageGallery = lazy(() => import('pages/FreshFlowersWreathPageGallery/FreshFlowersWreathPageGallery'));
 const ArtificialWreathGalleryPageDesktop = lazy(() => import('pages/ArtificialWreathGalleryPageDesktop/ArtificialWreathGalleryPageDesktop'));
+const EliteCoffinsPageDesktop = lazy(() => import('pages/EliteCoffinsPageDesktop/EliteCoffinsPageDesktop'));
+
 
 export const App = () => {
   return (
@@ -51,6 +53,7 @@ export const App = () => {
           <Route path="/funeralvasesgallery" element={<FuneralVasesGalleryPage />} />
           <Route path="/freshFlowersWreathGallery" element={<FreshFlowersWreathPageGallery />} />
           <Route path="/artificialWreathsGalleryDesktop" element={<ArtificialWreathGalleryPageDesktop />} />
+          <Route path="/eliteCoffins" element={<EliteCoffinsPageDesktop />} />
         </Routes>
       </Suspense>
     </>

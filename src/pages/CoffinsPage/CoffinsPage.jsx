@@ -201,7 +201,7 @@ const coffinsPictureEconomPrice = [
 ];
 
 const buttonDescription = 'Переглянути всі';
-const eliteCoffinsLink = '/freshFlowersWreathGallery';
+const eliteCoffinsLink = '/eliteCoffins';
 const eliteTitleForGallery = 'Елітні труни';
 const eliteTitleForModalWindow = 'Елітні труни';
 const standartCoffinsLink = '/freshFlowersWreathGallery';
