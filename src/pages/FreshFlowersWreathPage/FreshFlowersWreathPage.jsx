@@ -282,7 +282,7 @@ const freshFlowersWreathArray = [
 ];
 
 const buttonDescription = 'Переглянути всі';
-const link = '/freshFlowersWreathGallery'
+const link = '/freshflowersgallery'
 const titleForGallery = 'Вінки із живих квітів'
 const titleForModalWindow = 'Вінки із живих квітів';
 
