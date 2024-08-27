@@ -207,7 +207,7 @@ const eliteTitleForModalWindow = 'Елітні труни';
 const standartCoffinsLink = '/standartcoffins';
 const standartTitleForGallery = 'Стандартні та недорогі бюджетні труни';
 const standartTitleForModalWindow = 'Стандартні та недорогі бюджетні труни';
-const economCoffinsLink = '/freshFlowersWreathGallery';
+const economCoffinsLink = '/economcoffins';
 const economTitleForGallery = 'Економ труни';
 const economTitleForModalWindow = 'Економ труни';
 

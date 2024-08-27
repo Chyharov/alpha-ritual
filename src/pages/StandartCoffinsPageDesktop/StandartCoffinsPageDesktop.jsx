@@ -31,7 +31,7 @@ const coffinsPictureStandartPrice = [
 ];
 
 const buttonDescription = 'Переглянути всі';
-const titleForGallery = 'Елітні труни';
+const titleForGallery = 'Стандартні труни';
 
 const StandartCoffinsPageDesktop = () => {
   return (
