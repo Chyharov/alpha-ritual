@@ -3,21 +3,6 @@ import PhotoSlider from "components/PhotoSlider/PhotoSlider";
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionCrosses.module.scss'
 
-const CrossesPictureList = [
-      { id: 1, src: require('../../images/crosses/crosses1.jpg'), alt: 'Зображення 1', width: '120', height: '90' },
-      { id: 2, src: require('../../images/crosses/crosses2.jpg'), alt: 'Зображення 2', width: '120', height: '90' },
-      { id: 3, src: require('../../images/crosses/crosses3.jpg'), alt: 'Зображення 3', width: '120', height: '90' },
-      { id: 4, src: require('../../images/crosses/crosses4.jpg'), alt: 'Зображення 4', width: '120', height: '90' },
-      { id: 5, src: require('../../images/crosses/crosses5.jpg'), alt: 'Зображення 5', width: '120', height: '90' },
-      { id: 6, src: require('../../images/crosses/crosses6.jpg'), alt: 'Зображення 6', width: '120', height: '90' },
-      { id: 7, src: require('../../images/crosses/crosses7.jpg'), alt: 'Зображення 7', width: '120', height: '90' },
-      { id: 8, src: require('../../images/crosses/crosses8.jpg'), alt: 'Зображення 8', width: '120', height: '90' },
-      { id: 9, src: require('../../images/crosses/crosses9.jpg'), alt: 'Зображення 9', width: '120', height: '90' },
-      { id: 10, src: require('../../images/crosses/crosses10.jpg'), alt: 'Зображення 10', width: '120', height: '90' },
-      { id: 11, src: require('../../images/crosses/crosses11.jpg'), alt: 'Зображення 11', width: '120', height: '90' },
-      { id: 12, src: require('../../images/crosses/crosses12.jpg'), alt: 'Зображення 12', width: '120', height: '90' },
-];
-
 const whyArtificialWreath = [
   { id: 1, title: "Жодних церковних заборон із цього приводу немає. Справа не в православних канонах, проблема виключно у практичній площині. Вилучення грунту під час копання могильної ями, а потім його повернення в могилу після поховання робить землю спушеною, а значить, об’ємною та нестабільною." },
   { id: 2, title: "Споруджувати якийсь більш-менш монументальний пам’ятник з важкого каменю на нестабільний ґрунт просто недоцільно. Монумент перекоситься, опорні блоки проваляться, а сама кам’яна композиція трісне або зовсім зруйнується. Залежно від виду ґрунту, його вологості та глибини могили процес осідання та стабілізації може зайняти від одного до п’яти років." },
@@ -32,7 +17,7 @@ const WhichRitualCross = [
   { id: 5, title: "Зовнішній вигляд ритуального хреста може бути будь-яким, але не порушуючим релігійні почуття інших православних людей – суворим, стриманим і без зайвого декору." },
 ];
   
-const SectionCrosses = () => {
+const SectionCrosses = ({ array }) => {
   const buttonDescription = 'Детальніше';
   const buttonShowAllDescription = 'Переглянути всі';
   const [showWhy, setShowWhy] = useState(false);
@@ -80,7 +65,7 @@ const SectionCrosses = () => {
 
         <h2 className='title' style={{ marginBottom: '16px', textAlign: 'center' }}>Хрести</h2>
 
-        <PhotoSlider array={CrossesPictureList} />
+        <PhotoSlider array={array} />
 
         <ButtonMoreDetails style={{ marginBottom: '64px' }} buttonDescription={buttonShowAllDescription} />  
         

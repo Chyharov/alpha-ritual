@@ -219,7 +219,6 @@ const CoffinsPage = () => {
         <SectionTitleForPage {...titleProps} />
         <SectionTitleForDefaultPageDesktop
           {...titleProps}
-          array={CoffinsPictureElitePrice}
         />
         <SectionCoffins />
         <SectionEliteCoffinsDesktop
