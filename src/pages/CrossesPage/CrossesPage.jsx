@@ -4,6 +4,7 @@ import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefault
 import backgroundImgDesktop from 'images/crosses/crossesBackgroundDesk.png';
 import backgroundImg from '../../images/crosses/CrossesBackgroundMob.jpg';
 import Crosses from '../../components/SectionCrosses/SectionCrosses';
+import SectionCrossesDesktop from 'components/SectionCrossesDesktop/SectionCrossesDesktop';
 import Footer from 'components/Footer/Footer';
 
 const CrossesPictureList = [
@@ -111,6 +112,7 @@ const CrossesPage = () => {
         <SectionTitleForPage {...titleProps} />
         <SectionTitleForDefaultPageDesktop {...titleProps} />
         <Crosses array={CrossesPictureList} />
+        <SectionCrossesDesktop />
       </main>
       <Footer />
     </>
