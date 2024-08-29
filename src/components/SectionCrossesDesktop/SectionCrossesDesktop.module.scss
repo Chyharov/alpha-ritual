@@ -6,6 +6,7 @@
     @include mq(desk) {
         display: block;
         padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -29,6 +30,60 @@
         left: 80px;
         width: 400px;
         height: 560px;
+        border-radius: 20px;
+    }
+}
+
+.crossesDescriptionList {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 196px;
+    }
+}
+
+.crossesDescriptionList__item {
+    @include mq(desk) {
+        position: sticky;
+        width: 320px;
+        height: 172px;
+        padding: 16px;
+        background-color: var(--cardBlackDark);
+        outline: 1px solid var(--secondaryTextColor);
+        border-radius: 8px;
+        z-index: 9;
+    }
+}
+
+.logoBackgroundCrosses {
+    @include mq(desk) {
+        position: absolute;
+        left: 315px;
+        bottom: 168px;
+        width: 512px;
+        height: 512px;
+    }
+}
+
+.flowersBackgroundCrosses {
+    @include mq(desk) {
+        position: absolute;
+        right: 315px;
+        bottom: 80px;
+        width: 400px;
+        height: 560px;
+        border-radius: 20px;
+        z-index: 7;
+    }
+}
+
+.blurCrossesBackground {
+    @include mq(desk) {
+        position: absolute;
+        left: 180px;
+        bottom: 286px;
+        width: 1000px;
+        height: 320px;
         border-radius: 20px;
     }
 }

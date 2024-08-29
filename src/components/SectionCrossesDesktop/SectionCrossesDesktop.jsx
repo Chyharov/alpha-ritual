@@ -1,4 +1,7 @@
 import crossesDecoratinForDescription from 'images/crosses/crossesDecoratinForDescription.jpg'
+import logoBackgroundCrosses from 'images/crosses/logoBackgroundCrosses.png'
+import flowersBackgroundCrosses from 'images/crosses/flowersBackgroundCrosses.png'
+import blurCrossesBackground from 'images/crosses/blurCrossesBackground.png'
 import s from './SectionCrossesDesktop.module.scss';
 
 const SectionCrossesDesktop = () => {
@@ -41,8 +44,24 @@ const SectionCrossesDesktop = () => {
               </div>
               <img className={s.crossesDecoratinForDescription} src={crossesDecoratinForDescription} alt="crossesDecoratinForDescription" />
               <h2 className='title' style={{ marginBottom: '40px'}}>Який ритуальний хрест краще встановлювати на могилу?</h2>
-              <p className='description'>У цьому питанні потрібно керуватися виключно особистими уподобаннями рідних та близьких покійного, православними канонами та практичними аспектами.</p>
-      </div>
+              <p className='description' style={{ marginBottom: '116px' }}>У цьому питанні потрібно керуватися виключно особистими уподобаннями рідних та близьких покійного, православними канонами та практичними аспектами.</p>
+      
+                <ul className={s.crossesDescriptionList}>
+                  <li>
+                      <li className={s.crossesDescriptionList__item} style={{marginBottom: '24px'}}><p className='secondaryDescription'>Православ’я загалом не пред’являє жодних особливих суворих правил і церковних канонів, крім того, що ритуальний могильний хрест має бути православним, якщо покійний належить саме до цієї конфесії християнства.  </p></li>
+                      <li className={s.crossesDescriptionList__item}><p className='secondaryDescription'>Висвітлення ритуального хреста, як і обряд відспівування покійного, можна провести у день поховання. Це робить священик, який приїде на церемонію прощання або безпосередньо до церкви, якщо покійного відспівують у храмі.</p></li>
+                  </li>
+                  <li>
+                      <li className={s.crossesDescriptionList__item} style={{marginBottom: '24px'}}><p className='secondaryDescription'>З погляду практичності краще вибирати довговічні матеріали чи вироби, покриті гарним захистом від руйнівних атмосферних чинників. Це особливо важливо, якщо сім’я покійного не планує встановлювати пам’ятник найближчими роками з фінансових чи інших причин.</p></li>
+                      <li className={s.crossesDescriptionList__item}><p className='secondaryDescription'>Зовнішній вигляд ритуального хреста може бути будь-яким, але не порушуючим релігійні почуття інших православних людей – суворим, стриманим і без зайвого декору.</p></li>
+                  </li>
+              </ul>
+              <img className={s.logoBackgroundCrosses} src={logoBackgroundCrosses} alt="logoBackgroundCrosses" />
+              <img className={s.flowersBackgroundCrosses} src={flowersBackgroundCrosses} alt="flowersBackgroundCrosses" />
+              <img className={s.blurCrossesBackground} src={blurCrossesBackground} alt="blurCrossesBackground" />
+
+              <div className='outline'></div>
+          </div>
     </section>
   );
 };
