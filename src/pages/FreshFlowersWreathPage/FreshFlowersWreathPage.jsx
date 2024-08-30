@@ -1,11 +1,11 @@
-import Header from '../../components/Header/Header'
+import Header from '../../components/Header/Header';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgroundDesk.png';
-import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg'
+import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg';
 import SectionFreshFlowersWreath from 'components/SectionFreshFlowersWreath/SectionFreshFlowersWreath';
 import SectionFreshFlowersWreathDesktop from 'components/SectionFreshFlowersWreathDesktop/SectionFreshFlowersWreathDesktop';
-import SectionFreshFlowersWreathDescriptionDesktop from 'components/SectionFreshFlowersWreathDescriptionDesktop/SectionFreshFlowersWreathDescriptionDesktop'
+import SectionFreshFlowersWreathDescriptionDesktop from 'components/SectionFreshFlowersWreathDescriptionDesktop/SectionFreshFlowersWreathDescriptionDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -15,7 +15,8 @@ const titleProps = {
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',
   title: 'Вінок із живих квітів',
-  description: 'Навіть для атеїстів та нерелігійних людей жалобні вінки з живих квітів на похованні – це символ поваги, вічного кохання та поваги до померлого. Квіткові композиції на церемонії прощання виконують і більш практичну функцію – згладити емоційне траурне напруження та зменшити стрес рідних та близьких покійного, які прийшли провести його в останню путь.'
+  description:
+    'Навіть для атеїстів та нерелігійних людей жалобні вінки з живих квітів на похованні – це символ поваги, вічного кохання та поваги до померлого. Квіткові композиції на церемонії прощання виконують і більш практичну функцію – згладити емоційне траурне напруження та зменшити стрес рідних та близьких покійного, які прийшли провести його в останню путь.',
 };
 
 const freshFlowersWreathArray = [
@@ -278,29 +279,55 @@ const freshFlowersWreathArray = [
     id: 52,
     src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop52.jpg'),
     alt: 'Зображення 52',
-  }
+  },
 ];
 
 const buttonDescription = 'Переглянути всі';
-const link = '/freshflowersgallery'
-const titleForGallery = 'Вінки із живих квітів'
+const link = '/freshflowersgallery';
+const titleForGallery = 'Вінки із живих квітів';
 const titleForModalWindow = 'Вінки із живих квітів';
+const titleForSectionGalleryDesktop =
+  'Як живі квіти у жалобному вінку зберігають свою свіжість?';
+const DescriptionForSectionGalleryDesktop = [
+  {
+    id: 1,
+    description:
+      'Каркас вінка із заднього боку затягнутий спеціальною декоративно-захисною тканиною, яка приховує зволожуючі блоки. Сама ж тканина перешкоджає швидкому випаровуванню вологи з рослин. Завдяки цьому живі квіти в жалобному вінку зберігають свій свіжий первісний вигляд весь час, поки триває жалобна церемонія прощання.',
+  },
+  {
+    id: 2,
+    description:
+      'Додатково до зволожуючого складу додаються спеціальні компоненти, які перешкоджають випаровуванню вологи з пелюсток та листя живих квітів у вінках. Аналогічно захищені квіткові кошики, надгробні композиції та траурні букети.',
+  },
+  {
+    id: 3,
+    description:
+      'Флористи поховального будинку «Альфа» підберуть для вас ідеальну композицію з живих квітів у вигляді жалобного вінка, кошика, монограми або букета на похорон. Ми вкладемо у кожну квітку свій символ, щоб ви змогли яскравіше висловити свої почуття до покійного. Ви можете купити вінок або жалобний кошик із живих квітів для покладання на похованні близької людини або замовити комплексне флористичне оформлення церемонії прощання.',
+  },
+];
 
 const FreshFlowersWreathPage = () => {
-
-    return (
-      <>
-        <Header />
-          <main>
-            <SectionTitleForPage {...titleProps} />
-            <SectionTitleForDefaultPageDesktop {...titleProps}/>
-            <SectionFreshFlowersWreath array={freshFlowersWreathArray} />
-            <SectionFreshFlowersWreathDesktop />
-            <SectionFreshFlowersWreathDescriptionDesktop array={freshFlowersWreathArray} buttonDescription={buttonDescription} link={link} titleForGallery={titleForGallery} titleForModalWindow={titleForModalWindow} />
-          </main>
-        <Footer />
-      </>
-    );
-  };
+  return (
+    <>
+      <Header />
+      <main>
+        <SectionTitleForPage {...titleProps} />
+        <SectionTitleForDefaultPageDesktop {...titleProps} />
+        <SectionFreshFlowersWreath array={freshFlowersWreathArray} />
+        <SectionFreshFlowersWreathDesktop />
+        <SectionFreshFlowersWreathDescriptionDesktop
+          array={freshFlowersWreathArray}
+          buttonDescription={buttonDescription}
+          link={link}
+          titleForGallery={titleForGallery}
+          titleForModalWindow={titleForModalWindow}
+          titleForSectionGalleryDesktop={titleForSectionGalleryDesktop}
+          DescriptionForSectionGalleryDesktop={DescriptionForSectionGalleryDesktop}
+        />
+      </main>
+      <Footer />
+    </>
+  );
+};
 
 export default FreshFlowersWreathPage;
