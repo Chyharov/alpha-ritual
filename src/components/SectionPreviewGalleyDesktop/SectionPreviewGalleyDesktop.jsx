@@ -1,7 +1,7 @@
-import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
-import s from './SectionFreshFlowersWreathDescriptionDesktop.module.scss';
+import GalleryWithTitleAndButtonMoreDetails from '../GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
+import s from './SectionPreviewGalleyDesktop.module.scss';
 
-const SectionFreshFlowersWreathDescriptionDesktop = ({
+const SectionPreviewGalleyDesktop = ({
   array,
   buttonDescription,
   link,
@@ -11,7 +11,7 @@ const SectionFreshFlowersWreathDescriptionDesktop = ({
   DescriptionForSectionGalleryDesktop,
 }) => {
   return (
-    <section className={s.sectionFreshFlowersWreathDescriptionDesktop}>
+    <section className={s.sectionPreviewGalleyDesktop}>
       <div className="container">
         <h2
           className="title"
@@ -20,8 +20,8 @@ const SectionFreshFlowersWreathDescriptionDesktop = ({
           {titleForSectionGalleryDesktop}
         </h2>
 
-        <div className={s.freshFlowersWreathDescriptionDesktopContainer}>
-          <div className={s.flowersWreathDescriptionContainer}>
+        <div className={s.previewGalleyDesktopContainer}>
+          <div className={s.previewGalleyDesktopDescriptionContainer}>
             {DescriptionForSectionGalleryDesktop.map(desk => (
               <p key={desk.id} className="description">
                 {desk.description}
@@ -42,4 +42,4 @@ const SectionFreshFlowersWreathDescriptionDesktop = ({
   );
 };
 
-export default SectionFreshFlowersWreathDescriptionDesktop;
+export default SectionPreviewGalleyDesktop;

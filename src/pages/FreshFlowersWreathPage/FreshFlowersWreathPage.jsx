@@ -5,7 +5,7 @@ import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgrou
 import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg';
 import SectionFreshFlowersWreath from 'components/SectionFreshFlowersWreath/SectionFreshFlowersWreath';
 import SectionFreshFlowersWreathDesktop from 'components/SectionFreshFlowersWreathDesktop/SectionFreshFlowersWreathDesktop';
-import SectionFreshFlowersWreathDescriptionDesktop from 'components/SectionFreshFlowersWreathDescriptionDesktop/SectionFreshFlowersWreathDescriptionDesktop';
+import SectionPreviewGalleyDesktop from 'components/SectionPreviewGalleyDesktop/SectionPreviewGalleyDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
@@ -315,7 +315,7 @@ const FreshFlowersWreathPage = () => {
         <SectionTitleForDefaultPageDesktop {...titleProps} />
         <SectionFreshFlowersWreath array={freshFlowersWreathArray} />
         <SectionFreshFlowersWreathDesktop />
-        <SectionFreshFlowersWreathDescriptionDesktop
+        <SectionPreviewGalleyDesktop
           array={freshFlowersWreathArray}
           buttonDescription={buttonDescription}
           link={link}
