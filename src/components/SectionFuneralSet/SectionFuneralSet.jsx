@@ -2,26 +2,9 @@ import PhotoSlider from "components/PhotoSlider/PhotoSlider";
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from './SectionFuneralSet.module.scss'
 
-const funeralSetPictureList = [
-        { id: 1, src: require('../../images/funeralSet/funeralSet1.jpg'), alt: 'Зображення 1' },
-        { id: 2, src: require('../../images/funeralSet/funeralSet2.jpg'), alt: 'Зображення 2' },
-        { id: 3, src: require('../../images/funeralSet/funeralSet3.jpg'), alt: 'Зображення 3' },
-        { id: 4, src: require('../../images/funeralSet/funeralSet4.jpg'), alt: 'Зображення 4' },
-        { id: 5, src: require('../../images/funeralSet/funeralSet5.jpg'), alt: 'Зображення 5' },
-        { id: 6, src: require('../../images/funeralSet/funeralSet6.jpg'), alt: 'Зображення 6' },
-        { id: 7, src: require('../../images/funeralSet/funeralSet7.jpg'), alt: 'Зображення 7' },
-        { id: 8, src: require('../../images/funeralSet/funeralSet8.jpg'), alt: 'Зображення 8' },
-        { id: 9, src: require('../../images/funeralSet/funeralSet9.jpg'), alt: 'Зображення 9' },
-        { id: 10, src: require('../../images/funeralSet/funeralSet10.jpg'), alt: 'Зображення 10' },
-        { id: 11, src: require('../../images/funeralSet/funeralSet11.jpg'), alt: 'Зображення 11' },
-        { id: 12, src: require('../../images/funeralSet/funeralSet12.jpg'), alt: 'Зображення 12' },
-        { id: 13, src: require('../../images/funeralSet/funeralSet13.jpg'), alt: 'Зображення 13' },
-        { id: 14, src: require('../../images/funeralSet/funeralSet14.jpg'), alt: 'Зображення 14' },
-];
-
 const buttonShowAll = 'Переглянути всі';
 
-const SectionFuneralSet = () => {
+const SectionFuneralSet = ({ array }) => {
 
     return (
         <section className={s.funeralVases}>
@@ -50,7 +33,7 @@ const SectionFuneralSet = () => {
 
           <h2 className="title" style={{ marginBottom: '16px', textAlign: 'center' }}>Поховальний набір</h2>
 
-            <PhotoSlider array={funeralSetPictureList} />   
+            <PhotoSlider array={array} />   
 
             <ButtonMoreDetails buttonDescription={buttonShowAll} />
 
