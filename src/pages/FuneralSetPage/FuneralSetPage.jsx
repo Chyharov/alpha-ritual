@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImg from '../../images/otherAttributes/OtherAttributesBackgroundMob.jpg';
-import backgroundImgDesktop from 'images/crosses/crossesBackgroundDesk.png';
+import backgroundImgDesktop from 'images/funeralSet/funeralBackgroundDesk.png';
 import SectionFuneralSet from 'components/SectionFuneralSet/SectionFuneralSet';
 import Footer from 'components/Footer/Footer';
 
