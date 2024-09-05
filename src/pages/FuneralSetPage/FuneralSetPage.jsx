@@ -42,7 +42,7 @@ const FuneralSetPage = () => {
         <SectionTitleForPage {...titleProps} />
         <SectionTitleForDefaultPageDesktop {...titleProps} />
         <SectionFuneralSet array={funeralSetPictureList} />
-        <SectionFuneralSetDesktop />
+        <SectionFuneralSetDesktop array={funeralSetPictureList}/>
         </main>
       <Footer />
     </>
