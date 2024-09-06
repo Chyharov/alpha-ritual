@@ -36,7 +36,7 @@ const funeralSetPictureList = [
 ];
 
 const buttonDescription = 'Переглянути всі';
-const link = '/freshflowersgallery';
+const link = '/funeralsetgallery';
 const titleForGallery = 'Поховальний набір';
 const titleForModalWindow = 'Поховальний набір';
 const titleForSectionGalleryDesktop =

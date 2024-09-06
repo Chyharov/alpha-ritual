@@ -32,7 +32,7 @@ const FreshFlowersWreathPictureList = [
 const buttonShowAll = 'Переглянути всі';
 
 
-const SectionFreshFlowersWreathGallery = () => {
+const SectionFreshFlowersWreathGallery = ({ array }) => {
     const [showAllPhotos, setShowAllPhotos] = useState(false);
 
     const handleClickShowAll = () => {

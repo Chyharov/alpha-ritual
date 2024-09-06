@@ -26,6 +26,7 @@ const ArtificialWreathGalleryPageDesktop = lazy(() => import('pages/ArtificialWr
 const EliteCoffinsPageDesktop = lazy(() => import('pages/EliteCoffinsPageDesktop/EliteCoffinsPageDesktop'));
 const StandartCoffinsPageDesktop = lazy(() => import('pages/StandartCoffinsPageDesktop/StandartCoffinsPageDesktop'));
 const EconomCoffinsPageDesktop = lazy(() => import('pages/EconomCoffinsPageDesktop/EconomCoffinsPageDesktop'));
+const FuneralSetGalleryPageDesktop = lazy(() => import('pages/FuneralSetGalleryPageDesktop/FuneralSetGalleryPageDesktop'));
 
 export const App = () => {
   return (
@@ -57,6 +58,7 @@ export const App = () => {
           <Route path="/elitecoffins" element={<EliteCoffinsPageDesktop />} />
           <Route path="/standartcoffins" element={<StandartCoffinsPageDesktop />} />
           <Route path="/economcoffins" element={<EconomCoffinsPageDesktop />} />
+          <Route path="/funeralsetgallery" element={<FuneralSetGalleryPageDesktop />} />
         </Routes>
       </Suspense>
     </>
