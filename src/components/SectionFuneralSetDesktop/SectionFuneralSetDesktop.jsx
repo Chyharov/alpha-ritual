@@ -2,7 +2,7 @@ import backgroundImageForDescriptionContainerDesktop from 'images/funeralSet/bac
 import funeralSetBlur from 'images/funeralSet/funeralSetBlur.png'
 import s from './SectionFuneralSetDesktop.module.scss';
 
-const SectionFuneralSetDesktop = ({ array }) => {
+const SectionFuneralSetDesktop = () => {
   return (
     <section className={s.sectionFuneralSetDesktop}>
       <div className="container">
