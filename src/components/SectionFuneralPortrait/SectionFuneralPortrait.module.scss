@@ -3,12 +3,14 @@
 .sectionFuneralPortrait {
     margin-top: -125px;
     padding-bottom: 80px;
+
+    @include mq(desk) {
+        display: none;
+    }
 }
 
 .funeralPortraitContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    @include mq(desk) {}
 }
