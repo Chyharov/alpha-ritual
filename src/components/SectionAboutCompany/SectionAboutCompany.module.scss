@@ -1,8 +1,15 @@
+@import '../../sass/utils/mixin';
+
 .sectionAboutCompany {
     margin-top: -160px;
     display: flex;
     flex-direction: column;
     padding-bottom: 80px;
+
+    @include mq(desk) {
+        margin-top: 0px;
+        padding-top: 80px;
+    }
 }
 
 .aboutCompanyTitle {
