@@ -8,7 +8,7 @@ const title = 'Додаткові послуги';
 
 const AdditionalServicesPage = () => {
   return (
-    <>
+    <>  
       <Header />
         <main>
           <SectionTitleForPage title={title} backgroundImg={backgroundImg} />
