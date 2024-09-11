@@ -3,25 +3,15 @@ import Modal from '../ModalWindow/ModalWindow'
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import s from "./SectionDecorations.module.scss"
 
-const decorationsPhotos = [
-  { id: 1, src: require('../../images/decorations/decoration1.jpg'), alt: 'Зображення 1', width: '280', height: '210' },
-  { id: 2, src: require('../../images/decorations/decoration2.jpg'), alt: 'Зображення 2', width: '280', height: '210' },
-  { id: 3, src: require('../../images/decorations/decoration3.jpg'), alt: 'Зображення 3', width: '150', height: '150' },
-  { id: 4, src: require('../../images/decorations/decoration4.jpg'), alt: 'Зображення 4', width: '280', height: '210' },
-  { id: 5, src: require('../../images/decorations/decoration5.jpg'), alt: 'Зображення 5', width: '280', height: '210' },
-  { id: 6, src: require('../../images/decorations/decoration6.jpg'), alt: 'Зображення 6', width: '280', height: '210' },
-  { id: 7, src: require('../../images/decorations/decoration7.jpg'), alt: 'Зображення 7', width: '280', height: '210' },
-];
-
 const buttonShowAll = 'Переглянути всі';
 
-const SectionDecorations = () => {
+const SectionDecorations = ({ array }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [showAllPhotos, setShowAllPhotos] = useState(false);
 
   const openModal = (id) => {
-    setSelectedImage(decorationsPhotos.find(image => image.id === id));
+    setSelectedImage(array.find(image => image.id === id));
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
   };
@@ -30,7 +20,7 @@ const SectionDecorations = () => {
     setShowAllPhotos(true);
   };
 
-  const displayedPhotos = showAllPhotos ? decorationsPhotos : decorationsPhotos.slice(0, 6);
+  const displayedPhotos = showAllPhotos ? array : array.slice(0, 6);
 
   return (
     <section className={s.sectionDecorations}>
@@ -49,7 +39,7 @@ const SectionDecorations = () => {
           {modalOpen && selectedImage && (
               <Modal
                 selectedImage={selectedImage}
-                arrayPhoto={decorationsPhotos}
+                arrayPhoto={array}
                 setSelectedImage={setSelectedImage}
                 setModalOpen={setModalOpen}
               />

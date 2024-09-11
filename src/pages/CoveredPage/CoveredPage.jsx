@@ -60,6 +60,4 @@ const CoveredPage = () => {
   );
 };
 
-
-
 export default CoveredPage;

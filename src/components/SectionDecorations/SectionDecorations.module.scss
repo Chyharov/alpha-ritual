@@ -3,6 +3,10 @@
 .sectionDecorations {
     margin-top: -420px;
     padding-bottom: 80px;
+    
+    @include mq(desk) {
+        display: none;
+    }
 }
 
 .decorationsContainer {
