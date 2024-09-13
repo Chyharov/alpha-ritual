@@ -7,6 +7,11 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 80px;
+
+  @include mq(desk) {
+    margin-top: 0px;
+    padding-top: 80px;
+  }
 }
 
 .ritualCarPark__container {
