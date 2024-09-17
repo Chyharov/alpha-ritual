@@ -3,6 +3,11 @@
 .sectionRitualServicesList {
     margin-top: -160px;
     padding-bottom: 64px;
+
+    @include mq(desk) {
+        margin-top: 0px;
+        padding-top: 80px;
+    }
 }
 
 .ritualServicesContainer {
