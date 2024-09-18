@@ -6,7 +6,10 @@
 
     @include mq(tab) {}
 
-    @include mq(desk) {}
+    @include mq(desk) {
+        margin-top: 0px;
+        padding-top: 80px;
+    }
 }
 
 .ritualServices__container {
