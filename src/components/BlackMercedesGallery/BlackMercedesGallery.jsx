@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import Modal from '../ModalWindow/ModalWindow';
+import ModalWindowForDestopVersion from '../ModalWindowForDestopVersion/ModalWindowForDestopVersion';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
 import s from './BlackMercedesGallery.module.scss';
+
+const titleForModalWindow = 'VIP';
+const subTitleForPhoto = 'Mercedes Banz Sprinter Чорний';
+const subDescriptionForPhoto = '(14 - 18 пасажирів)';
 
 const RitualCarParBlackMercedesPhoto = [
   { id: 1, src: require('../../images/blackMercedes/blackMercedes1.webp'), alt: 'Зображення 1', width: '280', height: '210' },
@@ -69,12 +73,15 @@ const BlackMercedes = ({ style }) => {
               </CarouselProvider>
             </li>
            {modalOpen && selectedImage && (
-            <Modal
+            <ModalWindowForDestopVersion
               selectedImage={selectedImage}
               arrayPhoto={RitualCarParBlackMercedesPhoto}
               setSelectedImage={setSelectedImage}
               setModalOpen={setModalOpen}
-              onImageChange={handleImageChange}
+              onImageChange={handleImageChange} 
+              titleForModalWindow={titleForModalWindow}
+              subTitleForPhoto={subTitleForPhoto}
+              subDescriptionForPhoto={subDescriptionForPhoto}
           />
         )}
     </>

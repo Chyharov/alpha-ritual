@@ -17,8 +17,9 @@ const ModalWindowForDestopVersion = ({
   arrayPhoto,
   setSelectedImage,
   setModalOpen,
-  titleForGallery,
   titleForModalWindow,
+  subTitleForPhoto,
+  subDescriptionForPhoto
 }) => {
   const [currentImage, setCurrentImage] = useState(null);
 
@@ -99,6 +100,8 @@ const ModalWindowForDestopVersion = ({
           >
             <img src={arrowNext} alt="arrowNext" />
           </ButtonNext>
+          <h3 className={s.subTitleForPhoto}>{subTitleForPhoto}</h3>
+          <p className={s.subDescriptionForPhoto}>{subDescriptionForPhoto}</p>
         </CarouselProvider>
       </div>
     </div>
