@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import Modal from '../ModalWindow/ModalWindow';
+import ModalWindowForDestopVersion from '../ModalWindowForDestopVersion/ModalWindowForDestopVersion';
 import arrowLeft from '../../images/arrowLeft.svg';
 import arrowRight from '../../images/arrowRight.svg';
 import s from './WhiteVolksWagen.module.scss';
+
+const titleForModalWindow = 'Економ клас';
+const subTitleForPhoto = 'Volkswagen Т-5 Білий';
+const subDescriptionForPhoto = '(2 - 5 пасажирів)';
 
 const whiteVolksWagenPhotos = [
   { id: 1, src: require('../../images/whiteVolksWagen/whiteVolksWagen1.webp'), alt: 'Зображення 1', width: '280', height: '210' },
@@ -59,12 +63,15 @@ const WhiteVolksWagen = ({style}) => {
       </li>
 
       {modalOpen && selectedImage && (
-        <Modal
+        <ModalWindowForDestopVersion
           selectedImage={selectedImage}
           arrayPhoto={whiteVolksWagenPhotos}
           setSelectedImage={setSelectedImage}
           setModalOpen={setModalOpen}
           onImageChange={handleImageChange}
+          titleForModalWindow={titleForModalWindow}
+          subTitleForPhoto={subTitleForPhoto}
+          subDescriptionForPhoto={subDescriptionForPhoto}
         />
       )}
     </>
