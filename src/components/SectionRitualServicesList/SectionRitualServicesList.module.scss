@@ -38,6 +38,10 @@
 .ritualServices__list {
     width: 100%;
     margin-bottom: 16px;
+
+    @include mq(tab) {
+        width: 70%;
+    }
 }
 
 .ritualServices__listItem {
@@ -128,6 +132,10 @@
 .containerInfo__list {
     width: 100%;
     margin-bottom: 24px;
+
+    @include mq(desk) {
+        width: 30%;
+    }
 }
 
 .containerInfo__listItem {
@@ -143,4 +151,9 @@
     margin-bottom: -13px;
     padding: 3px;
     background-color: var(--cardBlackDark);
+
+    @include mq(desk) {
+        display: flex;
+        justify-content: center;
+    }
 }
