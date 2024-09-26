@@ -6,7 +6,7 @@ import s from '../SectionHero/SectionHero.module.scss';
 
 const SectionHero = () => {
   return (
-    <section className={s.sectionHero}>
+    <section className={s.sectionHero} id='hero'>
       <div className={s.bgimg}>
         <div className={'container ' + s.heroImg__container}>
           <div className={s.hero__container}>
