@@ -32,7 +32,7 @@ const SectionAdditionalServices = () => {
   const displayedServices = showAll ? additionalServices : additionalServices.slice(0, 4);
 
   return (
-    <section className={s.sectionAdditionalServices}>
+    <section className={s.sectionAdditionalServices} id='additionalservices'>
       <div className={'container ' + s.ritualServices__container}>
 
         <h2 className='title' style={{ marginBottom: '24px' }}>Додаткові послуги</h2>

@@ -7,7 +7,7 @@ import s from './SectionContactsAndMap.module.scss';
 
 const SectionContactsAndMap = () => {
   return (
-    <section className={s.sectionContactsAndMap}>
+    <section className={s.sectionContactsAndMap} id='сontacts'>
         <div className={'container ' + s.contactsAndMap__container}>
               
           <address>

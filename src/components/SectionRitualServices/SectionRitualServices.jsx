@@ -124,7 +124,7 @@ const SectionRitualServices = () => {
   };
 
   return (
-    <section className={s.sectionRitualServices}>
+    <section className={s.sectionRitualServices} id='ritualservices'>
       <div className="container">
         <div className={s.ritualServicesContainer}>
           <h2 className='title' style={{ marginBottom: '40px', textAlign: 'center' }}>Ритуальні послуги</h2>

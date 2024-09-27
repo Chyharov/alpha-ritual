@@ -5,5 +5,29 @@
 
     @include mq(desk) {
         display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 8;
+        border-bottom: 1px solid var(--secondaryTextColor);
+    }
+}
+
+.header__container {
+    @include mq(desk) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu__list {
+    @include mq(desk) {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

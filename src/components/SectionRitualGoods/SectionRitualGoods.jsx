@@ -17,7 +17,7 @@ const SectionRitualGoods = () => {
   const displayedServices = showAll ? ritualServicesDescriptionArray : ritualServicesDescriptionArray.slice(0, 1);
 
   return (
-    <section className={s.sectionRitualGoods}>
+    <section className={s.sectionRitualGoods} id='ritualgoods'>
       <div className={`container ${s.ritualServicesContainer}`}>
 
         <h2 className='title' style={{ marginBottom: '16px', textAlign: 'center' }}>Ритуальні товари</h2>
