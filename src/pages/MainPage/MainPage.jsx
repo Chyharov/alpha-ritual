@@ -1,4 +1,4 @@
-import Header from 'components/Header/Header';
+import HeaderForMainPageDesktopVersion from 'components/HeaderForMainPageDesktopVersion/HeaderForMainPageDesktopVersion';
 import Hero from 'components/SectionHero/SectionHero';
 import SectionRitualGoods from 'components/SectionRitualGoods/SectionRitualGoods';
 import SectionRitualTransport from 'components/SectionRitualTransport/SectionRitualTransport';
@@ -10,7 +10,7 @@ import Footer from 'components/Footer/Footer';
 const MainPage = () => {
   return (
     <>
-      <Header />
+      <HeaderForMainPageDesktopVersion />
       <main>
         <Hero />
         <SectionRitualGoods />

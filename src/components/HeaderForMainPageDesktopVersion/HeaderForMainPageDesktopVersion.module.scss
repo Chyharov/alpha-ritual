@@ -1,0 +1,9 @@
+@import '../../sass/utils/mixin';
+
+.header {
+    display: none;
+
+    @include mq(desk) {
+        display: block;
+    }
+}
