@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import Logo from '../Logo/Logo';
+import Theme from '../NavBar/Theme';
 import s from './HeaderForMainPageDesktopVersion.module.scss';
 
 const HeaderForMainPageDesktopVersion = props => {
@@ -124,6 +125,7 @@ const HeaderForMainPageDesktopVersion = props => {
             </Link>
           </motion.li>
         </ul>
+      <Theme />
       </div>
     </header>
   );
