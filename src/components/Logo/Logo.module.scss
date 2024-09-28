@@ -6,12 +6,16 @@
   justify-content: flex-start;
 
   @include mq(desk) {
-    width: 167px;
+    width: 207px;
   }
 }
 
 .logo__text {
   margin-left: 8px;
+    @include mq(desk) {
+      height: 38px;
+      margin-right: 40px;
+    }
 }
 
 .logo__img {

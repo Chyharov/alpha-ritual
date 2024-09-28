@@ -19,15 +19,27 @@
 .header__container {
     @include mq(desk) {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 }
 
 .menu__list {
     @include mq(desk) {
-        width: 1000px;
+        width: 840px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 25px;
+    }
+}
+
+.menu__list_item {
+
+    @include mq(desk) {
+        font-family: Open Sans Regular;
+        font-size: 16px;
+        line-height: 1.38;
+        color: var(--primaryTextColorDark);
+        padding: 8px 4px;
     }
 }
