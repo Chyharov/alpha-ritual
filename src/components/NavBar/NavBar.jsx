@@ -1,21 +1,20 @@
 import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
 import Theme from './Theme';
-import s from './NavBar.module.scss'
+import s from './NavBar.module.scss';
 
 const NavMenu = () => {
-
   return (
     <>
-    <div className={s.navBar} onClick={e => e.stopPropagation()}>
-      <nav className={s.nav}>
-        <MobileNavigation />
-        <Navigation />
-      </nav>
-    </div>
+      <div className={s.navBar} onClick={e => e.stopPropagation()}>
+        <nav className={s.nav}>
+          <MobileNavigation />
+          <Navigation />
+        </nav>
+      </div>
       <Theme />
-      </>
+    </>
   );
-}
+};
 
 export default NavMenu;
