@@ -77,6 +77,15 @@
     font-family: Open Sans ExtraBold;
     font-size: 16px;
     line-height: 1.38;
+
+    @include mq(desk) {
+        font-family: Open Sans SemiBold;
+        font-size: 25px;
+        line-height: 1;
+        text-align: center;
+        padding: 8px;
+        color: var(--primaryTextColorDark);
+    }
 }
 
 .ritualServices__btnDetails {
@@ -109,6 +118,10 @@
     color: var(--primaryTextColorDark);
     padding: 8px;
     margin-bottom: 24px;
+
+    @include mq(desk) {
+        font-size: 25px;
+    }
 }
 
 .containerInfo__title {
