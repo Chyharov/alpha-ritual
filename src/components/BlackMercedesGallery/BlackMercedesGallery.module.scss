@@ -11,6 +11,10 @@
         padding: 30px 10px 30px;
         z-index: 2;
     }
+
+    @include mq(desk) {
+        width: 600px;
+    }
 }
 
 .ritualCarParkList__title {

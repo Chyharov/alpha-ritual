@@ -23,7 +23,7 @@
   }
 
   @include mq(desk) {
-    width: 1000px;
+    width: 100%;
   } 
 }
 
@@ -53,4 +53,12 @@
   @include mq(tab) {
       padding: 30px 10px 30px;
     }
+}
+
+.ritualCarParkList {
+  @include mq(desk) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
