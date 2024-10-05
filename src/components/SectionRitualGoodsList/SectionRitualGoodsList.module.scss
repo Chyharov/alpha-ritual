@@ -34,6 +34,11 @@
     color: var(--primaryTextColorDark);
     padding: 8px;
     margin-bottom: 32px;
+
+    @include mq(desk) {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
 }
 
 .ritualGoodsListItem {
@@ -41,6 +46,10 @@
     background-color: var(--cardBlackDark);
     padding: 8px;
     margin-bottom: 8px;
+
+    @include mq(desk) {
+        margin-bottom: 16px;
+    }
 }
 
 .ritualGoodsListItemDescription {
@@ -55,4 +64,12 @@
     font-size: 16px;
     line-height: 1.38;
     color: var(--secondaryTextColor);
+}
+
+.ritualGoodsList {
+    @include mq(desk) {
+        width: 700px;
+        margin-left: 16px;
+        margin-bottom: 25px;
+    }
 }
