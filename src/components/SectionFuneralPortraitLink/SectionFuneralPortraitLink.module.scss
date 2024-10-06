@@ -14,4 +14,8 @@
     background-size: cover;
     background-position: center;
     height: 478px;
+
+    @include mq(desk) {
+        background-image: none;
+    }
 }
