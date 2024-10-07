@@ -10,7 +10,7 @@ const SectionFuneralPortraitLink = () => {
     <section className={s.sectionFuneralPortraitLink}>
       <div className={'container ' + s.funeralPortrait__container}>
 
-        <h2 className="title" style={{ marginBottom: '16px', paddingTop: '430px', textAlign: 'center' }}>Портрет на поховання</h2>
+        <h2 className={'title ' + s.titleFuneralPortrait}>Портрет на поховання</h2>
 
         <p className="description" style={{ marginBottom: '24px' }}>У канонах православної віри, як і в інших світових релігіях, немає жодної згадки про необхідність наявності на поховальній церемонії прижиттєвого портрета покійного. Немає і обов’язкового перев’язування портрета чорною траурною стрічкою. Це виключно світська традиція, яка має глибоке значення.</p>
 

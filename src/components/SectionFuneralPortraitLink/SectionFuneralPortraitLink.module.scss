@@ -5,7 +5,19 @@
 
     @include mq(tab) {}
 
-    @include mq(desk) {}
+    @include mq(desk) {
+     padding-bottom: 140px;
+    }
+}
+
+.titleFuneralPortrait {
+    margin-bottom: 16px;
+    text-align: center;
+    padding-top: 430px;
+
+    @include mq(desk) {
+        padding-top: 0px;
+    }
 }
 
 .funeralPortrait__container {
@@ -17,5 +29,6 @@
 
     @include mq(desk) {
         background-image: none;
+        height: 210px;
     }
 }
