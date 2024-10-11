@@ -1,6 +1,5 @@
 import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
-import Theme from './Theme';
 import s from './NavBar.module.scss';
 
 const NavMenu = () => {
@@ -12,7 +11,6 @@ const NavMenu = () => {
           <Navigation />
         </nav>
       </div>
-      <Theme />
     </>
   );
 };
