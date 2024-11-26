@@ -20,6 +20,7 @@ const SectionHero = () => {
               <li className={s.heroNavlist__item}><a href="tel:+380442322408">+38 (044) 232 24 08</a></li>
               <li className={s.heroNavlist__item}><a href="tel:+380995069473">+38 (099) 506 94 73</a></li>
               <li className={s.heroNavlist__item}><a href="tel:+380667858127">+38 (066) 785 81 27</a></li>
+              <li className={s.heroNavlist__item}><a href="tel:+380939545423">+38 (093) 954 54 23</a></li>
             </ul>
           </nav>
           
