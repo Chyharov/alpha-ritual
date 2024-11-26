@@ -24,10 +24,6 @@
     text-align: center;
     color: var(--primaryTextColorDark);
     margin-bottom: 20px;
-
-    @include mq(desk) {
-        width: 600px;
-    }
 }
 
 .ritualCarParkList__name {
