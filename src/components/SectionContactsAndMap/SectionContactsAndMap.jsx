@@ -53,6 +53,9 @@ const SectionContactsAndMap = () => {
               <li className={s.telDescription}>
                 <a href="tel:+380667858127">+38 (066) 785 81 27</a>
               </li>
+              <li className={s.telDescription}>
+                <a href="tel:+380939545423">+38 (093) 954 54 23</a>
+              </li>
             </ul>
           </div>
           
