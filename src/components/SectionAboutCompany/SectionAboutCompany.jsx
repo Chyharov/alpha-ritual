@@ -19,6 +19,7 @@ const SectionAboutCompany = () => {
                         <li className={s.aboutCompanyListItem}><a href="tel:+380442322408">+38 (044) 232 24 08</a></li>
                         <li className={s.aboutCompanyListItem}><a href="tel:+380995062408">+38 (099) 506 24 08</a></li>
                         <li className={s.aboutCompanyListItem}><a href="tel:+380667858127">+38 (066) 785 81 27</a></li>
+                        <li className={s.aboutCompanyListItem}><a href="tel:+380939545423">+38 (093) 954 54 23</a></li>
                     </ul>
                 </div>
 
