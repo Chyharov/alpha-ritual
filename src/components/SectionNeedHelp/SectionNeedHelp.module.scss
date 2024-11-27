@@ -1,0 +1,32 @@
+@import '../../sass/utils/mixin';
+
+.sectionNeedHelp {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.sectionNeedHelpContainer {
+  background-color: var(--cardBlackDark);
+  border-radius: 30px;
+  padding: 8px;
+}
+
+.sectionNeedHelpContainerList {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #866929;
+  border-radius: 30px;
+}
+
+.phoneNumberListLink {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.phoneNumberList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-style: italic;
+}

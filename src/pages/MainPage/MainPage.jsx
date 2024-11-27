@@ -5,6 +5,7 @@ import HeaderForMainPageDesktopVersion from 'components/HeaderForMainPageDesktop
 import Hero from 'components/SectionHero/SectionHero';
 import SectionRitualGoods from 'components/SectionRitualGoods/SectionRitualGoods';
 import SectionRitualTransport from 'components/SectionRitualTransport/SectionRitualTransport';
+import SectionNeedHelp from 'components/SectionNeedHelp/SectionNeedHelp';
 import SectionRitualServices from 'components/SectionRitualServices/SectionRitualServices';
 import SectionServicesList from 'components/SectionAdditionalServices/SectionAdditionalServices';
 import SectionContactsAndMap from 'components/SectionContactsAndMap/SectionContactsAndMap';
@@ -20,6 +21,7 @@ const MainPage = () => {
         <Hero />
         <SectionRitualGoods />
         <SectionRitualTransport />
+        <SectionNeedHelp />
         <SectionRitualServices />
         <SectionServicesList />
         <SectionContactsAndMap />

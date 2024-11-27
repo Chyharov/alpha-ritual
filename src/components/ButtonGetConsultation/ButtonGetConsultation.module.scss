@@ -1,215 +1,214 @@
 @import '../../sass/utils/mixin';
 
 .getConsultation {
-    background-color: var(--hoverColor);
-    color: var(--secondaryTextColor);
-    border-radius: 8px;
-    border: none;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    width: 100%;
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
+  background-color: var(--hoverColor);
+  color: var(--secondaryTextColor);
+  border-radius: 8px;
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  font-family: Open Sans SemiBold;
+  font-size: 14px;
+  line-height: 1.43;
 
-    @include mq(tab) {
-        
-    }
+  @include mq(tab) {
+  }
 
-    @include mq(desk) {
-        width: 288px;
-        height: 48px;
-    }
+  @include mq(desk) {
+    width: 288px;
+    height: 48px;
+  }
 }
 
 .modal {
-    width: 90%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    padding: 16px 32px;
-    background-color: var(--primaryTextColorDark);
-    color: var(--backgroundColor);
-    border: 1px solid var(--hoverColor);
-    border-radius: 20px;
-    transform: translate(-50%, -50%);
-    box-shadow: var(--primaryTextShadowColor);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-style: normal;
+  width: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 16px 32px;
+  background-color: var(--primaryTextColorDark);
+  color: var(--backgroundColor);
+  border: 1px solid var(--hoverColor);
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--primaryTextShadowColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
 
-    @include mq(desk) {
-        width: 38%;
-        padding: 40px 80px;
-        z-index: 9;
-    }
+  @include mq(desk) {
+    width: 38%;
+    padding: 40px 80px;
+    z-index: 9;
+  }
 }
 
 .bgShadow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 
 .contact__list {
-    width: 240px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .contact__links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .contact__icons {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 .btn__close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
 
-    @include mq(desk) {
-        padding: 16px;
-        width: 74px;
-        height: 74px;
-    }
+  @include mq(desk) {
+    padding: 16px;
+    width: 74px;
+    height: 74px;
+  }
 }
 
 .icon__telegram {
-    fill: #3498db;
+  fill: #3498db;
 }
 
 .icon__viber {
-    fill: #8a3ab9;
+  fill: #8a3ab9;
 }
 
 .icon__whatsApp {
-    fill: #25d366;
+  fill: #25d366;
 }
 
 .contacts__btnContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @include mq(tab) {
-        width: 300px;
-    }
+  @include mq(tab) {
+    width: 300px;
+  }
 }
 
 .address__container {
-    display: none;
+  display: none;
 
-    @include mq(tab) {
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.phone__container {
+  @include mq(tab) {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
 
-    @include mq(tab) {
-        width: 300px;
-    }
+.phone__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include mq(tab) {
+    width: 300px;
+  }
 }
 
 .modalTitleContainer {
-    padding: 8px;
-    margin-bottom: 16px;
+  padding: 8px;
+  margin-bottom: 16px;
 
-    @include mq(desk) {
-        margin-bottom: 16px;
-    }
+  @include mq(desk) {
+    margin-bottom: 16px;
+  }
 }
 
 .titleNeedHelp {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 16px;
+  font-family: Open Sans SemiBold;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 16px;
 
-    @include mq(desk) {
-        font-size: 32px;
-        line-height: 1.25;
-    }
+  @include mq(desk) {
+    font-size: 32px;
+    line-height: 1.25;
+  }
 }
 
 .titleCallUs {
-    font-family: Open Sans ExtraBold;
-    font-size: 16px;
-    line-height: 1.375;
-    text-align: center;
-    margin-top: 16px;
+  font-family: Open Sans ExtraBold;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  margin-top: 16px;
 }
 
 .border {
-    width: 100%;
-    border: 1px solid var(--secondaryTextColor);
-    border-radius: 20px;
+  width: 100%;
+  border: 1px solid var(--secondaryTextColor);
+  border-radius: 20px;
 }
 
 .phoneNumberItemMain,
 .phoneNumberItem {
-    font-family: Open Sans SemiBold;
-    font-size: 14px;
-    line-height: 1.43;
-    padding: 14px 45px;
-    border-radius: 8px;
-    height: 48px
+  font-family: Open Sans SemiBold;
+  font-size: 14px;
+  line-height: 1.43;
+  padding: 14px 45px;
+  border-radius: 8px;
+  height: 48px;
 }
 
 .phoneNumberItemMain {
-    color: var(--secondaryTextColor);
-    background-color: var(--hoverColorDark);
-    margin-bottom: 16px;
+  color: var(--secondaryTextColor);
+  background-color: var(--hoverColorDark);
+  margin-bottom: 16px;
 }
 
 .phoneNumberItem {
-    border: 1px solid var(--hoverColorDark);
-    color: #22211E;
-    margin-bottom: 16px;
+  border: 1px solid var(--hoverColorDark);
+  color: #22211e;
+  margin-bottom: 16px;
 }
 
 .contact__itemDescription {
-    font-family: Open Sans Regular;
+  font-family: Open Sans Regular;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--backgroundColor);
+
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.38;
-    color: var(--backgroundColor);
-    
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: 1.38;
-    }
-    
-    @media screen and (min-width: 1360px) {
-        font-size: 16px;
-        line-height: 1.38;
-    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    font-size: 16px;
+    line-height: 1.38;
+  }
 }
 
 .phoneNumberList {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
