@@ -7,15 +7,14 @@ const SectionNeedHelp = () => {
         <div className={s.sectionNeedHelpContainer}>
           <div className={s.sectionNeedHelpContainerList}>
             <h2
-              className="title"
-              style={{ textAlign: 'center', marginBottom: '24px', fontStyle: 'italic' }}
+              className={s.needHelpTitle}
             >
               Потрібна допомога?
             </h2>
 
             <ul className={s.phoneNumberList}>
               <a className={s.phoneNumberListLink} href="tel:+380672459505">
-                <li className={s.phoneNumberItemMain}>+38 (067) 245 95 05</li>
+                <li className={s.phoneNumberItem}>+38 (067) 245 95 05</li>
               </a>
               <a className={s.phoneNumberListLink} href="tel:+380442322408">
                 <li className={s.phoneNumberItem}>+38 (044) 232 24 08</li>
