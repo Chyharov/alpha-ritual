@@ -55,15 +55,65 @@
   }
 }
 
+.phoneNumberItem:hover {
+  @include mq(desk) {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
+}
+
 .phoneNumberList {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-style: italic;
+  margin-bottom: 24px;
 
   @include mq(desk) {
     justify-content: space-between;
     flex-direction: row;
   }
+}
+
+.contact__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  @include mq(desk) {
+    margin: 0 auto 30px auto;
+    width: 500px;
+  }
+}
+
+.contact__icons {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  fill: #866929;
+
+  @include mq(desk) {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+}
+
+.contact__item:hover {
+  @include mq(desk) {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__itemDescription {
+  text-align: center;
 }
