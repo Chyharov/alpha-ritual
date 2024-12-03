@@ -4,6 +4,7 @@ import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefault
 import backgroundImgDesktop from 'images/coffins/coffinsBackgroundDesk.png';
 import backgroundImg from 'images/coffins/backgroundCoffinsMob.jpg';
 import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
+import SectionNeedHelp from 'components/SectionNeedHelp/SectionNeedHelp';
 import SectionStandartCoffinsDesktop from 'components/SectionStandartCoffinsDesktop/SectionStandartCoffinsDesktop';
 import SectionEliteCoffinsDesktop from 'components/SectionEliteCoffinsDesktop/SectionEliteCoffinsDesktop';
 import SectionEconomCoffinsDesktop from 'components/SectionEconomCoffinsDesktop/SectionEconomCoffinsDesktop';
@@ -221,6 +222,7 @@ const CoffinsPage = () => {
           {...titleProps}
         />
         <SectionCoffins />
+        <SectionNeedHelp />
         <SectionEliteCoffinsDesktop
           CoffinsPictureElitePrice={CoffinsPictureElitePrice}
           buttonDescription={buttonDescription}
