@@ -3,6 +3,7 @@ import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTit
 import SectionTitleForMainPageDesktop from 'components/SectionTitleForMainPageDesktop/SectionTitleForMainPageDesktop';
 import backgroundImgDesktop from 'images/pictHero.png'
 import SectionCoverd from 'components/SectionCovered/SectionCovered';
+import SectionNeedHelp from 'components/SectionNeedHelp/SectionNeedHelp';
 import SectionGalleryForDesktop from '../../components/SectionGalleryForDesktop/SectionGalleryForDesktop';
 import Footer from 'components/Footer/Footer';
 
@@ -49,6 +50,7 @@ const CoveredPage = () => {
         <SectionTitleForPage {...titleProps} />
         <SectionTitleForMainPageDesktop {...titleProps}/>
         <SectionCoverd array={decorationsPictureList} />
+        <SectionNeedHelp />
         <SectionGalleryForDesktop
           array={decorationsPictureList}
           buttonDescription={buttonDescription}
