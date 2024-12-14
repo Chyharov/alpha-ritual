@@ -106,7 +106,7 @@ const titleProps = {
 };
 
 const buttonDescription = 'Переглянути всі';
-const link = '/freshflowersgallery';
+const link = '/crossesgallery';
 const titleForGallery = 'Хрести';
 const titleForModalWindow = 'Хрести';
 const titleForSectionGalleryDesktop =
