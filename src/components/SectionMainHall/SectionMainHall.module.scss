@@ -1,1 +1,53 @@
 @import '../../sass/utils/mixin';
+
+
+.sectionMainHall {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    @include mq(desk) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.mainHall__container {
+    background-color: var(--cardBlackDark);
+        border-radius: 30px;
+        padding: 8px;
+}
+
+.galleryMainHall__list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+
+    @include mq(desk) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.galleryMainHall__itemImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid #866929;
+
+    @include mq(desk) {
+        width: 180px;
+        height: 180px;
+        border-radius: 30px;
+    }
+}
+
+.borderMainHall__container {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #866929;
+    border-radius: 30px;
+}
