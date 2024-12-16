@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
-import Modal from '../ModalWindowForDestopVersion/ModalWindowForDestopVersion';
+import Modal from '../ModalWindow/ModalWindow';
 import s from '../SectionMainHall/SectionMainHall.module.scss';
 
 const buttonDescription = 'Переглянути всі'
@@ -73,12 +73,6 @@ const SectionMainHall = () => {
       <div className='container'>
         <div className={s.mainHall__container}>
           <div className={s.borderMainHall__container}>
-        <h2
-          className="title"
-          style={{ textAlign: 'center', marginBottom: '40px' }}
-        >
-          SectionMainHall
-        </h2>
         <ul className={s.galleryMainHall__list}>
           {displayedPhotos.map(photo => (
             <li key={photo.id} className={s.galleryMainHall__item}>
@@ -86,7 +80,7 @@ const SectionMainHall = () => {
             </li>
           ))}
         </ul>
-        {!showAllPhotos && <ButtonMoreDetails buttonDescription={buttonDescription} style={{ width: '240px', marginTop: '40px' }} onClick={handleClickShowAll} />}
+        {!showAllPhotos && <ButtonMoreDetails buttonDescription={buttonDescription} style={{ width: '240px', marginTop: '20px' }} onClick={handleClickShowAll} />}
           {modalOpen && selectedImage && (
         <Modal
           selectedImage={selectedImage}
