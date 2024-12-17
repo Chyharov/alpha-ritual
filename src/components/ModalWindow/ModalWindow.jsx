@@ -57,7 +57,9 @@ const ModalWindow = ({ selectedImage, arrayPhoto, setSelectedImage, setModalOpen
           <Slider>
             {arrayPhoto.map((photo, id) => (
               <Slide key={id}>
-                <img className={s.modalImage} id={photo.id} src={photo.src} alt={photo.alt} />
+                <div className={s.slider}>
+                  <img className={s.modalImage} id={photo.id} src={photo.src} alt={photo.alt} />
+                </div>
               </Slide>
             ))}
           </Slider>

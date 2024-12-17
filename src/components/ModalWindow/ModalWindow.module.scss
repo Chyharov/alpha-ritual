@@ -21,12 +21,17 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     outline: 1px solid var(--primaryTextColor);
 
-    @include mq(tab) {
-        max-width: 450px;
-    }
-
     @include mq(desk) {
-        width: 700px;
+        max-width: 560px;
+    }
+}
+
+.slider {
+    @include mq(desk) {
+        max-width: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -37,8 +42,8 @@
     border-radius: 16px;
 
     @include mq(desk) {
-        width: 430px;
-        height: 430px;
+        max-width: 430px;
+        max-height: 540px;
     }
 }
 
