@@ -1,68 +1,66 @@
 @import '../../sass/utils/mixin';
 
 .galleryWindowContainer {
-    width: 100%;
-    padding: 8px 8px 24px 8px;
-    outline: 1px solid var(--secondaryTextColor);
-    border-radius: 8px;
-    margin-bottom: 24px;
+  width: 100%;
+  padding: 8px 8px 24px 8px;
+  outline: 1px solid var(--secondaryTextColor);
+  border-radius: 8px;
+  margin-bottom: 24px;
 
-    @include mq(tab) {
-        padding: 8px 8px 24px 8px;
-        width: 288px;
-        margin-bottom: 24px;
-        z-index: 1;
-        background-color: var(--cardBlackDark);
-    }
+  @include mq(tab) {
+    width: 288px;
+    z-index: 1;
+    background-color: var(--cardBlackDark);
+  }
 }
 
 .containerForButtons {
-    width: 58.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+  width: 58.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 
-    @include mq(desk) {
-        margin-top: 32px;
-    }
+  @include mq(desk) {
+    margin-top: 32px;
+  }
 }
 
 .buttonNavigation {
-    background-color: var(--backgroundColorDark);
-    border: 1px solid var(--secondaryTextColor);
-    border-radius: 16px;
-    padding: 11px;
-    cursor: pointer;
+  background-color: var(--backgroundColorDark);
+  border: 1px solid var(--secondaryTextColor);
+  border-radius: 16px;
+  padding: 11px;
+  cursor: pointer;
 
-    @include mq(tab) {
-        font-size: 25px;
-        padding: 10px;
-    }
+  @include mq(tab) {
+    font-size: 25px;
+    padding: 10px;
+  }
 }
 
 .imageGallery {
-    margin-bottom: 24px;
-    
-    @include mq(tab) {
-        width: 272px;
-    }
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    width: 272px;
+  }
 }
 
 .galleryWithTitleAndButtonMoreDetailsContainer {
-    width: 100%;
+  width: 100%;
 
-    @include mq(tab) {
-        width: 288px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 64px;
-    }
+  @include mq(tab) {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 64px;
+  }
 }
 
-.ritualServices__link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.galleryLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
