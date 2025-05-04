@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react';
+import Loader from 'components/Loader/Loader';
 import { Routes, Route } from 'react-router-dom';
 
 const MainPage = lazy(() => import('pages/MainPage/MainPage'));
@@ -32,7 +33,7 @@ const CrossesGalleryPage = lazy(() => import('pages/CrossesGalleryPage/CrossesGa
 export const App = () => {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/wreaths" element={<WreathsPage />} />
