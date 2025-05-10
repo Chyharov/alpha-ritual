@@ -8,7 +8,7 @@ import SectionRitualTransport from 'components/SectionRitualTransport/SectionRit
 import SectionMainHall from 'components/SectionMainHall/SectionMainHall';
 import SectionNeedHelp from 'components/SectionNeedHelp/SectionNeedHelp';
 import SectionRitualServices from 'components/SectionRitualServices/SectionRitualServices';
-import SectionServicesList from 'components/SectionAdditionalServices/SectionAdditionalServices';
+import SectionAdditionalServices from 'components/SectionAdditionalServices/SectionAdditionalServices';
 import SectionContactsAndMap from 'components/SectionContactsAndMap/SectionContactsAndMap';
 import Footer from 'components/Footer/Footer';
 
@@ -25,7 +25,7 @@ const MainPage = () => {
         <SectionMainHall />
         <SectionNeedHelp />
         <SectionRitualServices />
-        <SectionServicesList />
+        <SectionAdditionalServices />
         <SectionContactsAndMap />
       </main>
       <Footer />
