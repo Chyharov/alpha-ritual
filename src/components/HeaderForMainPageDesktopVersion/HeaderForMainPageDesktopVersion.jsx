@@ -104,7 +104,7 @@ const HeaderForMainPageDesktopVersion = props => {
             >
               Додаткові послуги
             </Link>
-                  </motion.li>
+          </motion.li>
 
           <motion.li
             initial={animateFrom}
@@ -124,8 +124,25 @@ const HeaderForMainPageDesktopVersion = props => {
               Контакти
             </Link>
           </motion.li>
+
+          <motion.li
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{ delay: 0.5 }}
+            className={s.menu__list_item}
+          >
+            <a
+              href="https://g.page/r/CZPKcPVX5fZBEBM/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={s.menu__list_link}
+              onClick={() => props.isMobile && props.closeMobileMenu()}
+            >
+              Відгуки
+            </a>
+          </motion.li>
         </ul>
-      <Theme />
+        <Theme />
       </div>
     </header>
   );

@@ -25,11 +25,11 @@
 
 .menu__list {
     @include mq(desk) {
-        width: 840px;
+        margin: 0 auto;
+        width: 940px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right: 25px;
     }
 }
 

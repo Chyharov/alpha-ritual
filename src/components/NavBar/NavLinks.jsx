@@ -145,6 +145,23 @@ const NavLinks = (props) => {
                     </motion.li>
                 </Link>
 
+                <Link
+                    onClick={() => props.isMobile && props.closeMobileMenu()}
+                    className={s.menu__list_link}
+                    to="https://g.page/r/CZPKcPVX5fZBEBM/review"
+                    spy={true}
+                    smooth={true}
+                    offset={getOffsetByDeviceType()}
+                    duration={500}>
+                    
+                    <motion.li 
+                        initial={animateFrom}
+                        animate={animateTo}
+                        transition={{delay: 0.50}}
+                        className={s.menu__list_item}>
+                            Відгуки
+                    </motion.li>
+                </Link>
         </ul>
     </div>
 );
