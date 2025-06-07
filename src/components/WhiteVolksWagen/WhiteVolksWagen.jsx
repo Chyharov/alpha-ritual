@@ -11,12 +11,12 @@ const subTitleForPhoto = 'Volkswagen Т-5 Білий';
 const subDescriptionForPhoto = '(2 - 5 пасажирів)';
 
 const whiteVolksWagenPhotos = [
-  { id: 1, src: require('../../images/whiteVolksWagen/whiteVolksWagen1.webp'), alt: 'Зображення 1', width: '280', height: '210' },
-  { id: 2, src: require('../../images/whiteVolksWagen/whiteVolksWagen2.webp'), alt: 'Зображення 2', width: '280', height: '210' },
-  { id: 3, src: require('../../images/whiteVolksWagen/whiteVolksWagen3.webp'), alt: 'Зображення 3', width: '150', height: '150' },
-  { id: 4, src: require('../../images/whiteVolksWagen/whiteVolksWagen4.webp'), alt: 'Зображення 4', width: '280', height: '210' },
-  { id: 5, src: require('../../images/whiteVolksWagen/whiteVolksWagen5.webp'), alt: 'Зображення 5', width: '280', height: '210' },
-  { id: 6, src: require('../../images/whiteVolksWagen/whiteVolksWagen6.webp'), alt: 'Зображення 6', width: '280', height: '210' },
+  { id: 1, src: require('../../images/whiteVolksWagen/whiteVolksWagen12025.webp'), alt: 'Зображення 1', width: '280', height: '210' },
+  { id: 2, src: require('../../images/whiteVolksWagen/whiteVolksWagen22025.webp'), alt: 'Зображення 2', width: '280', height: '210' },
+  { id: 3, src: require('../../images/whiteVolksWagen/whiteVolksWagen32025.webp'), alt: 'Зображення 3', width: '150', height: '150' },
+  { id: 4, src: require('../../images/whiteVolksWagen/whiteVolksWagen42025.webp'), alt: 'Зображення 4', width: '280', height: '210' },
+  { id: 5, src: require('../../images/whiteVolksWagen/whiteVolksWagen52025.webp'), alt: 'Зображення 5', width: '280', height: '210' },
+  { id: 6, src: require('../../images/whiteVolksWagen/whiteVolksWagen62025.webp'), alt: 'Зображення 6', width: '280', height: '210' },
 ];
 
 const WhiteVolksWagen = ({style}) => {
