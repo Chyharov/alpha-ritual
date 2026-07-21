@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Альфа-Ритуал">
+  <rect width="512" height="512" rx="56" fill="#0f172a"/>
+  <path d="M256 76 168 160h64v144h48V160h64L256 76z" fill="#f8fafc"/>
+  <path d="M144 336h224v56H144z" fill="#f59e0b"/>
+</svg>
