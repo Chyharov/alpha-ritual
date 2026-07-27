@@ -127,12 +127,12 @@ const freshFlowersWreathArray = [
   },
   {
     id: 22,
-    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop21.jpg'),
+    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop22.jpg'),
     alt: 'Зображення 22',
   },
   {
     id: 23,
-    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop22.jpg'),
+    src: require('../../images/freshFlowersWreathDesktop/freshFlowersWreathDesktop23.jpg'),
     alt: 'Зображення 23',
   },
   {

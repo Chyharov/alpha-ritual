@@ -30,7 +30,7 @@
 }
         
 .bgimg {
-  background-image: url(../../images/hero/heroBgMobile.jpg);
+  background-image: url(../../images/hero/heroBgMobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -135,6 +135,7 @@
 
   @include mq(desk) {
     display: block;
+    width: 180px;
   }
 }
 

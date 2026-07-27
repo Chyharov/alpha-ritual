@@ -1,5 +1,5 @@
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
-import heroImg from '../../images/hero/pictHero.png'
+import heroImg from '../../images/hero/heroBgMobile.png'
 import line from '../../images/Line5.svg'
 import blur from '../../images/blur.png'
 import s from '../SectionHero/SectionHero.module.scss';
