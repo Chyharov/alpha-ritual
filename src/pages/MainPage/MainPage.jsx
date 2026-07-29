@@ -13,7 +13,7 @@ import SectionContactsAndMap from 'components/SectionContactsAndMap/SectionConta
 import Footer from 'components/Footer/Footer';
 
 const MainPage = () => {
-  const isDesktop = useMediaQuery({ minWidth: 769 });
+  const isDesktop = useMediaQuery({ minWidth: 1360 });
 
   return (
     <>
