@@ -15,7 +15,6 @@
     padding-bottom: 20px;
     outline: 1px solid var(--secondaryTextColor);
   }
-
 }
 
 .header__container {
@@ -24,7 +23,7 @@
 
   @include mq(tab) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -32,5 +31,3 @@
     justify-content: space-between;
   }
 }
-
-
