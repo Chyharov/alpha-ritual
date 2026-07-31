@@ -1,21 +1,13 @@
 @import '../../sass/utils/mixin';
 
 .menu__list {
-    @include mq(mob) {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: flex-start;
-      justify-content: center;
-      width: 100%;
-    }
-
-  @include mq(tab) {
+  @include mq(mob) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 840px;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -24,11 +16,6 @@
   font-size: 16px;
   color: var(--primaryTextColorDark);
   width: 100%;
-
-  @include mq(desk) {
-    width: auto;
-    line-height: 1.38;
-  }
 }
 
 .menu__list_item {
@@ -36,57 +23,39 @@
   align-items: flex-start;
   flex-direction: column;
 
-  @include mq(mob-only) {
+  @include mq(mob) {
     border-bottom: 1px solid white;
     padding: 8px;
   }
-
-  @include mq(tab) {
-    align-items: center;
-    padding: 8px 4px;
-  }
-}
-
-.menu__list_item:not(:last-child) {
-  @include mq(tab) {
-      margin-right: 10px;
-    }
- 
 }
 
 .menu__list_item a:hover,
 .menu__list_item a:focus {
-    border-bottom: 5px solid var(--primaryTextColor);
-    margin-bottom: -5px;
+  border-bottom: 5px solid var(--primaryTextColor);
+  margin-bottom: -5px;
 }
 
 .navBar {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-    @include mq(tab) {
+@media screen and (max-width: 767px) {
+  .navBar .navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navBar .navigation {
+    display: none;
+  }
+
+  .navBar .mobileNavigation {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    }
   }
-  
-  @media screen and (max-width: 767px) {
-    .navBar .navigation {
-      display: none;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .navBar .navigation {
-      display: none;
-    }
-  
-    .navBar .mobileNavigation {
-      display: fles;
-    }
-  }
+}
 
 .navBar .mobileNavigation .hamburgerMenu {
   cursor: pointer;
@@ -104,10 +73,6 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-
-  @include mq(desk) {
-    margin-right: 0px;
-  }
 }
 
 .menuList__container {
@@ -117,25 +82,15 @@
   position: absolute;
   top: 75px;
   left: 0px;
-  background-color: var(--backgroundColorDark);
 
-  @include mq(tab) {
-    width: 840px;
-    position: static;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  background: rgba(34, 33, 30, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .nav {
   display: flex;
   align-items: center;
-
-  @include mq(tab) {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
 }
