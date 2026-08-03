@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.f6227e26.css",
-    "main.js": "./static/js/main.3a099467.js",
+    "main.js": "./static/js/main.48be5334.js",
     "static/css/535.2333c9b3.chunk.css": "./static/css/535.2333c9b3.chunk.css",
-    "static/js/535.e414881b.chunk.js": "./static/js/535.e414881b.chunk.js",
+    "static/js/535.b4496e07.chunk.js": "./static/js/535.b4496e07.chunk.js",
     "static/css/745.9b292268.chunk.css": "./static/css/745.9b292268.chunk.css",
     "static/js/745.8144a196.chunk.js": "./static/js/745.8144a196.chunk.js",
     "static/css/180.79f5cece.chunk.css": "./static/css/180.79f5cece.chunk.css",
@@ -66,7 +66,7 @@
     "static/js/319.0eef03dd.chunk.js": "./static/js/319.0eef03dd.chunk.js",
     "static/media/blurMakingFuneralWreath.png": "./static/media/blurMakingFuneralWreath.7f8929f5755f5aea7628.png",
     "static/media/blur.png": "./static/media/blur.92babc72e3bd1946bca6.png",
-    "static/media/blurRitualTransport.png": "./static/media/blurRitualTransport.b07f4bfaf58bb4c5589e.png",
+    "static/media/blurRitualTransport.png": "./static/media/blurRitualTransport.eed3b47026afc98bc428.png",
     "static/media/freshFlowersWreathDesktopblurSecond.png": "./static/media/freshFlowersWreathDesktopblurSecond.514e8afc583250a01b4e.png",
     "static/media/blurForSectionWreaths.png": "./static/media/blurForSectionWreaths.8f2a2d325b48c9aca52a.png",
     "static/media/blurCrossesBackground.png": "./static/media/blurCrossesBackground.1f642eb48140ded0bc0e.png",
@@ -376,9 +376,9 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.f6227e26.css.map": "./static/css/main.f6227e26.css.map",
-    "main.3a099467.js.map": "./static/js/main.3a099467.js.map",
+    "main.48be5334.js.map": "./static/js/main.48be5334.js.map",
     "535.2333c9b3.chunk.css.map": "./static/css/535.2333c9b3.chunk.css.map",
-    "535.e414881b.chunk.js.map": "./static/js/535.e414881b.chunk.js.map",
+    "535.b4496e07.chunk.js.map": "./static/js/535.b4496e07.chunk.js.map",
     "745.9b292268.chunk.css.map": "./static/css/745.9b292268.chunk.css.map",
     "745.8144a196.chunk.js.map": "./static/js/745.8144a196.chunk.js.map",
     "180.79f5cece.chunk.css.map": "./static/css/180.79f5cece.chunk.css.map",
@@ -442,6 +442,6 @@
   },
   "entrypoints": [
     "static/css/main.f6227e26.css",
-    "static/js/main.3a099467.js"
+    "static/js/main.48be5334.js"
   ]
 }
