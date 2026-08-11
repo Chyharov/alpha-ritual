@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.f6227e26.css",
-    "main.js": "./static/js/main.937ab144.js",
-    "static/css/535.2333c9b3.chunk.css": "./static/css/535.2333c9b3.chunk.css",
-    "static/js/535.3953d964.chunk.js": "./static/js/535.3953d964.chunk.js",
+    "main.js": "./static/js/main.d32208dd.js",
+    "static/css/124.06eda1e4.chunk.css": "./static/css/124.06eda1e4.chunk.css",
+    "static/js/124.9f78026b.chunk.js": "./static/js/124.9f78026b.chunk.js",
     "static/css/745.9b292268.chunk.css": "./static/css/745.9b292268.chunk.css",
     "static/js/745.8144a196.chunk.js": "./static/js/745.8144a196.chunk.js",
     "static/css/180.79f5cece.chunk.css": "./static/css/180.79f5cece.chunk.css",
@@ -161,14 +161,12 @@
     "static/media/freshFlowersWreathDesktop3.jpg": "./static/media/freshFlowersWreathDesktop3.f806581ca1e6ad98ba6f.jpg",
     "static/media/freshFlowersWreath3.jpg": "./static/media/freshFlowersWreath3.8ccb3bd81899b08a8836.jpg",
     "static/media/covered3.jpg": "./static/media/covered3.ecf86b7fca5ce4b66160.jpg",
-    "static/media/SectionRitualServicesGirlFlowers.png": "./static/media/SectionRitualServicesGirlFlowers.1a983779a776ba264b8c.png",
     "static/media/covered2.jpg": "./static/media/covered2.6466bc01e46f1cbda275.jpg",
     "static/media/whiteVolksWagen3.jpg": "./static/media/whiteVolksWagen3.7a9327fab4462779e29b.jpg",
     "static/media/flowersBackgroundCrosses.png": "./static/media/flowersBackgroundCrosses.23966e51497f894f3bc5.png",
     "static/media/SectionRitualServicesBlur.png": "./static/media/SectionRitualServicesBlur.3324484952c809aa6861.png",
     "static/media/covered5.jpg": "./static/media/covered5.9b15b5a2a8acb8a52123.jpg",
     "static/media/freshFlowersWreath1.jpg": "./static/media/freshFlowersWreath1.9e9f5ce5953c4055e3a8.jpg",
-    "static/media/SectionRitualServicesFlowers.png": "./static/media/SectionRitualServicesFlowers.36d2fa8f801d418f0419.png",
     "static/media/flowersRitualGoodsDesk.png": "./static/media/flowersRitualGoodsDesk.b2d40019fd72322dd206.png",
     "static/media/freshFlowersWreathDesktop.jpg": "./static/media/freshFlowersWreathDesktop.3784b254ec2e17878211.jpg",
     "static/media/freshFlowersWreathDesktop11.jpg": "./static/media/freshFlowersWreathDesktop11.f3acecfd00921f838742.jpg",
@@ -268,11 +266,13 @@
     "static/media/coffinsEconomPrice14.jpg": "./static/media/coffinsEconomPrice14.2af229b0e43b646e636f.jpg",
     "static/media/coffinsAveragePrice7.jpg": "./static/media/coffinsAveragePrice7.2172693a19374f72bd3d.jpg",
     "static/media/coffinsElitePrice10.jpg": "./static/media/coffinsElitePrice10.286803daf9076ad57d1d.jpg",
+    "static/media/SectionRitualServicesGirlFlowers.jpg": "./static/media/SectionRitualServicesGirlFlowers.b064ac98aad616a27c9e.jpg",
     "static/media/coffinsElitePrice25.jpg": "./static/media/coffinsElitePrice25.4c1e597281fff603df79.jpg",
     "static/media/coffinsAveragePrice2.jpg": "./static/media/coffinsAveragePrice2.40de66e1d971703eb615.jpg",
     "static/media/heroBg.png": "./static/media/heroBg.bbca60b69ab8ac985612.png",
     "static/media/coffinsEconomPrice9.jpg": "./static/media/coffinsEconomPrice9.7e1548d83db2bc0492ff.jpg",
     "static/media/coffinsElitePrice22.jpg": "./static/media/coffinsElitePrice22.a18c6deadc1eb5dfd161.jpg",
+    "static/media/SectionRitualServicesFlowers.jpg": "./static/media/SectionRitualServicesFlowers.058388b0405b9408be7e.jpg",
     "static/media/blackMercedes10.webp": "./static/media/blackMercedes10.78ddf42fbafd8ae2147c.webp",
     "static/media/coffinsEconomPrice12.jpg": "./static/media/coffinsEconomPrice12.abd7c9f722bcccd8debc.jpg",
     "static/media/coffinsEconomPrice11.jpg": "./static/media/coffinsEconomPrice11.012f5f87a040cb3ff9aa.jpg",
@@ -376,9 +376,9 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.f6227e26.css.map": "./static/css/main.f6227e26.css.map",
-    "main.937ab144.js.map": "./static/js/main.937ab144.js.map",
-    "535.2333c9b3.chunk.css.map": "./static/css/535.2333c9b3.chunk.css.map",
-    "535.3953d964.chunk.js.map": "./static/js/535.3953d964.chunk.js.map",
+    "main.d32208dd.js.map": "./static/js/main.d32208dd.js.map",
+    "124.06eda1e4.chunk.css.map": "./static/css/124.06eda1e4.chunk.css.map",
+    "124.9f78026b.chunk.js.map": "./static/js/124.9f78026b.chunk.js.map",
     "745.9b292268.chunk.css.map": "./static/css/745.9b292268.chunk.css.map",
     "745.8144a196.chunk.js.map": "./static/js/745.8144a196.chunk.js.map",
     "180.79f5cece.chunk.css.map": "./static/css/180.79f5cece.chunk.css.map",
@@ -442,6 +442,6 @@
   },
   "entrypoints": [
     "static/css/main.f6227e26.css",
-    "static/js/main.937ab144.js"
+    "static/js/main.d32208dd.js"
   ]
 }
