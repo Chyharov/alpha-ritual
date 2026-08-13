@@ -139,6 +139,19 @@
   }
 }
 
+// .blur {
+//   display: none;
+
+//   @include mq(desk) {
+//     display: block;
+//     position: absolute;
+//     top: 234px;
+//     right: 266px;
+//     width: 682px;
+//     height: 566px;
+//   }
+// }
+
 .blur {
   display: none;
 
@@ -147,8 +160,8 @@
     position: absolute;
     top: 234px;
     right: 266px;
-    width: 682px;
-    height: 566px;
+    width: 56.83%;
+    aspect-ratio: 682 / 566;
   }
 }
 
