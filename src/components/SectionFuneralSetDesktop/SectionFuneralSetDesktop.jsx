@@ -1,4 +1,4 @@
-import backgroundImageForDescriptionContainerDesktop from 'images/funeralSet/backgroundImageForDescriptionContainerDesktop.png'
+import backgroundImageForDescriptionContainerDesktop from 'images/funeralSet/backgroundImageForDescriptionContainerDesktop.jpg'
 import funeralSetBlur from 'images/funeralSet/funeralSetBlur.png'
 import s from './SectionFuneralSetDesktop.module.scss';
 
