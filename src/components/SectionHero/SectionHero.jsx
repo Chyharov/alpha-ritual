@@ -1,7 +1,7 @@
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
-import heroImg from '../../images/hero/heroBg.png'
+import heroImg from '../../images/hero/heroBgUpdate.png'
 import line from '../../images/Line5.svg'
-import blur from '../../images/blur.png'
+import blur from '../../images/blurUpdate.png'
 import s from '../SectionHero/SectionHero.module.scss';
 
 const SectionHero = () => {

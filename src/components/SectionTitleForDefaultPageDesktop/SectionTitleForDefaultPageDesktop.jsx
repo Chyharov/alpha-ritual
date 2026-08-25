@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import lineBottom from '../../images/Line5.svg';
-import blur from '../../images/blur.png';
+import blur from '../../images/blurUpdate.png';
 import line from '../../images/TitleForPage/Line6.svg';
 import s from './SectionTitleForDefaultPageDesktop.module.scss';
 
