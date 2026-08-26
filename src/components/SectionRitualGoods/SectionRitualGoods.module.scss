@@ -1,7 +1,7 @@
 @import '../../sass/utils/mixin';
 
 .sectionRitualGoods {
-  padding: 32px 0px 32px;
+  padding-bottom: 32px;
 
   @include mq(desk) {
     position: relative;
@@ -21,7 +21,6 @@
   }
 }
 
-
 .ritualServicesContainer {
   display: flex;
   flex-direction: column;
@@ -33,7 +32,6 @@
 }
 
 .ritualGoodsTitle {
-
   @include mq(desk) {
     font-family: Open Sans SemiBold;
     font-size: 32px;
@@ -114,10 +112,10 @@
 
 .blurRitualGoodsDesk {
   position: absolute;
-  top: 688px;
+  bottom: 140px;
   left: 150px;
   border-radius: 20px;
   z-index: 1;
-  width: 1060px;
+  width: 78%;
   height: 334px;
 }

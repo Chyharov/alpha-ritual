@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
-import blurRitualGoodsDesk from '../../images/ritualGoods/blurRitualGoodsDesk.png'
-import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDesk.png'
+import blurRitualGoodsDesk from '../../images/ritualGoods/blurRitualGoodsDeskUpdate.png'
+import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDeskUpdate.jpg'
 import logo512RitualGoodsDesk from '../../images/ritualGoods/logo512RitualGoodsDesk.svg'
 import s from './SectionRitualGoods.module.scss';
 
