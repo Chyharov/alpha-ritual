@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.45baf30f.css",
-    "main.js": "./static/js/main.b7fc2eea.js",
-    "static/css/762.28875a7f.chunk.css": "./static/css/762.28875a7f.chunk.css",
-    "static/js/762.a828d989.chunk.js": "./static/js/762.a828d989.chunk.js",
+    "main.js": "./static/js/main.6a1b0cd0.js",
+    "static/css/965.ee5c4f17.chunk.css": "./static/css/965.ee5c4f17.chunk.css",
+    "static/js/965.6e70a91c.chunk.js": "./static/js/965.6e70a91c.chunk.js",
     "static/css/745.9b292268.chunk.css": "./static/css/745.9b292268.chunk.css",
     "static/js/745.5a4dcbf1.chunk.js": "./static/js/745.5a4dcbf1.chunk.js",
     "static/css/180.79f5cece.chunk.css": "./static/css/180.79f5cece.chunk.css",
@@ -68,6 +68,7 @@
     "static/media/funeralSetBlur.png": "./static/media/funeralSetBlur.ff80b8349a11ca954be1.png",
     "static/media/blurUpdate.png": "./static/media/blurUpdate.95d2d34d9ceae30b1095.png",
     "static/media/blurRitualTransport.png": "./static/media/blurRitualTransport.eed3b47026afc98bc428.png",
+    "static/media/blurRitualGoodsDeskUpdate.png": "./static/media/blurRitualGoodsDeskUpdate.4b758503add191a58844.png",
     "static/media/freshFlowersWreathDesktopblurSecond.png": "./static/media/freshFlowersWreathDesktopblurSecond.514e8afc583250a01b4e.png",
     "static/media/blurForSectionWreaths.png": "./static/media/blurForSectionWreaths.8f2a2d325b48c9aca52a.png",
     "static/media/blurCrossesBackground.png": "./static/media/blurCrossesBackground.1f642eb48140ded0bc0e.png",
@@ -167,7 +168,6 @@
     "static/media/SectionRitualServicesBlur.png": "./static/media/SectionRitualServicesBlur.3324484952c809aa6861.png",
     "static/media/covered5.jpg": "./static/media/covered5.9b15b5a2a8acb8a52123.jpg",
     "static/media/freshFlowersWreath1.jpg": "./static/media/freshFlowersWreath1.9e9f5ce5953c4055e3a8.jpg",
-    "static/media/flowersRitualGoodsDesk.png": "./static/media/flowersRitualGoodsDesk.b2d40019fd72322dd206.png",
     "static/media/freshFlowersWreathDesktop.jpg": "./static/media/freshFlowersWreathDesktop.3784b254ec2e17878211.jpg",
     "static/media/freshFlowersWreathDesktop11.jpg": "./static/media/freshFlowersWreathDesktop11.f3acecfd00921f838742.jpg",
     "static/media/freshFlowersWreath11.jpg": "./static/media/freshFlowersWreath11.5fb7d8d5b441d5b078aa.jpg",
@@ -200,7 +200,6 @@
     "static/media/freshFlowersWreath21.jpg": "./static/media/freshFlowersWreath21.06d8860f15a05644c9d5.jpg",
     "static/media/artificialWreaths7.jpg": "./static/media/artificialWreaths7.d0b532abc2f7b11da244.jpg",
     "static/media/coffinsAveragePrice10.jpg": "./static/media/coffinsAveragePrice10.7c97e11a76432973f87f.jpg",
-    "static/media/blurRitualGoodsDesk.png": "./static/media/blurRitualGoodsDesk.f0f6e6bac4051d35c23c.png",
     "static/media/artificialWreaths4.jpg": "./static/media/artificialWreaths4.2ce7d6a2508619d5f153.jpg",
     "static/media/artificialWreaths5.jpg": "./static/media/artificialWreaths5.a7350fa5a8d370ce348f.jpg",
     "static/media/freshFlowersWreathDesktop17.jpg": "./static/media/freshFlowersWreathDesktop17.01e9182001eabddd08dd.jpg",
@@ -270,6 +269,7 @@
     "static/media/coffinsAveragePrice2.jpg": "./static/media/coffinsAveragePrice2.40de66e1d971703eb615.jpg",
     "static/media/heroBgUpdate.png": "./static/media/heroBgUpdate.0e52db45113a7f86e351.png",
     "static/media/coffinsEconomPrice9.jpg": "./static/media/coffinsEconomPrice9.7e1548d83db2bc0492ff.jpg",
+    "static/media/flowersRitualGoodsDeskUpdate.jpg": "./static/media/flowersRitualGoodsDeskUpdate.10b2baa7aec0efbb516d.jpg",
     "static/media/coffinsElitePrice22.jpg": "./static/media/coffinsElitePrice22.a18c6deadc1eb5dfd161.jpg",
     "static/media/SectionRitualServicesFlowers.jpg": "./static/media/SectionRitualServicesFlowers.058388b0405b9408be7e.jpg",
     "static/media/blackMercedes10.webp": "./static/media/blackMercedes10.78ddf42fbafd8ae2147c.webp",
@@ -376,9 +376,9 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.45baf30f.css.map": "./static/css/main.45baf30f.css.map",
-    "main.b7fc2eea.js.map": "./static/js/main.b7fc2eea.js.map",
-    "762.28875a7f.chunk.css.map": "./static/css/762.28875a7f.chunk.css.map",
-    "762.a828d989.chunk.js.map": "./static/js/762.a828d989.chunk.js.map",
+    "main.6a1b0cd0.js.map": "./static/js/main.6a1b0cd0.js.map",
+    "965.ee5c4f17.chunk.css.map": "./static/css/965.ee5c4f17.chunk.css.map",
+    "965.6e70a91c.chunk.js.map": "./static/js/965.6e70a91c.chunk.js.map",
     "745.9b292268.chunk.css.map": "./static/css/745.9b292268.chunk.css.map",
     "745.5a4dcbf1.chunk.js.map": "./static/js/745.5a4dcbf1.chunk.js.map",
     "180.79f5cece.chunk.css.map": "./static/css/180.79f5cece.chunk.css.map",
@@ -442,6 +442,6 @@
   },
   "entrypoints": [
     "static/css/main.45baf30f.css",
-    "static/js/main.b7fc2eea.js"
+    "static/js/main.6a1b0cd0.js"
   ]
 }
