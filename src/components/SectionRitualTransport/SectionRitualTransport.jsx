@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import BlackMercedesGallery from "components/BlackMercedesGallery/BlackMercedesGallery";
 import WhiteVolksWagen from "components/WhiteVolksWagen/WhiteVolksWagen";
-import blurRitualTransport from '../../images/ritualTransport/blurRitualTransport.png'
+import blurRitualTransport from '../../images/ritualTransport/blurRitualTransportUpdate.png'
 import s from './SectionRitualTransport.module.scss';
 
 const ritualTransportDescriptionArray = [
