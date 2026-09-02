@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import whiteFlowersForSectionAdditionalService from '../../images/additionalServices/whiteFlowersForSectionAdditionalService.jpg'
-import whiteFlowerForSectionAdditionalService from '../../images/additionalServices/whiteFlowerForSectionAdditionalService.jpg'
+import whiteFlowerForSectionAdditionalService from '../../images/additionalServices/whiteFlowerForSectionAdditionalServiceUpdate.jpg'
 import blurForSectionAdditionalService from '../../images/additionalServices/blurForSectionAdditionalService.svg'
 import s from './SectionAdditionalServices.module.scss';
 
