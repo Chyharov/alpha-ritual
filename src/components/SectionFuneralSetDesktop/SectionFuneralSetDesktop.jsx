@@ -1,5 +1,5 @@
-import backgroundImageForDescriptionContainerDesktop from 'images/funeralSet/backgroundImageForDescriptionContainerDesktop.jpg'
-import funeralSetBlur from 'images/funeralSet/funeralSetBlur.png'
+import backgroundImageForDescriptionContainerDesktop from 'images/funeralSet/backgroundImageForDescriptionContainerDesktopUpdate.jpg'
+import funeralSetBlur from 'images/funeralSet/funeralSetBlurUpdate.png'
 import s from './SectionFuneralSetDesktop.module.scss';
 
 const SectionFuneralSetDesktop = () => {
