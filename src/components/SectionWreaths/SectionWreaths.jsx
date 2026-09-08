@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import freshflowerswreathImg from '../../images/wreaths/freshflowerswreathImg.jpg'
 import artificialwreathsImg from '../../images/wreaths/artificialwreathsImg.jpg'
-import frontViewWreathsDesktop from '../../images/wreaths/frontViewWreathsDesktop.jpg'
+import frontViewWreathsDesktop from '../../images/wreaths/frontViewWreathsDesktopUpdate.jpg'
 import blurForSectionWreaths from '../../images/wreaths/blurForSectionWreaths.png'
 import s from './SectionWreaths.module.scss'
 
