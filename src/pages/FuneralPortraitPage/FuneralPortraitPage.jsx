@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImg from '../../images/otherAttributes/FuneralPortraitBackgroundMob.jpg';
-import backgroundImgDesktop from 'images/otherAttributes/funeralPortraitBackgroundDesk.png';
+import backgroundImgDesktop from 'images/funeralPortrait/funeralPortraitBackgroundDesk.png';
 import SectionFuneralPortrait from 'components/SectionFuneralPortrait/SectionFuneralPortrait';
 import SectionFuneralPortraitDesktop from 'components/SectionFuneralPortraitDesktop/SectionFuneralPortraitDesktop'
 import Footer from 'components/Footer/Footer';

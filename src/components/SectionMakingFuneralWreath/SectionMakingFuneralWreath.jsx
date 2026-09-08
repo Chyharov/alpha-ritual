@@ -1,8 +1,8 @@
 import React from 'react';
 import fronImgMakingFuneralWreath from '../../images/makingFuneralWreath/fronImgMakingFuneralWreath.jpg';
-import fronImgMakingFuneralWreathSecond from '../../images/makingFuneralWreath/fronImgMakingFuneralWreathSecond.jpg';
-import rectangleMakingFuneralWreath from '../../images/makingFuneralWreath/rectangleMakingFuneralWreath.png';
-import blurMakingFuneralWreath from '../../images/makingFuneralWreath/blurMakingFuneralWreath.png';
+import fronImgMakingFuneralWreathSecond from '../../images/makingFuneralWreath/fronImgMakingFuneralWreathSecondUpdate.jpg';
+import rectangleMakingFuneralWreath from '../../images/makingFuneralWreath/rectangleMakingFuneralWreathUpdate.png';
+import blurMakingFuneralWreath from '../../images/makingFuneralWreath/blurMakingFuneralWreathUpdate.png';
 import s from './SectionMakingFuneralWreath.jsx.module.scss';
 
 const wreathsMakingDescriptionArray = [
