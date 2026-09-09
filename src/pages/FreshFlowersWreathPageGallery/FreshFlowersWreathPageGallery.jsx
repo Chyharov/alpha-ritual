@@ -1,6 +1,6 @@
 import Header from '../../components/Header/Header';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
-import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgroundDesk.png';
+import backgroundImgDesktop from 'images/freshFlowersWreath/freshWreathsBackgroundDeskUpdate.png';
 import backgroundImg from '../../images/freshFlowersWreath/freshFlowersWreathBackgroundMob.jpg';
 import SectionGalleryForDesktop from '../../components/SectionGalleryForDesktop/SectionGalleryForDesktop';
 import Footer from 'components/Footer/Footer';
