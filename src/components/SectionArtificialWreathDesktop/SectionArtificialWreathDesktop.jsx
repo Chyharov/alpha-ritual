@@ -1,8 +1,8 @@
-import artificialWreathsImageDescription from 'images/artificialWreaths/artificialWreathsImageDescription.png';
-import artificialWreathsImageListDescription from 'images/artificialWreaths/artificialWreathsImageListDescription.png';
+import artificialWreathsImageDescription from 'images/artificialWreaths/artificialWreathsImageDescriptionUpdate.png';
+import artificialWreathsImageListDescription from 'images/artificialWreaths/artificialWreathsImageListDescriptionUpdate.png';
 import GalleryWithTitleAndButtonMoreDetails from 'components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import artificialWreathsblur from 'images/artificialWreaths/artificialWreathsblur.png';
-import artificialWreathsblur2 from 'images/artificialWreaths/artificialWreathsblur2.png';
+import artificialWreathsblur2 from 'images/artificialWreaths/artificialWreathsblur2Update.png';
 import s from './SectionArtificialWreathDesktop.module.scss';
 
 const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleForGallery, titleForModalWindow }) => {
