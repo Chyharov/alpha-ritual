@@ -1,6 +1,6 @@
 import Header from '../../components/Header/Header';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
-import backgroundImgDesktop from 'images/crosses/crossesBackgroundDesk.png';
+import backgroundImgDesktop from 'images/crosses/crossesBackgroundDesktopUpdate.png';
 import backgroundImg from '../../images/crosses/CrossesBackgroundMob.jpg';
 import SectionGalleryForDesktop from '../../components/SectionGalleryForDesktop/SectionGalleryForDesktop';
 import Footer from 'components/Footer/Footer';
