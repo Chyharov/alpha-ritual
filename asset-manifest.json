@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.45baf30f.css",
-    "main.js": "./static/js/main.5a418652.js",
+    "main.js": "./static/js/main.e81702f4.js",
     "static/css/802.e5bd268a.chunk.css": "./static/css/802.e5bd268a.chunk.css",
     "static/js/802.3100ac3b.chunk.js": "./static/js/802.3100ac3b.chunk.js",
     "static/css/833.12e1f812.chunk.css": "./static/css/833.12e1f812.chunk.css",
     "static/js/833.46cce3ff.chunk.js": "./static/js/833.46cce3ff.chunk.js",
-    "static/css/180.79f5cece.chunk.css": "./static/css/180.79f5cece.chunk.css",
-    "static/js/180.94882962.chunk.js": "./static/js/180.94882962.chunk.js",
+    "static/css/221.de4a6846.chunk.css": "./static/css/221.de4a6846.chunk.css",
+    "static/js/221.3cdf1390.chunk.js": "./static/js/221.3cdf1390.chunk.js",
     "static/css/558.bbe3f915.chunk.css": "./static/css/558.bbe3f915.chunk.css",
     "static/js/558.a3116cec.chunk.js": "./static/js/558.a3116cec.chunk.js",
     "static/css/817.df1b1c3f.chunk.css": "./static/css/817.df1b1c3f.chunk.css",
@@ -76,6 +76,7 @@
     "static/media/decoration1.jpg": "./static/media/decoration1.e7616c097ee8f4eadd86.jpg",
     "static/media/funeralSetUpdate12.jpg": "./static/media/funeralSetUpdate12.c1460c513d13b8b304ce.jpg",
     "static/media/freshWreathsBackgroundDesktopUpdate.png": "./static/media/freshWreathsBackgroundDesktopUpdate.fd38747406f91d89e830.png",
+    "static/media/coffinsBackgroundDesktopUpdate.png": "./static/media/coffinsBackgroundDesktopUpdate.e4097683af21a5782708.png",
     "static/media/funeralSetUpdate10.jpg": "./static/media/funeralSetUpdate10.3aa23d3f409d6dfc5849.jpg",
     "static/media/freshFlowersWreathDesktopUpdate42.jpg": "./static/media/freshFlowersWreathDesktopUpdate42.d03a8894774e30b140e9.jpg",
     "static/media/freshFlowersWreathUpdate42.jpg": "./static/media/freshFlowersWreathUpdate42.d03a8894774e30b140e9.jpg",
@@ -404,13 +405,13 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.45baf30f.css.map": "./static/css/main.45baf30f.css.map",
-    "main.5a418652.js.map": "./static/js/main.5a418652.js.map",
+    "main.e81702f4.js.map": "./static/js/main.e81702f4.js.map",
     "802.e5bd268a.chunk.css.map": "./static/css/802.e5bd268a.chunk.css.map",
     "802.3100ac3b.chunk.js.map": "./static/js/802.3100ac3b.chunk.js.map",
     "833.12e1f812.chunk.css.map": "./static/css/833.12e1f812.chunk.css.map",
     "833.46cce3ff.chunk.js.map": "./static/js/833.46cce3ff.chunk.js.map",
-    "180.79f5cece.chunk.css.map": "./static/css/180.79f5cece.chunk.css.map",
-    "180.94882962.chunk.js.map": "./static/js/180.94882962.chunk.js.map",
+    "221.de4a6846.chunk.css.map": "./static/css/221.de4a6846.chunk.css.map",
+    "221.3cdf1390.chunk.js.map": "./static/js/221.3cdf1390.chunk.js.map",
     "558.bbe3f915.chunk.css.map": "./static/css/558.bbe3f915.chunk.css.map",
     "558.a3116cec.chunk.js.map": "./static/js/558.a3116cec.chunk.js.map",
     "817.df1b1c3f.chunk.css.map": "./static/css/817.df1b1c3f.chunk.css.map",
@@ -470,6 +471,6 @@
   },
   "entrypoints": [
     "static/css/main.45baf30f.css",
-    "static/js/main.5a418652.js"
+    "static/js/main.e81702f4.js"
   ]
 }
