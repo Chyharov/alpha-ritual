@@ -15,7 +15,7 @@ const titleProps = {
   description: 'Труна не обов’язково повинна бути елітною з цінних порід дерева з багатою внутрішньою оббивкою вишуканими тканинами. Це може бути і зовсім недорога труна. При цьому його скромне, але урочисте оформлення недорогими тканинами, що відповідають жалобній церемонії, підкреслить всю повноту поваги до покійного.'
 };
 
-const CoffinsPictureEconomPrice = [
+const coffinsPictureEconomPrice = [
   { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate.jpg'), alt: 'coffinsEconomPriceUpdate' },
   { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate2.jpg'), alt: 'coffinsEconomPriceUpdate2' },
   { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate3.jpg'), alt: 'coffinsEconomPriceUpdate3' },
@@ -44,7 +44,7 @@ const EconomCoffinsPageDesktop = () => {
       <main>
         <SectionTitleForDefaultPageDesktop {...titleProps} />
         <SectionGalleryForDesktop
-          array={CoffinsPictureEconomPrice}
+          array={coffinsPictureEconomPrice}
           buttonDescription={buttonDescription}
           titleForGallery={titleForGallery}
         />

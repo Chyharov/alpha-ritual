@@ -49,7 +49,7 @@ const coffinsPictureAveragePrice = [
   { id: 12, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice12.jpg'), alt: 'Зображення 12' },    
 ];
   
-const CoffinsPictureEconomPrice = [
+const coffinsPictureEconomPrice = [
   { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate.jpg'), alt: 'coffinsEconomPriceUpdate' },
   { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate2.jpg'), alt: 'coffinsEconomPriceUpdate2' },
   { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate3.jpg'), alt: 'coffinsEconomPriceUpdate3' },
@@ -189,7 +189,7 @@ const SectionCoffins = () => {
           )}
 
           <GalleryWindow 
-            array={CoffinsPictureEconomPrice}
+            array={coffinsPictureEconomPrice}
             title="Економ труни"
             material="Матеріал"
             materialDescription="дерев’яна заготівля, оббита тканиною (шовк, атлас, велюр, парча)"

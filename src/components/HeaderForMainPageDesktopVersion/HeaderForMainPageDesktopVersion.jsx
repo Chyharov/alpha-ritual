@@ -115,7 +115,7 @@ const HeaderForMainPageDesktopVersion = props => {
             <Link
               onClick={() => props.isMobile && props.closeMobileMenu()}
               className={s.menu__list_link}
-              to="сontacts"
+              to="contacts"
               spy={true}
               smooth={true}
               offset={-70}

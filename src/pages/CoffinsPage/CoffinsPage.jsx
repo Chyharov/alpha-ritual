@@ -182,7 +182,7 @@ const coffinsPictureStandartPrice = [
   { id: 12, src: require('../../images/coffinsAveragePrice/coffinsAveragePrice12.jpg'), alt: 'Зображення 12' },    
 ];
 
-const CoffinsPictureEconomPrice = [
+const coffinsPictureEconomPrice = [
   { id: 1, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate.jpg'), alt: 'coffinsEconomPriceUpdate' },
   { id: 2, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate2.jpg'), alt: 'coffinsEconomPriceUpdate2' },
   { id: 3, src: require('../../images/coffinsEconomPrice/coffinsEconomPriceUpdate3.jpg'), alt: 'coffinsEconomPriceUpdate3' },
@@ -238,7 +238,7 @@ const CoffinsPage = () => {
           standartTitleForModalWindow={standartTitleForModalWindow}
         /> 
         <SectionEconomCoffinsDesktop
-          coffinsPictureEconomPrice={CoffinsPictureEconomPrice}
+          coffinsPictureEconomPrice={coffinsPictureEconomPrice}
           buttonDescription={buttonDescription}
           economCoffinsLink={economCoffinsLink} 
           economTitleForGallery={economTitleForGallery}
