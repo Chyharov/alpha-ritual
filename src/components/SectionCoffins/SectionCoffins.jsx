@@ -3,35 +3,35 @@ import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import GalleryWindow from 'components/GalleryWindow/GalleryWindow';
 import s from './SectionCoffins.module.scss'
 
-const CoffinsPictureElitePrice = [
-  { id: 1, src: require('../../images/coffinsElitePrice/coffinsElitePrice1.jpg'), alt: 'Зображення 1' },
-  { id: 2, src: require('../../images/coffinsElitePrice/coffinsElitePrice2.jpg'), alt: 'Зображення 2' },
-  { id: 3, src: require('../../images/coffinsElitePrice/coffinsElitePrice3.jpg'), alt: 'Зображення 3' },
-  { id: 4, src: require('../../images/coffinsElitePrice/coffinsElitePrice4.jpg'), alt: 'Зображення 4' },
-  { id: 5, src: require('../../images/coffinsElitePrice/coffinsElitePrice5.jpg'), alt: 'Зображення 5' },
-  { id: 6, src: require('../../images/coffinsElitePrice/coffinsElitePrice6.jpg'), alt: 'Зображення 6' },
-  { id: 7, src: require('../../images/coffinsElitePrice/coffinsElitePrice7.jpg'), alt: 'Зображення 7' },
-  { id: 8, src: require('../../images/coffinsElitePrice/coffinsElitePrice8.jpg'), alt: 'Зображення 8' },
-  { id: 9, src: require('../../images/coffinsElitePrice/coffinsElitePrice9.jpg'), alt: 'Зображення 9' },
-  { id: 10, src: require('../../images/coffinsElitePrice/coffinsElitePrice10.jpg'), alt: 'Зображення 10' },
-  { id: 11, src: require('../../images/coffinsElitePrice/coffinsElitePrice11.jpg'), alt: 'Зображення 11' },
-  { id: 12, src: require('../../images/coffinsElitePrice/coffinsElitePrice12.jpg'), alt: 'Зображення 12' },
-  { id: 13, src: require('../../images/coffinsElitePrice/coffinsElitePrice13.jpg'), alt: 'Зображення 13' },
-  { id: 14, src: require('../../images/coffinsElitePrice/coffinsElitePrice14.jpg'), alt: 'Зображення 14' },
-  { id: 15, src: require('../../images/coffinsElitePrice/coffinsElitePrice15.jpg'), alt: 'Зображення 15' },
-  { id: 16, src: require('../../images/coffinsElitePrice/coffinsElitePrice16.jpg'), alt: 'Зображення 16' },
-  { id: 17, src: require('../../images/coffinsElitePrice/coffinsElitePrice17.jpg'), alt: 'Зображення 17' },
-  { id: 18, src: require('../../images/coffinsElitePrice/coffinsElitePrice18.jpg'), alt: 'Зображення 18' },
-  { id: 19, src: require('../../images/coffinsElitePrice/coffinsElitePrice19.jpg'), alt: 'Зображення 19' },
-  { id: 20, src: require('../../images/coffinsElitePrice/coffinsElitePrice20.jpg'), alt: 'Зображення 20' },
-  { id: 21, src: require('../../images/coffinsElitePrice/coffinsElitePrice21.jpg'), alt: 'Зображення 21' },
-  { id: 22, src: require('../../images/coffinsElitePrice/coffinsElitePrice22.jpg'), alt: 'Зображення 22' },
-  { id: 23, src: require('../../images/coffinsElitePrice/coffinsElitePrice23.jpg'), alt: 'Зображення 23' },
-  { id: 24, src: require('../../images/coffinsElitePrice/coffinsElitePrice24.jpg'), alt: 'Зображення 24' },
-  { id: 25, src: require('../../images/coffinsElitePrice/coffinsElitePrice25.jpg'), alt: 'Зображення 25' },
-  { id: 26, src: require('../../images/coffinsElitePrice/coffinsElitePrice26.jpg'), alt: 'Зображення 26' },
-  { id: 27, src: require('../../images/coffinsElitePrice/coffinsElitePrice27.jpg'), alt: 'Зображення 27' },
-  { id: 28, src: require('../../images/coffinsElitePrice/coffinsElitePrice28.jpg'), alt: 'Зображення 28' },
+const coffinsPictureElitePrice = [
+  { id: 1, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate.jpg'), alt: 'coffinsElitePriceUpdate', },
+  { id: 2, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate2.jpg'), alt: 'coffinsElitePriceUpdate2', },
+  { id: 3, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate3.jpg'), alt: 'coffinsElitePriceUpdate3', },
+  { id: 4, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate4.jpg'), alt: 'coffinsElitePriceUpdate4', },
+  { id: 5, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate5.jpg'), alt: 'coffinsElitePriceUpdate5', },
+  { id: 6, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate6.jpg'), alt: 'coffinsElitePriceUpdate6', },
+  { id: 7, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate7.jpg'), alt: 'coffinsElitePriceUpdate7', },
+  { id: 8, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate8.jpg'), alt: 'coffinsElitePriceUpdate8', },
+  { id: 9, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate9.jpg'), alt: 'coffinsElitePriceUpdate9', },
+  { id: 10, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate10.jpg'), alt: 'coffinsElitePriceUpdate10', },
+  { id: 11, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate11.jpg'), alt: 'coffinsElitePriceUpdate11', },
+  { id: 12, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate12.jpg'), alt: 'coffinsElitePriceUpdate12', },
+  { id: 13, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate13.jpg'), alt: 'coffinsElitePriceUpdate13', },
+  { id: 14, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate14.jpg'), alt: 'coffinsElitePriceUpdate14', },
+  { id: 15, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate15.jpg'), alt: 'coffinsElitePriceUpdate15', },
+  { id: 16, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate16.jpg'), alt: 'coffinsElitePriceUpdate16', },
+  { id: 17, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate17.jpg'), alt: 'coffinsElitePriceUpdate17', },
+  { id: 18, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate18.jpg'), alt: 'coffinsElitePriceUpdate18', },
+  { id: 19, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate19.jpg'), alt: 'coffinsElitePriceUpdate19', },
+  { id: 20, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate20.jpg'), alt: 'coffinsElitePriceUpdate20', },
+  { id: 21, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate21.jpg'), alt: 'coffinsElitePriceUpdate21', },
+  { id: 22, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate22.jpg'), alt: 'coffinsElitePriceUpdate22', },
+  { id: 23, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate23.jpg'), alt: 'coffinsElitePriceUpdate23', },
+  { id: 24, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate24.jpg'), alt: 'coffinsElitePriceUpdate24', },
+  { id: 25, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate25.jpg'), alt: 'coffinsElitePriceUpdate25', },
+  { id: 26, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate26.jpg'), alt: 'coffinsElitePriceUpdate26', },
+  { id: 27, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate27.jpg'), alt: 'coffinsElitePriceUpdate27', },
+  { id: 28, src: require('../../images/coffinsElitePrice/coffinsElitePriceUpdate28.jpg'), alt: 'coffinsElitePriceUpdate28', },
 ];
 
 const coffinsPictureAveragePrice = [
@@ -152,7 +152,7 @@ const SectionCoffins = () => {
           )}
           
           <GalleryWindow 
-            array={CoffinsPictureElitePrice}
+            array={coffinsPictureElitePrice}
             title="Елітні труни"
             material="Матеріал"
             materialDescription="дерев’яна заготовка покрита лаком"

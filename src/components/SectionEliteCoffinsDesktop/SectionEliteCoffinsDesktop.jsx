@@ -2,7 +2,7 @@ import GalleryWithTitleAndButtonMoreDetails from '../../components/GalleryWithTi
 import s from './SectionEliteCoffinsDesktop.module.scss';
 
 const SectionEliteCoffinsDesktop = ({
-  CoffinsPictureElitePrice,
+  coffinsPictureElitePrice,
   buttonDescription,
   eliteCoffinsLink,
   eliteTitleForGallery,
@@ -57,7 +57,7 @@ const SectionEliteCoffinsDesktop = ({
             </div>
 
             <GalleryWithTitleAndButtonMoreDetails
-              array={CoffinsPictureElitePrice}
+              array={coffinsPictureElitePrice}
               buttonDescription={buttonDescription}
               link={eliteCoffinsLink}
               titleForGallery={eliteTitleForGallery}
