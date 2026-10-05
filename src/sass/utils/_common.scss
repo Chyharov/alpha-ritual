@@ -36,4 +36,8 @@ main, header, footer {
 
 main {
   padding-top: 75px;
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 80px;
+  }
 }

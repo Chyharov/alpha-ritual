@@ -1,7 +1,6 @@
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import heroImg from '../../images/hero/heroBgUpdate.png'
 import line from '../../images/Line5.svg'
-import blur from '../../images/blurUpdate.png'
 import s from '../SectionHero/SectionHero.module.scss';
 
 const SectionHero = () => {
@@ -35,7 +34,7 @@ const SectionHero = () => {
         </div>
         <img className={s.hero__image} src={heroImg} alt="hero__image" />
       </div>
-      <img className={s.blur} src={blur} alt="blur" />
+      <div className={s.blur} />
     </section>
   );
 };
