@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.a5af1a7d.css",
-    "main.js": "./static/js/main.6ffa606c.js",
-    "static/css/802.bc98aa73.chunk.css": "./static/css/802.bc98aa73.chunk.css",
-    "static/js/802.8b3c7aaf.chunk.js": "./static/js/802.8b3c7aaf.chunk.js",
+    "main.js": "./static/js/main.43475ec1.js",
+    "static/css/164.bb407dcd.chunk.css": "./static/css/164.bb407dcd.chunk.css",
+    "static/js/164.05c9136b.chunk.js": "./static/js/164.05c9136b.chunk.js",
     "static/css/833.12e1f812.chunk.css": "./static/css/833.12e1f812.chunk.css",
     "static/js/833.46cce3ff.chunk.js": "./static/js/833.46cce3ff.chunk.js",
     "static/css/221.de4a6846.chunk.css": "./static/css/221.de4a6846.chunk.css",
@@ -405,9 +405,9 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.a5af1a7d.css.map": "./static/css/main.a5af1a7d.css.map",
-    "main.6ffa606c.js.map": "./static/js/main.6ffa606c.js.map",
-    "802.bc98aa73.chunk.css.map": "./static/css/802.bc98aa73.chunk.css.map",
-    "802.8b3c7aaf.chunk.js.map": "./static/js/802.8b3c7aaf.chunk.js.map",
+    "main.43475ec1.js.map": "./static/js/main.43475ec1.js.map",
+    "164.bb407dcd.chunk.css.map": "./static/css/164.bb407dcd.chunk.css.map",
+    "164.05c9136b.chunk.js.map": "./static/js/164.05c9136b.chunk.js.map",
     "833.12e1f812.chunk.css.map": "./static/css/833.12e1f812.chunk.css.map",
     "833.46cce3ff.chunk.js.map": "./static/js/833.46cce3ff.chunk.js.map",
     "221.de4a6846.chunk.css.map": "./static/css/221.de4a6846.chunk.css.map",
@@ -471,6 +471,6 @@
   },
   "entrypoints": [
     "static/css/main.a5af1a7d.css",
-    "static/js/main.6ffa606c.js"
+    "static/js/main.43475ec1.js"
   ]
 }
