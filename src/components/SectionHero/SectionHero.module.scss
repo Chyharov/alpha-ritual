@@ -139,30 +139,6 @@
   }
 }
 
-.blur {
-  display: none;
-
-  @include mq(desk) {
-    display: block;
-    position: absolute;
-    top: 234px;
-    right: 266px;
-    width: 850px;
-    height: 650px;
-    background: radial-gradient(
-      ellipse at center,
-      rgba(190, 190, 190, 0.45) 0%,
-      rgba(160, 160, 160, 0.3) 25%,
-      rgba(120, 120, 120, 0.16) 45%,
-      rgba(80, 80, 80, 0.07) 60%,
-      transparent 78%
-    );
-    filter: blur(60px);
-    z-index: 0;
-    pointer-events: none;
-  }
-}
-
 .heroNavlist {
   margin-bottom: 26px;
 }
