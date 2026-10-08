@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.a5af1a7d.css",
-    "main.js": "./static/js/main.43475ec1.js",
-    "static/css/164.bb407dcd.chunk.css": "./static/css/164.bb407dcd.chunk.css",
-    "static/js/164.05c9136b.chunk.js": "./static/js/164.05c9136b.chunk.js",
+    "main.js": "./static/js/main.13d4e3b8.js",
+    "static/css/188.41e9a97d.chunk.css": "./static/css/188.41e9a97d.chunk.css",
+    "static/js/188.4368dc34.chunk.js": "./static/js/188.4368dc34.chunk.js",
     "static/css/833.12e1f812.chunk.css": "./static/css/833.12e1f812.chunk.css",
     "static/js/833.46cce3ff.chunk.js": "./static/js/833.46cce3ff.chunk.js",
     "static/css/221.de4a6846.chunk.css": "./static/css/221.de4a6846.chunk.css",
@@ -67,7 +67,6 @@
     "static/media/blurMakingFuneralWreathUpdate.png": "./static/media/blurMakingFuneralWreathUpdate.c9dea5ebdee89bfc83e6.png",
     "static/media/blurUpdate.png": "./static/media/blurUpdate.95d2d34d9ceae30b1095.png",
     "static/media/blurRitualTransportUpdate.png": "./static/media/blurRitualTransportUpdate.eed3b47026afc98bc428.png",
-    "static/media/blurRitualGoodsDeskUpdate.png": "./static/media/blurRitualGoodsDeskUpdate.4b758503add191a58844.png",
     "static/media/funeralSetBlurUpdate.png": "./static/media/funeralSetBlurUpdate.e04321c95a60de562f83.png",
     "static/media/freshFlowersWreathDesktopblurSecond.png": "./static/media/freshFlowersWreathDesktopblurSecond.514e8afc583250a01b4e.png",
     "static/media/blurForSectionWreaths.png": "./static/media/blurForSectionWreaths.8f2a2d325b48c9aca52a.png",
@@ -405,9 +404,9 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.a5af1a7d.css.map": "./static/css/main.a5af1a7d.css.map",
-    "main.43475ec1.js.map": "./static/js/main.43475ec1.js.map",
-    "164.bb407dcd.chunk.css.map": "./static/css/164.bb407dcd.chunk.css.map",
-    "164.05c9136b.chunk.js.map": "./static/js/164.05c9136b.chunk.js.map",
+    "main.13d4e3b8.js.map": "./static/js/main.13d4e3b8.js.map",
+    "188.41e9a97d.chunk.css.map": "./static/css/188.41e9a97d.chunk.css.map",
+    "188.4368dc34.chunk.js.map": "./static/js/188.4368dc34.chunk.js.map",
     "833.12e1f812.chunk.css.map": "./static/css/833.12e1f812.chunk.css.map",
     "833.46cce3ff.chunk.js.map": "./static/js/833.46cce3ff.chunk.js.map",
     "221.de4a6846.chunk.css.map": "./static/css/221.de4a6846.chunk.css.map",
@@ -471,6 +470,6 @@
   },
   "entrypoints": [
     "static/css/main.a5af1a7d.css",
-    "static/js/main.43475ec1.js"
+    "static/js/main.13d4e3b8.js"
   ]
 }
