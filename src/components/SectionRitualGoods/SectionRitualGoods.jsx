@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
-import blurRitualGoodsDesk from '../../images/ritualGoods/blurRitualGoodsDeskUpdate.png'
+import Blur from 'components/Blur/Blur';
 import flowersRitualGoodsDesk from '../../images/ritualGoods/flowersRitualGoodsDeskUpdate.jpg'
 import logo512RitualGoodsDesk from '../../images/ritualGoods/logo512RitualGoodsDesk.svg'
 import s from './SectionRitualGoods.module.scss';
@@ -84,7 +84,7 @@ const SectionRitualGoods = () => {
 
         <p className='description'>Ми розуміємо, що цей час важкий, і завданням нашої компанії є надання вам підтримки та допомоги на кожному етапі організації прощання. Наша команда професіоналів готова допомогти вам з усіма питаннями та деталями, щоб забезпечити гідне та тепле прощання з вашим близьким</p>
 
-        <img className={s.blurRitualGoodsDesk} src={blurRitualGoodsDesk} alt="blurRitualGoodsDesk" />
+        <Blur style={{ width: '78%', height: '334px', bottom: '140px', left: '150px' }} />
 
         </div>
       </div>
