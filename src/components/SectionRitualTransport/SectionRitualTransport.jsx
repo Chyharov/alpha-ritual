@@ -3,6 +3,7 @@ import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import BlackMercedesGallery from "components/BlackMercedesGallery/BlackMercedesGallery";
 import WhiteVolksWagen from "components/WhiteVolksWagen/WhiteVolksWagen";
 import blurRitualTransport from '../../images/ritualTransport/blurRitualTransportUpdate.png'
+import Blur from 'components/Blur/Blur';
 import s from './SectionRitualTransport.module.scss';
 
 const ritualTransportDescriptionArray = [
@@ -50,6 +51,7 @@ const SectionRitualTransport = () => {
           </div>
 
           <img className={s.blurRitualTransport} src={blurRitualTransport} alt="blurRitualTransport" />
+          <Blur style={{ width: '53.3%', height: '566px', top: '171px', left: '486px' }} />
         </div>
       </div>
     </section>
