@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ButtonMoreDetails from 'components/ButtonMoreDetails/ButtonMoreDetails';
 import whiteFlowersForSectionAdditionalService from '../../images/additionalServices/whiteFlowersForSectionAdditionalService.jpg'
 import whiteFlowerForSectionAdditionalService from '../../images/additionalServices/whiteFlowerForSectionAdditionalServiceUpdate.jpg'
-import blurForSectionAdditionalService from '../../images/additionalServices/blurForSectionAdditionalService.svg'
+import Blur from 'components/Blur/Blur';
 import s from './SectionAdditionalServices.module.scss';
 
 const additionalServices = [
@@ -95,7 +95,7 @@ const SectionAdditionalServices = () => {
 
         <img className={s.whiteFlowersForSectionAdditionalService} src={whiteFlowersForSectionAdditionalService} alt="whiteFlowersForSectionAdditionalService" />
         <img className={s.whiteFlowerForSectionAdditionalService} src={whiteFlowerForSectionAdditionalService} alt="whiteFlowerForSectionAdditionalService" />
-        <img className={s.blurForSectionAdditionalService} src={blurForSectionAdditionalService} alt="blurForSectionAdditionalService" />
+        <Blur style={{ width: '36%', height: '490px', top: '462px', left: '526px' }} />
 
       </div>
     </section>
