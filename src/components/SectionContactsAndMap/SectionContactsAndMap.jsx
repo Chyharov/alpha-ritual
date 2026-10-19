@@ -1,7 +1,7 @@
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import phoneIcon from 'images/phoneIcon.svg'
 import locationIcon from 'images/locationIcon.svg'
-import blurAddressAndMap from 'images/blurAddressAndMap.svg'
+import Blur from 'components/Blur/Blur';
 import MapComponent from 'components/MapComponent/MapComponent'
 import s from './SectionContactsAndMap.module.scss';
 
@@ -71,7 +71,7 @@ const SectionContactsAndMap = () => {
 
       </div>
 
-      <img className={s.blurAddressAndMap} src={blurAddressAndMap} alt="blurAddressAndMap" />
+      <Blur style={{ width: '23.6%', height: '320px', top: '282px', left: '400px' }} />
 
     </section>
   );
