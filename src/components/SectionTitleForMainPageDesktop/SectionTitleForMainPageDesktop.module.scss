@@ -107,14 +107,3 @@
         display: block;
     }
 }
-
-.blur {
-    @include mq(desk) {
-        display: block;
-        position: absolute;
-        top: 340px;
-        left: 413px;
-        width: 682px;
-        height: 566px;
-    }
-}
