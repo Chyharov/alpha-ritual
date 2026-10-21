@@ -8,16 +8,52 @@ import SectionGalleryForDesktop from 'components/SectionGalleryForDesktop/Sectio
 import Footer from 'components/Footer/Footer';
 
 const funeralVasesPictureList = [
-    { id: 1, src: require('../../images/funeralVases/funeralVases1.jpg'), alt: 'Зображення 1' },
-    { id: 2, src: require('../../images/funeralVases/funeralVases2.jpg'), alt: 'Зображення 2' },
-    { id: 3, src: require('../../images/funeralVases/funeralVases3.jpg'), alt: 'Зображення 3' },
-    { id: 4, src: require('../../images/funeralVases/funeralVases4.jpg'), alt: 'Зображення 4' },
-    { id: 5, src: require('../../images/funeralVases/funeralVases5.jpg'), alt: 'Зображення 5' },
-    { id: 6, src: require('../../images/funeralVases/funeralVases6.jpg'), alt: 'Зображення 6' },
-    { id: 7, src: require('../../images/funeralVases/funeralVases7.jpg'), alt: 'Зображення 7' },
-    { id: 8, src: require('../../images/funeralVases/funeralVases8.jpg'), alt: 'Зображення 8' },
-    { id: 9, src: require('../../images/funeralVases/funeralVases9.jpg'), alt: 'Зображення 9' },
-  ];
+  {
+    id: 1,
+    src: require('../../images/funeralVases/funeralVasesUpdate.jpg'),
+    alt: 'funeralVasesUpdate',
+  },
+  {
+    id: 2,
+    src: require('../../images/funeralVases/funeralVasesUpdate2.jpg'),
+    alt: 'funeralVasesUpdate2',
+  },
+  {
+    id: 3,
+    src: require('../../images/funeralVases/funeralVasesUpdate3.jpg'),
+    alt: 'funeralVasesUpdate3',
+  },
+  {
+    id: 4,
+    src: require('../../images/funeralVases/funeralVasesUpdate4.jpg'),
+    alt: 'funeralVasesUpdate4',
+  },
+  {
+    id: 5,
+    src: require('../../images/funeralVases/funeralVasesUpdate5.jpg'),
+    alt: 'funeralVasesUpdate5',
+  },
+  {
+    id: 6,
+    src: require('../../images/funeralVases/funeralVasesUpdate6.jpg'),
+    alt: 'funeralVasesUpdate6',
+  },
+  {
+    id: 7,
+    src: require('../../images/funeralVases/funeralVasesUpdate7.jpg'),
+    alt: 'funeralVasesUpdate7',
+  },
+  {
+    id: 8,
+    src: require('../../images/funeralVases/funeralVasesUpdate8.jpg'),
+    alt: 'funeralVasesUpdate8',
+  },
+  {
+    id: 9,
+    src: require('../../images/funeralVases/funeralVasesUpdate9.jpg'),
+    alt: 'funeralVasesUpdate9',
+  },
+];
 
 const buttonDescription = 'Переглянути всі';
 const titleForGallery = 'Вінки із живих квітів';
