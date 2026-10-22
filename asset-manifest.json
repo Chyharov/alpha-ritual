@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a5af1a7d.css",
-    "main.js": "./static/js/main.9300078d.js",
+    "main.js": "./static/js/main.482b01bd.js",
     "static/css/705.8404a3f8.chunk.css": "./static/css/705.8404a3f8.chunk.css",
     "static/js/705.b095baaa.chunk.js": "./static/js/705.b095baaa.chunk.js",
     "static/css/833.3a6a29b1.chunk.css": "./static/css/833.3a6a29b1.chunk.css",
@@ -18,8 +18,8 @@
     "static/js/536.d848b9c3.chunk.js": "./static/js/536.d848b9c3.chunk.js",
     "static/css/999.f3e268b9.chunk.css": "./static/css/999.f3e268b9.chunk.css",
     "static/js/999.f1b4acef.chunk.js": "./static/js/999.f1b4acef.chunk.js",
-    "static/css/11.37be5650.chunk.css": "./static/css/11.37be5650.chunk.css",
-    "static/js/11.40adaaa0.chunk.js": "./static/js/11.40adaaa0.chunk.js",
+    "static/css/811.248cc78c.chunk.css": "./static/css/811.248cc78c.chunk.css",
+    "static/js/811.4343e381.chunk.js": "./static/js/811.4343e381.chunk.js",
     "static/css/372.e8b72d4b.chunk.css": "./static/css/372.e8b72d4b.chunk.css",
     "static/js/372.c3c29a23.chunk.js": "./static/js/372.c3c29a23.chunk.js",
     "static/css/840.876601e6.chunk.css": "./static/css/840.876601e6.chunk.css",
@@ -126,6 +126,7 @@
     "static/media/freshFlowersWreathDesktopUpdate34.jpg": "./static/media/freshFlowersWreathDesktopUpdate34.66170ffc628e8cdc8472.jpg",
     "static/media/freshFlowersWreathUpdate34.jpg": "./static/media/freshFlowersWreathUpdate34.66170ffc628e8cdc8472.jpg",
     "static/media/covered17.jpg": "./static/media/covered17.23702729872c13dc916c.jpg",
+    "static/media/VasesBackgroundDeskUpdate.png": "./static/media/VasesBackgroundDeskUpdate.aa0665cfa176e556bdb1.png",
     "static/media/freshFlowersWreathDesktopUpdate39.jpg": "./static/media/freshFlowersWreathDesktopUpdate39.e08e700c2dd96a243da9.jpg",
     "static/media/freshFlowersWreathUpdate39.jpg": "./static/media/freshFlowersWreathUpdate39.e08e700c2dd96a243da9.jpg",
     "static/media/covered18.jpg": "./static/media/covered18.92f4e0437e0116dc2bc4.jpg",
@@ -139,7 +140,6 @@
     "static/media/freshFlowersWreathDesktopUpdate45.jpg": "./static/media/freshFlowersWreathDesktopUpdate45.1242aca5e81fcab6814c.jpg",
     "static/media/freshFlowersWreathUpdate45.jpg": "./static/media/freshFlowersWreathUpdate45.1242aca5e81fcab6814c.jpg",
     "static/media/funeralSetUpdate4.jpg": "./static/media/funeralSetUpdate4.132c978125899a778a13.jpg",
-    "static/media/VasesBackgroundDesk.png": "./static/media/VasesBackgroundDesk.f86042d672e78bf01647.png",
     "static/media/freshFlowersWreathDesktopUpdate41.jpg": "./static/media/freshFlowersWreathDesktopUpdate41.76fcfcab9ff1a809fb36.jpg",
     "static/media/freshFlowersWreathUpdate41.jpg": "./static/media/freshFlowersWreathUpdate41.76fcfcab9ff1a809fb36.jpg",
     "static/media/covered4.jpg": "./static/media/covered4.0730345a1135c9080a60.jpg",
@@ -401,7 +401,7 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.a5af1a7d.css.map": "./static/css/main.a5af1a7d.css.map",
-    "main.9300078d.js.map": "./static/js/main.9300078d.js.map",
+    "main.482b01bd.js.map": "./static/js/main.482b01bd.js.map",
     "705.8404a3f8.chunk.css.map": "./static/css/705.8404a3f8.chunk.css.map",
     "705.b095baaa.chunk.js.map": "./static/js/705.b095baaa.chunk.js.map",
     "833.3a6a29b1.chunk.css.map": "./static/css/833.3a6a29b1.chunk.css.map",
@@ -418,8 +418,8 @@
     "536.d848b9c3.chunk.js.map": "./static/js/536.d848b9c3.chunk.js.map",
     "999.f3e268b9.chunk.css.map": "./static/css/999.f3e268b9.chunk.css.map",
     "999.f1b4acef.chunk.js.map": "./static/js/999.f1b4acef.chunk.js.map",
-    "11.37be5650.chunk.css.map": "./static/css/11.37be5650.chunk.css.map",
-    "11.40adaaa0.chunk.js.map": "./static/js/11.40adaaa0.chunk.js.map",
+    "811.248cc78c.chunk.css.map": "./static/css/811.248cc78c.chunk.css.map",
+    "811.4343e381.chunk.js.map": "./static/js/811.4343e381.chunk.js.map",
     "372.e8b72d4b.chunk.css.map": "./static/css/372.e8b72d4b.chunk.css.map",
     "372.c3c29a23.chunk.js.map": "./static/js/372.c3c29a23.chunk.js.map",
     "840.876601e6.chunk.css.map": "./static/css/840.876601e6.chunk.css.map",
@@ -467,6 +467,6 @@
   },
   "entrypoints": [
     "static/css/main.a5af1a7d.css",
-    "static/js/main.9300078d.js"
+    "static/js/main.482b01bd.js"
   ]
 }
