@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import ButtonGetConsultation from 'components/ButtonGetConsultation/ButtonGetConsultation';
 import lineBottom from '../../images/Line5.svg';
-import blur from '../../images/blurUpdate.png';
+import Blur from 'components/Blur/Blur';
 import line from '../../images/TitleForPage/Line6.svg';
 import s from './SectionTitleForDefaultPageDesktop.module.scss';
 
@@ -47,7 +47,7 @@ const SectionTitleForDefaultPageDesktop = ({
           alt="section__image"
         />
       </div>
-      <img className={s.blur} src={blur} alt="blur" />
+      <Blur style={{ width: '50%', height: '566px', top: '340px', left: '413px' }} />
       <h3 className={s.descriptionTitle}>
         {titleTritd}
       </h3>
