@@ -2,7 +2,7 @@ import artificialWreathsImageDescription from 'images/artificialWreaths/artifici
 import artificialWreathsImageListDescription from 'images/artificialWreaths/artificialWreathsImageListDescriptionUpdate.png';
 import GalleryWithTitleAndButtonMoreDetails from 'components/GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
 import artificialWreathsblur from 'images/artificialWreaths/artificialWreathsblur.png';
-import artificialWreathsblur2 from 'images/artificialWreaths/artificialWreathsblur2Update.png';
+import Blur from 'components/Blur/Blur';
 import s from './SectionArtificialWreathDesktop.module.scss';
 
 const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleForGallery, titleForModalWindow }) => {
@@ -167,7 +167,7 @@ const SectionArtificialWreathDesktop = ({array, buttonDescription, link, titleFo
                 titleForModalWindow={titleForModalWindow}
             />
           </div>
-          <img className={s.artificialWreathsblur2} src={artificialWreathsblur2} alt="artificialWreathsblur2" />
+          <Blur style={{ width: '540px', height: '400px', top: '332px', left: '0px' }} />
         </div>
       </div>
     </section>
