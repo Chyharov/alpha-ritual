@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.a5af1a7d.css",
-    "main.js": "./static/js/main.64c8fd95.js",
+    "main.js": "./static/js/main.2b9ec278.js",
     "static/css/705.8404a3f8.chunk.css": "./static/css/705.8404a3f8.chunk.css",
     "static/js/705.b095baaa.chunk.js": "./static/js/705.b095baaa.chunk.js",
     "static/css/833.3a6a29b1.chunk.css": "./static/css/833.3a6a29b1.chunk.css",
@@ -14,8 +14,8 @@
     "static/js/817.75b30c4e.chunk.js": "./static/js/817.75b30c4e.chunk.js",
     "static/css/246.3038cc0e.chunk.css": "./static/css/246.3038cc0e.chunk.css",
     "static/js/246.11783816.chunk.js": "./static/js/246.11783816.chunk.js",
-    "static/css/612.4a170099.chunk.css": "./static/css/612.4a170099.chunk.css",
-    "static/js/612.1db7b7a5.chunk.js": "./static/js/612.1db7b7a5.chunk.js",
+    "static/css/933.dc31adff.chunk.css": "./static/css/933.dc31adff.chunk.css",
+    "static/js/933.8725595d.chunk.js": "./static/js/933.8725595d.chunk.js",
     "static/css/999.6e26f7cf.chunk.css": "./static/css/999.6e26f7cf.chunk.css",
     "static/js/999.28e0fbc5.chunk.js": "./static/js/999.28e0fbc5.chunk.js",
     "static/css/281.ded34b43.chunk.css": "./static/css/281.ded34b43.chunk.css",
@@ -69,7 +69,6 @@
     "static/media/freshFlowersWreathDesktopblurSecond.png": "./static/media/freshFlowersWreathDesktopblurSecond.514e8afc583250a01b4e.png",
     "static/media/blurForSectionWreaths.png": "./static/media/blurForSectionWreaths.8f2a2d325b48c9aca52a.png",
     "static/media/blurCrossesBackground.png": "./static/media/blurCrossesBackground.1f642eb48140ded0bc0e.png",
-    "static/media/artificialWreathsblur2Update.png": "./static/media/artificialWreathsblur2Update.ed946d26b3989f989dfd.png",
     "static/media/decoration1.jpg": "./static/media/decoration1.e7616c097ee8f4eadd86.jpg",
     "static/media/funeralSetUpdate12.jpg": "./static/media/funeralSetUpdate12.c1460c513d13b8b304ce.jpg",
     "static/media/freshWreathsBackgroundDesktopUpdate.png": "./static/media/freshWreathsBackgroundDesktopUpdate.fd38747406f91d89e830.png",
@@ -400,7 +399,7 @@
     "static/media/arrowRight.svg": "./static/media/arrowRight.b9c84fae764af70935f7733002b2b213.svg",
     "static/media/SectionRitualServicesRectangle.svg": "./static/media/SectionRitualServicesRectangle.d6aa688f39b11507c52a5767a767d156.svg",
     "main.a5af1a7d.css.map": "./static/css/main.a5af1a7d.css.map",
-    "main.64c8fd95.js.map": "./static/js/main.64c8fd95.js.map",
+    "main.2b9ec278.js.map": "./static/js/main.2b9ec278.js.map",
     "705.8404a3f8.chunk.css.map": "./static/css/705.8404a3f8.chunk.css.map",
     "705.b095baaa.chunk.js.map": "./static/js/705.b095baaa.chunk.js.map",
     "833.3a6a29b1.chunk.css.map": "./static/css/833.3a6a29b1.chunk.css.map",
@@ -413,8 +412,8 @@
     "817.75b30c4e.chunk.js.map": "./static/js/817.75b30c4e.chunk.js.map",
     "246.3038cc0e.chunk.css.map": "./static/css/246.3038cc0e.chunk.css.map",
     "246.11783816.chunk.js.map": "./static/js/246.11783816.chunk.js.map",
-    "612.4a170099.chunk.css.map": "./static/css/612.4a170099.chunk.css.map",
-    "612.1db7b7a5.chunk.js.map": "./static/js/612.1db7b7a5.chunk.js.map",
+    "933.dc31adff.chunk.css.map": "./static/css/933.dc31adff.chunk.css.map",
+    "933.8725595d.chunk.js.map": "./static/js/933.8725595d.chunk.js.map",
     "999.6e26f7cf.chunk.css.map": "./static/css/999.6e26f7cf.chunk.css.map",
     "999.28e0fbc5.chunk.js.map": "./static/js/999.28e0fbc5.chunk.js.map",
     "281.ded34b43.chunk.css.map": "./static/css/281.ded34b43.chunk.css.map",
@@ -466,6 +465,6 @@
   },
   "entrypoints": [
     "static/css/main.a5af1a7d.css",
-    "static/js/main.64c8fd95.js"
+    "static/js/main.2b9ec278.js"
   ]
 }
