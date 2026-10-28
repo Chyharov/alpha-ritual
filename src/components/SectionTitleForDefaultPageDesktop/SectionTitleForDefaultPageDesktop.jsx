@@ -42,7 +42,6 @@ const SectionTitleForDefaultPageDesktop = ({
           </div>
         </div>
         <img
-          className={s.section__image}
           src={backgroundImgDesktop}
           alt="section__image"
         />

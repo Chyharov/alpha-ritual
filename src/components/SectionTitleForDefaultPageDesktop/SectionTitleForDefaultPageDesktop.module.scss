@@ -91,14 +91,6 @@
     }
 }
 
-.section__image {
-    @include mq(desk) {
-        margin-top: 16px;
-        width: 590px;
-        height: 570px;
-        z-index: 1;
-    }
-}
 
 .lineImage {
     @include mq(desk) {
