@@ -11,7 +11,7 @@
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 8;
+        z-index: 1000;
         border-bottom: 1px solid var(--secondaryTextColor);
     }
 }

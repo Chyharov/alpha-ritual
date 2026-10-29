@@ -9,6 +9,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   outline: 1px solid var(--primaryTextColor);
+  z-index: 1000;
 
   @include mq(tab) {
     padding-top: 20px;

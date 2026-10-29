@@ -151,10 +151,14 @@
 }
 
 .backgroundImgDesktop {
+  display: none;
+  @media screen and (min-width: 1360px) {
+  display: block;
   margin-top: 16px;
   display: block;
   width: 590px;
   height: 570px;
   margin-bottom: 80px;
   z-index: 1;
+  }
 }
