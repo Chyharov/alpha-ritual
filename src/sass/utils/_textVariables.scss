@@ -1,154 +1,160 @@
 .title {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1;
-    color: var(--primaryTextColorDark);
-    padding: 8px;
+  font-family: Open Sans SemiBold;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--primaryTextColorDark);
+  padding: 8px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 32px;
-        line-height: 1.25;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 1.25;
+  }
 
-    @media screen and (min-width: 1360px) {
-        font-size: 32px;
-        line-height: 1.25;
-    }
+  @media screen and (min-width: 1360px) {
+    font-size: 32px;
+    line-height: 1.25;
+  }
 }
 
 .mediumTitle {
-    font-family: Open Sans SemiBold;
-    font-size: 20px;
-    line-height: 1;
-    color: var(--primaryTextColorDark);
-    text-align: center;
-    padding: 8px;
+  font-family: Open Sans SemiBold;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--primaryTextColorDark);
+  text-align: center;
+  padding: 8px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.12;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 28px;
-        line-height: 1.12;
-    }
-
-    @media screen and (min-width: 1360px) {
-        font-size: 28px;
-        line-height: 1.12;
-    }
+  @media screen and (min-width: 1360px) {
+    font-size: 28px;
+    line-height: 1.12;
+  }
 }
 
 .smallTitle {
-    font-family: Open Sans ExtraBold;
-    font-size: 16px;
-    line-height: 1.38;
-    color: var(--primaryTextColorDark);
-    padding: 8px;
+  font-family: Open Sans ExtraBold;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--primaryTextColorDark);
+  padding: 8px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.12;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 28px;
-        line-height: 1.12;
-    }
-
-    @media screen and (min-width: 1360px) {
-        font-size: 28px;
-        line-height: 1.12;
-    }
+  @media screen and (min-width: 1360px) {
+    font-size: 28px;
+    line-height: 1.12;
+  }
 }
 
 .titleThird {
-    @media screen and (min-width: 1360px) {
-        font-family: Open Sans Regular;
-        font-size: 24px;
-        line-height: 1.17;
-        color: var(--primaryTextColorDark);
-        padding: 8px;
-    }
+  @media screen and (min-width: 1360px) {
+    font-family: Open Sans Regular;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--primaryTextColorDark);
+    padding: 8px;
+  }
 }
 
 .forCardTitle {
-    font-family: Open Sans Regular;
-    font-size: 16px;
-    line-height: 1.38;
-    color: var(--primaryTextColorDark);
+  font-family: Open Sans Regular;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--primaryTextColorDark);
 
-    @media screen and (min-width: 768px) {
-        font-size: 28px;
-        line-height: 1.12;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.12;
+  }
 
-    @media screen and (min-width: 1360px) {
-        font-size: 28px;
-        line-height: 1.12;
-    }
+  @media screen and (min-width: 1360px) {
+    font-size: 28px;
+    line-height: 1.12;
+  }
 }
 
 .description {
-    font-family: Open Sans Regular;
+  font-family: Open Sans Regular;
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--primaryTextColorDark);
+  padding: 8px;
+
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 1.38;
-    color: var(--primaryTextColorDark);
-    padding: 8px;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: 1.38;
-    }
-
-    @media screen and (min-width: 1360px) {
-        font-size: 16px;
-        line-height: 1.38;
-    }
+  @media screen and (min-width: 1360px) {
+    font-size: 16px;
+    line-height: 1.38;
+  }
 }
 
 .links,
 .linksIsActive,
 .secondaryDescription {
-    font-family: Open Sans Regular;
-    font-size: 14px;
-    line-height: 1.43;
+  font-family: Open Sans Regular;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .secondaryDescription {
-    color: var(--primaryTextColorDark);
+  color: var(--primaryTextColorDark);
 }
 
 .linksIsActive {
-    color: var(--hoverColorDark);
+  color: var(--hoverColorDark);
 }
 
 .links {
-    color: var(--secondaryTextColor);
+  color: var(--secondaryTextColor);
 }
 
 .buttonDescription {
-    font-family: Open Sans SemiBold;
+  font-family: Open Sans SemiBold;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4cebf;
+
+  @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.43;
-    color: #D4CEBF;
+  }
 
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.43;
-    }
-
-    @media screen and (min-width: 1360px) {
-        font-size: 14px;
-        line-height: 1.43;
-    }
+  @media screen and (min-width: 1360px) {
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
 
 .list {
-    width: 100%;
+  width: 100%;
 }
 
 .listItem {
-    width: 100%;
-    border-radius: 8px;
-    background-color: #2B2925;
-    margin-bottom: 8px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #2b2925;
+  margin-bottom: 8px;
 }
 
 .outline {
-    border-bottom: 1px solid var(--secondaryTextColor);
+  border-bottom: 1px solid var(--secondaryTextColor);
+}
+
+.backgroundImgDesktop {
+  margin-top: 16px;
+  display: block;
+  width: 590px;
+  height: 570px;
+  margin-bottom: 80px;
+  z-index: 1;
 }

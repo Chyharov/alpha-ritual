@@ -31,7 +31,7 @@ const SectionTitleForMainPageDesktop = ({ prevTitle, title, backgroundImgDesktop
           </div>
           
         </div>
-        <img className={s.section__image} src={backgroundImgDesktop} alt="section__image" />
+        <img className="backgroundImgDesktop" src={backgroundImgDesktop} alt="section__image" />
       </div>
       <Blur style={{ width: '682px', height: '566px', top: '340px', left: '413px' }} />
     </section>

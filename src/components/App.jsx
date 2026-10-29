@@ -1,6 +1,16 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useLayoutEffect } from 'react';
 import Loader from 'components/Loader/Loader';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const MainPage = lazy(() => import('pages/MainPage/MainPage'));
 const WreathsPage = lazy(() => import('pages/WreathsPage/WreathsPage'));
@@ -33,6 +43,7 @@ const CrossesGalleryPage = lazy(() => import('pages/CrossesGalleryPage/CrossesGa
 export const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<MainPage />} />
