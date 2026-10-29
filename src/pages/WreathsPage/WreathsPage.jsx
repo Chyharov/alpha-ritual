@@ -2,7 +2,7 @@ import Header from 'components/Header/Header';
 import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForMainPageDesktop from 'components/SectionTitleForMainPageDesktop/SectionTitleForMainPageDesktop';
 import backgroundImgDesktop from 'images/wreaths/WreathsBackgroundDeskUpdate.png'
-import backgroundImg from 'images/wreaths/WreathsBackgroundMob.jpg';
+import backgroundImgMobile from 'images/wreaths/WreathsBackgroundMob.jpg';
 import SectionWreath from 'components/SectionWreaths/SectionWreaths';
 import SectionNeedHelp from 'components/SectionNeedHelp/SectionNeedHelp';
 import SectionMakingFuneralWreath from 'components/SectionMakingFuneralWreath/SectionMakingFuneralWreath';
@@ -10,7 +10,7 @@ import Footer from 'components/Footer/Footer';
 
 const titleProps = {
   title: 'Вінки',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitle: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices'

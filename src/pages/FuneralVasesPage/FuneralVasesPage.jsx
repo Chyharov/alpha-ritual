@@ -1,7 +1,7 @@
 import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
-import backgroundImg from '../../images/funeralVases/VasesBackgroundMob.jpg';
+import backgroundImgMobile from '../../images/funeralVases/VasesBackgroundMob.jpg';
 import backgroundImgDesktop from 'images/funeralVases/VasesBackgroundDeskUpdate.png';
 import SectionFuneralVases from 'components/SectionFuneralVases/SectionFuneralVases';
 import SectionGalleryForDesktop from 'components/SectionGalleryForDesktop/SectionGalleryForDesktop';
@@ -60,7 +60,7 @@ const titleForGallery = 'Вінки із живих квітів';
 
 const titleProps = {
   titleLink: 'Урни для праху',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitleLink: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',

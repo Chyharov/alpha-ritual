@@ -1,13 +1,13 @@
 import Header from '../../components/Header/Header';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImgDesktop from 'images/crosses/crossesBackgroundDesktopUpdate.png';
-import backgroundImg from '../../images/crosses/CrossesBackgroundMob.jpg';
+import backgroundImgMobile from '../../images/crosses/CrossesBackgroundMob.jpg';
 import SectionGalleryForDesktop from '../../components/SectionGalleryForDesktop/SectionGalleryForDesktop';
 import Footer from 'components/Footer/Footer';
 
 const titleProps = {
   titleLink: 'Хрести',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitleLink: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',

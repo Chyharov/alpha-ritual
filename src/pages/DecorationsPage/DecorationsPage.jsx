@@ -2,8 +2,8 @@ import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForMainPageDesktop from 'components/SectionTitleForMainPageDesktop/SectionTitleForMainPageDesktop';
 import SectionDecorations from 'components/SectionDecorations/SectionDecorations';
-import backgroundImgDesktop from 'images/hero/heroBgMobileUpdate.png'
-import backgroundImg from '../../images/crosses/CrossesBackgroundMob.jpg';
+import backgroundImgDesktop from '../../images/hero/heroBgUpdate.png'
+import backgroundImgMobile from '../../images/crosses/CrossesBackgroundMob.jpg';
 import SectionGalleryForDesktop from '../../components/SectionGalleryForDesktop/SectionGalleryForDesktop';
 import Footer from 'components/Footer/Footer';
 
@@ -19,7 +19,7 @@ const decorationsPhotos = [
 
 const titleProps = {
   title: 'Декор',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitle: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',

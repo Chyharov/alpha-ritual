@@ -1,7 +1,7 @@
 import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
-import backgroundImg from '../../images/otherAttributes/OtherAttributesBackgroundMob.jpg';
+import backgroundImgMobile from '../../images/otherAttributes/OtherAttributesBackgroundMob.jpg';
 import backgroundImgDesktop from 'images/funeralSet/funeralBackgroundDeskUpdate.png';
 import SectionFuneralSet from 'components/SectionFuneralSet/SectionFuneralSet';
 import SectionFuneralSetDesktop from 'components/SectionFuneralSetDesktop/SectionFuneralSetDesktop';
@@ -10,7 +10,7 @@ import Footer from 'components/Footer/Footer';
 
 const titleProps = {
   titleLink: 'Поховальний набір',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitleLink: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',

@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import s from './SectionTitleForMainPage.module.scss';
 import Line from '../../images/TitleForPage/Line6.svg';
 
-const SectionTitleForMainPage = ({title, backgroundImg, link, prevTitle}) => {
+const SectionTitleForMainPage = ({title, backgroundImgMobile, link, prevTitle}) => {
 
   return (
-   <section style={{ backgroundImage: `url(${backgroundImg})` }} className={s.SectionTitleForMainPage}>
+   <section style={{ backgroundImage: `url(${backgroundImgMobile})` }} className={s.SectionTitleForMainPage}>
         <div className='container'>
           <div className={s.titleContainer}>
           

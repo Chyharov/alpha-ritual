@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImgDesktop from 'images/crosses/crossesBackgroundDesktopUpdate.png';
-import backgroundImg from '../../images/crosses/CrossesBackgroundMob.jpg';
+import backgroundImgMobile from '../../images/crosses/CrossesBackgroundMob.jpg';
 import Crosses from '../../components/SectionCrosses/SectionCrosses';
 import SectionCrossesDesktop from 'components/SectionCrossesDesktop/SectionCrossesDesktop';
 import SectionPreviewGalleyDesktop from 'components/SectionPreviewGalleyDesktop/SectionPreviewGalleyDesktop';
@@ -97,7 +97,7 @@ const CrossesPictureList = [
 
 const titleProps = {
   titleLink: 'Хрести',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitleLink: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',

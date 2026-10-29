@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header'
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionAboutCompany from 'components/SectionAboutCompany/SectionAboutCompany';
 import Footer from '../../components/Footer/Footer';
-import backgroundImg from '../../images/aboutCompany/aboutCompanyBackgroundMob.jpg'
+import backgroundImgMobile from '../../images/aboutCompany/aboutCompanyBackgroundMob.jpg'
 
 const title = 'Про Компанію';
 
@@ -11,7 +11,7 @@ const AboutPage = () => {
     <>
       <Header />
         <main>
-        <SectionTitleForPage title={title} backgroundImg={backgroundImg} />
+        <SectionTitleForPage title={title} backgroundImgMobile={backgroundImgMobile} />
         <SectionAboutCompany />
         </main>
       <Footer />

@@ -1,7 +1,7 @@
 import Header from '../../components/Header/Header';
 import SectionTitleForPage from '../../components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
-import backgroundImg from '../../images/otherAttributes/FuneralPortraitBackgroundMob.jpg';
+import backgroundImgMobile from '../../images/otherAttributes/FuneralPortraitBackgroundMob.jpg';
 import backgroundImgDesktop from 'images/funeralPortrait/funeralPortraitBackgroundDeskUpdate.png';
 import SectionFuneralPortrait from 'components/SectionFuneralPortrait/SectionFuneralPortrait';
 import SectionFuneralPortraitDesktop from 'components/SectionFuneralPortraitDesktop/SectionFuneralPortraitDesktop'
@@ -9,7 +9,7 @@ import Footer from 'components/Footer/Footer';
 
 const titleProps = {
   titleLink: 'Портрет на поховання',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitleLink: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',

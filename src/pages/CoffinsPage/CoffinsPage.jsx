@@ -2,7 +2,7 @@ import Header from 'components/Header/Header';
 import SectionTitleForPage from 'components/SectionTitleForPage/SectionTitleForPage';
 import SectionTitleForDefaultPageDesktop from 'components/SectionTitleForDefaultPageDesktop/SectionTitleForDefaultPageDesktop';
 import backgroundImgDesktop from 'images/coffins/coffinsBackgroundDesktopUpdate.png';
-import backgroundImg from 'images/coffins/backgroundCoffinsMob.jpg';
+import backgroundImgMobile from 'images/coffins/backgroundCoffinsMob.jpg';
 import SectionCoffins from 'components/SectionCoffins/SectionCoffins';
 import SectionNeedHelp from 'components/SectionNeedHelp/SectionNeedHelp';
 import SectionStandartCoffinsDesktop from 'components/SectionStandartCoffinsDesktop/SectionStandartCoffinsDesktop';
@@ -12,7 +12,7 @@ import Footer from 'components/Footer/Footer';
 
 const titleProps = {
   titleLink: 'Труни',
-  backgroundImg: backgroundImg,
+  backgroundImgMobile: backgroundImgMobile,
   prevTitleLink: 'Додаткові послуги',
   backgroundImgDesktop: backgroundImgDesktop,
   prevLink: '/additionalservices',
