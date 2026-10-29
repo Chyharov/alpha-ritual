@@ -1,7 +1,7 @@
 import crossesDecoratinForDescription from 'images/crosses/crossesDecoratinForDescription.jpg'
-import logoBackgroundCrosses from 'images/crosses/logoBackgroundCrosses.png'
-import flowersBackgroundCrosses from 'images/crosses/flowersBackgroundCrosses.png'
-import blurCrossesBackground from 'images/crosses/blurCrossesBackground.png'
+import logoBackgroundCrosses from 'images/crosses/logoBackgroundCrossesUpdate.png'
+import flowersBackgroundCrosses from 'images/crosses/flowersBackgroundCrossesUpdate.jpg'
+import Blur from 'components/Blur/Blur';
 import s from './SectionCrossesDesktop.module.scss';
 
 const SectionCrossesDesktop = () => {
@@ -58,7 +58,7 @@ const SectionCrossesDesktop = () => {
               </ul>
               <img className={s.logoBackgroundCrosses} src={logoBackgroundCrosses} alt="logoBackgroundCrosses" />
               <img className={s.flowersBackgroundCrosses} src={flowersBackgroundCrosses} alt="flowersBackgroundCrosses" />
-              <img className={s.blurCrossesBackground} src={blurCrossesBackground} alt="blurCrossesBackground" />
+              <Blur style={{ width: '70%', height: '320px', bottom: '286px', left: '180px' }} />
 
               <div className='outline'></div>
           </div>

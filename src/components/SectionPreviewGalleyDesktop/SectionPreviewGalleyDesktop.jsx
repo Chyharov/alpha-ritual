@@ -1,4 +1,5 @@
 import GalleryWithTitleAndButtonMoreDetails from '../GalleryWithTitleAndButtonMoreDetails/GalleryWithTitleAndButtonMoreDetails';
+import Blur from 'components/Blur/Blur';
 import s from './SectionPreviewGalleyDesktop.module.scss';
 
 const SectionPreviewGalleyDesktop = ({
@@ -36,6 +37,7 @@ const SectionPreviewGalleyDesktop = ({
             titleForGallery={titleForGallery}
             titleForModalWindow={titleForModalWindow}
           />
+        <Blur style={{ width: '540px', height: '400px', bottom: '96px', left: '0px' }} />
         </div>
       </div>
     </section>

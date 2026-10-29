@@ -76,14 +76,3 @@
         z-index: 7;
     }
 }
-
-.blurCrossesBackground {
-    @include mq(desk) {
-        position: absolute;
-        left: 180px;
-        bottom: 286px;
-        width: 1000px;
-        height: 320px;
-        border-radius: 20px;
-    }
-}
