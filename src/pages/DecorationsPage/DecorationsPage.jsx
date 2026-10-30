@@ -8,13 +8,13 @@ import SectionGalleryForDesktop from '../../components/SectionGalleryForDesktop/
 import Footer from 'components/Footer/Footer';
 
 const decorationsPhotos = [
-  { id: 1, src: require('../../images/decorations/decoration1.jpg'), alt: 'Зображення 1', width: '280', height: '210' },
-  { id: 2, src: require('../../images/decorations/decoration2.jpg'), alt: 'Зображення 2', width: '280', height: '210' },
-  { id: 3, src: require('../../images/decorations/decoration3.jpg'), alt: 'Зображення 3', width: '150', height: '150' },
-  { id: 4, src: require('../../images/decorations/decoration4.jpg'), alt: 'Зображення 4', width: '280', height: '210' },
-  { id: 5, src: require('../../images/decorations/decoration5.jpg'), alt: 'Зображення 5', width: '280', height: '210' },
-  { id: 6, src: require('../../images/decorations/decoration6.jpg'), alt: 'Зображення 6', width: '280', height: '210' },
-  { id: 7, src: require('../../images/decorations/decoration7.jpg'), alt: 'Зображення 7', width: '280', height: '210' },
+  { id: 1, src: require('../../images/decorations/decorationUpdate.jpg'), alt: 'decorationUpdate', width: '280', height: '210' },
+  { id: 2, src: require('../../images/decorations/decorationUpdate2.jpg'), alt: 'decorationUpdate2', width: '280', height: '210' },
+  { id: 3, src: require('../../images/decorations/decorationUpdate3.jpg'), alt: 'decorationUpdate3', width: '150', height: '150' },
+  { id: 4, src: require('../../images/decorations/decorationUpdate4.jpg'), alt: 'decorationUpdate4', width: '280', height: '210' },
+  { id: 5, src: require('../../images/decorations/decorationUpdate5.jpg'), alt: 'decorationUpdate5', width: '280', height: '210' },
+  { id: 6, src: require('../../images/decorations/decorationUpdate6.jpg'), alt: 'decorationUpdate6', width: '280', height: '210' },
+  { id: 7, src: require('../../images/decorations/decorationUpdate7.jpg'), alt: 'decorationUpdate7', width: '280', height: '210' },
 ];
 
 const titleProps = {
