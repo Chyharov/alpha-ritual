@@ -52,7 +52,7 @@
 .containerRitualService {
     @include mq(desk) { 
         position: relative;
-        z-index: 4;
+        z-index: 8;
     }
 }
 
@@ -63,7 +63,7 @@
         position: absolute;
         top: 600px;
         left: 0;
-        z-index: 4;
+        z-index: 7;
     }
 }
 
