@@ -5,6 +5,9 @@
   padding-bottom: 32px;
 
   @include mq(tab) {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0px;
   }
 
   @include mq(desk) {
@@ -20,12 +23,21 @@
   flex-direction: column;
   align-items: center;
 
+  @include mq(tab) {
+    z-index: 1;
+    width: 426px;
+    margin-left: 0px;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
   @include mq(desk) {
     width: 528px;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    align-items: center;
   }
 }
 
@@ -37,7 +49,12 @@
   height: 494px;
 
   @include mq(tab) {
+    position: relative;
     background-image: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--secondaryTextColor);
+    height: 600px;
   }
 
   @include mq(desk) {
@@ -51,6 +68,10 @@
 .hero__container {
   margin: 0 auto;
   padding: 8px;
+
+  @include mq(tab) {
+    margin: 0px;
+  }
 
   @include mq(desk) {
     width: 528px;
@@ -69,6 +90,7 @@
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.17;
+    margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1360px) {
@@ -76,6 +98,7 @@
     line-height: 1.17;
     padding: 8px;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -103,7 +126,17 @@
 .hero__image {
   display: none;
 
+  @include mq(tab) {
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    display: block;
+    width: 392px;
+    height: 432px;
+  }
+
   @include mq(desk) {
+    position: static;
     display: block;
     width: 590px;
     height: 570px;
@@ -113,10 +146,13 @@
 
 .heroDescription {
   padding: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  width: 298px;
 
   @include mq(desk) {
+    width: auto;
     padding: 24px 24px 8px 24px;
+    margin-bottom: 40px;
   }
 }
 
@@ -134,8 +170,15 @@
 .lineImage {
   display: none;
 
+  @include mq(tab) {
+      display: block;
+      width: 220px;
+      margin-bottom: 32px;
+    }
+
   @include mq(desk) {
     display: block;
+    margin-bottom: 0px;
     width: 180px;
   }
 }
@@ -152,7 +195,7 @@
 }
 
 .hero__navigation {
-  @include mq(desk) {
+  @include mq(tab) {
     display: none;
   }
 }

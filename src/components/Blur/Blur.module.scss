@@ -3,7 +3,7 @@
 .blur {
   display: none;
 
-  @include mq(desk) {
+  @include mq(tab) {
     display: block;
     position: absolute;
     background: radial-gradient(
