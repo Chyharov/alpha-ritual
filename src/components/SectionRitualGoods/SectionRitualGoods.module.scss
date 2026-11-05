@@ -3,6 +3,13 @@
 .sectionRitualGoods {
   padding-bottom: 32px;
 
+  @include mq(tab) {
+      position: relative;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 0px;
+    }
+
   @include mq(desk) {
     position: relative;
     display: block;
@@ -13,6 +20,12 @@
 
 .ritualServicesContainerDesktop {
   display: none;
+
+  @include mq(tab) {
+    display: block;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--secondaryTextColor);
+  }
 
   @include mq(desk) {
     display: block;
@@ -26,7 +39,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include mq(desk) {
+  @include mq(tab) {
     display: none;
   }
 }
