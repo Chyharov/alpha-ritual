@@ -4,11 +4,11 @@
   padding-bottom: 32px;
 
   @include mq(tab) {
-      position: relative;
-      display: block;
-      padding-top: 32px;
-      padding-bottom: 0px;
-    }
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 0px;
+  }
 
   @include mq(desk) {
     position: relative;
@@ -45,6 +45,15 @@
 }
 
 .ritualGoodsTitle {
+  @include mq(tab) {
+    font-family: Open Sans SemiBold;
+    font-size: 32px;
+    line-height: 1.25;
+    color: var(--secondaryTextColor);
+    padding: 8px;
+    margin-bottom: 32px;
+  }
+
   @include mq(desk) {
     font-family: Open Sans SemiBold;
     font-size: 32px;
@@ -60,11 +69,33 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @include mq(tab) {
+    justify-content: flex-end;
+  }
+
+  @include mq(desk) {
+    justify-content: space-between;
+  }
 }
 
 .logo512RitualGoodsDesk {
   width: 42.67%;
   height: 42.67%;
+
+  @include mq(tab) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 66.67%;
+    height: auto;
+  }
+
+  @include mq(desk) {
+    position: static;
+    width: 42.67%;
+    height: 42.67%;
+  }
 }
 
 .containerForRitualGoodsTitle {
@@ -72,11 +103,28 @@
 }
 
 .flowersRitualGoodsDesk {
+  border-radius: 20px;
   position: absolute;
   top: 158px;
   left: 25%;
   width: 33.334%;
   z-index: 2;
+
+  @include mq(tab) {
+    position: absolute;
+    top: 470px;
+    left: 60%;
+    width: 40%;
+    z-index: 2;
+  }
+
+  @include mq(desk) {
+    position: absolute;
+    top: 158px;
+    left: 25%;
+    width: 33.334%;
+    z-index: 2;
+  }
 }
 
 .ritualGoodsDeskription {
@@ -88,6 +136,20 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @include mq(tab) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  @include mq(desk) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
 }
 
 .ritualGoodsListItem {
