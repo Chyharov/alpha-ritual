@@ -29,15 +29,26 @@ button {
   cursor: pointer;
 }
 
-main, header, footer {
+main,
+header,
+footer {
   color: var(--primaryTextColor);
   background-color: var(--backgroundColorDark);
 }
 
 main {
-  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 82px;
+
+  @media screen and (min-width: 768px) and (max-width: 1359px) {
+    gap: 40px;
+    padding-top: 92px;
+  }
 
   @media screen and (min-width: 1360px) {
-    padding-top: 80px;
+    gap: 80px;
+    padding-top: 88px;
   }
 }
