@@ -139,7 +139,7 @@ const SectionRitualServices = () => {
               <ul className={s.ritualServicesList}>
                 {service.items.map(item => (
                   <li key={item.id} className={s.ritualServiceListItem}>
-                    <div className={s.ritualServiceListItemContainer}>
+                    
                       <div className={s.containerRitualServiceListItem}>
                         {!selectedServices[`${service.title}-${item.id}`] && (
                           <h3 className={s.ritualServiceListTitle}>
@@ -182,7 +182,6 @@ const SectionRitualServices = () => {
                           </button>
                         )}
                       </div>
-                    </div>
                   </li>
                 ))}
               </ul>
