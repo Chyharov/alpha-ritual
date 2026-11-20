@@ -11,7 +11,7 @@
 .ritualServicesContainer {
   @include mq(tab) {
     position: relative;
-    height: 1005px;
+    height: 1060px;
     border-bottom: 1px solid var(--secondaryTextColor);
   }
 }
@@ -69,7 +69,7 @@
 .containerCrimationService {
   @include mq(tab) {
     position: absolute;
-    top: 600px;
+    top: 490px;
     left: 0;
     z-index: 7;
   }
@@ -203,6 +203,15 @@ ul .ritualServiceListItem:last-child {
 
 .sectionRitualServicesGirlFlowers {
   @include mq(tab) {
+      top: 80px;
+      left: 28px;
+      width: 280px;
+      height: 392px;
+      z-index: 2;
+      border-radius: 20px;
+    }
+
+  @include mq(desk) {
     top: 160px;
     left: 80px;
     width: 400px;
@@ -214,6 +223,15 @@ ul .ritualServiceListItem:last-child {
 
 .sectionRitualServicesFlowers {
   @include mq(tab) {
+      top: 630px;
+      right: 28px;
+      width: 280px;
+      height: 392px;
+      border-radius: 20px;
+      z-index: 2;
+    }
+
+  @include mq(desk) {
     top: 390px;
     right: 80px;
     width: 400px;
@@ -223,7 +241,8 @@ ul .ritualServiceListItem:last-child {
 }
 
 .sectionRitualServicesBlur {
-  @include mq(tab) {
+  
+  @include mq(desk) {
     top: 400px;
     left: 93px;
     width: 682px;
@@ -233,6 +252,15 @@ ul .ritualServiceListItem:last-child {
 
 .sectionRitualServicesRectangle {
   @include mq(tab) {
+    transform: rotate(90deg);
+      top: 430px;
+      left: 0px;
+      width: 640px;
+      height: 280px;
+    }
+
+  @include mq(desk) {
+    transform: rotate(0deg);
     top: 380px;
     left: 281px;
     width: 640px;

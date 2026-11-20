@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SectionRitualServicesBlur from '../../images/RitualServices/SectionRitualServicesBlur.png'
+import Blur from 'components/Blur/Blur';
 import SectionRitualServicesFlowers from '../../images/RitualServices/SectionRitualServicesFlowers.jpg'
 import SectionRitualServicesGirlFlowers from '../../images/RitualServices/SectionRitualServicesGirlFlowersUpdate.jpg'
 import SectionRitualServicesRectangle from '../../images/RitualServices/SectionRitualServicesRectangle.svg'
@@ -248,7 +248,7 @@ const SectionRitualServices = () => {
               </ul>
             </div>
           ))}
-          <img className={s.sectionRitualServicesBlur} src={SectionRitualServicesBlur} alt="ritualServicesBlur" />
+          <Blur style={{ width: '682px', height: '566px', top: '400px', left: '93px;' }} />
           <img className={s.sectionRitualServicesFlowers} src={SectionRitualServicesFlowers} alt="ritualServicesFlowers" />
           <img className={s.sectionRitualServicesGirlFlowers} src={SectionRitualServicesGirlFlowers} alt="ritualServicesGirlFlowers" />
           <img className={s.sectionRitualServicesRectangle} src={SectionRitualServicesRectangle} alt="ritualServicesRectangle" />
