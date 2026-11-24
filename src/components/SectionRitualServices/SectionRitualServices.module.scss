@@ -11,8 +11,11 @@
 .ritualServicesContainer {
   @include mq(tab) {
     position: relative;
-    height: 1060px;
+    height: 1300px;
     border-bottom: 1px solid var(--secondaryTextColor);
+  }
+  @include mq(desk) {
+    height: 1200px;
   }
 }
 
@@ -62,7 +65,7 @@
 .containerRitualService {
   @include mq(tab) {
     position: relative;
-    z-index: 8;
+    z-index: 7;
   }
 }
 
@@ -72,6 +75,10 @@
     top: 490px;
     left: 0;
     z-index: 7;
+  }
+
+  @include mq(desk) {
+    top: 650px;
   }
 }
 

@@ -116,10 +116,10 @@ const crimationServices = [
 const SectionRitualServices = () => {
   const [selectedServices, setSelectedServices] = useState({});
 
-  const toggleDetails = id => {
+  const toggleDetails = (serviceTitle, itemId) => {
     setSelectedServices(prevState => ({
       ...prevState,
-      [id]: !prevState[id],
+      [serviceTitle]: itemId,
     }));
   };
 
@@ -141,12 +141,12 @@ const SectionRitualServices = () => {
                   <li key={item.id} className={s.ritualServiceListItem}>
                     
                       <div className={s.containerRitualServiceListItem}>
-                        {!selectedServices[`${service.title}-${item.id}`] && (
+                        {selectedServices[service.title] !== item.id && (
                           <h3 className={s.ritualServiceListTitle}>
                             {item.title}
                           </h3>
                         )}
-                        {selectedServices[`${service.title}-${item.id}`] && (
+                        {selectedServices[service.title] === item.id && (
                           <div className={s.ritualServices__ContainerInfo}>
                             <h2 className={s.containerInfo__title}>
                               {item.title}
@@ -170,12 +170,12 @@ const SectionRitualServices = () => {
                             </div>
                           </div>
                         )}
-                        {!selectedServices[`${service.title}-${item.id}`] && (
+                        {selectedServices[service.title] !== item.id && (
                           <button
                             className={s.ritualServiceListLink}
                             type="button"
                             onClick={() =>
-                              toggleDetails(`${service.title}-${item.id}`)
+                              toggleDetails(service.title, item.id)
                             }
                           >
                             Деталі
@@ -201,12 +201,12 @@ const SectionRitualServices = () => {
                   <li key={item.id} className={s.ritualServiceListItem}>
                     <div className={s.ritualServiceListItemContainer}>
                       <div className={s.containerRitualServiceListItem}>
-                        {!selectedServices[`${service.title}-${item.id}`] && (
+                        {selectedServices[service.title] !== item.id && (
                           <h3 className={s.ritualServiceListTitle}>
                             {item.title}
                           </h3>
                         )}
-                        {selectedServices[`${service.title}-${item.id}`] && (
+                        {selectedServices[service.title] === item.id && (
                           <div className={s.ritualServices__ContainerInfo}>
                             <h2 className={s.containerInfo__title}>
                               {item.title}
@@ -230,13 +230,13 @@ const SectionRitualServices = () => {
                             </div>
                           </div>
                         )}
-                        {!selectedServices[`${service.title}-${item.id}`] && (
+                        {selectedServices[service.title] !== item.id && (
                           <button
                             className={s.ritualServiceListLink}
                             type="button"
                             onClick={() =>
-                              toggleDetails(`${service.title}-${item.id}`)
-                            }
+                              toggleDetails(service.title, item.id)
+                             }
                           >
                             Деталі
                           </button>
