@@ -13,8 +13,13 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     padding: 10px;
+    z-index: 9;
 
     @include mq(tab) {
+        width: 10%;
+    }
+
+    @include mq(desk) {
         width: 5%;
     }
 }
