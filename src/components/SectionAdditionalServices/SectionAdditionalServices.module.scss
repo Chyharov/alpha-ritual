@@ -1,14 +1,13 @@
 @import '../../sass/utils/mixin';
 
 .sectionAdditionalServices {
-  padding-top: 32px;
   padding-bottom: 80px;
 
   @include mq(tab) {
+    padding-bottom: 40px;
   }
 
   @include mq(desk) {
-    padding-top: 80px;
     padding-bottom: 80px;
   }
 }
@@ -21,10 +20,6 @@
   margin-right: auto;
 
   @include mq(tab) {
-
-  }
-
-  @include mq(desk) {
     display: none;
   }
 }
@@ -32,7 +27,7 @@
 .ritualServicesDesktop__container {
   display: none;
 
-  @include mq(desk) {
+  @include mq(tab) {
     display: block;
     position: relative;
     padding-bottom: 204px;
@@ -112,7 +107,7 @@
 }
 
 .additationContainer {
-  @include mq(desk) {
+  @include mq(tab) {
     width: 592px;
     margin-top: 47px;
     margin-bottom: 80px;
@@ -120,7 +115,7 @@
 }
 
 .ritualServices__listItemDesktop {
-  @include mq(desk) {
+  @include mq(tab) {
     width: 288px;
     height: 120px;
     border-radius: 8px;
@@ -130,7 +125,7 @@
 }
 
 .ritualServices__listDesk {
-  @include mq(desk) {
+  @include mq(tab) {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -140,7 +135,7 @@
 }
 
 .otherAtributicsTitle {
-  @include mq(desk) {
+  @include mq(tab) {
     font-family: Open Sans Regular;
     font-size: 24px;
     line-height: 1.67;
@@ -150,14 +145,14 @@
 }
 
 .otherAtributicsList {
-  @include mq(desk) {  
+  @include mq(tab) {  
     display: flex;
     justify-content: flex-start;
   }
 }
 
 .otherAtributicsListItem {
-  @include mq(desk) {
+  @include mq(tab) {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -173,25 +168,25 @@
 }
 
 .funeralPortraitCard {
-  @include mq(desk) {
+  @include mq(tab) {
     background-image: url(../../images/additionalServices/funeralPortraitCard.jpg);
   }
 }
 
 .funeralSetCard {
-  @include mq(desk) {
+  @include mq(tab) {
     background-image: url(../../images/additionalServices/funeralSetCard.jpg);
   }
 }
 
 .otherAtributicsListLink:not(:last-child) {
-  @include mq(desk) {  
+  @include mq(tab) {  
     margin-right: 16px;
   }
 }
 
 .otherAtributicsDescription {
-  @include mq(desk) {
+  @include mq(tab) {
     font-family: Open Sans Medium;
     font-size: 20px;
     line-height: 1;
@@ -200,7 +195,7 @@
 }
 
 .whiteFlowersForSectionAdditionalService {
-  @include mq(desk) {
+  @include mq(tab) {
     position: absolute;
     top: 0px;
     left: 200px;
@@ -211,7 +206,7 @@
 }
 
 .whiteFlowerForSectionAdditionalService {
-  @include mq(desk) {
+  @include mq(tab) {
     position: absolute;
     bottom: 0px;
     right: 120px;
