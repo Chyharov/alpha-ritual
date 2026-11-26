@@ -32,7 +32,6 @@
     position: relative;
     padding-bottom: 204px;
   }
-
 }
 
 .additationContainerFlex {
@@ -72,8 +71,8 @@
 }
 
 .ritualServices__list {
-    width: 100%;
-    margin-bottom: 24px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .ritualServices__listItem {
@@ -145,7 +144,7 @@
 }
 
 .otherAtributicsList {
-  @include mq(tab) {  
+  @include mq(tab) {
     display: flex;
     justify-content: flex-start;
   }
@@ -180,7 +179,7 @@
 }
 
 .otherAtributicsListLink:not(:last-child) {
-  @include mq(tab) {  
+  @include mq(tab) {
     margin-right: 16px;
   }
 }
@@ -196,6 +195,10 @@
 
 .whiteFlowersForSectionAdditionalService {
   @include mq(tab) {
+    display: none;
+  }
+
+  @include mq(desk) {
     position: absolute;
     top: 0px;
     left: 200px;
@@ -207,6 +210,9 @@
 
 .whiteFlowerForSectionAdditionalService {
   @include mq(tab) {
+    display: none;
+  }
+  @include mq(desk) {
     position: absolute;
     bottom: 0px;
     right: 120px;
