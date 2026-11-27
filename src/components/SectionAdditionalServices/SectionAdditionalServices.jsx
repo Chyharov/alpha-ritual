@@ -95,9 +95,10 @@ const SectionAdditionalServices = () => {
 
         <img className={s.whiteFlowersForSectionAdditionalService} src={whiteFlowersForSectionAdditionalService} alt="whiteFlowersForSectionAdditionalService" />
         <img className={s.whiteFlowerForSectionAdditionalService} src={whiteFlowerForSectionAdditionalService} alt="whiteFlowerForSectionAdditionalService" />
-        <Blur style={{ width: '36%', height: '490px', top: '462px', left: '526px' }} />
+        <Blur style={{ width: '36%', height: '490px', top: '462px', right: 'auto' }} />
 
       </div>
+      
     </section>
   );
 };

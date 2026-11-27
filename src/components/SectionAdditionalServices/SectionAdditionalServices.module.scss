@@ -30,13 +30,21 @@
   @include mq(tab) {
     display: block;
     position: relative;
+  }
+  @include mq(desk) {
     padding-bottom: 204px;
   }
 }
 
 .additationContainerFlex {
-  display: flex;
-  justify-content: flex-end;
+  @include mq(tab) {
+    margin-bottom: 40px;
+  }
+  
+  @include mq(desk) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .ritualServices__title {
@@ -106,7 +114,12 @@
 }
 
 .additationContainer {
-  @include mq(tab) {
+  @include mq(desk) {
+    width: 100%;
+    margin-top: 47px;
+    margin-bottom: 80px;
+  }
+  @include mq(desk) {
     width: 592px;
     margin-top: 47px;
     margin-bottom: 80px;
@@ -127,9 +140,9 @@
   @include mq(tab) {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(2, 288px);
+    justify-content: space-between;
+    justify-items: stretch;
   }
 }
 
@@ -146,6 +159,10 @@
 .otherAtributicsList {
   @include mq(tab) {
     display: flex;
+    justify-content: space-between;
+  }
+
+  @include mq(desk) {
     justify-content: flex-start;
   }
 }
@@ -199,6 +216,7 @@
   }
 
   @include mq(desk) {
+    display: block;
     position: absolute;
     top: 0px;
     left: 200px;
@@ -213,6 +231,7 @@
     display: none;
   }
   @include mq(desk) {
+    display: block;
     position: absolute;
     bottom: 0px;
     right: 120px;
